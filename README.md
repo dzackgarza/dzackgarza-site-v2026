@@ -8,14 +8,21 @@ through `just`; it is not vendored here.
 ## Usage
 
 ```
-just build      # content/ -> dist/
-just serve      # build, then preview over HTTP
-just check      # build, then fail on broken internal links
+just setup        # install the pinned generator (once, after clone)
+just build        # content/ -> dist/
+just serve        # build, then preview over HTTP
+just check        # build, then fail on malformed pages or broken internal links
 just new "Title"  # scaffold a blog post
+just update       # bump the generator to the latest published commit
 ```
 
-Recipes call `bunx github:dzackgarza/pandoc-ssg`. To develop against a local
-generator checkout, override the `SSG` variable:
+The generator [pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg) is a
+declared dependency (`package.json`), pinned by `bun.lock` so builds are
+reproducible — exactly like Jekyll in a `Gemfile`. Recipes invoke the installed
+generator, *not* `bunx github:…` (which caches a stale clone and is not
+reproducible). Upgrade deliberately with `just update`.
+
+To develop against a local generator checkout instead:
 
 ```
 SSG="bun /path/to/pandoc-ssg/src/cli.ts" just build
