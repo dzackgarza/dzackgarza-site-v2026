@@ -27,7 +27,7 @@
 
     "kind-of": ["kind-of@6.0.3", "", {}, "sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw=="],
 
-    "pandoc-ssg": ["pandoc-ssg@github:dzackgarza/pandoc-ssg#076c8ca", { "dependencies": { "gray-matter": "^4.0.3", "smol-toml": "^1.3.1", "yaml": "^2.7.0", "zod": "^3.24.0" }, "peerDependencies": { "playwright": "^1.60.0" }, "optionalPeers": ["playwright"], "bin": { "pandoc-ssg": "src/cli.ts" } }, "dzackgarza-pandoc-ssg-076c8ca", "sha512-9Bm/PL4dg2cRjxpnbIq2SuFwwyjec8H/ApI2TbYU3jJbc99e54FD85qCrr5YUvk7wbk9dYeLa2Eblu1Hw5f/qw=="],
+    "pandoc-ssg": ["pandoc-ssg@github:dzackgarza/pandoc-ssg#dedfb7d", { "dependencies": { "gray-matter": "^4.0.3", "smol-toml": "^1.3.1", "yaml": "^2.7.0", "zod": "^3.24.0" }, "peerDependencies": { "playwright": "^1.60.0" }, "optionalPeers": ["playwright"], "bin": { "pandoc-ssg": "src/cli.ts" } }, "dzackgarza-pandoc-ssg-dedfb7d", "sha512-Llkq28IJQlSAkJIkp4Hf+jzei/NmaBGd6r+pry8HpKUkb9BiY4EdmjnS1cNyhXTZ7Mr0RR3jQMADwRAqtqbXgA=="],
 
     "playwright": ["playwright@1.60.0", "", { "dependencies": { "playwright-core": "1.60.0" }, "optionalDependencies": { "fsevents": "2.3.2" }, "bin": { "playwright": "cli.js" } }, "sha512-hheHdokM8cdqCb0lcE3s+zT4t4W+vvjpGxsZlDnikarzx8tSzMebh3UiFtgqwFwnTnjYQcsyMF8ei2mCO/tpeA=="],
 
