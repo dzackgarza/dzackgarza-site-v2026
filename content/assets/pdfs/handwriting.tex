@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{dashrule}
+\usepackage{pgf, pgffor}
+\usepackage{amsfonts}
+
+
+\newsavebox\myboxX
+\newsavebox\myboxx
+\newdimen\heightX
+\newdimen\heightx
+
+\newcommand{\setline}[2]{%
+    \savebox\myboxX{\scalebox{#1}{X}}%
+    \savebox\myboxx{\scalebox{#1}{x}}%
+    \heightX=\ht\myboxX
+    \heightx=\ht\myboxx
+    \noindent\ooalign{\rule[\heightX]{\textwidth}{.1pt}\cr
+    \noindent\hdashrule[\heightx]{\textwidth}{.1pt}{1mm}\cr
+    \noindent\rule{\textwidth}{.1pt}\cr
+    \noindent\scalebox{#1}{\pdfliteral{q 1 Tr [.1 .2]0 d .1 w}#2\pdfliteral{Q}}}%
+}
+
+\begin{document}
+
+\foreach \n in {
+\alpha, \beta, \gamma,\delta,\varepsilon, 
+\zeta, \eta, \theta, \iota, \kappa, 
+\lambda,\mu,\nu,\xi,
+\pi, \rho, \sigma, \tau, \upsilon, 
+\chi, \psi, \omega
+}{
+\foreach \j in {1, 2, ..., 3}{
+  \setline{4}{$\n\n\n\n\n\n\n\n\n\n$}
+  \vspace{0.15cm}
+  \\
+}
+}
+
+
+\end{document}

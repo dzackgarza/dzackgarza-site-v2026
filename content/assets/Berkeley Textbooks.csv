@@ -1,0 +1,406 @@
+Column 1,Column 3,Column 5
+Course,Lec #,Course Title,Instructor,Author/Title,Publisher
+1A,1,Calculus,Harrison,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,1,Calculus,Aganagic,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,2,Calculus,Ratner,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,3,Calculus,Borcherds,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+16A,1,Analytic Geometry & Calculus,Conrad,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. I, ISBN#10: 0-558-37269-4",Pearson Custom
+16B,1,Analytic Geometry & Calculus,Sarason,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+16B,2,Analytic Geometry & Calculus,Steel,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+24,1,Freshman Seminars,Harrison,No Required Textbook,?
+32,1,Precalculus,Staff,"Fundamentals ofPrecalculus, ISBN#10: 1-111-46584-3",Cengage
+53,1,Multivariable Calculus,Frenkel,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+53,2,Multivariable Calculus,Stankova,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+H53,1,Honors Multivariable Calculus,Stamm,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+54,1,Linear Algebra & Differential Equations,Teleman,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+54,2,Linear Algebra & Differential Equations,Gu,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+55,1,Discrete Mathematics,Vojta,"Rosen, Discrete Mathematics & Its Applications, ISBN#10: 0-073-22972-5",McGraw-Hill
+104,1,Introduction to Analysis,Yilmaz,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,2,Introduction to Analysis,Jones,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,3,Introduction to Analysis,Dahl,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,4,Introduction to Analysis,Givental,"Rudin, Principles of Mathematical Analysis",McGraw-Hill
+104,5,Introduction to Analysis,Rycroft,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+110,1,Linear Algebra,Grunbaum,"Friedberg, Insel & Spence, Linear Algebra, ISBN#: 0-13-008451-4",Pearson
+113,1,Abstract Algebra,Wodzicki,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+113,2,Abstract Algebra,Paulin,No Text Used,?
+113,3,Abstract Algebra,Medvedev,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+113,4,Abstract Algebra,Poirier,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+H113,1,Honors Abstract Algebra,Coleman,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+114,1,Abstract Algebra II,Zickert,"Ian Stewart, Galois Theory 3rd ed., ISBN#: 1-58488-393-6",Chapman & Hall CRC
+118,1,Fourier Analysis Wavelets & Signal Processing,Wilkening,"A. Boggess & F.J. Narcowich, A First Course in Wavelets with Fourier Analysis 2nd ed., ISBN#: 978-0-470-43117-7",Wiley
+121A,1,Mathematical Tools for the Physical Sciences,Teleman,"Boas, Mathematical Methods in the Physical Sciences 3rd ed., ISBN#: 0-471-19826-9",Wiley
+121B,1,Mathematical Tools for the Physical Sciences,Neu,Will Use Own Lecture Notes,?
+128A,1,Numerical Analysis,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+128B,1,Numerical Analysis II,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+130,1,The Classical Geometries,Serganova,"Robin Hartshorne, Geometry: Euclid and Beyond ISBN#: 0-387-98650-2",Springer-Verlag
+?,?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 1 (Books I and II) ISBN#: 0-486-60088-2",Dover
+?,?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 2 (Books III-IX) ISBN#: 0-486-60089-0",Dover
+135,1,Introduction to the Theory of Sets,Ratner,"Enderton, Elements of Set Theory ISBN#: 0-12-238440-7",Academic Press
+136,1,Incompleteness & Undecidability,Steel,"Cutland, Computability: An Introduction to Recursive Function Theory ISBN#: 0-521-29465-7",Cambridge Univ. Press
+140,1,Metric Differential Geometry,Rieffel,"Banchoff & Lovett, Differential Geometry of Curves and Surfaces ISBN#: 978-1-5688-1456-8",A.K. Peters
+141,1,Elementary Differential Topology,Zickert,"Munkres, Analysis on Manifolds ISBN#: 0-201-31596-3",Westview Press
+151,1,Mathematics of the Secondary School Curriculum,Hald,Will use notes (made available on Bancroft Copy Central),?
+153,1,Mathematics of the Secondary School Curriculum,Gomez,Will use notes (made available on Bancroft Copy Central),?
+160,1,History of Mathematics,Hald,"Edwards, The Historical Development of the Calculus ISBD#: 0-387-94313-7",Springer
+172,1,Combinatorics,Manon?,?,?
+185,1,Complex Analysis,Givental,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,2,Complex Analysis,VanValkenburgh,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+?,?,?,?,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,3,Complex Analysis,Yilmaz,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+H185,1,Honors Complex Analysis,Wodzicki,"Henri Cartan, Elementary Theory of Analytic Functions of One or Several Complex Variables",Dover
+202B,1,Introduction to Topology & Analysis,Sarason,"Gerald Folland, Real Analysis 1999 ISBN#: 0-471-31716-0",Wiley
+?,?,?,?,"H.L. Royden, Real Analysis ISBN#: 0-02-404151-3",Prentice-Hall
+?,?,?,?,"Walter Rudin, Functional Analysis 2nd ed. ISBN#: 0-07-054236-8",McGraw-Hill
+203,1,Asymptotic Analysis,Evans?,?,?
+208,1,C* Algebras,Rieffel,"Davidson, C*-Algebras by Example ISBN#: 0-8218-0599-1",AMS
+215B,1,Algebraic Topology,Hutchings,"Milnor & Stasheff, Characteristic Classes 1974 ISBN#: 0-691-08122-0",Princeton U. Press
+C218B,1,Probability Theory,Staff?,?,?
+220,1,Methods of Applied Mathematics,Chorin,Professor will provide own notes.,?
+222B,1,Partial Differential Equations,Dodson,"Evans, Partial Differential Equations ISBN#: 9780-8218-4974-3",AMS
+C223B,1,Stochastic Processes,Staff?,?,?
+225B,1,Metamathematics,Harrington?,?,?
+228B,1,Numerical Solution of Differential Equations,Wilkening,"R.J. Leveque, Finite Difference Methods for Ordinary & Partial Differential Equations 2007, ISBN#: 9780-8987-1629-0",SIAM
+?,?,?,?,"R.J. Leveque, Finite Volume Methods for Hyperbolic Problems 2002, ISBN#: 0-521-00924-3",Cambridge
+229,1,Theory of Models,Harrington?,?,?
+240,1,Riemannian Geometry,Lott,"John Lee, Riemannian Manifolds: An Introduction to Curvature 1997 ISBN#: 0-387-98322-8",Springer
+?,?,?,?,"Burago, Burago, Ivanov A Course in Metric Geometry 2001, ISBN#: 0-821-82129-6",AMS
+241,1,Complex Manifolds,Auroux,"Daniel Huybrechts, Complex Geometry: An Introduction, ISBN#: 3-540-21290-6Note: Available online through Libraries",Springer
+?,?,?,?,"Otto Forster, Lectures on Riemann Surfaces ISBN#: 0-387-90617-7",Springer
+249,1,Algebraic Combinatorics,Haiman,"Stanley, Enumerative Combinatorics Vol. I, 2000, ISBN#: 978-0-521-66351-9",Cambridge Univ. Press
+?,?,?,?,"Stanley, Enumerative Combinatorics Vol. II, 2001, ISBN#: 978-0-521-78987-5",Cambridge Univ. Press
+250B,1,Multilinear Algebra and Further Topics,Eisenbud?,?,?
+252,1,Representation Theory,Serganova,"Fulton Harris, Representation Theory: A First Course ISBN#: 0-387-97495-4",Springer
+?,?,?,?,"Curtis/Reiner, Representation Theory of Finite Groups and Associative Algebras ISBN#: 978-0-471-60845-5",AMS Chelsea
+253,1,Homological Algebra,Olsson,"Charles Weibel, An Introduction to Homological Algebra 1997 ISBN#: 0-521-55987",Cambridge Univ. Press
+254B,1,Number Theory,Paulin,No Textbook Used,?
+256B,1,Algebraic Geometry,Vojta,"Hartshorne, Algebraic Geometry ISBN#: 0-387-90244-9",Springer
+261B,1,Lie Groups,Bryant,"Mark Sepanski, Compact Lie Groups 2006 ISBN#: 978-0-387-30263-8",Springer
+270,1,Hot Topics in Mathematics,Teichner?,?,?
+274,1,Topics in Algebra,Williams,No Required Text,?
+274,2,Topics in Algebra,Scanlon,"J. Silverman, The Arithmetic of Dynamical Systems ISBN#: 978-0-387-69903-5",Springer
+?,?,?,?,"J. Milnor, Dynamics in One Complex Variable 3rd ed. ISBN#: 0-691-12488-4",Princeton Univ. Press
+276,1,Topics in Topology,Teichner?,?,?
+Course,Course Title,Instructor,Author/Title,Publisher
+1A,Calculus,Harrison,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Aganagic,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Ratner,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Borcherds,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+16A,Analytic Geometry & Calculus,Conrad,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. I, ISBN#10: 0-558-37269-4",Pearson Custom
+16B,Analytic Geometry & Calculus,Sarason,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+16B,Analytic Geometry & Calculus,Steel,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+24,Freshman Seminars,Harrison,No Required Textbook,?
+32,Precalculus,Staff,"Fundamentals ofPrecalculus, ISBN#10: 1-111-46584-3",Cengage
+53,Multivariable Calculus,Frenkel,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+53,Multivariable Calculus,Stankova,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+H53,Honors Multivariable Calculus,Stamm,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+54,Linear Algebra & Differential Equations,Teleman,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+54,Linear Algebra & Differential Equations,Gu,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+55,Discrete Mathematics,Vojta,"Rosen, Discrete Mathematics & Its Applications, ISBN#10: 0-073-22972-5",McGraw-Hill
+104,Introduction to Analysis,Yilmaz,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Jones,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Dahl,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Givental,"Rudin, Principles of Mathematical Analysis",McGraw-Hill
+104,Introduction to Analysis,Rycroft,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+110,Linear Algebra,Grunbaum,"Friedberg, Insel & Spence, Linear Algebra, ISBN#: 0-13-008451-4",Pearson
+113,Abstract Algebra,Wodzicki,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+113,Abstract Algebra,Paulin,No Text Used,?
+113,Abstract Algebra,Medvedev,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+113,Abstract Algebra,Poirier,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+H113,Honors Abstract Algebra,Coleman,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+114,Abstract Algebra II,Zickert,"Ian Stewart, Galois Theory 3rd ed., ISBN#: 1-58488-393-6",Chapman & Hall CRC
+118,Fourier Analysis Wavelets & Signal Processing,Wilkening,"A. Boggess & F.J. Narcowich, A First Course in Wavelets with Fourier Analysis 2nd ed., ISBN#: 978-0-470-43117-7",Wiley
+121A,Mathematical Tools for the Physical Sciences,Teleman,"Boas, Mathematical Methods in the Physical Sciences 3rd ed., ISBN#: 0-471-19826-9",Wiley
+121B,Mathematical Tools for the Physical Sciences,Neu,Will Use Own Lecture Notes,?
+128A,Numerical Analysis,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+128B,Numerical Analysis II,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+130,The Classical Geometries,Serganova,"Robin Hartshorne, Geometry: Euclid and Beyond ISBN#: 0-387-98650-2",Springer-Verlag
+?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 1 (Books I and II) ISBN#: 0-486-60088-2",Dover
+?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 2 (Books III-IX) ISBN#: 0-486-60089-0",Dover
+135,Introduction to the Theory of Sets,Ratner,"Enderton, Elements of Set Theory ISBN#: 0-12-238440-7",Academic Press
+136,Incompleteness & Undecidability,Steel,"Cutland, Computability: An Introduction to Recursive Function Theory ISBN#: 0-521-29465-7",Cambridge Univ. Press
+140,Metric Differential Geometry,Rieffel,"Banchoff & Lovett, Differential Geometry of Curves and Surfaces ISBN#: 978-1-5688-1456-8",A.K. Peters
+141,Elementary Differential Topology,Zickert,"Munkres, Analysis on Manifolds ISBN#: 0-201-31596-3",Westview Press
+151,Mathematics of the Secondary School Curriculum,Hald,Will use notes (made available on Bancroft Copy Central),?
+153,Mathematics of the Secondary School Curriculum,Gomez,Will use notes (made available on Bancroft Copy Central),?
+160,History of Mathematics,Hald,"Edwards, The Historical Development of the Calculus ISBD#: 0-387-94313-7",Springer
+172,Combinatorics,Manon?,?,?
+185,Complex Analysis,Givental,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,VanValkenburgh,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+?,?,?,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,Yilmaz,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+H185,Honors Complex Analysis,Wodzicki,"Henri Cartan, Elementary Theory of Analytic Functions of One or Several Complex Variables",Dover
+202B,Introduction to Topology & Analysis,Sarason,"Gerald Folland, Real Analysis 1999 ISBN#: 0-471-31716-0",Wiley
+?,?,?,"H.L. Royden, Real Analysis ISBN#: 0-02-404151-3",Prentice-Hall
+?,?,?,"Walter Rudin, Functional Analysis 2nd ed. ISBN#: 0-07-054236-8",McGraw-Hill
+203,Asymptotic Analysis,Evans?,?,?
+208,C* Algebras,Rieffel,"Davidson, C*-Algebras by Example ISBN#: 0-8218-0599-1",AMS
+215B,Algebraic Topology,Hutchings,"Milnor & Stasheff, Characteristic Classes 1974 ISBN#: 0-691-08122-0",Princeton U. Press
+C218B,Probability Theory,Staff?,?,?
+220,Methods of Applied Mathematics,Chorin,Professor will provide own notes.,?
+222B,Partial Differential Equations,Dodson,"Evans, Partial Differential Equations ISBN#: 9780-8218-4974-3",AMS
+C223B,Stochastic Processes,Staff?,?,?
+225B,Metamathematics,Harrington?,?,?
+228B,Numerical Solution of Differential Equations,Wilkening,"R.J. Leveque, Finite Difference Methods for Ordinary & Partial Differential Equations 2007, ISBN#: 9780-8987-1629-0",SIAM
+?,?,?,"R.J. Leveque, Finite Volume Methods for Hyperbolic Problems 2002, ISBN#: 0-521-00924-3",Cambridge
+229,Theory of Models,Harrington?,?,?
+240,Riemannian Geometry,Lott,"John Lee, Riemannian Manifolds: An Introduction to Curvature 1997 ISBN#: 0-387-98322-8",Springer
+?,?,?,"Burago, Burago, Ivanov A Course in Metric Geometry 2001, ISBN#: 0-821-82129-6",AMS
+241,Complex Manifolds,Auroux,"Daniel Huybrechts, Complex Geometry: An Introduction, ISBN#: 3-540-21290-6Note: Available online through Libraries",Springer
+?,?,?,"Otto Forster, Lectures on Riemann Surfaces ISBN#: 0-387-90617-7",Springer
+249,Algebraic Combinatorics,Haiman,"Stanley, Enumerative Combinatorics Vol. I, 2000, ISBN#: 978-0-521-66351-9",Cambridge Univ. Press
+?,?,?,"Stanley, Enumerative Combinatorics Vol. II, 2001, ISBN#: 978-0-521-78987-5",Cambridge Univ. Press
+250B,Multilinear Algebra and Further Topics,Eisenbud?,?,?
+252,Representation Theory,Serganova,"Fulton Harris, Representation Theory: A First Course ISBN#: 0-387-97495-4",Springer
+?,?,?,"Curtis/Reiner, Representation Theory of Finite Groups and Associative Algebras ISBN#: 978-0-471-60845-5",AMS Chelsea
+253,Homological Algebra,Olsson,"Charles Weibel, An Introduction to Homological Algebra 1997 ISBN#: 0-521-55987",Cambridge Univ. Press
+254B,Number Theory,Paulin,No Textbook Used,?
+256B,Algebraic Geometry,Vojta,"Hartshorne, Algebraic Geometry ISBN#: 0-387-90244-9",Springer
+261B,Lie Groups,Bryant,"Mark Sepanski, Compact Lie Groups 2006 ISBN#: 978-0-387-30263-8",Springer
+270,Hot Topics in Mathematics,Teichner?,?,?
+274,Topics in Algebra,Williams,No Required Text,?
+274,Topics in Algebra,Scanlon,"J. Silverman, The Arithmetic of Dynamical Systems ISBN#: 978-0-387-69903-5",Springer
+?,?,?,"J. Milnor, Dynamics in One Complex Variable 3rd ed. ISBN#: 0-691-12488-4",Princeton Univ. Press
+276,Topics in Topology,Teichner?,?,?
+Course,Course Title,Instructor,Author/Title,Publisher
+1A,Calculus,Harrison,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Aganagic,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Ratner,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,Borcherds,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+16A,Analytic Geometry & Calculus,Conrad,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. I, ISBN#10: 0-558-37269-4",Pearson Custom
+16B,Analytic Geometry & Calculus,Sarason,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+16B,Analytic Geometry & Calculus,Steel,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+24,Freshman Seminars,Harrison,No Required Textbook,?
+32,Precalculus,Staff,"Fundamentals ofPrecalculus, ISBN#10: 1-111-46584-3",Cengage
+53,Multivariable Calculus,Frenkel,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+53,Multivariable Calculus,Stankova,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+H53,Honors Multivariable Calculus,Stamm,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+54,Linear Algebra & Differential Equations,Teleman,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+54,Linear Algebra & Differential Equations,Gu,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+55,Discrete Mathematics,Vojta,"Rosen, Discrete Mathematics & Its Applications, ISBN#10: 0-073-22972-5",McGraw-Hill
+104,Introduction to Analysis,Yilmaz,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Jones,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Dahl,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,Givental,"Rudin, Principles of Mathematical Analysis",McGraw-Hill
+104,Introduction to Analysis,Rycroft,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+110,Linear Algebra,Grunbaum,"Friedberg, Insel & Spence, Linear Algebra, ISBN#: 0-13-008451-4",Pearson
+113,Abstract Algebra,Wodzicki,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+113,Abstract Algebra,Paulin,No Text Used,?
+113,Abstract Algebra,Medvedev,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+113,Abstract Algebra,Poirier,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+H113,Honors Abstract Algebra,Coleman,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+114,Abstract Algebra II,Zickert,"Ian Stewart, Galois Theory 3rd ed., ISBN#: 1-58488-393-6",Chapman & Hall CRC
+118,Fourier Analysis Wavelets & Signal Processing,Wilkening,"A. Boggess & F.J. Narcowich, A First Course in Wavelets with Fourier Analysis 2nd ed., ISBN#: 978-0-470-43117-7",Wiley
+121A,Mathematical Tools for the Physical Sciences,Teleman,"Boas, Mathematical Methods in the Physical Sciences 3rd ed., ISBN#: 0-471-19826-9",Wiley
+121B,Mathematical Tools for the Physical Sciences,Neu,Will Use Own Lecture Notes,?
+128A,Numerical Analysis,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+128B,Numerical Analysis II,Strain,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+130,The Classical Geometries,Serganova,"Robin Hartshorne, Geometry: Euclid and Beyond ISBN#: 0-387-98650-2",Springer-Verlag
+?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 1 (Books I and II) ISBN#: 0-486-60088-2",Dover
+?,?,?,"Euclid, The Thirteen Books of the Elements Vol. 2 (Books III-IX) ISBN#: 0-486-60089-0",Dover
+135,Introduction to the Theory of Sets,Ratner,"Enderton, Elements of Set Theory ISBN#: 0-12-238440-7",Academic Press
+136,Incompleteness & Undecidability,Steel,"Cutland, Computability: An Introduction to Recursive Function Theory ISBN#: 0-521-29465-7",Cambridge Univ. Press
+140,Metric Differential Geometry,Rieffel,"Banchoff & Lovett, Differential Geometry of Curves and Surfaces ISBN#: 978-1-5688-1456-8",A.K. Peters
+141,Elementary Differential Topology,Zickert,"Munkres, Analysis on Manifolds ISBN#: 0-201-31596-3",Westview Press
+151,Mathematics of the Secondary School Curriculum,Hald,Will use notes (made available on Bancroft Copy Central),?
+153,Mathematics of the Secondary School Curriculum,Gomez,Will use notes (made available on Bancroft Copy Central),?
+160,History of Mathematics,Hald,"Edwards, The Historical Development of the Calculus ISBD#: 0-387-94313-7",Springer
+172,Combinatorics,Manon?,?,?
+185,Complex Analysis,Givental,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,VanValkenburgh,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+?,?,?,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,Yilmaz,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+H185,Honors Complex Analysis,Wodzicki,"Henri Cartan, Elementary Theory of Analytic Functions of One or Several Complex Variables",Dover
+202B,Introduction to Topology & Analysis,Sarason,"Gerald Folland, Real Analysis 1999 ISBN#: 0-471-31716-0",Wiley
+?,?,?,"H.L. Royden, Real Analysis ISBN#: 0-02-404151-3",Prentice-Hall
+?,?,?,"Walter Rudin, Functional Analysis 2nd ed. ISBN#: 0-07-054236-8",McGraw-Hill
+203,Asymptotic Analysis,Evans?,?,?
+208,C* Algebras,Rieffel,"Davidson, C*-Algebras by Example ISBN#: 0-8218-0599-1",AMS
+215B,Algebraic Topology,Hutchings,"Milnor & Stasheff, Characteristic Classes 1974 ISBN#: 0-691-08122-0",Princeton U. Press
+C218B,Probability Theory,Staff?,?,?
+220,Methods of Applied Mathematics,Chorin,Professor will provide own notes.,?
+222B,Partial Differential Equations,Dodson,"Evans, Partial Differential Equations ISBN#: 9780-8218-4974-3",AMS
+C223B,Stochastic Processes,Staff?,?,?
+225B,Metamathematics,Harrington?,?,?
+228B,Numerical Solution of Differential Equations,Wilkening,"R.J. Leveque, Finite Difference Methods for Ordinary & Partial Differential Equations 2007, ISBN#: 9780-8987-1629-0",SIAM
+?,?,?,"R.J. Leveque, Finite Volume Methods for Hyperbolic Problems 2002, ISBN#: 0-521-00924-3",Cambridge
+229,Theory of Models,Harrington?,?,?
+240,Riemannian Geometry,Lott,"John Lee, Riemannian Manifolds: An Introduction to Curvature 1997 ISBN#: 0-387-98322-8",Springer
+?,?,?,"Burago, Burago, Ivanov A Course in Metric Geometry 2001, ISBN#: 0-821-82129-6",AMS
+241,Complex Manifolds,Auroux,"Daniel Huybrechts, Complex Geometry: An Introduction, ISBN#: 3-540-21290-6Note: Available online through Libraries",Springer
+?,?,?,"Otto Forster, Lectures on Riemann Surfaces ISBN#: 0-387-90617-7",Springer
+249,Algebraic Combinatorics,Haiman,"Stanley, Enumerative Combinatorics Vol. I, 2000, ISBN#: 978-0-521-66351-9",Cambridge Univ. Press
+?,?,?,"Stanley, Enumerative Combinatorics Vol. II, 2001, ISBN#: 978-0-521-78987-5",Cambridge Univ. Press
+250B,Multilinear Algebra and Further Topics,Eisenbud?,?,?
+252,Representation Theory,Serganova,"Fulton Harris, Representation Theory: A First Course ISBN#: 0-387-97495-4",Springer
+?,?,?,"Curtis/Reiner, Representation Theory of Finite Groups and Associative Algebras ISBN#: 978-0-471-60845-5",AMS Chelsea
+253,Homological Algebra,Olsson,"Charles Weibel, An Introduction to Homological Algebra 1997 ISBN#: 0-521-55987",Cambridge Univ. Press
+254B,Number Theory,Paulin,No Textbook Used,?
+256B,Algebraic Geometry,Vojta,"Hartshorne, Algebraic Geometry ISBN#: 0-387-90244-9",Springer
+261B,Lie Groups,Bryant,"Mark Sepanski, Compact Lie Groups 2006 ISBN#: 978-0-387-30263-8",Springer
+270,Hot Topics in Mathematics,Teichner?,?,?
+274,Topics in Algebra,Williams,No Required Text,?
+274,Topics in Algebra,Scanlon,"J. Silverman, The Arithmetic of Dynamical Systems ISBN#: 978-0-387-69903-5",Springer
+?,?,?,"J. Milnor, Dynamics in One Complex Variable 3rd ed. ISBN#: 0-691-12488-4",Princeton Univ. Press
+276,Topics in Topology,Teichner?,?,?
+Course,Course Title,Author/Title,Publisher
+1A,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5",Cengage
+16A,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. I, ISBN#10: 0-558-37269-4",Pearson Custom
+16B,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+16B,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0",Pearson Custom
+24,Freshman Seminars,No Required Textbook,?
+32,Precalculus,"Fundamentals ofPrecalculus, ISBN#10: 1-111-46584-3",Cengage
+53,Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+53,Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+H53,Honors Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2",Cengage
+54,Linear Algebra & Differential Equations,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+54,Linear Algebra & Differential Equations,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5",Pearson Custom
+55,Discrete Mathematics,"Rosen, Discrete Mathematics & Its Applications, ISBN#10: 0-073-22972-5",McGraw-Hill
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+104,Introduction to Analysis,"Rudin, Principles of Mathematical Analysis",McGraw-Hill
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X",Springer
+110,Linear Algebra,"Friedberg, Insel & Spence, Linear Algebra, ISBN#: 0-13-008451-4",Pearson
+113,Abstract Algebra,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+113,Abstract Algebra,No Text Used,?
+113,Abstract Algebra,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+113,Abstract Algebra,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9",Wiley
+H113,Honors Abstract Algebra,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7",Pearson Education
+114,Abstract Algebra II,"Ian Stewart, Galois Theory 3rd ed., ISBN#: 1-58488-393-6",Chapman & Hall CRC
+118,Fourier Analysis Wavelets & Signal Processing,"A. Boggess & F.J. Narcowich, A First Course in Wavelets with Fourier Analysis 2nd ed., ISBN#: 978-0-470-43117-7",Wiley
+121A,Mathematical Tools for the Physical Sciences,"Boas, Mathematical Methods in the Physical Sciences 3rd ed., ISBN#: 0-471-19826-9",Wiley
+121B,Mathematical Tools for the Physical Sciences,Will Use Own Lecture Notes,?
+128A,Numerical Analysis,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+128B,Numerical Analysis II,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X",Springer-Verlag
+130,The Classical Geometries,"Robin Hartshorne, Geometry: Euclid and Beyond ISBN#: 0-387-98650-2",Springer-Verlag
+?,?,"Euclid, The Thirteen Books of the Elements Vol. 1 (Books I and II) ISBN#: 0-486-60088-2",Dover
+?,?,"Euclid, The Thirteen Books of the Elements Vol. 2 (Books III-IX) ISBN#: 0-486-60089-0",Dover
+135,Introduction to the Theory of Sets,"Enderton, Elements of Set Theory ISBN#: 0-12-238440-7",Academic Press
+136,Incompleteness & Undecidability,"Cutland, Computability: An Introduction to Recursive Function Theory ISBN#: 0-521-29465-7",Cambridge Univ. Press
+140,Metric Differential Geometry,"Banchoff & Lovett, Differential Geometry of Curves and Surfaces ISBN#: 978-1-5688-1456-8",A.K. Peters
+141,Elementary Differential Topology,"Munkres, Analysis on Manifolds ISBN#: 0-201-31596-3",Westview Press
+151,Mathematics of the Secondary School Curriculum,Will use notes (made available on Bancroft Copy Central),?
+153,Mathematics of the Secondary School Curriculum,Will use notes (made available on Bancroft Copy Central),?
+160,History of Mathematics,"Edwards, The Historical Development of the Calculus ISBD#: 0-387-94313-7",Springer
+172,Combinatorics?,?,?
+185,Complex Analysis,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+?,?,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1",AMS
+185,Complex Analysis,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9",McGraw-Hill
+H185,Honors Complex Analysis,"Henri Cartan, Elementary Theory of Analytic Functions of One or Several Complex Variables",Dover
+202B,Introduction to Topology & Analysis,"Gerald Folland, Real Analysis 1999 ISBN#: 0-471-31716-0",Wiley
+?,?,"H.L. Royden, Real Analysis ISBN#: 0-02-404151-3",Prentice-Hall
+?,?,"Walter Rudin, Functional Analysis 2nd ed. ISBN#: 0-07-054236-8",McGraw-Hill
+203,Asymptotic Analysis?,?,?
+208,C* Algebras,"Davidson, C*-Algebras by Example ISBN#: 0-8218-0599-1",AMS
+215B,Algebraic Topology,"Milnor & Stasheff, Characteristic Classes 1974 ISBN#: 0-691-08122-0",Princeton U. Press
+C218B,Probability Theory?,?,?
+220,Methods of Applied Mathematics,Professor will provide own notes.,?
+222B,Partial Differential Equations,"Evans, Partial Differential Equations ISBN#: 9780-8218-4974-3",AMS
+C223B,Stochastic Processes?,?,?
+225B,Metamathematics?,?,?
+228B,Numerical Solution of Differential Equations,"R.J. Leveque, Finite Difference Methods for Ordinary & Partial Differential Equations 2007, ISBN#: 9780-8987-1629-0",SIAM
+?,?,"R.J. Leveque, Finite Volume Methods for Hyperbolic Problems 2002, ISBN#: 0-521-00924-3",Cambridge
+229,Theory of Models?,?,?
+240,Riemannian Geometry,"John Lee, Riemannian Manifolds: An Introduction to Curvature 1997 ISBN#: 0-387-98322-8",Springer
+?,?,"Burago, Burago, Ivanov A Course in Metric Geometry 2001, ISBN#: 0-821-82129-6",AMS
+241,Complex Manifolds,"Daniel Huybrechts, Complex Geometry: An Introduction, ISBN#: 3-540-21290-6Note: Available online through Libraries",Springer
+?,?,"Otto Forster, Lectures on Riemann Surfaces ISBN#: 0-387-90617-7",Springer
+249,Algebraic Combinatorics,"Stanley, Enumerative Combinatorics Vol. I, 2000, ISBN#: 978-0-521-66351-9",Cambridge Univ. Press
+?,?,"Stanley, Enumerative Combinatorics Vol. II, 2001, ISBN#: 978-0-521-78987-5",Cambridge Univ. Press
+250B,Multilinear Algebra and Further Topics?,?,?
+252,Representation Theory,"Fulton Harris, Representation Theory: A First Course ISBN#: 0-387-97495-4",Springer
+?,?,"Curtis/Reiner, Representation Theory of Finite Groups and Associative Algebras ISBN#: 978-0-471-60845-5",AMS Chelsea
+253,Homological Algebra,"Charles Weibel, An Introduction to Homological Algebra 1997 ISBN#: 0-521-55987",Cambridge Univ. Press
+254B,Number Theory,No Textbook Used,?
+256B,Algebraic Geometry,"Hartshorne, Algebraic Geometry ISBN#: 0-387-90244-9",Springer
+261B,Lie Groups,"Mark Sepanski, Compact Lie Groups 2006 ISBN#: 978-0-387-30263-8",Springer
+270,Hot Topics in Mathematics?,?,?
+274,Topics in Algebra,No Required Text,?
+274,Topics in Algebra,"J. Silverman, The Arithmetic of Dynamical Systems ISBN#: 978-0-387-69903-5",Springer
+?,?,"J. Milnor, Dynamics in One Complex Variable 3rd ed. ISBN#: 0-691-12488-4",Princeton Univ. Press
+276,Topics in Topology?,?,?
+Course,Course Title,Author/Title
+1A,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5"
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5"
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5"
+1B,Calculus,"Stewart, Single Variable Essential Calculus (Custom) ISBN#13: 978-1-424-05500-5"
+16A,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. I, ISBN#10: 0-558-37269-4"
+16B,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0"
+16B,Analytic Geometry & Calculus,"Goldstein, Lay, Schneider & Asmar, Calculus & Its Applications, Vol. II, ISBN#10: 0-558-37274-0"
+24,Freshman Seminars,No Required Textbook
+32,Precalculus,"Fundamentals ofPrecalculus, ISBN#10: 1-111-46584-3"
+53,Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2"
+53,Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2"
+H53,Honors Multivariable Calculus,"Stewart, Multivariable Calculus (Custom) ISBN#13: 978-1-424-05499-2"
+54,Linear Algebra & Differential Equations,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5"
+54,Linear Algebra & Differential Equations,"Linear Algebra & Differential Equations New (Custom), ISBN#10: 0-558-66889-5"
+55,Discrete Mathematics,"Rosen, Discrete Mathematics & Its Applications, ISBN#10: 0-073-22972-5"
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X"
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X"
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X"
+104,Introduction to Analysis,"Rudin, Principles of Mathematical Analysis"
+104,Introduction to Analysis,"Ross, Elementary Analysis: The Theory of Calculus, ISBN#: 978-0-387-9049-X"
+110,Linear Algebra,"Friedberg, Insel & Spence, Linear Algebra, ISBN#: 0-13-008451-4"
+113,Abstract Algebra,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7"
+113,Abstract Algebra,No Text Used
+113,Abstract Algebra,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9"
+113,Abstract Algebra,"Dummit & Foote, Abstract Algebra, 3rd ed., ISBN#: 0-471-43334-9"
+H113,Honors Abstract Algebra,"Fraleigh, A First Course In Abstract Algebra, 7th ed., ISBN#: 0-201-76390-7"
+114,Abstract Algebra II,"Ian Stewart, Galois Theory 3rd ed., ISBN#: 1-58488-393-6"
+118,Fourier Analysis Wavelets & Signal Processing,"A. Boggess & F.J. Narcowich, A First Course in Wavelets with Fourier Analysis 2nd ed., ISBN#: 978-0-470-43117-7"
+121A,Mathematical Tools for the Physical Sciences,"Boas, Mathematical Methods in the Physical Sciences 3rd ed., ISBN#: 0-471-19826-9"
+121B,Mathematical Tools for the Physical Sciences,Will Use Own Lecture Notes
+128A,Numerical Analysis,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X"
+128B,Numerical Analysis II,"Stoer & Bulirsch, An Introduction to Numerical Analysis, 3rd ed. (2002) ISBN#: 0-387-95452-X"
+130,The Classical Geometries,"Robin Hartshorne, Geometry: Euclid and Beyond ISBN#: 0-387-98650-2"
+?,?,"Euclid, The Thirteen Books of the Elements Vol. 1 (Books I and II) ISBN#: 0-486-60088-2"
+?,?,"Euclid, The Thirteen Books of the Elements Vol. 2 (Books III-IX) ISBN#: 0-486-60089-0"
+135,Introduction to the Theory of Sets,"Enderton, Elements of Set Theory ISBN#: 0-12-238440-7"
+136,Incompleteness & Undecidability,"Cutland, Computability: An Introduction to Recursive Function Theory ISBN#: 0-521-29465-7"
+140,Metric Differential Geometry,"Banchoff & Lovett, Differential Geometry of Curves and Surfaces ISBN#: 978-1-5688-1456-8"
+141,Elementary Differential Topology,"Munkres, Analysis on Manifolds ISBN#: 0-201-31596-3"
+151,Mathematics of the Secondary School Curriculum,Will use notes (made available on Bancroft Copy Central)
+153,Mathematics of the Secondary School Curriculum,Will use notes (made available on Bancroft Copy Central)
+160,History of Mathematics,"Edwards, The Historical Development of the Calculus ISBD#: 0-387-94313-7"
+172,Combinatorics,?
+185,Complex Analysis,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1"
+185,Complex Analysis,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9"
+?,?,"Sarason, Notes on Complex Function Theory ISBN#: 978-0-8218-4428-1"
+185,Complex Analysis,"Brown/Churchill, Complex Variables & Applications 8th ed. ISBN#: 978-0-07-305194-9"
+H185,Honors Complex Analysis,"Henri Cartan, Elementary Theory of Analytic Functions of One or Several Complex Variables"
+202B,Introduction to Topology & Analysis,"Gerald Folland, Real Analysis 1999 ISBN#: 0-471-31716-0"
+?,?,"H.L. Royden, Real Analysis ISBN#: 0-02-404151-3"
+?,?,"Walter Rudin, Functional Analysis 2nd ed. ISBN#: 0-07-054236-8"
+203,Asymptotic Analysis,?
+208,C* Algebras,"Davidson, C*-Algebras by Example ISBN#: 0-8218-0599-1"
+215B,Algebraic Topology,"Milnor & Stasheff, Characteristic Classes 1974 ISBN#: 0-691-08122-0"
+C218B,Probability Theory,?
+220,Methods of Applied Mathematics,Professor will provide own notes.
+222B,Partial Differential Equations,"Evans, Partial Differential Equations ISBN#: 9780-8218-4974-3"
+C223B,Stochastic Processes,?
+225B,Metamathematics,?
+228B,Numerical Solution of Differential Equations,"R.J. Leveque, Finite Difference Methods for Ordinary & Partial Differential Equations 2007, ISBN#: 9780-8987-1629-0"
+?,?,"R.J. Leveque, Finite Volume Methods for Hyperbolic Problems 2002, ISBN#: 0-521-00924-3"
+229,Theory of Models,?
+240,Riemannian Geometry,"John Lee, Riemannian Manifolds: An Introduction to Curvature 1997 ISBN#: 0-387-98322-8"
+?,?,"Burago, Burago, Ivanov A Course in Metric Geometry 2001, ISBN#: 0-821-82129-6"
+241,Complex Manifolds,"Daniel Huybrechts, Complex Geometry: An Introduction, ISBN#: 3-540-21290-6Note: Available online through Libraries"
+?,?,"Otto Forster, Lectures on Riemann Surfaces ISBN#: 0-387-90617-7"
+249,Algebraic Combinatorics,"Stanley, Enumerative Combinatorics Vol. I, 2000, ISBN#: 978-0-521-66351-9"
+?,?,"Stanley, Enumerative Combinatorics Vol. II, 2001, ISBN#: 978-0-521-78987-5"
+250B,Multilinear Algebra and Further Topics,?
+252,Representation Theory,"Fulton Harris, Representation Theory: A First Course ISBN#: 0-387-97495-4"
+?,?,"Curtis/Reiner, Representation Theory of Finite Groups and Associative Algebras ISBN#: 978-0-471-60845-5"
+253,Homological Algebra,"Charles Weibel, An Introduction to Homological Algebra 1997 ISBN#: 0-521-55987"
+254B,Number Theory,No Textbook Used
+256B,Algebraic Geometry,"Hartshorne, Algebraic Geometry ISBN#: 0-387-90244-9"
+261B,Lie Groups,"Mark Sepanski, Compact Lie Groups 2006 ISBN#: 978-0-387-30263-8"
+270,Hot Topics in Mathematics,?
+274,Topics in Algebra,No Required Text
+274,Topics in Algebra,"J. Silverman, The Arithmetic of Dynamical Systems ISBN#: 978-0-387-69903-5"
+?,?,"J. Milnor, Dynamics in One Complex Variable 3rd ed. ISBN#: 0-691-12488-4"
+276,Topics in Topology,?

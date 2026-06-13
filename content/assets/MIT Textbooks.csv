@@ -1,0 +1,91 @@
+Subject,Book,Author,ISBN
+18.01,J. W. Bush,"* Calculus with Analytic Geometry, 2nd ed.","Simmons, George F.",9780070576421
+18.024,J. Geiger,* Analysis on Manifolds,"Munkres, James R.",9780201315967
+18.06,C. Barwick,"* Introduction to Linear Algebra, 4th ed.","Strang, Gilbert",9780980232714
+18.085,G. Strang,* Computational Science and Engineering,"Strang, Gilbert",9780961408817
+18.086,N. Stoop,* Computational Science and Engineering,"Strang, Gilbert",9780961408817
+? ,N. Stoop,"Numerical Methods for Conservation Laws, 2nd ed.","Leveque, Randall J.",9783764327231
+18.100A,T. Beck,* Introduction to Analysis,"Mattuck, Arthur",9781484814116
+18.100B,J. Zahl,"* Mathematical Analysis: A Modern Approach to Advanced Calculus, 2nd ed.","Apostol, Tom M.",9780201002881
+18.100C,S. Seyfaddini,"* Principles of Mathematical Analysis, 3rd ed.","Rudin, Walter",9780070542358
+18.104,G. Staffilani,* A First Course in the Calculus of Variations,"Kot, Mark",9781470414955
+18.125,S. Dyatlov,* Essentials of Integration Theory for Analysis,"Stroock, Daniel W.",9781461411345
+18.137,W. Minicozzi,* A Course in Minimal Surfaces,"Colding, Tobias H.; Minicozzi",9780821853238
+18.175,V. Gorin,"Probability: A Survey of the Mathematical Theory, 2nd ed.","Lamperti, John W.",9780471154075
+? ,V. Gorin,"Probability: Theory and Examples, 4th ed.","Durrett, Rick",9780521765398
+18.300,L. Faria,"* An Introduction to Nonlinear Partial Differential Equations, 2nd ed.","Logan, J. David",9780470225950
+?,L. Faria,"Applied Partial Differential Equations with Fourier Series and Boundary Value Problems, 5th ed.","Haberman, Richard",9780321797056
+?,L. Faria,Linear and Nonlinear Waves,"Whitham, G. B.",9780471359425
+?,L. Faria,"Mathematical Models: Mechanical Vibrations, Population Dynamics, and Traffic Flow","Haberman, Richard",9780898714081
+?,L. Faria,Mathematics Applied to Deterministic Problems in the Natural Sciences,"Lin, C. C.; Segel, L. A.",9780898712292
+18.306,A. Nachbin,Linear and Nonlinear Waves,"Whitham, G. B.",9780471359425
+?,A. Nachbin,"Nonlinear Partial Differential Equations for Scientists and Engineers, 3rd ed.","Debnath, Lokenath",9780817682644
+?,A. Nachbin,"Partial Differential Equations, 4th ed.","John, Fritz",9780387906096
+?,A. Nachbin,"Partial Differential Equations in Action: From Modelling to Theory, 2nd ed.","Salsa, Sandro",9783319150925
+18.335,W. Shin,Numerical Linear Algebra,"Trefethen, Lloyd N.; Bau III,",9780898713619
+18.369,S. G. Johnson,Group Theory and Its Applications in Physics,"Inui, Tomoyuki; Tanabe, Y.; On",9783540604457
+?,S. G. Johnson,"Photonic Crystals: Molding the Flow of Light, 2nd ed.","Joannopoulos, John D.; Johnson",9780691124568
+18.405,D. Moshkovitz,* Computational Complexity: A Modern Approach,"Arora, Sanjeev; Barak, Boaz",9780521424264
+18.424,P. W. Shor,"* Elements of Information Theory, 2nd ed.","Cover, Thomas M.; Thomas, Joy",9780471241959
+18.600,S. Sheffield,"A First Course in Probability, 9th ed.","Ross, Sheldon",9780321794772
+18.615,A. Bufetov,"An Introduction to Markov Processes, 2nd ed.","Stroock, Daniel W.",9783642405228
+?,A. Bufetov,Markov Chains and Mixing Times,"Levin, David A.; Wilmer, Eliza",9780821847398
+18.650,V.-E. Brunel,All of Statistics: A Concise Course in Statistical Inference,"Wasserman, Larry",9781441923226
+18.655,P. Kempthorne,"* Mathematical Statistics: Basic Ideas and Selected Topics, Volume I, 2nd ed.","Bickel, Peter J.; Doksum, Kjel",9781498723800
+18.702,A. Negut,"* Algebra, 2nd ed.","Artin, Michael",9780132413770
+18.703,V. G. Kac,"* A First Course in Abstract Algebra, 7th ed.","Fraleigh, John B.",9780201763904
+18.726,D. Maulik,Algebraic Geometry,"Hartshorne, Robin",9781441928078
+18.747,P. I. Etingof,"* Bombay Lectures on Highest Weight Representations of Infinite Dimensional Lie Algebras, 2nd ed.","Kac, Victor G.; Raina, A. K.;",9789814522199
+18.757,L. Rider,* An Introduction to Lie Groups and Lie Algebras,"Kirillov Jr., Alexander A.",9780521889698
+?,L. Rider,"Lie Groups Beyond an Introduction, 2nd ed.","Knapp, Anthony W.",9780817642594
+18.786,S. Raskin,"Algebraic Number Theory, 2nd ed.",,9780950273426
+18.821,H. Cohn,Team Writing: A Guide to Working in Groups,"Wolfe, Joanna",9780312565824
+18.901,J. Hirsh,"* Topology, 2nd ed.","Munkres, James R.",9780131816299
+18.904,E. Dotto,Topology and Groupoids,"Brown, Ronald",9781419627224
+18.937,E. Murphy,Introduction to the H-Principle,"Eliashberg, Y.; Mishachev, N",9780821832271
+18.966,P. Seidel,Introduction to Differential Topology,,9780521284707
+18.01,"* Calculus with Analytic Geometry, 2nd ed.","Simmons, George F.",9780070576421
+18.024,* Analysis on Manifolds,"Munkres, James R.",9780201315967
+18.06,"* Introduction to Linear Algebra, 4th ed.","Strang, Gilbert",9780980232714
+18.085,* Computational Science and Engineering,"Strang, Gilbert",9780961408817
+18.086,* Computational Science and Engineering,"Strang, Gilbert",9780961408817
+?,"Numerical Methods for Conservation Laws, 2nd ed.","Leveque, Randall J.",9783764327231
+18.100A,* Introduction to Analysis,"Mattuck, Arthur",9781484814116
+18.100B,"* Mathematical Analysis: A Modern Approach to Advanced Calculus, 2nd ed.","Apostol, Tom M.",9780201002881
+18.100C,"* Principles of Mathematical Analysis, 3rd ed.","Rudin, Walter",9780070542358
+18.104,* A First Course in the Calculus of Variations,"Kot, Mark",9781470414955
+18.125,* Essentials of Integration Theory for Analysis,"Stroock, Daniel W.",9781461411345
+18.137,* A Course in Minimal Surfaces,"Colding, Tobias H.; Minicozzi",9780821853238
+18.175,"Probability: A Survey of the Mathematical Theory, 2nd ed.","Lamperti, John W.",9780471154075
+? ,"Probability: Theory and Examples, 4th ed.","Durrett, Rick",9780521765398
+18.300,"* An Introduction to Nonlinear Partial Differential Equations, 2nd ed.","Logan, J. David",9780470225950
+? ,"Applied Partial Differential Equations with Fourier Series and Boundary Value Problems, 5th ed.","Haberman, Richard",9780321797056
+? ,Linear and Nonlinear Waves,"Whitham, G. B.",9780471359425
+? ,"Mathematical Models: Mechanical Vibrations, Population Dynamics, and Traffic Flow","Haberman, Richard",9780898714081
+? ,Mathematics Applied to Deterministic Problems in the Natural Sciences,"Lin, C. C.; Segel, L. A.",9780898712292
+18.306,Linear and Nonlinear Waves,"Whitham, G. B.",9780471359425
+? ,"Nonlinear Partial Differential Equations for Scientists and Engineers, 3rd ed.","Debnath, Lokenath",9780817682644
+? ,"Partial Differential Equations, 4th ed.","John, Fritz",9780387906096
+? ,"Partial Differential Equations in Action: From Modelling to Theory, 2nd ed.","Salsa, Sandro",9783319150925
+18.335,Numerical Linear Algebra,"Trefethen, Lloyd N.; Bau III,",9780898713619
+18.369,Group Theory and Its Applications in Physics,"Inui, Tomoyuki; Tanabe, Y.; On",9783540604457
+? ,"Photonic Crystals: Molding the Flow of Light, 2nd ed.","Joannopoulos, John D.; Johnson",9780691124568
+18.405,* Computational Complexity: A Modern Approach,"Arora, Sanjeev; Barak, Boaz",9780521424264
+18.424,"* Elements of Information Theory, 2nd ed.","Cover, Thomas M.; Thomas, Joy",9780471241959
+18.600,"A First Course in Probability, 9th ed.","Ross, Sheldon",9780321794772
+18.615,"An Introduction to Markov Processes, 2nd ed.","Stroock, Daniel W.",9783642405228
+? ,Markov Chains and Mixing Times,"Levin, David A.; Wilmer, Eliza",9780821847398
+18.650,All of Statistics: A Concise Course in Statistical Inference,"Wasserman, Larry",9781441923226
+18.655,"* Mathematical Statistics: Basic Ideas and Selected Topics, Volume I, 2nd ed.","Bickel, Peter J.; Doksum, Kjel",9781498723800
+18.702,"* Algebra, 2nd ed.","Artin, Michael",9780132413770
+18.703,"* A First Course in Abstract Algebra, 7th ed.","Fraleigh, John B.",9780201763904
+18.726,Algebraic Geometry,"Hartshorne, Robin",9781441928078
+18.747,"* Bombay Lectures on Highest Weight Representations of Infinite Dimensional Lie Algebras, 2nd ed.","Kac, Victor G.; Raina, A. K.;",9789814522199
+18.757,* An Introduction to Lie Groups and Lie Algebras,"Kirillov Jr., Alexander A.",9780521889698
+? ,"Lie Groups Beyond an Introduction, 2nd ed.","Knapp, Anthony W.",9780817642594
+18.786,"Algebraic Number Theory, 2nd ed.",,9780950273426
+18.821,Team Writing: A Guide to Working in Groups,"Wolfe, Joanna",9780312565824
+18.901,"* Topology, 2nd ed.","Munkres, James R.",9780131816299
+18.904,Topology and Groupoids,"Brown, Ronald",9781419627224
+18.937,Introduction to the H-Principle,"Eliashberg, Y.; Mishachev, N",9780821832271
+18.966,Introduction to Differential Topology,,9780521284707
