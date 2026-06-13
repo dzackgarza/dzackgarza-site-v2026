@@ -9,3 +9,5 @@ macros:
   OO: "\\mathcal{O}"
   Spec: "\\operatorname{Spec}"
   Hom: "\\operatorname{Hom}"
+  GL: "\\operatorname{GL}"
+  dash: "\\text{-}"

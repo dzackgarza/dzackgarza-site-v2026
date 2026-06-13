@@ -1,4 +1,9 @@
 [[main]]
+title = "Home"
+href = "/"
+weight = 5
+
+[[main]]
 title = "Writing"
 href = "/writing/"
 weight = 10
