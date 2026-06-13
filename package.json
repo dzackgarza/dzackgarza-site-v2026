@@ -4,7 +4,10 @@
   "private": true,
   "description": "Content surface for dzackgarza.com, built with the pandoc-ssg generator.",
   "devDependencies": {
-    "pandoc-ssg": "github:dzackgarza/pandoc-ssg",
-    "playwright": "^1.60.0"
+    "@sveltejs/vite-plugin-svelte": "^5",
+    "pandoc-ssg": "github:dzackgarza/pandoc-ssg#1c05b43",
+    "playwright": "^1.60.0",
+    "svelte": "^5",
+    "vite": "^6"
   }
 }
