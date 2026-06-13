@@ -46,7 +46,7 @@ The MIT Talbot Workshop, June 2022.
 UGA Graduate Student Seminar, February 2021.
 
 
-::: {.component type="gallery" items="gallery_dg_gss"}
+::: {.component type="media-gallery" items="gallery_dg_gss"}
 :::
 
 
@@ -63,7 +63,7 @@ UGA Graduate Student Seminar, February 2021.
 Reading group at UGA, November 2021.
 
 
-::: {.component type="gallery" items="gallery_graph_moduli"}
+::: {.component type="media-gallery" items="gallery_graph_moduli"}
 :::
 
 
@@ -94,7 +94,7 @@ Slides: to be posted.
 
 [CRAAG](https://www.daniellitt.com/crag), UGA.
 
-::: {.component type="gallery" items="gallery_derham"}
+::: {.component type="media-gallery" items="gallery_derham"}
 :::
 
 
@@ -125,7 +125,7 @@ Slides: to be posted.
 
 [Symplectic Reading Seminar](https://www.notion.so/Symplectic-Reading-Seminar-UGA-Summer-2021-1a2410e895014c82ae5b26c3550ad09f) at UGA.
 
-::: {.component type="gallery" items="gallery_jholo"}
+::: {.component type="media-gallery" items="gallery_jholo"}
 :::
 
 
@@ -147,7 +147,7 @@ Slides: to be posted.
 
 Heegaard-Floer homology course final presentation.
 
-::: {.component type="gallery" items="gallery_sarkar"}
+::: {.component type="media-gallery" items="gallery_sarkar"}
 :::
 
 
@@ -155,7 +155,7 @@ Heegaard-Floer homology course final presentation.
 
 Graduate Student Seminar at UGA.
 
-::: {.component type="gallery" items="gallery_gss_stab_homotopy"}
+::: {.component type="media-gallery" items="gallery_gss_stab_homotopy"}
 :::
 
 
@@ -190,7 +190,7 @@ Reading seminar at UGA.
 
 Mock AMS Conference at UGA.
 
-::: {.component type="gallery" items="gallery_spaces_in_ag"}
+::: {.component type="media-gallery" items="gallery_spaces_in_ag"}
 :::
 
 
@@ -206,7 +206,7 @@ Mock AMS Conference at UGA.
 [CRAAG](https://www.daniellitt.com/crag) at UGA.
 
 
-::: {.component type="gallery" items="gallery_weil_zeta"}
+::: {.component type="media-gallery" items="gallery_weil_zeta"}
 :::
 
 
@@ -221,7 +221,7 @@ Mock AMS Conference at UGA.
 
 UGA Graduate Student Seminar, UGA.
 
-::: {.component type="gallery" items="gallery_homotopy_of_spheres"}
+::: {.component type="media-gallery" items="gallery_homotopy_of_spheres"}
 :::
 
 

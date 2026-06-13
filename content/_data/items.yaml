@@ -315,68 +315,68 @@ feature_row_undergrad:
     url: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.pdf
     is_project: true
 gallery_graph_moduli:
-  - url: /assets/images/graph_moduli_preview.png
-    image_path: /assets/images/graph_moduli_preview.png
-  - url: /assets/images/graph1.png
-    image_path: /assets/images/graph1.png
-  - url: /assets/images/graph2.png
-    image_path: /assets/images/graph2.png
+  - type: image
+    src: /assets/images/graph_moduli_preview.png
+  - type: image
+    src: /assets/images/graph1.png
+  - type: image
+    src: /assets/images/graph2.png
 gallery_derham:
-  - url: /assets/images/derham1.png
-    image_path: /assets/images/derham1.png
-  - url: /assets/images/derham2.png
-    image_path: /assets/images/derham2.png
-  - url: /assets/images/derham3.png
-    image_path: /assets/images/derham3.png
+  - type: image
+    src: /assets/images/derham1.png
+  - type: image
+    src: /assets/images/derham2.png
+  - type: image
+    src: /assets/images/derham3.png
 gallery_jholo:
-  - url: /assets/images/jholo_1.png
-    image_path: /assets/images/jholo_1.png
-  - url: /assets/images/jholo_2.png
-    image_path: /assets/images/jholo_2.png
-  - url: /assets/images/jholo_3.png
-    image_path: /assets/images/jholo_3.png
+  - type: image
+    src: /assets/images/jholo_1.png
+  - type: image
+    src: /assets/images/jholo_2.png
+  - type: image
+    src: /assets/images/jholo_3.png
 gallery_gss_stab_homotopy:
-  - url: /assets/images/gss_stab_homotopy1.png
-    image_path: /assets/images/gss_stab_homotopy1.png
-  - url: /assets/images/gss_stab_homotopy2.png
-    image_path: /assets/images/gss_stab_homotopy2.png
-  - url: /assets/images/gss_stab_homotopy3.png
-    image_path: /assets/images/gss_stab_homotopy3.png
+  - type: image
+    src: /assets/images/gss_stab_homotopy1.png
+  - type: image
+    src: /assets/images/gss_stab_homotopy2.png
+  - type: image
+    src: /assets/images/gss_stab_homotopy3.png
 gallery_sarkar:
-  - url: /assets/images/sarkar_1.png
-    image_path: /assets/images/sarkar_1.png
-  - url: /assets/images/sarkar_2.png
-    image_path: /assets/images/sarkar_2.png
-  - url: /assets/images/sarkar_3.png
-    image_path: /assets/images/sarkar_3.png
+  - type: image
+    src: /assets/images/sarkar_1.png
+  - type: image
+    src: /assets/images/sarkar_2.png
+  - type: image
+    src: /assets/images/sarkar_3.png
 gallery_spaces_in_ag:
-  - url: /assets/images/spaces_in_ag_1.png
-    image_path: /assets/images/spaces_in_ag_1.png
-  - url: /assets/images/spaces_in_ag_2.png
-    image_path: /assets/images/spaces_in_ag_2.png
-  - url: /assets/images/spaces_in_ag_3.png
-    image_path: /assets/images/spaces_in_ag_3.png
+  - type: image
+    src: /assets/images/spaces_in_ag_1.png
+  - type: image
+    src: /assets/images/spaces_in_ag_2.png
+  - type: image
+    src: /assets/images/spaces_in_ag_3.png
 gallery_weil_zeta:
-  - url: /assets/images/weil_zeta_1.png
-    image_path: /assets/images/weil_zeta_1.png
-  - url: /assets/images/weil_zeta_2.png
-    image_path: /assets/images/weil_zeta_2.png
-  - url: /assets/images/weil_zeta_3.png
-    image_path: /assets/images/weil_zeta_3.png
+  - type: image
+    src: /assets/images/weil_zeta_1.png
+  - type: image
+    src: /assets/images/weil_zeta_2.png
+  - type: image
+    src: /assets/images/weil_zeta_3.png
 gallery_homotopy_of_spheres:
-  - url: /assets/images/homotopy_of_spheres1.png
-    image_path: /assets/images/homotopy_of_spheres1.png
-  - url: /assets/images/homotopy_of_spheres2.png
-    image_path: /assets/images/homotopy_of_spheres2.png
-  - url: /assets/images/homotopy_of_spheres2.png
-    image_path: /assets/images/homotopy_of_spheres3.png
+  - type: image
+    src: /assets/images/homotopy_of_spheres1.png
+  - type: image
+    src: /assets/images/homotopy_of_spheres2.png
+  - type: image
+    src: /assets/images/homotopy_of_spheres3.png
 gallery_dg_gss:
-  - url: /assets/images/dg_1.png
-    image_path: /assets/images/dg_1.png
-  - url: /assets/images/dg_2.png
-    image_path: /assets/images/dg_2.png
-  - url: /assets/images/dg_3.png
-    image_path: /assets/images/dg_3.png
+  - type: image
+    src: /assets/images/dg_1.png
+  - type: image
+    src: /assets/images/dg_2.png
+  - type: image
+    src: /assets/images/dg_3.png
 gallery_ex:
   - url: /assets/images/jholo1.png
     image_path: /assets/images/jholo1.png
@@ -392,8 +392,7 @@ MathDrawingGallery:
     title: The classic Klein bottle!
   - url: assets/images/foliation-diagram.png
     image_path: assets/images/foliation-diagram.png
-    title: A diagram demonstrating how the fibers of a fiber bundle 'foliate' the
-      total space.
+    title: A diagram demonstrating how the fibers of a fiber bundle 'foliate' the total space.
   - url: assets/images/group-swarm.png
     image_path: assets/images/group-swarm.png
     title: Group swarm
@@ -496,20 +495,16 @@ MathCodeGallery:
     title: A 3D plot of a 2D image, using pixel intensity as height.
   - url: assets/images/cv-face-normals.jpg
     image_path: assets/images/cv-face-normals.jpg
-    title: Dynamically generating normal vectors for a face based only on pixel
-      intensity
+    title: Dynamically generating normal vectors for a face based only on pixel intensity
   - url: assets/images/cv-eigenfaces.jpg
     image_path: assets/images/cv-eigenfaces.jpg
-    title: Examples of an 'eigenface' SVD decomposition, sorted from largest to
-      smallest singular values.
+    title: Examples of an 'eigenface' SVD decomposition, sorted from largest to smallest singular values.
   - url: assets/images/cv-segmentation.jpg
     image_path: assets/images/cv-segmentation.jpg
-    title: Using computer vision techniques to segment an image for classification
-      purposes.
+    title: Using computer vision techniques to segment an image for classification purposes.
   - url: assets/images/cv-matching.jpg
     image_path: assets/images/cv-matching.jpg
-    title: Finding corresponding points in two images of the same object from
-      different perspectives using projective and epipolar geometry.
+    title: Finding corresponding points in two images of the same object from different perspectives using projective and epipolar geometry.
 feature_row:
   - image_path: /assets/images/GOATS2020Poster3.png
     alt: Conference Poster/Infographic
