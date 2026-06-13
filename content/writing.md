@@ -163,19 +163,8 @@ You can also find my even *less* organized math journal [here](https://notes.dza
 
 # Links to Notes by Others
 
-> Note: If you you write and share LaTeX notes, please let me know and I'd be happy to link your site here!
-
-- Arun Debray maintains a page of [lecture notes](https://web.ma.utexas.edu/users/a.debray/lecture_notes/).
-- Gilles Castel maintains a page of [lecture notes ](https://castel.dev/notes).
-- Evan Chen maintains a [page of lecture notes](https://web.evanchen.cc/coursework.html), along with [The Infinite Napkin](https://web.evanchen.cc/napkin.html).
-- Dexter Chua has [lecture notes from Cambridge courses](http://dec41.user.srcf.net/notes/).
-- Aleksander Shmakov has some notes posted [on his website](http://shmakov.us/).
-- Anton Geraschenko has [page of lecture notes](https://stacky.net/wiki/index.php?title=Course_notes).
-- Chris Schommer-Pries has [some lecture notes](https://sites.google.com/site/chrisschommerpriesmath/Home/course-notes-and-materials).
-- Dongryul Kim has uploaded a large collection of [live-tex'd notes from Harvard courses](https://github.com/Dongryul-Kim/harvard_notes).
-- Zoë Farmer has some [notes from various undergraduate courses](https://www.dataleek.io/archive/pages/latex-notes.html)
-- Akhil Matthew has some [notes from graduate courses](http://math.uchicago.edu/~amathew/notes.html)
-- Henry Liu has [notes from graduate courses](https://people.maths.ox.ac.uk/liu/notes/)
+::: {.component type="link-group" items="notes_by_others"}
+:::
 
 # Resources / Remarks on Live-Texing
 

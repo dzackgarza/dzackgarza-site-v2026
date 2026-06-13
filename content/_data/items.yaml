@@ -557,3 +557,40 @@ teaching:
   - date: Fall 2019
     title: "MATH 2200: Analytic Geometry & Calculus"
     detail: "Teaching Assistant — [discussion sections](/courses/2019/2200)"
+
+notes_by_others:
+  title: Notes by Others
+  description: "If you write and share LaTeX notes, let me know and I'd be happy to link your site here."
+  links:
+    - label: Arun Debray
+      href: "https://web.ma.utexas.edu/users/a.debray/lecture_notes/"
+      note: Lecture notes.
+    - label: Gilles Castel
+      href: "https://castel.dev/notes"
+      note: Lecture notes.
+    - label: Evan Chen
+      href: "https://web.evanchen.cc/coursework.html"
+      note: "Lecture notes, and [The Infinite Napkin](https://web.evanchen.cc/napkin.html)."
+    - label: Dexter Chua
+      href: "http://dec41.user.srcf.net/notes/"
+      note: Cambridge course notes.
+    - label: Aleksander Shmakov
+      href: "http://shmakov.us/"
+    - label: Anton Geraschenko
+      href: "https://stacky.net/wiki/index.php?title=Course_notes"
+      note: Course notes.
+    - label: Chris Schommer-Pries
+      href: "https://sites.google.com/site/chrisschommerpriesmath/Home/course-notes-and-materials"
+      note: Lecture notes.
+    - label: Dongryul Kim
+      href: "https://github.com/Dongryul-Kim/harvard_notes"
+      note: Live-TeX'd notes from Harvard courses.
+    - label: Zoë Farmer
+      href: "https://www.dataleek.io/archive/pages/latex-notes.html"
+      note: Notes from various undergraduate courses.
+    - label: Akhil Mathew
+      href: "http://math.uchicago.edu/~amathew/notes.html"
+      note: Notes from graduate courses.
+    - label: Henry Liu
+      href: "https://people.maths.ox.ac.uk/liu/notes/"
+      note: Notes from graduate courses.
