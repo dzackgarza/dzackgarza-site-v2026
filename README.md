@@ -12,9 +12,13 @@ just setup        # install the pinned generator (once, after clone)
 just build        # content/ -> dist/
 just serve        # build, then preview over HTTP
 just check        # build, then fail on malformed pages or broken internal links
+just verify       # build, then browser-check every page (JS errors, MathJax, landmarks)
 just new "Title"  # scaffold a blog post
 just update       # bump the generator to the latest published commit
 ```
+
+`just verify` drives a headless browser (Playwright) over every page; run
+`bunx playwright install chromium` once to fetch the browser.
 
 The generator [pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg) is a
 declared dependency (`package.json`), pinned by `bun.lock` so builds are

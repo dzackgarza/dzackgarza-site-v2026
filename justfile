@@ -25,6 +25,12 @@ serve: build
 check:
     {{SSG}} check
 
+# Build, then drive a headless browser over every page: fail on JS/console
+# errors, missing landmarks, or MathJax errors (needs the playwright dep + a
+# browser: `bunx playwright install chromium`)
+verify:
+    {{SSG}} verify
+
 # Scaffold a new blog post: just new "My Post Title"
 new TITLE:
     {{SSG}} new post "{{TITLE}}"

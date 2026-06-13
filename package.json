@@ -4,6 +4,7 @@
   "private": true,
   "description": "Content surface for dzackgarza.com, built with the pandoc-ssg generator.",
   "devDependencies": {
-    "pandoc-ssg": "github:dzackgarza/pandoc-ssg"
+    "pandoc-ssg": "github:dzackgarza/pandoc-ssg",
+    "playwright": "^1.60.0"
   }
 }
