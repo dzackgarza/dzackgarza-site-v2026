@@ -5,7 +5,5 @@ site:
   schema: page.v1
 ---
 
-# Blog
-
 ::: {.component type="blog-index"}
 :::
