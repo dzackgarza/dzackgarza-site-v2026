@@ -67,7 +67,7 @@ See my [talks page](/talks).
     - [GOATS 2](https://dzackgarza.com/GOATS/2020/June/)
     - [GOATS 1](https://dzackgarza.com/GOATS/2020/April/)
 
-- Summer 2021: Organizer, [Qualifying exam review sessions](/quals) at UGA
+- Summer 2021: Organizer, Qualifying exam review sessions at UGA
   (Algebra, Real Analysis, Complex Analysis, Algebraic Topology).
 
 - Spring 2021: Organizer, Qualifying exam review sessions (Algebra and Real Analysis. UGA)
