@@ -9,6 +9,11 @@ href = "/writing/"
 weight = 10
 
 [[main]]
+title = "Blog"
+href = "/blog/"
+weight = 15
+
+[[main]]
 title = "Talks"
 href = "/talks/"
 weight = 20
