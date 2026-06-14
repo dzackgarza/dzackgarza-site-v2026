@@ -1,4 +1,9 @@
 [[main]]
+title = "Home"
+href = "/"
+weight = 3
+
+[[main]]
 title = "CV"
 href = "/assets/pdfs/CV_DZackGarza.pdf"
 weight = 5
