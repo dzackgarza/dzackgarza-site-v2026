@@ -13,73 +13,7 @@ Although it is unlikely to be very useful to anyone at this stage, you can find 
 You can also find my even *less* organized math journal [here](https://notes.dzackgarza.com/Notes/Quick_Notes.html).
 :::
 
-## Lectures and Courses
-
-- K3 Surfaces (Phil Engel, Spring 2023)
-
-  [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/k3surfaces/k3surfaces.pdf),
-  [<i class="fas fa-file-pdf"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/k3surfaces/k3surfaces.pdf)
-
-- Hochschild Homology (Tekin Karadag, Spring 2023)
-
-  [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/hochschild/hochschild.pdf),
-  [<i class="fas fa-file-pdf"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/hochschild/hochschild.html)
-
-- Lie Algebras (Brian Boe, Fall 2022)
-
-  [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.pdf),
-  [<i class="fas fa-file-pdf"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html)
-
-- Moduli Spaces (Valery Alexeev, Fall 2022)
-
-  [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.pdf),
-  [<i class="fas fa-file-pdf"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html)
-
-### Algebra
-
-::: {.component type="feature-row" items="feature_row_alg"}
-:::
-
-### Representation Theory
-
-::: {.component type="feature-row" items="feature_row_rep"}
-:::
-
-::: {.component type="feature-row" items="feature_row_rep2"}
-:::
-
-### Algebraic Geometry
-
-::: {.component type="feature-row" items="feature_row_algebraic_geometry"}
-:::
-
-::: {.component type="feature-row" items="feature_row_algebraic_geometry2"}
-:::
-
-### Arithmetic Geometry and Number Theory
-
-::: {.component type="feature-row" items="feature_row_number_theory1"}
-:::
-
-::: {.component type="feature-row" items="feature_row_number_theory2"}
-:::
-
-### Topology
-
-::: {.component type="feature-row" items="feature_row_top"}
-:::
-
-::: {.component type="feature-row" items="feature_row_top2"}
-:::
-
-### Analysis
-
-::: {.component type="feature-row" items="feature_row5"}
-:::
-
-## Undergrad
-
-::: {.component type="feature-row" items="feature_row_undergrad"}
+::: {.component type="collection" items="notes"}
 :::
 
 ## Talks / Seminars / Mini Courses
@@ -142,22 +76,6 @@ You can also find my even *less* organized math journal [here](https://notes.dza
 - UCSD Algebraic Geometry Conference, 2019
 
   [<i class="fas fa-file-pdf"></i> Talk Notes (PDF)](https://dzackgarza.com/_pages/UCSD-Algebraic-Geometry-Conference-2019.html)
-
-# Expository
-
-- Classifying groups of order $pq$ using semidirect products:
-  [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/_pages/PQ%20Classification.html)
-
-- An expository paper on the history of modern Algebraic Geometry (2017):
-  [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/GeometryFinalVersion.pdf)
-
-- Some notes on the Math GRE:
-
-  [Notes](/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html),
-  [Slides (HTML)](/assets/talks/02-22-2019-GRE-Workshop/Slides.html),
-  [Slides (PDF)](https://dzackgarza.com/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf).
-
-- My math-related Twitter threads on [Thread Reader](https://threadreaderapp.com/user/dzackgarza).
 
 ----------
 

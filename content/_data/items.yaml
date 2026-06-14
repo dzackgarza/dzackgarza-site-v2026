@@ -1,319 +1,3 @@
-feature_row_number_theory1:
-  - image_path: https://dzackgarza.com/assets/images/covers/algebraic_NT.png
-    alt: Algebraic Number Theory
-    title: Algebraic Number Theory
-    excerpt: |
-      *Paul Pollack, Spring 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/under_construction.png
-    alt: Galois Cohomology and Class Field Theory
-    title: Galois Cohomology and Class Field Theory
-    excerpt: |
-      *Pete Clark, Spring 2021*
-    url: https://dzackgarza.com/writing
-    is_project: true
-feature_row_number_theory2:
-  - image_path: https://dzackgarza.com/assets/images/covers/algebraic_curves.png
-    alt: Algebraic Curves
-    title: Algebraic Curves
-    excerpt: |
-      *Pete Clark, Fall 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/etale_cohomology.png
-    alt: Étale Cohomology
-    title: Étale Cohomology
-    excerpt: |
-      *Daniel Litt, Fall 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/rational_points.png
-    alt: Rational Points
-    title: Rational Points
-    excerpt: |
-      *Daniel Litt, Fall 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.pdf
-    is_project: true
-feature_row_algebraic_geometry:
-  - image_path: https://dzackgarza.com/assets/images/covers/algebraic_geometry.png
-    alt: Varieties
-    title: Varieties
-    excerpt: |
-      *Philip Engel, Fall 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/schemes.png
-    alt: Schemes
-    title: Schemes
-    excerpt: |
-      *Phil Engel, Fall 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.html)<br>
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/sheafcohomology.png
-    alt: Sheaf Cohomology
-    title: Sheaf Cohomology
-    excerpt: |
-      *Valery Alexeev, Spring 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html)<br>
-    url: ""
-    is_project: true
-feature_row_algebraic_geometry2:
-  - image_path: https://dzackgarza.com/assets/images/covers/four_manifolds.png
-    alt: 4-Manifolds and Algebraic Surfaces
-    title: 4-Manifolds and Algebraic Surfaces
-    excerpt: |
-      *Phil Engel, Spring 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html)<br>
-    url: ""
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/stacks.png
-    alt: "Moduli: GIT"
-    title: "Moduli: GIT"
-    excerpt: |
-      *Valery Alexeev, Fall 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html)<br>
-    url: ""
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/moduli_spaces.png
-    alt: "Moduli: Deformations"
-    title: "Moduli: Deformations"
-    excerpt: |
-      *Ben Bakker, Spring 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html)<br>
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.pdf
-    is_project: true
-feature_row_rep:
-  - image_path: https://dzackgarza.com/assets/images/covers/lie_algebras.png
-    alt: Lie Algebras
-    title: Lie Algebras
-    excerpt: |
-      *Chun-Ju Lai, Fall 2019*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2019/Lie%20Algebras/CourseNotes.pdf)
-
-      *Brian Boe, Fall 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html)
-    url: ""
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/category_o.png
-    alt: Category O
-    title: Category $\OO$
-    excerpt: |
-      *Brian Boe, Spring 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF V2](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.pdf), 
-      [<i class="fab fa-html5"></i> HTML V2](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/algebraic_groups.png
-    alt: Algebraic Groups
-    title: Algebraic Groups
-    excerpt: |
-      *Dan Nakano, Fall 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.pdf
-    is_project: true
-feature_row_rep2:
-  - image_path: https://dzackgarza.com/assets/images/covers/cohomologyreptheory.png
-    alt: Cohomology in Representation Theory
-    title: Cohomology in Representation Theory
-    excerpt: |
-      *Dan Nakano, Spring 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html)
-    url: ""
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/categorification.png
-    alt: Categorification
-    title: Categorification
-    excerpt: |
-      *Arik Wilbert, Summer 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/flagvarieties.png
-    alt: Flag Varieties, Equivariant Cohomology, and K Theory
-    title: Flag Varieties, Equivariant Cohomology, and K Theory
-    excerpt: |
-      *Scott Larson, Fall 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.pdf
-    is_project: true
-feature_row_top:
-  - image_path: https://dzackgarza.com/assets/images/covers/algebraic_topology.png
-    alt: Algebraic Topology
-    title: Algebraic Topology
-    excerpt: |
-      *Justin Roberts, Fall 2017 and Spring 2018*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/morse_theory.png
-    alt: Morse Theory
-    title: Morse Theory
-    excerpt: |
-      *Akram Alishahi, Spring 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Morse%20Theory/FullNotes.pdf)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Morse%20Theory/FullNotes.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/floer_homology.png
-    alt: Floer Homology
-    title: Floer Homology
-    excerpt: |
-      *Akram Alishahi, Spring 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FloerHomology/FloerHomology.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FloerHomology/FloerHomology.pdf
-    is_project: true
-feature_row_top2:
-  - image_path: https://dzackgarza.com/assets/images/covers/charclasses.png
-    alt: Characteristic Classes
-    title: Characteristic Classes
-    excerpt: |
-      *Akram Alishahi, Fall 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/charclasses.png
-    alt: Contact Topology
-    title: Contact Topology
-    excerpt: |
-      *Peter Lambert Colne, Spring 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html)
-    url: ""
-    is_project: true
-feature_row5:
-  - image_path: https://dzackgarza.com/assets/images/covers/real_analysis.png
-    alt: Real Analysis
-    title: Real Analysis
-    excerpt: |
-      *Neil Lyall, Fall 2019*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2019/Real%20Analysis/CourseNotes.pdf)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2019/Real%20Analysis/CourseNotes.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/complex_analysis.png
-    alt: Complex Analysis
-    title: Complex Analysis
-    excerpt: |
-      *Jingzhi Tie, Spring 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.pdf
-    is_project: true
-feature_row_alg:
-  - image_path: https://dzackgarza.com/assets/images/covers/algebra.png
-    alt: Abstract Algebra
-    title: Abstract Algebra
-    excerpt: |
-      *Dan Nakano, Fall 2019*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/commutative_algebra.png
-    alt: Commutative Algebra
-    title: Commutative Algebra
-    excerpt: |
-      *Pete Clark, Spring 2020*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Commutative%20Algebra/Commutative_Algebra_Notes.pdf)
-
-      *Daniel Litt, Spring 2022*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Commutative%20Algebra/Commutative_Algebra_Notes.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/homological_algebra.png
-    alt: Homological Algebra
-    title: Homological Algebra
-    excerpt: |
-      *Brian Boe, Spring 2021*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.pdf
-    is_project: true
-feature_row_undergrad:
-  - image_path: https://dzackgarza.com/assets/images/covers/undergraduate_compendium.png
-    alt: Undergraduate Compendium
-    title: Undergraduate Compendium
-    excerpt: |
-      *A giant study guide of undergraduate topics I wrote while studying for the Mathematics Subject GRE.*
-
-      *(Self study, Spring 2017)*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/combinatorics.png
-    alt: Combinatorics
-    title: Combinatorics
-    excerpt: |
-      *A study guide for undergraduate Combinatorics.*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.pdf),
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.pdf
-    is_project: true
-  - image_path: https://dzackgarza.com/assets/images/covers/lee_manifolds.png
-    alt: Smooth Manifolds
-    title: Smooth Manifolds
-    excerpt: |
-      *Notes on Lee's smooth manifolds.*
-
-      [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.pdf), 
-      [<i class="fab fa-html5"></i> HTML](https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.html)
-    url: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.pdf
-    is_project: true
 gallery_graph_moduli:
   - type: image
     src: /assets/images/graph_moduli_preview.png
@@ -594,3 +278,364 @@ notes_by_others:
     - label: Henry Liu
       href: "https://people.maths.ox.ac.uk/liu/notes/"
       note: Notes from graduate courses.
+notes:
+- title: K3 Surfaces
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Phil Engel, Spring 2023
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/k3surfaces/k3surfaces.pdf
+- title: Hochschild Homology
+  category: Notes
+  tags:
+  - Algebra
+  description: Tekin Karadag, Spring 2023
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/hochschild/hochschild.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/hochschild/hochschild.html
+- title: Abstract Algebra
+  category: Notes
+  tags:
+  - Algebra
+  description: Dan Nakano, Fall 2019
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.html
+- title: Commutative Algebra
+  category: Notes
+  tags:
+  - Algebra
+  description: Pete Clark, Spring 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Commutative%20Algebra/Commutative_Algebra_Notes.pdf
+- title: Commutative Algebra
+  category: Notes
+  tags:
+  - Algebra
+  description: Daniel Litt, Spring 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html
+- title: Homological Algebra
+  category: Notes
+  tags:
+  - Algebra
+  description: Brian Boe, Spring 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html
+- title: Lie Algebras
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Chun-Ju Lai, Fall 2019
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Lie%20Algebras/CourseNotes.pdf
+- title: Lie Algebras
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Brian Boe, Fall 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html
+- title: Category $\OO$
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Brian Boe, Spring 2020
+  links:
+  - label: PDF V2
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.pdf
+  - label: HTML V2
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html
+- title: Algebraic Groups
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Dan Nakano, Fall 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
+- title: Cohomology in Representation Theory
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Dan Nakano, Spring 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html
+- title: Categorification
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Arik Wilbert, Summer 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html
+- title: Flag Varieties, Equivariant Cohomology, and K Theory
+  category: Notes
+  tags:
+  - Representation Theory
+  description: Scott Larson, Fall 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html
+- title: Varieties
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Philip Engel, Fall 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html
+- title: Schemes
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Phil Engel, Fall 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.html
+- title: Sheaf Cohomology
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Valery Alexeev, Spring 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html
+- title: 4-Manifolds and Algebraic Surfaces
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Phil Engel, Spring 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html
+- title: 'Moduli: GIT'
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Valery Alexeev, Fall 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html
+- title: 'Moduli: Deformations'
+  category: Notes
+  tags:
+  - Algebraic Geometry
+  description: Ben Bakker, Spring 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html
+- title: Algebraic Number Theory
+  category: Notes
+  tags:
+  - Number Theory
+  description: Paul Pollack, Spring 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html
+- title: Galois Cohomology and Class Field Theory
+  category: Notes
+  tags:
+  - Number Theory
+  description: Pete Clark, Spring 2021
+  links: []
+- title: Algebraic Curves
+  category: Notes
+  tags:
+  - Number Theory
+  description: Pete Clark, Fall 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html
+- title: Étale Cohomology
+  category: Notes
+  tags:
+  - Number Theory
+  description: Daniel Litt, Fall 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html
+- title: Rational Points
+  category: Notes
+  tags:
+  - Number Theory
+  description: Daniel Litt, Fall 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html
+- title: Algebraic Topology
+  category: Notes
+  tags:
+  - Topology
+  description: Justin Roberts, Fall 2017 and Spring 2018
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html
+- title: Morse Theory
+  category: Notes
+  tags:
+  - Topology
+  description: Akram Alishahi, Spring 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Morse%20Theory/FullNotes.pdf
+- title: Floer Homology
+  category: Notes
+  tags:
+  - Topology
+  description: Akram Alishahi, Spring 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FloerHomology/FloerHomology.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
+- title: Characteristic Classes
+  category: Notes
+  tags:
+  - Topology
+  description: Akram Alishahi, Fall 2021
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html
+- title: Contact Topology
+  category: Notes
+  tags:
+  - Topology
+  description: Peter Lambert Colne, Spring 2022
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html
+- title: Real Analysis
+  category: Notes
+  tags:
+  - Analysis
+  description: Neil Lyall, Fall 2019
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Real%20Analysis/CourseNotes.pdf
+- title: Complex Analysis
+  category: Notes
+  tags:
+  - Analysis
+  description: Jingzhi Tie, Spring 2020
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html
+- title: Undergraduate Compendium
+  category: Notes
+  tags:
+  - Undergraduate
+  description: A giant study guide of undergraduate topics I wrote while studying for the Mathematics Subject GRE. (Self study, Spring 2017)
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html
+- title: Combinatorics
+  category: Notes
+  tags:
+  - Undergraduate
+  description: A study guide for undergraduate Combinatorics.
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html
+- title: Smooth Manifolds
+  category: Notes
+  tags:
+  - Undergraduate
+  description: Notes on Lee's smooth manifolds.
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.pdf
+  - label: HTML
+    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.html
+- title: Classifying groups of order $pq$ using semidirect products
+  category: Expository
+  tags:
+  - Algebra
+  description: ''
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/_pages/PQ%20Classification.html
+- title: A history of modern Algebraic Geometry
+  category: Expository
+  tags:
+  - Algebraic Geometry
+  description: Expository paper, 2017
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/GeometryFinalVersion.pdf
+- title: Notes on the Math GRE
+  category: Expository
+  tags: []
+  description: GRE Workshop, February 2019
+  links:
+  - label: Notes
+    href: /assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html
+  - label: Slides (HTML)
+    href: /assets/talks/02-22-2019-GRE-Workshop/Slides.html
+  - label: Slides (PDF)
+    href: https://dzackgarza.com/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf
+- title: Math-related Twitter threads
+  category: Expository
+  tags: []
+  description: Collected on Thread Reader
+  links:
+  - label: Thread Reader
+    href: https://threadreaderapp.com/user/dzackgarza
