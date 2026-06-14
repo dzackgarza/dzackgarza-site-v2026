@@ -5,7 +5,7 @@
   "description": "Content surface for dzackgarza.com, built with the pandoc-ssg generator.",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5",
-    "pandoc-ssg": "github:dzackgarza/pandoc-ssg#473af91",
+    "pandoc-ssg": "github:dzackgarza/pandoc-ssg#6db9b29",
     "playwright": "^1.60.0",
     "svelte": "^5",
     "vite": "^6"
