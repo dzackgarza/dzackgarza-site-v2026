@@ -6,12 +6,12 @@ site:
   route: /activities/
 ---
 
-## Conferences & Workshops
+# Conferences & Workshops
 
 ::: {.component type="timeline" items="activities_conferences"}
 :::
 
-## Service
+# Service
 
 ::: {.component type="timeline" items="activities_service"}
 :::

@@ -6,7 +6,7 @@ site:
   route: /talks/
 ---
 
-## 12/2022: On Phil Engel's paper [Looijenga's conjecture via integral affine geometry](https://arxiv.org/abs/1409.7676)
+# 12/2022: On Phil Engel's paper [Looijenga's conjecture via integral affine geometry](https://arxiv.org/abs/1409.7676)
 
 UGA Oral Exam, December 2022.
 
@@ -18,7 +18,7 @@ Notes/slides forthcoming.
 
 <hr>
 
-## 07/2022: Applications of Torelli: Faltings' proof of the Mordell conjecture.
+# 07/2022: Applications of Torelli: Faltings' proof of the Mordell conjecture.
 
 UGA Reading Group, July 2022
 
@@ -30,7 +30,7 @@ UGA Reading Group, July 2022
 <hr>
 
 
-## 06/2022: The Annihilator of the Lefschetz Motive
+# 06/2022: The Annihilator of the Lefschetz Motive
 
 The MIT Talbot Workshop, June 2022.
 
@@ -41,7 +41,7 @@ The MIT Talbot Workshop, June 2022.
 
 <hr>
 
-## 02/2022: Why Derived Geometry 
+# 02/2022: Why Derived Geometry 
 
 UGA Graduate Student Seminar, February 2021.
 
@@ -58,7 +58,7 @@ UGA Graduate Student Seminar, February 2021.
 <hr>
 
 
-## 11/2021: Betz-Cohen’s “Graph Moduli Spaces and Cohomology Operations”: The Equivariant Invariants
+# 11/2021: Betz-Cohen’s “Graph Moduli Spaces and Cohomology Operations”: The Equivariant Invariants
 
 Reading group at UGA, November 2021.
 
@@ -75,11 +75,11 @@ Reading group at UGA, November 2021.
 
 <hr>
 
-## 09/2021: Catalan's Conjecture, the Cases $q=2$ and $p=2$.
+# 09/2021: Catalan's Conjecture, the Cases $q=2$ and $p=2$.
   
 [CCAM](https://www.daniellitt.com/ccam), UGA.
 
-## 08/2021: Computing Volumes of Moduli Spaces
+# 08/2021: Computing Volumes of Moduli Spaces
 
 Mock AMS Conference, UGA.
 
@@ -90,7 +90,7 @@ Slides: to be posted.
 
 <hr>
 
-## 07/2021: Grothendieck's "On the de Rham Cohomology of Algebraic Varieties" 
+# 07/2021: Grothendieck's "On the de Rham Cohomology of Algebraic Varieties" 
 
 [CRAAG](https://www.daniellitt.com/crag), UGA.
 
@@ -105,7 +105,7 @@ Slides: to be posted.
 
 <hr>
 
-## 06/2021: The Adams Spectral Sequence.
+# 06/2021: The Adams Spectral Sequence.
 
 [Stable Homotopy Theory Seminar](https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
@@ -121,7 +121,7 @@ Slides: to be posted.
 <hr>
 
 
-## 06/2021: McDuff-Salamon "$J\dash$holomorphic Curves and Symplectic Topology" Seminar 
+# 06/2021: McDuff-Salamon "$J\dash$holomorphic Curves and Symplectic Topology" Seminar 
 
 [Symplectic Reading Seminar](https://www.notion.so/Symplectic-Reading-Seminar-UGA-Summer-2021-1a2410e895014c82ae5b26c3550ad09f) at UGA.
 
@@ -143,7 +143,7 @@ Slides: to be posted.
 <hr>
 
 
-## 05/2021: Sarkar-Wang's "An algorithm for computing some Heegaard Floer homologies".
+# 05/2021: Sarkar-Wang's "An algorithm for computing some Heegaard Floer homologies".
 
 Heegaard-Floer homology course final presentation.
 
@@ -151,7 +151,7 @@ Heegaard-Floer homology course final presentation.
 :::
 
 
-## 03/2021: An Overview of Stable Homotopy Theory
+# 03/2021: An Overview of Stable Homotopy Theory
 
 Graduate Student Seminar at UGA.
 
@@ -166,7 +166,7 @@ Graduate Student Seminar at UGA.
 
 <hr>
 
-## 03/2021: Homotopy Groups of Spectra 
+# 03/2021: Homotopy Groups of Spectra 
 
 [Stable Homotopy Theory Seminar](https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
@@ -182,11 +182,11 @@ Graduate Student Seminar at UGA.
 <hr>
 
 
-## Fall 2020: Floer Homology, Multiple Talks
+# Fall 2020: Floer Homology, Multiple Talks
 
 Reading seminar at UGA.
 
-## 06/2020: Interesting Topological Spaces in Algebraic Geometry 
+# 06/2020: Interesting Topological Spaces in Algebraic Geometry 
 
 Mock AMS Conference at UGA.
 
@@ -201,7 +201,7 @@ Mock AMS Conference at UGA.
 
 <hr>
 
-## 04/2020: Zeta Functions and The Weil Conjectures, "Numbers of solutions of equations in finite fields" 
+# 04/2020: Zeta Functions and The Weil Conjectures, "Numbers of solutions of equations in finite fields" 
 
 [CRAAG](https://www.daniellitt.com/crag) at UGA.
 
@@ -217,7 +217,7 @@ Mock AMS Conference at UGA.
 
 <hr>
 
-## 04/2020: Homotopy Groups of Spheres
+# 04/2020: Homotopy Groups of Spheres
 
 UGA Graduate Student Seminar, UGA.
 
@@ -232,11 +232,11 @@ UGA Graduate Student Seminar, UGA.
 
 <hr>
 
-## 02/2020: Theorems/Conjectures on Periodic Orbits in Symplectic Geometry 
+# 02/2020: Theorems/Conjectures on Periodic Orbits in Symplectic Geometry 
   
 Graduate Student Topology Seminar, UGA.
 
-## 2019 and Earlier
+# 2019 and Earlier
 
 - Nov 2019: Homotopy Theory and the Kervaire Invariant One Problem 
 
@@ -296,7 +296,7 @@ Graduate Student Topology Seminar, UGA.
 - 05/2013: Discrete Mathematics: An Overview of Graphs and Trees (Sierra College)
 
 
-## Other
+# Other
 
 - Winter/Spring 2018: Undergraduate Research with [Justin Roberts](http://www.math.ucsd.edu/~justin/) in Algebraic Topology 
   (UCSD)
