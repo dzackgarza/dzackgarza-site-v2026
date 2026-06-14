@@ -37,7 +37,7 @@ SSG="bun /path/to/pandoc-ssg/src/cli.ts" just build
 ```
 content/
   *.md            # pages (opt in with `site.page: true` frontmatter)
-  _data/          # navigation.toml, math-macros.yaml, items.yaml (component data)
+  _data/          # navigation.toml, items.yaml (component data)
   _site.toml      # passthrough subtrees, directory→type inference
   assets/         # images, PDFs, fonts (Git LFS); copied verbatim to dist/
   */              # standalone apps copied verbatim (opaque passthrough)
