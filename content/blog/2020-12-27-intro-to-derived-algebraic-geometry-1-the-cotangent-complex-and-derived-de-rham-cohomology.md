@@ -18,7 +18,6 @@ site:
 :::
 
 
-<div class="pandoc">
-<iframe src="/pandoc/2020-12-27.html" style="width:100%; min-height:800px;">
-</div>
+::: {.include path="../assets/archived_notes/Derived_Algebraic_Geometry.md"}
+:::
 

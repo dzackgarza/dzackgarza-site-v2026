@@ -639,3 +639,146 @@ notes:
   links:
   - label: Thread Reader
     href: https://threadreaderapp.com/user/dzackgarza
+
+activities_conferences:
+- date: Nov 2021
+  title: Chern–Simons and Other Topological Field Theories
+  detail: Invited Participant — MSRI · [Notes (PDF)](/assets/pdfs/transcribed_notes/MSRI_2021_ChernSimons.pdf)
+- date: Jul 2021
+  title: Graduate Summer School on Motivic Homotopy
+  detail: Participant — IAS/PCMI · [Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.pdf), [Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html)
+- date: Jun 2021
+  title: Viva Talbot!
+  detail: Participant / Note-Taker — MIT Talbot · [Hahn — Ring Spectra (PDF)](/assets/pdfs/transcribed_notes/Talbot_2021__Methods_and_mysteries_in_the_construction_of_ring_spectra.pdf), [Moulinos — Nonabelian Hodge (PDF)](/assets/pdfs/transcribed_notes/Talbot_2021__Perspectives_on_non_abelian_Hodge_theory.pdf)
+- date: Sep 2019
+  title: Mid-Atlantic Topology Seminar
+  detail: Participant · [Twitter thread](https://threadreaderapp.com/thread/1188848212767137793.html)
+- date: May 2019
+  title: Georgia Topology Conference
+  detail: Participant
+- date: May 2019
+  title: Graduate Student Conference in Algebra, Geometry, and Topology
+  detail: Participant — Temple University
+- date: Apr 2019
+  title: Redbud Topology Conference
+  detail: Participant — University of Oklahoma
+- date: Apr 2019
+  title: Geometry Festival
+  detail: Participant — University of Maryland · [Notes (PDF)](/assets/pdfs/conferences/UMD%20Geometry%20Festival%20Summary.pdf)
+- date: Mar 2019
+  title: 'Arizona Winter School: Topology and Arithmetic'
+  detail: Participant — University of Arizona · [Notes (PDF, WIP)](/assets/pdfs/transcribed_notes/AWS2019_Notes.pdf)
+- date: Jan 2019
+  title: Complex Algebraic Geometry Conference
+  detail: Participant — UC San Diego · [Notes (PDF)](https://dzackgarza.com/UCSD-Algebraic-Geometry-Conference-2019.html)
+- date: Jun 2018
+  title: Witt Vectors, Deformations, and Absolute Geometry
+  detail: Participant — University of Vermont
+- date: Mar 2018
+  title: Latinx in the Mathematical Sciences Conference
+  detail: Participant — IPAM
+activities_coursework:
+- date: Fall 2021
+  title: Characteristic Classes
+  detail: Akram Alishahi
+- date: Fall 2021
+  title: Schemes
+  detail: Phil Engel
+- date: Fall 2021
+  title: Rational Points
+  detail: Daniel Litt
+- date: Fall 2021
+  title: Flag Varieties, Equivariant Cohomology, and K-Theory
+  detail: Scott Larson
+- date: Fall 2021
+  title: Additive Combinatorics
+  detail: Akos Magyar
+- date: Summer 2021
+  title: Modular Forms (minicourse)
+  detail: Akos Magyar
+- date: Spring 2021
+  title: Homological Algebra
+  detail: Brian Boe · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.pdf)
+- date: Spring 2021
+  title: 4-Manifolds
+  detail: Philip Engel · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.pdf)
+- date: Spring 2021
+  title: Floer Homology
+  detail: Akram Alishahi · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FloerHomology/FloerHomology.pdf)
+- date: Spring 2021
+  title: Algebraic Number Theory
+  detail: Paul Pollack · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.pdf)
+- date: Fall 2020
+  title: Algebraic Curves
+  detail: Pete Clark · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.pdf)
+- date: Fall 2020
+  title: Algebraic Geometry
+  detail: Philip Engel · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.pdf)
+- date: Fall 2020
+  title: Algebraic Groups
+  detail: Dan Nakano · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.pdf)
+- date: Fall 2020
+  title: Smooth Manifolds
+  detail: David Gay
+- date: Summer 2020
+  title: Link Invariants, Categorification and Algebraic Geometry
+  detail: Arik Wilbert · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.pdf)
+- date: Summer 2020
+  title: Lee's Introduction to Smooth Manifolds (reading)
+  detail: Mike Usher · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/LeeManifolds/Manifolds.pdf)
+- date: Spring 2020
+  title: Commutative Algebra
+  detail: Pete Clark · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Commutative%20Algebra/Commutative_Algebra_Notes.pdf)
+- date: Spring 2020
+  title: Category O
+  detail: Brian Boe · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.pdf)
+- date: Spring 2020
+  title: Complex Analysis
+  detail: Jingzhi Tie · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.pdf)
+- date: Spring 2020
+  title: Moduli Spaces
+  detail: Ben Bakker · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.pdf)
+- date: Spring 2020
+  title: Morse Theory (partial)
+  detail: Akram Alishahi · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Morse%20Theory/FullNotes.pdf)
+- date: Fall 2019
+  title: Abstract Algebra
+  detail: Daniel Nakano · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.pdf)
+- date: Fall 2019
+  title: Real Analysis
+  detail: Neil Lyall · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2019/Real%20Analysis/CourseNotes.pdf)
+- date: Fall 2019
+  title: Lie Algebras
+  detail: Chun-Ju Lai · [Notes](https://dzackgarza.com/rawnotes/Class_Notes/2019/Lie%20Algebras/CourseNotes.pdf)
+- date: Fall 2019
+  title: Differential Topology
+  detail: Weiwei Wu
+activities_service:
+- date: Fall 2021
+  title: Directed Reading Program Mentor — Diophantine Geometry
+  detail: Mentored an undergraduate in Diophantine geometry and introductory algebraic number theory.
+- date: Summer 2021
+  title: Directed Reading Program Mentor — L-Functions
+  detail: Mentored an undergraduate in L-functions, complex analysis, and the prime number theorem.
+- date: Fall 2021
+  title: Co-Organizer — UGA Graduate Student Seminar
+  detail: Co-organized the UGA Graduate Student Seminar series.
+- date: Summer 2021
+  title: Organizer — Graduate Online Seminar Series (GOSS)
+  detail: Organized the GOSS seminar series.
+- date: Summer 2021
+  title: Co-Organizer — Mock AMS (UGA)
+  detail: Co-organized the Mock AMS conference at UGA.
+- date: Summer 2020
+  title: Co-Organizer — Graduate Online Anything Topology and Geometry Series (GOATS)
+  detail: Co-organized GOATS 1–3 with Sarah Blackwell. · [GOATS 3](https://dzackgarza.com/GOATS/2020/July/), [GOATS 2](https://dzackgarza.com/GOATS/2020/June/), [GOATS 1](https://dzackgarza.com/GOATS/2020/April/)
+- date: Summer 2021
+  title: Qualifying Exam Review Organizer — Algebra, Real Analysis, Complex Analysis, Algebraic Topology
+  detail: Organized qualifying exam review sessions for UGA graduate students.
+- date: Spring 2021
+  title: Qualifying Exam Review Organizer — Algebra and Real Analysis
+  detail: Organized qualifying exam review sessions for Algebra and Real Analysis.
+- date: 2017–2018
+  title: President — Society of Undergraduate Mathematics Students (UCSD)
+  detail: Served as president of SUMS at UC San Diego.
+
