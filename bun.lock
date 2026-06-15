@@ -6,7 +6,7 @@
       "name": "dzackgarza-site-v2026",
       "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "^5",
-        "pandoc-ssg": "github:dzackgarza/pandoc-ssg#6db9b29",
+        "pandoc-ssg": "github:dzackgarza/pandoc-ssg#d0739f7",
         "playwright": "^1.60.0",
         "svelte": "^5",
         "vite": "^6",
@@ -186,7 +186,7 @@
 
     "nanoid": ["nanoid@3.3.12", "", { "bin": { "nanoid": "bin/nanoid.cjs" } }, "sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ=="],
 
-    "pandoc-ssg": ["pandoc-ssg@github:dzackgarza/pandoc-ssg#6db9b29", { "dependencies": { "gray-matter": "^4.0.3", "smol-toml": "^1.3.1", "yaml": "^2.7.0", "zod": "^3.24.0" }, "peerDependencies": { "@sveltejs/vite-plugin-svelte": "^5.0.0", "playwright": "^1.60.0", "svelte": "^5.0.0", "vite": "^6.0.0" }, "optionalPeers": ["@sveltejs/vite-plugin-svelte", "playwright", "svelte", "vite"], "bin": { "pandoc-ssg": "src/cli.ts" } }, "dzackgarza-pandoc-ssg-6db9b29", "sha512-UGLiP5BYDYxjEKLhhdNPNdcL7HjR5OzTYzgTn0N7TDwZL0AW/Y0AdjgpmJdlRUN8dwZxGt/8eIHvBSUC/VgbwQ=="],
+    "pandoc-ssg": ["pandoc-ssg@github:dzackgarza/pandoc-ssg#d0739f7", { "dependencies": { "gray-matter": "^4.0.3", "smol-toml": "^1.3.1", "yaml": "^2.7.0", "zod": "^3.24.0" }, "peerDependencies": { "@sveltejs/vite-plugin-svelte": "^5.0.0", "playwright": "^1.60.0", "svelte": "^5.0.0", "vite": "^6.0.0" }, "optionalPeers": ["@sveltejs/vite-plugin-svelte", "playwright", "svelte", "vite"], "bin": { "pandoc-ssg": "src/cli.ts" } }, "dzackgarza-pandoc-ssg-d0739f7", "sha512-2xc+X0rib2WxkJ+OmOXtEEPvML4Pu094JmkMX/Z+YrPBJls870P0EMZSn9k0AjhpnFH58ITj1tzP3ItRxpQ2Hg=="],
 
     "picocolors": ["picocolors@1.1.1", "", {}, "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="],
 
