@@ -17,13 +17,6 @@ site:
 ::: {.component type="video" provider="youtube" id="zRPa-VAvl6Q"}
 :::
 
-
----
-date: 2021-04-26
-tags: 
-  - Unfiled
----
-
 # The Cotangent Complex and Derived de Rham Cohomology
 
 - Reference: [MSRI Workshop on Derived AG, Birational Geometry, Moduli Spaces](https://www.msri.org/workshops/862/schedules/25958).
