@@ -14,14 +14,18 @@ href = "/papers/"
 weight = 10
 
 [[main]]
-title = "Notes"
-href = "/writing/"
+title = "Writing"
 weight = 15
 
-[[main]]
-title = "Talks"
-href = "/talks/"
-weight = 20
+  [[main.children]]
+  title = "Notes"
+  href = "/writing/"
+  weight = 10
+
+  [[main.children]]
+  title = "Talks"
+  href = "/talks/"
+  weight = 20
 
 [[main]]
 title = "Teaching"
