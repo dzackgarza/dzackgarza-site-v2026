@@ -60,7 +60,7 @@ We plan to hold these on an ongoing/recurring basis, and will update this page w
 
 ## 2:10 - 2:20 PM EDT:  Break/Social Event
 
-## 2:20 - 3:20 PM EDT: [Arun Debray](https://web.ma.utexas.edu/users/a.debray/), University of Texas at Austin
+## 2:20 - 3:20 PM EDT: [Arun Debray](https://adebray.github.io/), University of Texas at Austin
   
 - Title: What: Bordism groups. Why: Condensed-matter physics. How: The Adams spectral sequence. [(Slides)](/assets/pdfs/goats/ArunGOATS.pdf)
 - Abstract: I'll discuss an application of algebraic topology to theoretical physics: the use of bordism groups to classify symmetry-protected topological (SPT) phases in condensed-matter physics. After introducing both of these concepts, I'll explain how to use the Adams spectral sequence over A(1) to compute some of these bordism groups. Freed-Hopkins propose a generalization of this bordism-theoretic approach to SPTs in the setting of crystalline phases; in the remaining time, I'll discuss my work in progress providing supporting evidence for their ansatz.

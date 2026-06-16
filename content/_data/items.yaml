@@ -247,7 +247,7 @@ notes_by_others:
   description: "If you write and share LaTeX notes, let me know and I'd be happy to link your site here."
   links:
     - label: Arun Debray
-      href: "https://web.ma.utexas.edu/users/a.debray/lecture_notes/"
+      href: "https://adebray.github.io/lecture_notes/"
       note: Lecture notes.
     - label: Gilles Castel
       href: "https://castel.dev/notes"
@@ -270,13 +270,13 @@ notes_by_others:
       href: "https://github.com/Dongryul-Kim/harvard_notes"
       note: Live-TeX'd notes from Harvard courses.
     - label: Zoë Farmer
-      href: "https://www.dataleek.io/archive/pages/latex-notes.html"
+      href: "http://web.archive.org/web/20230131133536/https://www.dataleek.io/archive/pages/latex-notes.html"
       note: Notes from various undergraduate courses.
     - label: Akhil Mathew
       href: "http://math.uchicago.edu/~amathew/notes.html"
       note: Notes from graduate courses.
     - label: Henry Liu
-      href: "https://people.maths.ox.ac.uk/liu/notes/"
+      href: "https://member.ipmu.jp/henry.liu/notes/"
       note: Notes from graduate courses.
 notes:
 - title: K3 Surfaces
@@ -670,7 +670,7 @@ activities_conferences:
   detail: Participant — University of Arizona · [Notes (PDF, WIP)](/assets/pdfs/transcribed_notes/AWS2019_Notes.pdf)
 - date: Jan 2019
   title: Complex Algebraic Geometry Conference
-  detail: Participant — UC San Diego · [Notes (PDF)](https://dzackgarza.com/UCSD-Algebraic-Geometry-Conference-2019.html)
+  detail: Participant — UC San Diego · [Notes (HTML)](/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html)
 - date: Jun 2018
   title: Witt Vectors, Deformations, and Absolute Geometry
   detail: Participant — University of Vermont

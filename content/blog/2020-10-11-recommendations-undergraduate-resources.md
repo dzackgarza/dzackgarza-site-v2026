@@ -35,7 +35,7 @@ I've generally had good luck following the  [reference-request tags](https://mat
 
 - If you find an author/lecturer/general source that you particularly like or learn well from, see what other content they have! If they cover other topics, be open to learning those -- you never quite know what will be useful where.
 
-- For lower division or introductory courses, try to [obtain a textbook](https://lmgtfy.app/?q=libgen) paired with a solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses. Beware typos!
+- For lower division or introductory courses, try to obtain a textbook paired with a solutions manual. This is a great way to drill problems, check your answers, and identify your weaknesses. Beware typos!
 
 - Don't bother with sites like Chegg. The solutions there are *often* incorrect, and this can lead to academic integrity issues.
 
@@ -156,7 +156,7 @@ _Garrity_, [All the Mathematics You Missed: But Need to Know for Graduate School
 	- Again, it's Strang, so worth checking out!
 
 - <i class="fas fa-tv"></i> 
-  [JJ's Nullspace Trick](https://www.youtube.com/watch?v=bqBacABVCeQ)
+  JJ's Nullspace Trick
   - Many computations in linear algebra boil down to computing the nullspace of a matrix, and this is an excellent shortcut that lets your write the basis of the nullspace of a matrix almost directly from its reduced row-echelon form.
 
 

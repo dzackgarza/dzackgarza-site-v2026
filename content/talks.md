@@ -77,7 +77,7 @@ Reading group at UGA, November 2021.
 
 # 09/2021: Catalan's Conjecture, the Cases $q=2$ and $p=2$.
   
-[CCAM](https://www.daniellitt.com/ccam), UGA.
+CCAM, UGA.
 
 # 08/2021: Computing Volumes of Moduli Spaces
 
@@ -107,7 +107,7 @@ Slides: to be posted.
 
 # 06/2021: The Adams Spectral Sequence.
 
-[Stable Homotopy Theory Seminar](https://www.math.purdue.edu/~pvankoug/spectra/index.html).
+[Stable Homotopy Theory Seminar](http://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
 <iframe width="956" height="200" src="https://www.youtube.com/embed/WGoguCm0nJg?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -168,7 +168,7 @@ Graduate Student Seminar at UGA.
 
 # 03/2021: Homotopy Groups of Spectra 
 
-[Stable Homotopy Theory Seminar](https://www.math.purdue.edu/~pvankoug/spectra/index.html).
+[Stable Homotopy Theory Seminar](http://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
 
   <iframe width="956" height="200" src="https://www.youtube.com/embed/U69FWhcn7ro?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -298,7 +298,7 @@ Graduate Student Topology Seminar, UGA.
 
 # Other
 
-- Winter/Spring 2018: Undergraduate Research with [Justin Roberts](http://www.math.ucsd.edu/~justin/) in Algebraic Topology 
+- Winter/Spring 2018: Undergraduate Research with [Justin Roberts](http://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/) in Algebraic Topology 
   (UCSD)
 
 ::: {.notice--info}

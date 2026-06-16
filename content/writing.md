@@ -67,15 +67,15 @@ You can also find my even *less* organized math journal [here](https://notes.dza
 
     [<i class="fas fa-file-pdf"></i> PDF (Old version)](/assets/pdfs/AWS2019_Wickelgren.pdf)
 
-    [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Obsidian/Archive/AWS2019/Typeset/Wickelgren/AWS2019_Wickelgren.pdf)
+    [<i class="fas fa-file-pdf"></i> PDF](/assets/pdfs/AWS2019_Wickelgren_typeset.pdf)
 
   - Matthew Morrow: Topological Hochschild Homology in Arithmetic Geometry
 
-    [<i class="fas fa-file-pdf"></i> PDF](https://dzackgarza.com/rawnotes/Obsidian/Archive/AWS2019/Typeset/Morrow/ASS2019_Morrow.pdf)
+    [<i class="fas fa-file-pdf"></i> PDF](/assets/pdfs/AWS2019_Morrow.pdf)
 
 - UCSD Algebraic Geometry Conference, 2019
 
-  [<i class="fas fa-file-pdf"></i> Talk Notes (PDF)](https://dzackgarza.com/_pages/UCSD-Algebraic-Geometry-Conference-2019.html)
+  [<i class="fab fa-html5"></i> Talk Notes (HTML)](/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html)
 
 ----------
 

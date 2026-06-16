@@ -13,7 +13,7 @@ This is the website for the summer 2021 iteration of the Mock AMS conference at 
 
 - Zoom meeting information can be obtained by registering here:
 
-  <https://zoom.us/meeting/register/tJIocu2vqD4vE9Mh0cUJ_pQi1qmfvUuS8a4q>
+  <http://web.archive.org/web/20211028124321/https://zoom.us/meeting/register/tJIocu2vqD4vE9Mh0cUJ_pQi1qmfvUuS8a4q>
 
 - A conference booklet with detailed information can be downloaded here:
 
@@ -76,7 +76,7 @@ This is the website for the summer 2021 iteration of the Mock AMS conference at 
 
 ## Code of Conduct
 
-> Adapted from  <https://conferences.math.mtu.edu/pint2021/coc/>, <https://ccrem20.cms.math.ca/index.php/cms-code-of-conduct/>, and <http://ncngt.org/>
+> Adapted from  <https://conferences.math.mtu.edu/pint2021/coc/>, <https://cms.math.ca/about-the-cms/governance/standing-policies/>, and <http://ncngt.org/>
 
 - Other attendees and speakers are your friends and colleagues, so please treat them in an accordingly respectful manner!
   In particular, please refrain from offensive or unwelcome comments/questions/discussions. 

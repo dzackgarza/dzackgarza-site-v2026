@@ -84,7 +84,7 @@ Rooms:
 
 ---
 
-## 2:10-3:10 PM EDT: [Duncan Clark](https://www.asc.ohio-state.edu/clark.1843/home), Ohio State University
+## 2:10-3:10 PM EDT: [Duncan Clark](https://math.osu.edu/people/clark.1843), Ohio State University
 
 -   **Title**: 
     On the Goodwillie Derivatives of the Identity in Structured Ring Spectra [(Slides)](/assets/pdfs/goats/Duncan-GOATS-slides-final.pdf)

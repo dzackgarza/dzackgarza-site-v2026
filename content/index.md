@@ -82,7 +82,7 @@ You can find many more notes on my [writing page](/writing/).
   [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.pdf),
   [<i class="fas fa-html5"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.html)
 
-- Notes for the [**ADDING** conference at UGA](https://www.daniellitt.com/adding) (May 2022)
+- Notes for the [**ADDING** conference at UGA](http://web.archive.org/web/20220131165434/https://www.daniellitt.com/adding) (May 2022)
 
   [<i class="fas fa-file-pdf"></i> Notes (PDF)](https://dzackgarza.com/rawnotes/Class_Notes/2022/ADDING/ADDING.pdf),
   [<i class="fas fa-html5"></i> Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2022/ADDING/ADDING.html)

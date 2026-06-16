@@ -25,7 +25,7 @@ Inspired by the following Twitter thread:
 
 - [The Chicago Undergraduate Mathematics Bibliography](https://www.ocf.berkeley.edu/~abhishek/chicmath.htm)
 
-- [Comments on a number of mathematics books](http://www.math.hkbu.edu.hk/~homanho/comments.html)
+- [Comments on a number of mathematics books](http://web.archive.org/web/20170728094153/http://www.math.hkbu.edu.hk:80/~homanho/comments.html)
 
 - [Milne's Collection of Course Notes](https://www.jmilne.org/math/CourseNotes/)
 
@@ -43,7 +43,7 @@ Inspired by the following Twitter thread:
 
 - You can find ranked recommendations [on this question on MO](https://mathoverflow.net/questions/761/undergraduate-level-math-books)
 
-- UC Berkeley has [a bibliography](https://math.berkeley.edu/courses/archives/announcements/fall-2011-textbooks) of books used by class.
+- UC Berkeley has [a bibliography](http://web.archive.org/web/20231204101534/https://math.berkeley.edu/courses/archives/announcements/fall-2011-textbooks) of books used by class.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ Inspired by the following Twitter thread:
 
 ### Gerald B. Folland, Real Analysis: Modern Techniques and Applications
 
-- Links to some [homeworks and solutions at UCSD](http://www.math.ucsd.edu/~bli/teaching/math240Cs20/)
+- Links to some [homeworks and solutions at UCSD](http://web.archive.org/web/20240417123544/https://mathweb.ucsd.edu/~bli/teaching/math240Cs20/)
 
 ### Walter Rudin, Real and Complex Analysis
 
@@ -142,8 +142,8 @@ Inspired by the following Twitter thread:
 ## Representation Theory
 
 - Gaitsgory, [Course Notes on Geometric Representation Theory](http://people.math.harvard.edu/~gaitsgde/267y/index.html)
-- Mcgerty, [Notes on Lie Groups/Algebras](https://courses.maths.ox.ac.uk/node/view_material/42444)
-- Shoshany, [Notes on Lie Groups](http://baraksh.com/BarakShoshanyLieGroupReview.pdf)
+- Mcgerty, [Notes on Lie Groups/Algebras](http://web.archive.org/web/20201205033140/https://courses.maths.ox.ac.uk/node/view_material/42444)
+- Shoshany, [Notes on Lie Groups](https://baraksh.com/static/lie/BarakShoshanyLieGroupReview.pdf)
   - From a physicist's perspective
 
 ### J-P. Serre, Linear Representations of Finite Groups
@@ -181,7 +181,7 @@ Inspired by the following Twitter thread:
 # Algebraic Geometry
 
 
-- Gathmann, [Notes](https://www.mathematik.uni-kl.de/~gathmann/de/alggeom.php)
+- Gathmann, [Notes](https://agag-gathmann.math.rptu.de/de/alggeom.php)
 - Vakil, [Rising Sea Notes](http://math.stanford.edu/~vakil/216blog/FOAGnov1817public.pdf)
 
 ## Robin Hartshorne, Algebraic Geometry
@@ -204,13 +204,13 @@ Inspired by the following Twitter thread:
 
 #### J. Neukirch, Algebraic Number Theory
 
-- Large number of exercises [here](http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
+- Large number of exercises [here](http://web.archive.org/web/20201128021157/http://www.math.ucsd.edu/~csorense/teaching/math204B_W20/204B_W20_EXC.pdf)
 
 #### Cassels and Fröhlich, Algebraic Number Theory
 
 #### J. Milne, Algebraic Number Theory
 
-- Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_ANT.pdf)
+- Not a textbook: actually [notes](https://www.jmilne.org/math/CourseNotes/ANT.pdf)
 
 ### Uncategorized
 
@@ -228,7 +228,7 @@ Inspired by the following Twitter thread:
 
 #### J. Milne, Class Field Theory
 
-- Not a textbook: actually [notes](http://www.math.ucsd.edu/~csorense/teaching/math204B_W19/Milne_CFT.pdf)
+- Not a textbook: actually [notes](https://www.jmilne.org/math/CourseNotes/CFT.pdf)
 
 #### Weil, Basic Number Theory
 
@@ -340,11 +340,11 @@ Inspired by the following Twitter thread:
 
 ### Voison, Hodge Theory and Complex Algebraic Geometry I
 
-- Notes: [Period Mappings and Period Domains](https://www-fourier.ujf-grenoble.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
+- Notes: [Period Mappings and Period Domains](http://web.archive.org/web/20260331070155/https://www-fourier.univ-grenoble-alpes.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
 
 ## Knot Theory
 
-- Justin Roberts, [Knots Knotes](http://math.ucsd.edu/~justin/Roberts-Knotes-Jan2015.pdf)
+- Justin Roberts, [Knots Knotes](http://web.archive.org/web/20210814080515/http://math.ucsd.edu/~justin/Roberts-Knotes-Jan2015.pdf)
 
 ### Rolfsen, Knots and Links
 
