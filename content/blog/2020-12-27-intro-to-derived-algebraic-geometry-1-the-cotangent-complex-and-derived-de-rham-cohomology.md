@@ -248,6 +248,7 @@ A specific way of doing this is the **Dold-Kan** correspondence:
 
 :::{.proposition title="Dold-Kan Correspondence"}
 Suppose we have a simplicial abelian group $M_\wait$, then we have face maps going to the left:
+
 \begin{tikzcd}
   M_0
 & M_1
@@ -264,6 +265,7 @@ Suppose we have a simplicial abelian group $M_\wait$, then we have face maps goi
   \ar[l, shift left=2.15ex] 
 \end{tikzcd}
 We make this into a chain complex by setting the differential to a graded sum:
+
 \begin{tikzcd}
     M_0 
 &&  M_1
@@ -313,6 +315,7 @@ This resolution has the following structure:
 S^0 = k[R], \,\, \text{the free commutative algebra on }R
 .\]
 Using the unit and counit maps of the adjunction, one obtains a canonical simplicial object,
+
 \begin{tikzcd}
   k[R]
     \ar[r, shift right=2.0ex] 
@@ -341,6 +344,7 @@ We can consider the category
 $\Ind(\mathrm{CAlg}_k^{\text{poly}})$ 
 given by formally adjoining filtered colimits.
 We have the following diagram,
+
 \begin{tikzcd}
   \mathrm{CAlg}_k^{\text{poly}} 
     \ar[d, hook]
@@ -380,6 +384,7 @@ There are 3 equivalent ways to view the cotangent complex.
 
 Use this derived functor approach: it will essentially be the derived functor of taking $\Omega^1$.
 Suppose $k \to R$ in commutative rings, denote by $S^\wait$ again the canonical resolution of $R$, yielding a diagram
+
 \begin{tikzcd}
 k 
   \ar[rd, ""]
@@ -415,6 +420,7 @@ We can define them by taking a map
 \]
 to the connective objects in the derived category of $k$.
 We can extend to get a diagram
+
 \begin{tikzcd}
   \mathrm{CAlg}_k^{\text{poly}} 
   \ar[rr, "{\Omega^1_{\wait/k}}"] 
@@ -462,6 +468,7 @@ Prove that
 .\]
 This is exactly lifting through the square zero extension.
 This is similar to having a lift
+
 \begin{tikzcd}
 & S\oplus M
     \ar[d]
@@ -478,6 +485,7 @@ So the RHS comma category mapping space in the previous equivalence is denoted t
 
 :::{.exercise title="?"}
 You can base-change the cotangent complex of $R/K$ to $S$ and obtain an exact triangle/cofiber sequence
+
 \begin{tikzcd}
   S \tensor_R^L L_{R/k}
     \ar[r]
@@ -490,6 +498,7 @@ This follows from the universal property above, and is a form of "transitivity".
 
 :::{.exercise title="?"}
 Given a diagram
+
 \begin{tikzcd}
   K 
     \ar[r]
@@ -531,6 +540,7 @@ R &\mapsto \dR_{R/k} \da \qty{R\to \Omega^1_{R/k} \to \Omega^2_{R/k} \to \cdots}
 which takes a polynomial ring $R$ to its algebraic de Rham complex.
 If $R$ is finitely generated, then the complex is bounded.
 One can formally extend by deriving this functor to obtain
+
 \begin{tikzcd}
   \calg_k^\poly 
     \ar[rr, "\dR_{\wait/k}"]

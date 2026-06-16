@@ -102,6 +102,7 @@ Note that in an ordinary category, if two morphisms are equivalent then they are
 
 :::{.definition title="Composition of morphisms"}
 For 1-simplices $f: a\to b, g:b\to c$, a **composition** of $f$ and $g$ is a 2-simplex $\sigma$ filling in the following diagram:
+
 \begin{tikzcd}
 	&& {b} \\
 	\\
