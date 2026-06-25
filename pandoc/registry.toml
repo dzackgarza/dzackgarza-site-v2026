@@ -61,14 +61,14 @@ handler = "link-group"
 handler = "video"
 
 [islands."blog-index"]
-entry = "../node_modules/pandoc-ssg/islands/blog-index/main.ts"
+entry = "node_modules/pandoc-ssg/islands/blog-index/main.ts"
 output = "assets/islands/blog-index.js"
 dataOutput = "blog/posts.json"
 dataSource = "blog-posts"
 mount = "blog-index"
 
 [islands.collection]
-entry = "../node_modules/pandoc-ssg/islands/collection/main.ts"
+entry = "node_modules/pandoc-ssg/islands/collection/main.ts"
 output = "assets/islands/collection.js"
 dataOutput = "_collections/{key}.json"
 dataSource = "items"

@@ -639,6 +639,15 @@ main iframe {
   font-size: 0.85rem;
   margin-right: 0.9rem;
 }
+/* per-item media inside a collection entry (folded-in talks): keep the video a
+   scannable size, and give the gallery a little breathing room from the text */
+.collection__item .responsive-embed {
+  max-width: 560px;
+  margin: 0.8rem 0;
+}
+.collection__item .media-gallery {
+  margin: 0.8rem 0 0.4rem;
+}
 
 /* ---------------------------------------------------------------------------
  * timeline (O21) — a date column beside each entry, no bullets.
