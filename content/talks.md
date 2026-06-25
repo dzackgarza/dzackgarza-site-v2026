@@ -6,6 +6,8 @@ site:
   route: /talks/
 ---
 
+::: {.talks-list}
+
 # Compact Moduli of Enriques Surfaces of Degree 2
 
 A talk on joint work (with Valery Alexeev, Phil Engel, and Luca Schaffler) on [compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638).
@@ -333,5 +335,7 @@ Graduate Student Topology Seminar, UGA.
 
 
 <hr>
+
+:::
 
 
