@@ -6,6 +6,20 @@ site:
   route: /talks/
 ---
 
+# Compact Moduli of Enriques Surfaces of Degree 2
+
+A talk on joint work (with Valery Alexeev, Phil Engel, and Luca Schaffler) on [compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PuH5VKlhH_Y?si=dmW17JzVVtjjxBpi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+::: {.notice--info}
+[<i class="fas fa-3x fa-file-pdf fa-3x"></i> Slides (PDF)](/assets/talks/ModuliEnriquesSlides.pdf)
+:::
+
+
+<hr>
+
+
 # 12/2022: On Phil Engel's paper [Looijenga's conjecture via integral affine geometry](https://arxiv.org/abs/1409.7676)
 
 UGA Oral Exam, December 2022.
@@ -13,6 +27,17 @@ UGA Oral Exam, December 2022.
 ::: {.notice--info}
 <!--[<i class="fas fa-3x fa-file-pdf fa-3x"></i> Slides (PDF)](/assets/talks/2022-07-28_UGA_ReadingGroup_AG.pdf)-->
 Notes/slides forthcoming.
+:::
+
+
+<hr>
+
+# 09/2022: Toward a Definition of the Fukaya Category
+
+$A_\infty\dash$Categories. UGA Symplectic Reading Seminar, September 2022.
+
+::: {.notice--info}
+[<i class="fas fa-3x fa-file-pdf fa-3x"></i> Slides (PDF)](/assets/talks/2022-09-20-Fukaya-Talk.pdf)
 :::
 
 
@@ -107,7 +132,7 @@ Slides: to be posted.
 
 # 06/2021: The Adams Spectral Sequence.
 
-[Stable Homotopy Theory Seminar](http://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
+[Stable Homotopy Theory Seminar](https://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
 <iframe width="956" height="200" src="https://www.youtube.com/embed/WGoguCm0nJg?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -168,7 +193,7 @@ Graduate Student Seminar at UGA.
 
 # 03/2021: Homotopy Groups of Spectra 
 
-[Stable Homotopy Theory Seminar](http://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
+[Stable Homotopy Theory Seminar](https://web.archive.org/web/20210729125315/https://www.math.purdue.edu/~pvankoug/spectra/index.html).
 
 
   <iframe width="956" height="200" src="https://www.youtube.com/embed/U69FWhcn7ro?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -298,7 +323,7 @@ Graduate Student Topology Seminar, UGA.
 
 # Other
 
-- Winter/Spring 2018: Undergraduate Research with [Justin Roberts](http://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/) in Algebraic Topology 
+- Winter/Spring 2018: Undergraduate Research with [Justin Roberts](https://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/) in Algebraic Topology 
   (UCSD)
 
 ::: {.notice--info}
