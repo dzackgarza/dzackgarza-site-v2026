@@ -369,13 +369,20 @@ main iframe {
   font-size: 0.9rem;
 }
 
-/* media-gallery (O23) — larger min + auto-fit so a few slide images fill the
-   width at a legible size (small galleries were spread into tiny tracks). */
+/* media-gallery (O23) — a uniform 3-up card grid with tight gaps (à la the
+   daniellitt.com work index): fixed columns so a few images never wrap into a
+   ragged row with a lone stretched image; collapses to 1-up on small screens. */
 .media-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin: 1.6rem 0;
+}
+@media (max-width: 520px) {
+  .media-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
 }
 .media-gallery__item {
   margin: 0;
