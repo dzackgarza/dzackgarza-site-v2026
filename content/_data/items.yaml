@@ -1005,12 +1005,10 @@ talks:
 - title: 'Discrete Mathematics: An Overview of Graphs and Trees'
   category: Talk
   description: 05/2013 · Sierra College
-- title: Undergraduate Research with Justin Roberts in Algebraic Topology
+- title: Undergraduate Research in Algebraic Topology
   category: Talk
-  description: Winter/Spring 2018
+  description: Winter/Spring 2018 · Undergraduate research with <a href="https://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/">Justin Roberts</a> at UCSD.
   links:
-  - label: Justin Roberts
-    href: https://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/
   - label: Poster (PDF)
     href: https://dzackgarza.com/assets/pdfs/research/ResearchPoster.pdf
   - label: Paper, Rough Draft (PDF)
