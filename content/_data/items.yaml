@@ -639,6 +639,62 @@ notes:
   links:
   - label: Thread Reader
     href: https://threadreaderapp.com/user/dzackgarza
+- title: 'IAS/PCMI Graduate Summer School: Motivic Homotopy'
+  category: Mini Course
+  tags:
+  - Homotopy Theory
+  - Algebraic Geometry
+  description: Lecture notes from the 2021 IAS/PCMI Graduate Summer School.
+  links:
+  - label: Combined Notes (PDF)
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.pdf
+  - label: Combined Notes (HTML)
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html
+  - label: 'Krashen — Field arithmetic'
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/1_Krashen/Krashen_Talks.pdf
+  - label: 'Gille — G-torsors over affine curves'
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/2_Gille/Gille_Talks.pdf
+  - label: 'Déglise — Motivic categories'
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/3_Deglise/Deglise_Talks.pdf
+  - label: 'Wickelgren — A1 homotopy theory'
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/4_Wickelgren/Wickelgren_Talks.pdf
+  - label: 'Morrow — Aspects of motivic cohomology'
+    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/5_Morrow/Morrow_Talks.pdf
+- title: 'Reading Seminar: McDuff–Salamon, J-Holomorphic Curves and Symplectic Topology'
+  category: Seminar
+  tags:
+  - Symplectic Geometry
+  description: Gromov–Witten invariants and regularity theorems.
+  links:
+  - label: Typeset Notes (PDF)
+    href: https://dzackgarza.com/assets/pdfs/expository/GW_Notes_June_26.pdf
+  - label: Slides and Handwritten Notes (PDF)
+    href: https://dzackgarza.com/assets/pdfs/expository/GW_Talk_June_26.pdf
+- title: VRG Notes on Tilings and Translation Surfaces
+  category: Seminar
+  tags:
+  - Geometry
+  links:
+  - label: PDF
+    href: https://dzackgarza.com/assets/notes/Tilings.pdf
+- title: Arizona Winter School, 2019
+  category: Mini Course
+  tags:
+  - Algebraic Geometry
+  - Number Theory
+  description: Notes from the 2019 Arizona Winter School.
+  links:
+  - label: 'Wickelgren — A1 Enumerative Geometry'
+    href: /assets/pdfs/AWS2019_Wickelgren_typeset.pdf
+  - label: 'Morrow — Topological Hochschild Homology'
+    href: /assets/pdfs/AWS2019_Morrow.pdf
+- title: UCSD Algebraic Geometry Conference, 2019
+  category: Seminar
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Talk Notes (HTML)
+    href: /assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html
 
 activities_conferences:
 - date: Nov 2021
