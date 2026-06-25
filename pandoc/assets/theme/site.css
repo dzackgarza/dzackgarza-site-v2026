@@ -386,6 +386,9 @@ main iframe {
 }
 .media-gallery__item {
   margin: 0;
+  /* override Tufte's `figure { max-width: 55% }` so the figure fills its grid
+     cell instead of leaving ~45% empty space beside each image */
+  max-width: none;
 }
 .media-gallery__image {
   width: 100%;
