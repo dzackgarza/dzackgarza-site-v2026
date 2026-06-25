@@ -1,0 +1,26 @@
+from: markdown+yaml_metadata_block+fenced_divs+tex_math_dollars+tex_math_single_backslash
+to: html5
+wrap: none
+standalone: true
+shift-heading-level-by: 1
+toc: true
+toc-depth: 3
+html-math-method:
+  method: mathjax
+template: ${.}/../templates/blog.html
+filters:
+  - ${.}/../filters/transclude.lua
+  # Tag amsthm fenced divs (:::{.theorem}, :::{.remark}, …) with a `proofenv`
+  # class so the stylesheet can style them. Lives in ~/.pandoc.
+  - ${PANDOC_DIR}/filters/convert_amsthm_envs.lua
+  # Prepend a real, selectable label ("Definition.", …) to the start of each
+  # env — not a CSS ::before (non-selectable, mis-placed for loose-inline divs).
+  - ${.}/../filters/amsthm_label.lua
+  # Compile \begin{tikzcd}/\begin{tikzpicture} RawBlocks to inline SVG (LaTeX ->
+  # pdf2svg, hash-cached). Lives in ~/.pandoc (the author's canonical figure
+  # toolchain); the build sets PANDOC_DIR so it finds its template + styles.
+  - ${.}/../filters/tikzcd.lua
+  - ${.}/../filters/components.lua
+  - ${.}/../filters/normalize_math.lua
+  - ${.}/../filters/center_figures.lua
+  - ${.}/../filters/sidenotes.lua
