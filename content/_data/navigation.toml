@@ -9,7 +9,7 @@ href = "/assets/pdfs/CV_DZackGarza.pdf"
 weight = 5
 
 [[main]]
-title = "Papers"
+title = "Research"
 href = "/papers/"
 weight = 10
 
@@ -27,15 +27,15 @@ weight = 15
   href = "/talks/"
   weight = 20
 
+  [[main.children]]
+  title = "Blog"
+  href = "/blog/"
+  weight = 30
+
 [[main]]
 title = "Teaching"
 href = "/teaching/"
 weight = 25
-
-[[main]]
-title = "Blog"
-href = "/blog/"
-weight = 30
 
 [[main]]
 title = "About"
