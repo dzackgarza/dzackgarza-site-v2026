@@ -369,11 +369,12 @@ main iframe {
   font-size: 0.9rem;
 }
 
-/* media-gallery (O23) */
+/* media-gallery (O23) — larger min + auto-fit so a few slide images fill the
+   width at a legible size (small galleries were spread into tiny tracks). */
 .media-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
   margin: 2rem 0;
 }
 .media-gallery__item {
