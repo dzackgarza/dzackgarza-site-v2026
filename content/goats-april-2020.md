@@ -25,7 +25,7 @@ We plan to hold these on an ongoing/recurring basis, and will update this page w
 
 # Schedule
 
-[Saturday, April 25th, 12:00 PM to 3:30 PM EDT <i class="fa fa-calendar"></i>](https://www.worldtimebuddy.com/?qm=1&lid=4180386,4887398,5419384,5368361&h=4180386&date=2020-4-25&sln=12-17)
+Saturday, April 25th, 12:00 PM to 3:30 PM EDT
 
 ## 11:50 AM EDT: Zoom meeting opens
 

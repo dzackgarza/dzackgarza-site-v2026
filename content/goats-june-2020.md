@@ -27,7 +27,7 @@ We plan to hold these on an ongoing/recurring basis, and will update this page w
 
 # Schedule 
 
-[Saturday, June 6th, 12:00 PM to 5:30 PM EDT <i class="fa fa-calendar"></i>](https://www.worldtimebuddy.com/?qm=1&lid=4180386,4887398,5419384,5368361&h=4180386&date=2020-4-25&sln=12-17)
+Saturday, June 6th, 12:00 PM to 5:30 PM EDT
 
 See also [ResearchSeminars.org](https://researchseminars.org/seminar/GOATS) page.
 
