@@ -313,7 +313,7 @@ We can work together to figure out how to best address your needs.
 - As a University of Georgia student, you have agreed to abide by the University's academic honesty policy, "A Culture of Honesty," and the Student Honor Code. 
 - All academic work must meet the standards described in "A Culture of Honesty" found at:
 
-  <https://ovpi.uga.edu/academic-honesty/academic-honesty-policy>.
+  <https://honesty.uga.edu/academic-honesty-policy/>.
 
 - *Ignorantia juris non excusat*: "Ignorance of the law does not excuse."
   **Lack of knowledge of the academic honesty policy does not excuse any violations.**
@@ -322,7 +322,7 @@ We can work together to figure out how to best address your needs.
 
 ## FERPA Notice
 
-- The Federal Family Educational Rights and Privacy Act (FERPA) grants students certain information privacy rights; see the registrar's explanation at <https://reg.uga.edu/general-information/ferpa/>. 
+- The Federal Family Educational Rights and Privacy Act (FERPA) grants students certain information privacy rights; see the registrar's explanation at <https://reg.uga.edu/student-records/ferpa/>. 
 
 - FERPA allows disclosure of directory information (name, address, telephone, email, date of birth, place of birth, major, activities, degrees, awards, prior schools), unless restrictions are requested in a written letter to the registrar.
 
