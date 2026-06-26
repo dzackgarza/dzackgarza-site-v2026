@@ -709,16 +709,6 @@ notes:
   - src: /assets/images/notes/31-combinatorics/1.png
   - src: /assets/images/notes/31-combinatorics/2.png
   - src: /assets/images/notes/31-combinatorics/3.png
-- title: Smooth Manifolds
-  category: Notes
-  tags:
-  - Undergraduate
-  description: Notes on Lee's smooth manifolds.
-  links:
-  - label: PDF
-    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.pdf
-  - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/LeeManifolds/Manifolds.html
 - title: Classifying groups of order $pq$ using semidirect products
   category: Expository
   tags:
@@ -754,13 +744,6 @@ notes:
   - src: /assets/images/notes/34-notes-on-the-math-gre/1.png
   - src: /assets/images/notes/34-notes-on-the-math-gre/2.png
   - src: /assets/images/notes/34-notes-on-the-math-gre/3.png
-- title: Math-related Twitter threads
-  category: Expository
-  tags: []
-  description: Collected on Thread Reader
-  links:
-  - label: Thread Reader
-    href: https://threadreaderapp.com/user/dzackgarza
 - title: 'IAS/PCMI Graduate Summer School: Motivic Homotopy'
   category: Mini Course
   tags:
