@@ -291,20 +291,6 @@ notes:
   - src: /assets/images/notes/00-k3-surfaces/1.png
   - src: /assets/images/notes/00-k3-surfaces/2.png
   - src: /assets/images/notes/00-k3-surfaces/3.png
-- title: Hochschild Homology
-  category: Notes
-  tags:
-  - Algebra
-  description: Tekin Karadag, Spring 2023
-  links:
-  - label: PDF
-    href: /assets/pdfs/notes/01-hochschild-homology.pdf
-  - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2023/Spring/hochschild/hochschild.html
-  images:
-  - src: /assets/images/notes/01-hochschild-homology/1.png
-  - src: /assets/images/notes/01-hochschild-homology/2.png
-  - src: /assets/images/notes/01-hochschild-homology/3.png
 - title: Abstract Algebra
   category: Notes
   tags:
