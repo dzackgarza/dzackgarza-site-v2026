@@ -7,8 +7,9 @@ site:
 
 ::: {.intro-split}
 ::: {.intro-split__text}
-As of the 2024-2025 academic year, I am a 6th year graduate student at the University of Georgia working in algebraic geometry with [Valery Alexeev](http://alpha.math.uga.edu/~valery/).
-I am currently thinking about KSBA and semitoroidal compactifications of moduli spaces of Enriques and Coble surfaces.
+I am a postdoctoral researcher at the National Center for Theoretical Sciences (NCTS) in Taipei. I completed my PhD at the University of Georgia, where I worked with [Valery Alexeev](https://www.math.uga.edu/directory/people/valery-alexeev).
+
+Broadly, I am interested in compactifications of moduli spaces, particularly of complex algebraic surfaces. Currently I am thinking about effective combinatorial descriptions of the boundary stratifications of KSBA compactifications (most recently using hyperbolic geometry, lattice theory, and "semitoric" methods from integral affine geometry), as well as comparisons between KSBA, toroidal, semitoroidal, and GIT compactifications, the compactifications induced by open immersions or closed embeddings of moduli spaces into other compactifications, and the geometric constructions that underlie maps between moduli spaces.
 
 [You can find my CV here](/assets/pdfs/CV_DZackGarza.pdf) and [preprints of my papers on Arxiv](https://arxiv.org/search/math?query=Garza%2C+D.+Zack&searchtype=all&abstracts=show).
 :::
@@ -26,19 +27,23 @@ I am currently thinking about KSBA and semitoroidal compactifications of moduli 
 {
   "@context": "http://schema.org",
   "@type": "Person",
-  "name" : "DZackGarza",
+  "name" : "D. Zack Garza",
   "url": "https://dzackgarza.com",
   "sameAs" : [
     "https://www.linkedin.com/in/dzackgarza/"
   ],
   "image": "https://dzackgarza.com/avatar.png",
-  "description": "D. Zack Garza is a person.",
+  "description": "D. Zack Garza is a mathematician and postdoctoral researcher at the National Center for Theoretical Sciences (NCTS) in Taipei, working on compactifications of moduli spaces of complex algebraic surfaces.",
   "email": "mailto:dzackgarza@gmail.com",
-  "jobTitle": "Student",
+  "jobTitle": "Postdoctoral Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "National Center for Theoretical Sciences (NCTS)"
+  },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "San Diego",
-    "addressRegion": "CA"
+    "addressLocality": "Taipei",
+    "addressCountry": "TW"
   }
 }
 </script>
