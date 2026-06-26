@@ -307,6 +307,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.html
+  images:
+  - src: /assets/images/notes/02-abstract-algebra/1.png
+  - src: /assets/images/notes/02-abstract-algebra/2.png
+  - src: /assets/images/notes/02-abstract-algebra/3.png
 - title: Commutative Algebra
   category: Notes
   tags:
@@ -315,6 +319,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Commutative%20Algebra/Commutative_Algebra_Notes.pdf
+  images:
+  - src: /assets/images/notes/03-commutative-algebra/1.png
+  - src: /assets/images/notes/03-commutative-algebra/2.png
+  - src: /assets/images/notes/03-commutative-algebra/3.png
 - title: Commutative Algebra
   category: Notes
   tags:
@@ -325,6 +333,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html
+  images:
+  - src: /assets/images/notes/04-commutative-algebra/1.png
+  - src: /assets/images/notes/04-commutative-algebra/2.png
+  - src: /assets/images/notes/04-commutative-algebra/3.png
 - title: Homological Algebra
   category: Notes
   tags:
@@ -335,6 +347,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html
+  images:
+  - src: /assets/images/notes/05-homological-algebra/1.png
+  - src: /assets/images/notes/05-homological-algebra/2.png
+  - src: /assets/images/notes/05-homological-algebra/3.png
 - title: Lie Algebras
   category: Notes
   tags:
@@ -343,6 +359,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Lie%20Algebras/CourseNotes.pdf
+  images:
+  - src: /assets/images/notes/06-lie-algebras/1.png
+  - src: /assets/images/notes/06-lie-algebras/2.png
+  - src: /assets/images/notes/06-lie-algebras/3.png
 - title: Lie Algebras
   category: Notes
   tags:
@@ -353,6 +373,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html
+  images:
+  - src: /assets/images/notes/07-lie-algebras/1.png
+  - src: /assets/images/notes/07-lie-algebras/2.png
+  - src: /assets/images/notes/07-lie-algebras/3.png
 - title: Category $\OO$
   category: Notes
   tags:
@@ -363,6 +387,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.pdf
   - label: HTML V2
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html
+  images:
+  - src: /assets/images/notes/08-category-oo/1.png
+  - src: /assets/images/notes/08-category-oo/2.png
+  - src: /assets/images/notes/08-category-oo/3.png
 - title: Algebraic Groups
   category: Notes
   tags:
@@ -373,6 +401,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
+  images:
+  - src: /assets/images/notes/09-algebraic-groups/1.png
+  - src: /assets/images/notes/09-algebraic-groups/2.png
+  - src: /assets/images/notes/09-algebraic-groups/3.png
 - title: Cohomology in Representation Theory
   category: Notes
   tags:
@@ -383,6 +415,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html
+  images:
+  - src: /assets/images/notes/10-cohomology-in-representation-theory/1.png
+  - src: /assets/images/notes/10-cohomology-in-representation-theory/2.png
+  - src: /assets/images/notes/10-cohomology-in-representation-theory/3.png
 - title: Categorification
   category: Notes
   tags:
@@ -393,6 +429,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html
+  images:
+  - src: /assets/images/notes/11-categorification/1.png
+  - src: /assets/images/notes/11-categorification/2.png
+  - src: /assets/images/notes/11-categorification/3.png
 - title: Flag Varieties, Equivariant Cohomology, and K Theory
   category: Notes
   tags:
@@ -403,6 +443,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html
+  images:
+  - src: /assets/images/notes/12-flag-varieties-equivariant-cohomology-an/1.png
+  - src: /assets/images/notes/12-flag-varieties-equivariant-cohomology-an/2.png
+  - src: /assets/images/notes/12-flag-varieties-equivariant-cohomology-an/3.png
 - title: Varieties
   category: Notes
   tags:
@@ -413,6 +457,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html
+  images:
+  - src: /assets/images/notes/13-varieties/1.png
+  - src: /assets/images/notes/13-varieties/2.png
+  - src: /assets/images/notes/13-varieties/3.png
 - title: Schemes
   category: Notes
   tags:
@@ -423,6 +471,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.html
+  images:
+  - src: /assets/images/notes/14-schemes/1.png
+  - src: /assets/images/notes/14-schemes/2.png
+  - src: /assets/images/notes/14-schemes/3.png
 - title: Sheaf Cohomology
   category: Notes
   tags:
@@ -433,6 +485,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html
+  images:
+  - src: /assets/images/notes/15-sheaf-cohomology/1.png
+  - src: /assets/images/notes/15-sheaf-cohomology/2.png
+  - src: /assets/images/notes/15-sheaf-cohomology/3.png
 - title: 4-Manifolds and Algebraic Surfaces
   category: Notes
   tags:
@@ -443,6 +499,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html
+  images:
+  - src: /assets/images/notes/16-4-manifolds-and-algebraic-surfaces/1.png
+  - src: /assets/images/notes/16-4-manifolds-and-algebraic-surfaces/2.png
+  - src: /assets/images/notes/16-4-manifolds-and-algebraic-surfaces/3.png
 - title: 'Moduli: GIT'
   category: Notes
   tags:
@@ -453,6 +513,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html
+  images:
+  - src: /assets/images/notes/17-moduli-git/1.png
+  - src: /assets/images/notes/17-moduli-git/2.png
+  - src: /assets/images/notes/17-moduli-git/3.png
 - title: 'Moduli: Deformations'
   category: Notes
   tags:
@@ -463,6 +527,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html
+  images:
+  - src: /assets/images/notes/18-moduli-deformations/1.png
+  - src: /assets/images/notes/18-moduli-deformations/2.png
+  - src: /assets/images/notes/18-moduli-deformations/3.png
 - title: Algebraic Number Theory
   category: Notes
   tags:
@@ -473,6 +541,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html
+  images:
+  - src: /assets/images/notes/19-algebraic-number-theory/1.png
+  - src: /assets/images/notes/19-algebraic-number-theory/2.png
+  - src: /assets/images/notes/19-algebraic-number-theory/3.png
 - title: Galois Cohomology and Class Field Theory
   category: Notes
   tags:
@@ -489,6 +561,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html
+  images:
+  - src: /assets/images/notes/20-algebraic-curves/1.png
+  - src: /assets/images/notes/20-algebraic-curves/2.png
+  - src: /assets/images/notes/20-algebraic-curves/3.png
 - title: Étale Cohomology
   category: Notes
   tags:
@@ -499,6 +575,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html
+  images:
+  - src: /assets/images/notes/21-tale-cohomology/1.png
+  - src: /assets/images/notes/21-tale-cohomology/2.png
+  - src: /assets/images/notes/21-tale-cohomology/3.png
 - title: Rational Points
   category: Notes
   tags:
@@ -509,6 +589,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html
+  images:
+  - src: /assets/images/notes/22-rational-points/1.png
+  - src: /assets/images/notes/22-rational-points/2.png
+  - src: /assets/images/notes/22-rational-points/3.png
 - title: Algebraic Topology
   category: Notes
   tags:
@@ -519,6 +603,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html
+  images:
+  - src: /assets/images/notes/23-algebraic-topology/1.png
+  - src: /assets/images/notes/23-algebraic-topology/2.png
+  - src: /assets/images/notes/23-algebraic-topology/3.png
 - title: Morse Theory
   category: Notes
   tags:
@@ -527,6 +615,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Morse%20Theory/FullNotes.pdf
+  images:
+  - src: /assets/images/notes/24-morse-theory/1.png
+  - src: /assets/images/notes/24-morse-theory/2.png
+  - src: /assets/images/notes/24-morse-theory/3.png
 - title: Floer Homology
   category: Notes
   tags:
@@ -537,6 +629,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FloerHomology/FloerHomology.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
+  images:
+  - src: /assets/images/notes/25-floer-homology/1.png
+  - src: /assets/images/notes/25-floer-homology/2.png
+  - src: /assets/images/notes/25-floer-homology/3.png
 - title: Characteristic Classes
   category: Notes
   tags:
@@ -547,6 +643,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html
+  images:
+  - src: /assets/images/notes/26-characteristic-classes/1.png
+  - src: /assets/images/notes/26-characteristic-classes/2.png
+  - src: /assets/images/notes/26-characteristic-classes/3.png
 - title: Contact Topology
   category: Notes
   tags:
@@ -557,6 +657,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html
+  images:
+  - src: /assets/images/notes/27-contact-topology/1.png
+  - src: /assets/images/notes/27-contact-topology/2.png
+  - src: /assets/images/notes/27-contact-topology/3.png
 - title: Real Analysis
   category: Notes
   tags:
@@ -565,6 +669,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Real%20Analysis/CourseNotes.pdf
+  images:
+  - src: /assets/images/notes/28-real-analysis/1.png
+  - src: /assets/images/notes/28-real-analysis/2.png
+  - src: /assets/images/notes/28-real-analysis/3.png
 - title: Complex Analysis
   category: Notes
   tags:
@@ -575,6 +683,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html
+  images:
+  - src: /assets/images/notes/29-complex-analysis/1.png
+  - src: /assets/images/notes/29-complex-analysis/2.png
+  - src: /assets/images/notes/29-complex-analysis/3.png
 - title: Undergraduate Compendium
   category: Notes
   tags:
@@ -585,6 +697,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html
+  images:
+  - src: /assets/images/notes/30-undergraduate-compendium/1.png
+  - src: /assets/images/notes/30-undergraduate-compendium/2.png
+  - src: /assets/images/notes/30-undergraduate-compendium/3.png
 - title: Combinatorics
   category: Notes
   tags:
@@ -595,6 +711,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.pdf
   - label: HTML
     href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html
+  images:
+  - src: /assets/images/notes/31-combinatorics/1.png
+  - src: /assets/images/notes/31-combinatorics/2.png
+  - src: /assets/images/notes/31-combinatorics/3.png
 - title: Smooth Manifolds
   category: Notes
   tags:
@@ -621,6 +741,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/GeometryFinalVersion.pdf
+  images:
+  - src: /assets/images/notes/33-a-history-of-modern-algebraic-geometry/1.png
+  - src: /assets/images/notes/33-a-history-of-modern-algebraic-geometry/2.png
+  - src: /assets/images/notes/33-a-history-of-modern-algebraic-geometry/3.png
 - title: Notes on the Math GRE
   category: Expository
   tags: []
@@ -632,6 +756,10 @@ notes:
     href: /assets/talks/02-22-2019-GRE-Workshop/Slides.html
   - label: Slides (PDF)
     href: https://dzackgarza.com/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf
+  images:
+  - src: /assets/images/notes/34-notes-on-the-math-gre/1.png
+  - src: /assets/images/notes/34-notes-on-the-math-gre/2.png
+  - src: /assets/images/notes/34-notes-on-the-math-gre/3.png
 - title: Math-related Twitter threads
   category: Expository
   tags: []
@@ -660,6 +788,10 @@ notes:
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/4_Wickelgren/Wickelgren_Talks.pdf
   - label: 'Morrow — Aspects of motivic cohomology'
     href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/5_Morrow/Morrow_Talks.pdf
+  images:
+  - src: /assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/1.png
+  - src: /assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/2.png
+  - src: /assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/3.png
 - title: 'Reading Seminar: McDuff–Salamon, J-Holomorphic Curves and Symplectic Topology'
   category: Seminar
   tags:
@@ -670,6 +802,10 @@ notes:
     href: https://dzackgarza.com/assets/pdfs/expository/GW_Notes_June_26.pdf
   - label: Slides and Handwritten Notes (PDF)
     href: https://dzackgarza.com/assets/pdfs/expository/GW_Talk_June_26.pdf
+  images:
+  - src: /assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/1.png
+  - src: /assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/2.png
+  - src: /assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/3.png
 - title: VRG Notes on Tilings and Translation Surfaces
   category: Seminar
   tags:
@@ -677,6 +813,10 @@ notes:
   links:
   - label: PDF
     href: https://dzackgarza.com/assets/notes/Tilings.pdf
+  images:
+  - src: /assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/1.png
+  - src: /assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/2.png
+  - src: /assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/3.png
 - title: Arizona Winter School, 2019
   category: Mini Course
   tags:
