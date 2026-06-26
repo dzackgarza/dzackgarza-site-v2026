@@ -16,8 +16,6 @@ You can also find my even *less* organized math journal [here](https://notes.dza
 ::: {.component type="collection" items="notes"}
 :::
 
-# Links to Notes by Others
-
 ::: {.component type="link-group" items="notes_by_others"}
 :::
 

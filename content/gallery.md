@@ -13,8 +13,6 @@ Some images and photos -- most can be clicked to open a gallery view. Enjoy!
 My current desktop:
 ![My current desktop](/assets/images/photo/desktop.png)
 
-# Hand-drawn Images
-
 # Digital Images
 
 An animation of plotting 2D faces as surfaces in $\RR^3$:

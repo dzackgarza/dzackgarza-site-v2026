@@ -26,6 +26,10 @@ serve: build
 check:
     {{SSG}} check --pandoc {{PANDOC}}
 
+# QC gate (run by the global pre-commit hook): build + fail on malformed pages
+# or broken internal links.
+test: check
+
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
 # browser: `bunx playwright install chromium`)
