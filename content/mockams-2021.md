@@ -13,7 +13,7 @@ This is the website for the summer 2021 iteration of the Mock AMS conference at 
 
 - Zoom meeting information can be obtained by registering here:
 
-  <http://web.archive.org/web/20211028124321/https://zoom.us/meeting/register/tJIocu2vqD4vE9Mh0cUJ_pQi1qmfvUuS8a4q>
+  <https://web.archive.org/web/20211028124321/https://zoom.us/meeting/register/tJIocu2vqD4vE9Mh0cUJ_pQi1qmfvUuS8a4q>
 
 - A conference booklet with detailed information can be downloaded here:
 

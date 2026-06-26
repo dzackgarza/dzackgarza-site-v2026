@@ -1,9 +1,11 @@
 # dzackgarza-site-v2026
 
 The content surface for [dzackgarza.com](https://dzackgarza.com/) — pages,
-data, assets, and standalone apps. The static-site generator is a dependency
-([dzackgarza/pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg)), invoked
-through `just`; it is not vendored here.
+data, assets, standalone apps, and the Pandoc template bundle that defines the
+site's HTML structure and visual language. The static-site generator is a
+dependency ([dzackgarza/pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg)),
+invoked through `just`; it is glue for compiling this repo's content and
+templates, not the owner of this site's theme.
 
 ## Usage
 
@@ -32,6 +34,21 @@ To develop against a local generator checkout instead:
 SSG="bun /path/to/pandoc-ssg/src/cli.ts" just build
 ```
 
+## Template bundle
+
+The checked-in `pandoc/` directory is the site-owned Pandoc bundle:
+
+- `pandoc/templates/` defines page and post HTML.
+- `pandoc/defaults/` defines the Pandoc defaults used for each page type.
+- `pandoc/filters/` contains Lua filters for transclusion, components, math, and theorem labels.
+- `pandoc/assets/theme/` contains the Tufte-based visual layer and site-specific CSS.
+- `pandoc/registry.toml` ties page types, schemas, templates, defaults, filters, and scaffolds together.
+
+Changing dzackgarza.com layout, navigation markup, typography, CSS, or other
+theme behavior should normally change this bundle, not the generic generator.
+The generator may still provide a starter bundle for new projects, but this
+repo owns the bundle used to render this site.
+
 ## Layout
 
 ```
@@ -41,6 +58,11 @@ content/
   _site.toml      # passthrough subtrees, directory→type inference
   assets/         # images, PDFs, fonts (Git LFS); copied verbatim to dist/
   */              # standalone apps copied verbatim (opaque passthrough)
+pandoc/
+  templates/      # site-owned Pandoc HTML templates
+  defaults/       # site-owned Pandoc defaults
+  filters/        # site-owned Pandoc Lua filters
+  assets/theme/   # site-owned Tufte/theme CSS
 ```
 
 Binary assets (PDF, PNG, JPG, fonts, wasm, …) are stored via Git LFS; see

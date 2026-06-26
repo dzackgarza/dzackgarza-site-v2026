@@ -15,7 +15,7 @@ site:
 
 # What To Do as an Undergraduate
 
-I defer to this excellent page from the math department at UC Irvine: <https://www.math.uci.edu/math-majors/math-grad-school-resources />
+I defer to this excellent page from the math department at UC Irvine: <https://www.math.uci.edu/math-majors/math-grad-school-resources/>
 
 # General Notes/Remarks
 
@@ -449,5 +449,4 @@ Standard Topics
 - <i class="fas fa-book"></i> 
   [Cracking the Coding Interview](https://www.amazon.com/gp/product/0984782850)
 	- Covers a number of extremely typical CS interview questions, absolutely read if you are preparing to apply for internships or jobs.
-
 

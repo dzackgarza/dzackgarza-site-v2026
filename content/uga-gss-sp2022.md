@@ -14,7 +14,7 @@ If you're interested in speaking, please reach out to the organizer.
 
 # Fall 2022 Talks
 
-This semester is jointly organized by [D. Zack Garza](https://dzackgarza.com) and [Haiyang Wang](http://web.archive.org/web/20220627182735/https://hywangn.wordpress.com/).
+This semester is jointly organized by [D. Zack Garza](https://dzackgarza.com) and [Haiyang Wang](https://web.archive.org/web/20220627182735/https://hywangn.wordpress.com/).
 
 ## First Week
 

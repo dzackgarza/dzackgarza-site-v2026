@@ -154,7 +154,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 **Resources**
 
 - <i class="fas fa-external-link-alt"></i> 
-  You can find five sample exams [here.](http://web.archive.org/web/20190528105250/http://math.ucla.edu/~iacoley/greprep.html)
+  You can find five sample exams [here.](https://web.archive.org/web/20190528105250/http://math.ucla.edu/~iacoley/greprep.html)
 - <i class="fas fa-book"></i> 
   Princeton Review, [Cracking the Math Subject GRE](https://www.amazon.com/gp/product/0375429727)
 
@@ -165,13 +165,12 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
   - [Notes](/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html), [Slides (HTML)](/assets/talks/02-22-2019-GRE-Workshop/Slides.html), [Slides (PDF)](https://dzackgarza.com/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf).
 
 - A UCSB Math Subject GRE Seminar:
-  <http://web.archive.org/web/20240726101825/https://web.math.ucsb.edu/~padraic/ucsb_2014_15/math_gre_w2015/math_gre_w2015.html>
+  <https://web.archive.org/web/20240726101825/https://web.math.ucsb.edu/~padraic/ucsb_2014_15/math_gre_w2015/math_gre_w2015.html>
  
- - Christian Parkinson's GRE seminar page: <http://web.archive.org/web/20210506180828/https://www.math.ucla.edu/~chparkin/gre.html>
+ - Christian Parkinson's GRE seminar page: <https://web.archive.org/web/20210506180828/https://www.math.ucla.edu/~chparkin/gre.html>
 
 **Advice**
 
 - Most problems don't require extensive computations; there is usually a trick that solves it very quickly.
 - Time is the most difficult factor, be sure to take timed practice tests. You have right around two minutes per problem.
 - Sign up early, as these exams are often only held a few times per year.
-

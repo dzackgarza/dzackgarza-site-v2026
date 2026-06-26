@@ -8,6 +8,7 @@
 # reproducible).
 
 SSG := "bunx pandoc-ssg"
+PANDOC := "pandoc"
 
 # Install the pinned generator (run once after clone, and after `just update`)
 setup:
@@ -15,7 +16,7 @@ setup:
 
 # Compile content/ into dist/
 build:
-    {{SSG}} build
+    {{SSG}} build --pandoc {{PANDOC}}
 
 # Build, then preview the site over HTTP (Ctrl-C to stop)
 serve: build
@@ -23,17 +24,17 @@ serve: build
 
 # Build, then fail on any malformed page or broken internal link
 check:
-    {{SSG}} check
+    {{SSG}} check --pandoc {{PANDOC}}
 
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
 # browser: `bunx playwright install chromium`)
 verify:
-    {{SSG}} verify
+    {{SSG}} verify --pandoc {{PANDOC}}
 
 # Scaffold a new blog post: just new "My Post Title"
 new TITLE:
-    {{SSG}} new post "{{TITLE}}"
+    {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
 
 # Bump the generator to the latest published version (updates bun.lock)
 update:

@@ -35,7 +35,7 @@ See also [ResearchSeminars.org](https://researchseminars.org/seminar/GOATS) page
 ## 11:50 AM EDT: Zoom meeting opens
 
 
-## 12:00-1:00PM EDT: [Marla Williams](http://www.math.unl.edu/~mwilliams26), University of Nebraska-Lincoln
+## 12:00-1:00PM EDT: Marla Williams, University of Nebraska-Lincoln
 
 - **Title**: 
     Trisections and Flat Surface Bundles [(Slides)](/assets/pdfs/goats/Marla-Trisections-and-Flat-Surface-Bundles.pdf)

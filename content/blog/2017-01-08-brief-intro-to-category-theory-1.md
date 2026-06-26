@@ -222,7 +222,17 @@ Denote
 
 and you get something that perhaps looks a little more familiar:
 
-![The Category 3](https://i.imgur.com/016ixGX.png)
+\begin{tikzcd}[row sep=large, column sep=large]
+  A
+    \arrow[loop left, "1_A"]
+    \arrow[r, "f"]
+    \arrow[dr, swap, "g\circ f"]
+  & B
+    \arrow[loop right, "1_B"]
+    \arrow[d, "g"] \\
+  & C
+    \arrow[loop right, "1_C"]
+\end{tikzcd}
 
 If you haven't seen this before, don't worry --  I am sure you will! This particular "shape" of diagram shows up in many algebraic constructions (quotients and products, to name a few), and understanding it is the first step in getting a handle on things like universal properties.
 
@@ -553,4 +563,3 @@ We can also make simple modifications to existing categories to obtain new ones:
 - The category of all morphisms in a fixed category $\mathbf{C}$, which yields $n\dash$categories.
 
 - Take $C$ and reverse arrows to obtain $C^{op}$ to obtain a form of "duality".
-
