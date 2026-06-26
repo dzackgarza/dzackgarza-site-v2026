@@ -132,7 +132,11 @@ body > nav a:hover {
 .nav-dropdown > summary {
   display: inline;
   margin: 0 0.6rem;
-  color: var(--link);
+  /* Match the sibling <a> nav links, which resolve to --ink via tufte's
+     a:link{color:inherit} (a:link out-specifies `body > nav a`). A <summary>
+     is not an anchor, so without this it would alone keep --link (navy),
+     making the "Writing" trigger the only coloured item in the bar. */
+  color: inherit;
   cursor: pointer;
   list-style: none;
 }
@@ -592,8 +596,38 @@ main iframe {
   margin: 1.6rem 0 0;
 }
 .collection__item {
-  margin-bottom: 1.3rem;
+  padding: 0 0 1.3rem;
+  margin: 0 0 1.5rem;
+  border-bottom: 1px solid var(--line);
   line-height: 1.5;
+}
+.collection__item:last-child {
+  border-bottom: none;
+}
+/* Per-item tag chips: same restrained #-prefixed, click-to-filter form the blog
+   listing uses, so the notes/talks entries read with the same affordances. */
+.collection__item-terms {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.45rem;
+  margin: 0.25rem 0 0;
+}
+.collection__item-tag {
+  font-family: var(--display);
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.collection__item-tag::before {
+  content: "#";
+  opacity: 0.5;
+}
+.collection__item-tag:hover,
+.collection__item-tag.is-active {
+  color: var(--ink);
 }
 /* Optional uniform thumbnail: a quiet fixed-size crop to the left, not a card. */
 .collection__item--thumbed {

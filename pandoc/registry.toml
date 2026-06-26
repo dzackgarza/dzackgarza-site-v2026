@@ -68,7 +68,8 @@ dataSource = "blog-posts"
 mount = "blog-index"
 
 [islands.collection]
-entry = "node_modules/pandoc-ssg/islands/collection/main.ts"
+entry = "_islands/collection/main.ts"
+source = "content"
 output = "assets/islands/collection.js"
 dataOutput = "_collections/{key}.json"
 dataSource = "items"
