@@ -45,6 +45,8 @@ Inspired by the following Twitter thread:
 
 - UC Berkeley has [a bibliography](https://web.archive.org/web/20231204101534/https://math.berkeley.edu/courses/archives/announcements/fall-2011-textbooks) of books used by class.
 
+- [Index of AMS "What is...?" column](http://arminstraub.com/math/what-is-column)
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 

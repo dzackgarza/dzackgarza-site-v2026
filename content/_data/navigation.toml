@@ -38,13 +38,18 @@ weight = 15
   weight = 40
 
 [[main]]
-title = "Teaching"
-href = "/teaching/"
-weight = 25
+title = "About"
+href = "/about/"
+weight = 35
 
 [[main]]
 title = "More"
-weight = 30
+weight = 40
+
+  [[main.children]]
+  title = "Teaching"
+  href = "/teaching/"
+  weight = 5
 
   [[main.children]]
   title = "Advice"
@@ -57,16 +62,6 @@ weight = 30
   weight = 20
 
   [[main.children]]
-  title = "Graduate Resources"
-  href = "/grad_resources/"
-  weight = 30
-
-  [[main.children]]
   title = "Activities"
   href = "/activities/"
   weight = 40
-
-[[main]]
-title = "About"
-href = "/about/"
-weight = 35
