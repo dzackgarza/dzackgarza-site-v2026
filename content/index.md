@@ -11,7 +11,7 @@ I am a postdoctoral researcher at the National Center for Theoretical Sciences (
 
 Broadly, I am interested in compactifications of moduli spaces, particularly of complex algebraic surfaces. Currently I am thinking about effective combinatorial descriptions of the boundary stratifications of KSBA compactifications (most recently using hyperbolic geometry, lattice theory, and "semitoric" methods from integral affine geometry), as well as comparisons between KSBA, toroidal, semitoroidal, and GIT compactifications, the compactifications induced by open immersions or closed embeddings of moduli spaces into other compactifications, and the geometric constructions that underlie maps between moduli spaces.
 
-[You can find my CV here](/assets/pdfs/CV_DZackGarza.pdf) and [preprints of my papers on Arxiv](https://arxiv.org/search/math?query=Garza%2C+D.+Zack&searchtype=all&abstracts=show).
+[You can find my CV here](/assets/pdfs/CV_DZackGarza.pdf) and my [research here](/papers/).
 :::
 
 ::: {.intro-split__photo}
@@ -21,7 +21,7 @@ Broadly, I am interested in compactifications of moduli spaces, particularly of 
 
 # Research
 
-- [(arxiv 2312.03638) Compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638). Joint work with Valery Alexeev, Phil Engel, and Luca Schaffler.
+- [(arxiv 2312.03638) Compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638). Joint work with [Valery Alexeev](https://www.math.uga.edu/directory/people/valery-alexeev), [Phil Engel](https://philip-engel.github.io/), and [Luca Schaffler](https://ricerca.matfis.uniroma3.it/users/lschaffler/).
 
 <script type="application/ld+json">
 {
