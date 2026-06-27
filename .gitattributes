@@ -17,3 +17,4 @@
 *.xoj  filter=lfs diff=lfs merge=lfs -text
 *.xopp filter=lfs diff=lfs merge=lfs -text
 *.svgz filter=lfs diff=lfs merge=lfs -text
+content/rawnotes/**/*.html filter=lfs diff=lfs merge=lfs -text

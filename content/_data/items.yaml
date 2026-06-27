@@ -281,7 +281,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/02-abstract-algebra.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2019/Algebra/Algebra.html
+    href: /rawnotes/Class_Notes/2019/Algebra/Algebra.html
   images:
   - src: /assets/images/notes/02-abstract-algebra/1.png
   - src: /assets/images/notes/02-abstract-algebra/2.png
@@ -307,7 +307,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/04-commutative-algebra.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html
+    href: /rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html
   images:
   - src: /assets/images/notes/04-commutative-algebra/1.png
   - src: /assets/images/notes/04-commutative-algebra/2.png
@@ -321,7 +321,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/05-homological-algebra.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html
+    href: /rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html
   images:
   - src: /assets/images/notes/05-homological-algebra/1.png
   - src: /assets/images/notes/05-homological-algebra/2.png
@@ -347,7 +347,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/07-lie-algebras.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html
+    href: /rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html
   images:
   - src: /assets/images/notes/07-lie-algebras/1.png
   - src: /assets/images/notes/07-lie-algebras/2.png
@@ -361,7 +361,7 @@ notes:
   - label: PDF V2
     href: /assets/pdfs/notes/08-category-oo.pdf
   - label: HTML V2
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html
+    href: /rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html
   images:
   - src: /assets/images/notes/08-category-oo/1.png
   - src: /assets/images/notes/08-category-oo/2.png
@@ -375,7 +375,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/09-algebraic-groups.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
+    href: /rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
   images:
   - src: /assets/images/notes/09-algebraic-groups/1.png
   - src: /assets/images/notes/09-algebraic-groups/2.png
@@ -389,7 +389,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/10-cohomology-in-representation-theory.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html
+    href: /rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html
   images:
   - src: /assets/images/notes/10-cohomology-in-representation-theory/1.png
   - src: /assets/images/notes/10-cohomology-in-representation-theory/2.png
@@ -403,7 +403,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/11-categorification.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html
+    href: /rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html
   images:
   - src: /assets/images/notes/11-categorification/1.png
   - src: /assets/images/notes/11-categorification/2.png
@@ -417,7 +417,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/12-flag-varieties-equivariant-cohomology-an.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html
+    href: /rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html
   images:
   - src: /assets/images/notes/12-flag-varieties-equivariant-cohomology-an/1.png
   - src: /assets/images/notes/12-flag-varieties-equivariant-cohomology-an/2.png
@@ -431,7 +431,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/13-varieties.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html
+    href: /rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html
   images:
   - src: /assets/images/notes/13-varieties/1.png
   - src: /assets/images/notes/13-varieties/2.png
@@ -444,8 +444,6 @@ notes:
   links:
   - label: PDF
     href: /assets/pdfs/notes/14-schemes.pdf
-  - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.html
   images:
   - src: /assets/images/notes/14-schemes/1.png
   - src: /assets/images/notes/14-schemes/2.png
@@ -459,7 +457,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/15-sheaf-cohomology.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html
+    href: /rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html
   images:
   - src: /assets/images/notes/15-sheaf-cohomology/1.png
   - src: /assets/images/notes/15-sheaf-cohomology/2.png
@@ -473,7 +471,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/16-4-manifolds-and-algebraic-surfaces.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html
+    href: /rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html
   images:
   - src: /assets/images/notes/16-4-manifolds-and-algebraic-surfaces/1.png
   - src: /assets/images/notes/16-4-manifolds-and-algebraic-surfaces/2.png
@@ -487,7 +485,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/17-moduli-git.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html
+    href: /rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html
   images:
   - src: /assets/images/notes/17-moduli-git/1.png
   - src: /assets/images/notes/17-moduli-git/2.png
@@ -501,7 +499,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/18-moduli-deformations.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html
+    href: /rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html
   images:
   - src: /assets/images/notes/18-moduli-deformations/1.png
   - src: /assets/images/notes/18-moduli-deformations/2.png
@@ -515,7 +513,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/19-algebraic-number-theory.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html
+    href: /rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html
   images:
   - src: /assets/images/notes/19-algebraic-number-theory/1.png
   - src: /assets/images/notes/19-algebraic-number-theory/2.png
@@ -535,7 +533,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/20-algebraic-curves.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html
+    href: /rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html
   images:
   - src: /assets/images/notes/20-algebraic-curves/1.png
   - src: /assets/images/notes/20-algebraic-curves/2.png
@@ -549,7 +547,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/21-tale-cohomology.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html
+    href: /rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html
   images:
   - src: /assets/images/notes/21-tale-cohomology/1.png
   - src: /assets/images/notes/21-tale-cohomology/2.png
@@ -563,7 +561,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/22-rational-points.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html
+    href: /rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html
   images:
   - src: /assets/images/notes/22-rational-points/1.png
   - src: /assets/images/notes/22-rational-points/2.png
@@ -577,7 +575,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/23-algebraic-topology.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html
+    href: /rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html
   images:
   - src: /assets/images/notes/23-algebraic-topology/1.png
   - src: /assets/images/notes/23-algebraic-topology/2.png
@@ -615,7 +613,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/26-characteristic-classes.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html
+    href: /rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html
   images:
   - src: /assets/images/notes/26-characteristic-classes/1.png
   - src: /assets/images/notes/26-characteristic-classes/2.png
@@ -629,7 +627,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/27-contact-topology.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html
+    href: /rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html
   images:
   - src: /assets/images/notes/27-contact-topology/1.png
   - src: /assets/images/notes/27-contact-topology/2.png
@@ -655,7 +653,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/29-complex-analysis.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html
+    href: /rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html
   images:
   - src: /assets/images/notes/29-complex-analysis/1.png
   - src: /assets/images/notes/29-complex-analysis/2.png
@@ -669,7 +667,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/30-undergraduate-compendium.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html
+    href: /rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html
   images:
   - src: /assets/images/notes/30-undergraduate-compendium/1.png
   - src: /assets/images/notes/30-undergraduate-compendium/2.png
@@ -683,7 +681,7 @@ notes:
   - label: PDF
     href: /assets/pdfs/notes/31-combinatorics.pdf
   - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html
+    href: /rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html
   images:
   - src: /assets/images/notes/31-combinatorics/1.png
   - src: /assets/images/notes/31-combinatorics/2.png
@@ -733,7 +731,7 @@ notes:
   - label: Combined Notes (PDF)
     href: /assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf
   - label: Combined Notes (HTML)
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html
+    href: /rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html
   - label: 'Krashen — Field arithmetic'
     href: /assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Krashen_Talks.pdf
   - label: 'Gille — G-torsors over affine curves'
@@ -802,7 +800,7 @@ activities_conferences:
   detail: Invited Participant — MSRI · [Notes (PDF)](/assets/pdfs/transcribed_notes/MSRI_2021_ChernSimons.pdf)
 - date: Jul 2021
   title: Graduate Summer School on Motivic Homotopy
-  detail: Participant — IAS/PCMI · [Notes (PDF)](/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf), [Notes (HTML)](https://dzackgarza.com/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html)
+  detail: Participant — IAS/PCMI · [Notes (PDF)](/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf), [Notes (HTML)](/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html)
 - date: Jun 2021
   title: Viva Talbot!
   detail: Participant / Note-Taker — MIT Talbot · [Hahn — Ring Spectra (PDF)](/assets/pdfs/transcribed_notes/Talbot_2021__Methods_and_mysteries_in_the_construction_of_ring_spectra.pdf), [Moulinos — Nonabelian Hodge (PDF)](/assets/pdfs/transcribed_notes/Talbot_2021__Perspectives_on_non_abelian_Hodge_theory.pdf)
