@@ -1,5 +1,5 @@
 ---
-title: My Talks
+title: Talks
 site:
   page: true
   schema: page.v1
