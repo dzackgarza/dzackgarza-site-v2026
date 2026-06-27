@@ -32,10 +32,39 @@ weight = 15
   href = "/blog/"
   weight = 30
 
+  [[main.children]]
+  title = "Gallery"
+  href = "/gallery/"
+  weight = 40
+
 [[main]]
 title = "Teaching"
 href = "/teaching/"
 weight = 25
+
+[[main]]
+title = "More"
+weight = 30
+
+  [[main.children]]
+  title = "Advice"
+  href = "/advice/"
+  weight = 10
+
+  [[main.children]]
+  title = "Tutoring"
+  href = "/tutoring/"
+  weight = 20
+
+  [[main.children]]
+  title = "Graduate Resources"
+  href = "/grad_resources/"
+  weight = 30
+
+  [[main.children]]
+  title = "Activities"
+  href = "/activities/"
+  weight = 40
 
 [[main]]
 title = "About"

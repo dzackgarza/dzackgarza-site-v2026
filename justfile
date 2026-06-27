@@ -26,9 +26,9 @@ serve: build
 check:
     {{SSG}} check --pandoc {{PANDOC}}
 
-# QC gate (run by the global pre-commit hook): build + fail on malformed pages
-# or broken internal links.
-test: check
+# QC gate (run by the global pre-commit hook): build + fail on malformed pages,
+# broken internal links, or pages reachable from nothing (orphans).
+test: check check-orphans
 
 # Push gate (run by the global pre-push hook). This is a content repo, so the
 # push gate is the same build + internal-link validation as the commit gate.
