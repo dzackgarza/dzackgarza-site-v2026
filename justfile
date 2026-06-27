@@ -9,6 +9,7 @@
 
 SSG := "bunx pandoc-ssg"
 PANDOC := "pandoc"
+SYNC_ITEMS := "ruby scripts/sync-items-data.rb merge"
 
 # Install the pinned generator (run once after clone, and after `just update`)
 setup:
@@ -16,6 +17,7 @@ setup:
 
 # Compile content/ into dist/
 build:
+    {{SYNC_ITEMS}}
     {{SSG}} build --pandoc {{PANDOC}}
 
 # Build, then preview the site over HTTP (Ctrl-C to stop)
@@ -24,6 +26,7 @@ serve: build
 
 # Build, then fail on any malformed page or broken internal link
 check:
+    {{SYNC_ITEMS}}
     {{SSG}} check --pandoc {{PANDOC}}
 
 # QC gate (run by the global pre-commit hook): build + fail on malformed pages,

@@ -1,0 +1,11 @@
+---
+papers:
+- title: Compact moduli of Enriques surfaces of degree 2
+  year: 2025
+  authors: Valery Alexeev, Philip Engel, D. Zack Garza, Luca Schaffler
+  venue: Nagoya Mathematical Journal, Vol. 259 (2025), pp. 581–624
+  arxiv: '2312.03638'
+  abstract: |
+    We describe a geometric, stable pair compactification of the moduli space of
+    Enriques surfaces with a numerical polarization of degree 2, and identify it
+    with a semitoroidal compactification of the period space.
