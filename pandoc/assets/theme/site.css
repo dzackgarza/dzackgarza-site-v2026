@@ -320,8 +320,8 @@ main iframe {
 }
 .intro-split__photo {
   flex: 0 0 auto;
-  width: 230px;
-  max-width: 38%;
+  width: 300px;
+  max-width: 42%;
 }
 .intro-split__photo img {
   width: 100%;
@@ -334,8 +334,8 @@ main iframe {
     gap: 1.3rem;
   }
   .intro-split__photo {
-    width: 200px;
-    max-width: 60%;
+    width: 260px;
+    max-width: 70%;
     order: -1;
   }
 }
