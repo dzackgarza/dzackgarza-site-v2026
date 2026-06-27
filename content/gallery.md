@@ -20,6 +20,20 @@ An animation of plotting 2D faces as surfaces in $\RR^3$:
   <source src="/assets/images/3dface.mp4" type="video/mp4">
 </video>
 
+# Hand-Drawn Mathematics
+
+Illustrations I've drawn while teaching or thinking through a problem.
+
+:::{.component type="media-gallery" items="MathDrawingGallery"}
+:::
+
+# Generated Figures
+
+Figures produced with TikZ, code, and other tools.
+
+:::{.component type="media-gallery" items="MathCodeGallery"}
+:::
+
 
 
 

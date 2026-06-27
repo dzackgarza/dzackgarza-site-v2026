@@ -1,128 +1,169 @@
 MathDrawingGallery:
-  - url: assets/images/sphere-v-ball-correct.png
-    image_path: assets/images/sphere-v-ball-correct.png
-    title: Low-dimensional variants of the Sphere and Ball.
-  - url: assets/images/mobius-band.png
-    image_path: assets/images/mobius-band.png
-    title: The classic Mobius band!
-  - url: assets/images/klein-bottle.png
-    image_path: assets/images/klein-bottle.png
-    title: The classic Klein bottle!
-  - url: assets/images/foliation-diagram.png
-    image_path: assets/images/foliation-diagram.png
-    title: A diagram demonstrating how the fibers of a fiber bundle 'foliate' the total space.
-  - url: assets/images/group-swarm.png
-    image_path: assets/images/group-swarm.png
-    title: Group swarm
-  - url: assets/images/drawings/J_Holo_Curve.png
-    image_path: assets/images/drawings/J_Holo_Curve.png
-    title: Embedded J-holomorphic curve
-  - url: assets/images/drawings/Embedded_Blowup.png
-    image_path: assets/images/drawings/Embedded_Blowup.png
-    title: Intersecting curves on a hyperplane
-  - url: assets/images/drawings/Embedded_J_holo_curve.png
-    image_path: assets/images/drawings/Embedded_J_holo_curve.png
-    title: An embedded curve with marked points
-  - url: assets/images/drawings/cell_complex_gluing.png
-    image_path: assets/images/drawings/cell_complex_gluing.png
-    title: Building a cell complex
-  - url: assets/images/drawings/tangent_space_lie_group.png
-    image_path: assets/images/drawings/tangent_space_lie_group.png
-    title: Tangent space at the identity
-  - url: assets/images/drawings/derived_yoga.png
-    image_path: assets/images/drawings/derived_yoga.png
-    title: Embedding a category into a graded category
-  - url: assets/images/drawings/moduli_of_curves.png
-    image_path: assets/images/drawings/moduli_of_curves.png
-    title: Moduli of curves
-  - url: assets/images/drawings/handle_slide.png
-    image_path: assets/images/drawings/handle_slide.png
-    title: Handle slides
-  - url: assets/images/drawings/finger_moves.png
-    image_path: assets/images/drawings/finger_moves.png
-    title: Finger moves
-  - url: assets/images/drawings/QuadricChart.png
-    image_path: assets/images/drawings/QuadricChart.png
-    title: Quadric surfaces
-  - url: assets/images/drawings/sphere_bundle.png
-    image_path: assets/images/drawings/sphere_bundle.png
-    title: A family of spheres over a sphere
-  - url: assets/images/sseq_colors.jpeg
-    image_path: assets/images/sseq_colors.jpeg
-    title: Spectral sequence
+- type: image
+  src: /assets/images/sphere-v-ball-correct.png
+  href: /assets/images/sphere-v-ball-correct.png
+  caption: Low-dimensional variants of the Sphere and Ball.
+- type: image
+  src: /assets/images/mobius-band.png
+  href: /assets/images/mobius-band.png
+  caption: The classic Mobius band!
+- type: image
+  src: /assets/images/klein-bottle.png
+  href: /assets/images/klein-bottle.png
+  caption: The classic Klein bottle!
+- type: image
+  src: /assets/images/foliation-diagram.png
+  href: /assets/images/foliation-diagram.png
+  caption: A diagram demonstrating how the fibers of a fiber bundle 'foliate' the total space.
+- type: image
+  src: /assets/images/group-swarm.png
+  href: /assets/images/group-swarm.png
+  caption: Group swarm
+- type: image
+  src: /assets/images/drawings/J_Holo_Curve.png
+  href: /assets/images/drawings/J_Holo_Curve.png
+  caption: Embedded J-holomorphic curve
+- type: image
+  src: /assets/images/drawings/Embedded_Blowup.png
+  href: /assets/images/drawings/Embedded_Blowup.png
+  caption: Intersecting curves on a hyperplane
+- type: image
+  src: /assets/images/drawings/Embedded_J_holo_curve.png
+  href: /assets/images/drawings/Embedded_J_holo_curve.png
+  caption: An embedded curve with marked points
+- type: image
+  src: /assets/images/drawings/cell_complex_gluing.png
+  href: /assets/images/drawings/cell_complex_gluing.png
+  caption: Building a cell complex
+- type: image
+  src: /assets/images/drawings/tangent_space_lie_group.png
+  href: /assets/images/drawings/tangent_space_lie_group.png
+  caption: Tangent space at the identity
+- type: image
+  src: /assets/images/drawings/derived_yoga.png
+  href: /assets/images/drawings/derived_yoga.png
+  caption: Embedding a category into a graded category
+- type: image
+  src: /assets/images/drawings/moduli_of_curves.png
+  href: /assets/images/drawings/moduli_of_curves.png
+  caption: Moduli of curves
+- type: image
+  src: /assets/images/drawings/handle_slide.png
+  href: /assets/images/drawings/handle_slide.png
+  caption: Handle slides
+- type: image
+  src: /assets/images/drawings/finger_moves.png
+  href: /assets/images/drawings/finger_moves.png
+  caption: Finger moves
+- type: image
+  src: /assets/images/drawings/QuadricChart.png
+  href: /assets/images/drawings/QuadricChart.png
+  caption: Quadric surfaces
+- type: image
+  src: /assets/images/drawings/sphere_bundle.png
+  href: /assets/images/drawings/sphere_bundle.png
+  caption: A family of spheres over a sphere
+- type: image
+  src: /assets/images/sseq_colors.jpeg
+  href: /assets/images/sseq_colors.jpeg
+  caption: Spectral sequence
 MathCodeGallery:
-  - url: assets/images/manifold_charts.png
-    image_path: assets/images/manifold_charts.png
-    title: Manifold charts
-  - url: assets/images/lattice.png
-    image_path: assets/images/lattice.png
-    title: Lattice
-  - url: assets/images/double_complex.png
-    image_path: assets/images/double_complex.png
-    title: Double complex
-  - url: assets/images/korbi.png
-    image_path: assets/images/korbi.png
-    title: Korbi
-  - url: assets/images/bundle_over_pn.png
-    image_path: assets/images/bundle_over_pn.png
-    title: A bundle over projective space
-  - url: assets/images/tangent_identity.jpeg
-    image_path: assets/images/tangent_identity.jpeg
-    title: Tangent at the identity
-  - url: assets/images/morse_decompose.png
-    image_path: assets/images/morse_decompose.png
-    title: Decomposition
-  - url: assets/images/blowup_one.png
-    image_path: assets/images/blowup_one.png
-    title: Blowups
-  - url: assets/images/tikz-twisted-sequence.jpg
-    image_path: assets/images/tikz-twisted-sequence.jpg
-    title: A 'twisted' long exact sequence.
-  - url: assets/images/tikz-lift.jpg
-    image_path: assets/images/tikz-lift.jpg
-    title: Fibers of the exponential map, showing the universal cover of the circle.
-  - url: assets/images/tikz-projection.jpg
-    image_path: assets/images/tikz-projection.jpg
-    title: Stereographic projection from the sphere onto the plane
-  - url: assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg
-    image_path: assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg
-    title: Various differentials in a spectral sequence.
-  - url: assets/images/section_point.png
-    image_path: assets/images/section_point.png
-    title: "Conic section: degenerate case of a point."
-  - url: assets/images/section_lines.png
-    image_path: assets/images/section_lines.png
-    title: "Conic section: degenerate case of two lines."
-  - url: assets/images/section_circle.png
-    image_path: assets/images/section_circle.png
-    title: "Conic section: a circle."
-  - url: assets/images/section_ellipse.png
-    image_path: assets/images/section_ellipse.png
-    title: "Conic section: an ellipse."
-  - url: assets/images/section_hyperbola.png
-    image_path: assets/images/section_hyperbola.png
-    title: "Conic section: two branches of a hyperbola."
-  - url: assets/images/section_parabola.png
-    image_path: assets/images/section_parabola.png
-    title: "Conic section: a parabola."
-  - url: assets/images/intersect-cylinder-sphere.jpg
-    image_path: assets/images/intersect-cylinder-sphere.jpg
-    title: Various differentials in a spectral sequence.
-  - url: assets/images/cv-3dfaceplot.jpg
-    image_path: assets/images/cv-3dfaceplot.jpg
-    title: A 3D plot of a 2D image, using pixel intensity as height.
-  - url: assets/images/cv-face-normals.jpg
-    image_path: assets/images/cv-face-normals.jpg
-    title: Dynamically generating normal vectors for a face based only on pixel intensity
-  - url: assets/images/cv-eigenfaces.jpg
-    image_path: assets/images/cv-eigenfaces.jpg
-    title: Examples of an 'eigenface' SVD decomposition, sorted from largest to smallest singular values.
-  - url: assets/images/cv-segmentation.jpg
-    image_path: assets/images/cv-segmentation.jpg
-    title: Using computer vision techniques to segment an image for classification purposes.
-  - url: assets/images/cv-matching.jpg
-    image_path: assets/images/cv-matching.jpg
-    title: Finding corresponding points in two images of the same object from different perspectives using projective and epipolar geometry.
+- type: image
+  src: /assets/images/manifold_charts.png
+  href: /assets/images/manifold_charts.png
+  caption: Manifold charts
+- type: image
+  src: /assets/images/lattice.png
+  href: /assets/images/lattice.png
+  caption: Lattice
+- type: image
+  src: /assets/images/double_complex.png
+  href: /assets/images/double_complex.png
+  caption: Double complex
+- type: image
+  src: /assets/images/korbi.png
+  href: /assets/images/korbi.png
+  caption: Korbi
+- type: image
+  src: /assets/images/bundle_over_pn.png
+  href: /assets/images/bundle_over_pn.png
+  caption: A bundle over projective space
+- type: image
+  src: /assets/images/tangent_identity.jpeg
+  href: /assets/images/tangent_identity.jpeg
+  caption: Tangent at the identity
+- type: image
+  src: /assets/images/morse_decompose.png
+  href: /assets/images/morse_decompose.png
+  caption: Decomposition
+- type: image
+  src: /assets/images/blowup_one.png
+  href: /assets/images/blowup_one.png
+  caption: Blowups
+- type: image
+  src: /assets/images/tikz-twisted-sequence.jpg
+  href: /assets/images/tikz-twisted-sequence.jpg
+  caption: A 'twisted' long exact sequence.
+- type: image
+  src: /assets/images/tikz-lift.jpg
+  href: /assets/images/tikz-lift.jpg
+  caption: Fibers of the exponential map, showing the universal cover of the circle.
+- type: image
+  src: /assets/images/tikz-projection.jpg
+  href: /assets/images/tikz-projection.jpg
+  caption: Stereographic projection from the sphere onto the plane
+- type: image
+  src: /assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg
+  href: /assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg
+  caption: Various differentials in a spectral sequence.
+- type: image
+  src: /assets/images/section_point.png
+  href: /assets/images/section_point.png
+  caption: 'Conic section: degenerate case of a point.'
+- type: image
+  src: /assets/images/section_lines.png
+  href: /assets/images/section_lines.png
+  caption: 'Conic section: degenerate case of two lines.'
+- type: image
+  src: /assets/images/section_circle.png
+  href: /assets/images/section_circle.png
+  caption: 'Conic section: a circle.'
+- type: image
+  src: /assets/images/section_ellipse.png
+  href: /assets/images/section_ellipse.png
+  caption: 'Conic section: an ellipse.'
+- type: image
+  src: /assets/images/section_hyperbola.png
+  href: /assets/images/section_hyperbola.png
+  caption: 'Conic section: two branches of a hyperbola.'
+- type: image
+  src: /assets/images/section_parabola.png
+  href: /assets/images/section_parabola.png
+  caption: 'Conic section: a parabola.'
+- type: image
+  src: /assets/images/intersect-cylinder-sphere.jpg
+  href: /assets/images/intersect-cylinder-sphere.jpg
+  caption: Various differentials in a spectral sequence.
+- type: image
+  src: /assets/images/cv-3dfaceplot.jpg
+  href: /assets/images/cv-3dfaceplot.jpg
+  caption: A 3D plot of a 2D image, using pixel intensity as height.
+- type: image
+  src: /assets/images/cv-face-normals.jpg
+  href: /assets/images/cv-face-normals.jpg
+  caption: Dynamically generating normal vectors for a face based only on pixel intensity
+- type: image
+  src: /assets/images/cv-eigenfaces.jpg
+  href: /assets/images/cv-eigenfaces.jpg
+  caption: Examples of an 'eigenface' SVD decomposition, sorted from largest to smallest singular values.
+- type: image
+  src: /assets/images/cv-segmentation.jpg
+  href: /assets/images/cv-segmentation.jpg
+  caption: Using computer vision techniques to segment an image for classification purposes.
+- type: image
+  src: /assets/images/cv-matching.jpg
+  href: /assets/images/cv-matching.jpg
+  caption: Finding corresponding points in two images of the same object from different perspectives using projective and epipolar geometry.
 feature_row:
   - image_path: /assets/images/GOATS2020Poster3.png
     alt: Conference Poster/Infographic
