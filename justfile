@@ -32,20 +32,24 @@ test: check
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
 # notes/talks listings are client-rendered from content/_data/items.yaml, so
-# their external + asset links slip past it. This lints that data file plus
-# every built page, resolving root-relative links against the live local
-# deployment. Vendored/archived third-party artifacts (example dumps, slide
-# decks) are skipped.
+# their external + asset links slip past it. This lints the content source
+# (so even *bare* URLs that never render as <a href> are checked) plus every
+# built page, resolving root-relative links against the live local deployment.
+# Vendored/archived third-party artifacts (example dumps, slide decks) are
+# skipped.
 #
 # Check for dead links across the site + collection data (lychee)
 check-links: build
     lychee --no-progress --base-url http://website.localhost/ \
         --max-concurrency 8 --timeout 20 \
         --accept '200,206,301,302,307,308,403' \
+        --exclude-path content/assets/examples \
+        --exclude-path content/assets/talks \
+        --exclude-path content/square_topologies \
         --exclude-path dist/assets/examples \
         --exclude-path dist/assets/talks \
         --exclude-path dist/square_topologies \
-        content/_data/items.yaml dist
+        content dist
 
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
