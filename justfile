@@ -30,6 +30,10 @@ check:
 # or broken internal links.
 test: check
 
+# Push gate (run by the global pre-push hook). This is a content repo, so the
+# push gate is the same build + internal-link validation as the commit gate.
+test-ci: test
+
 # pandoc-ssg's `check` only validates internal links in static HTML; the
 # notes/talks listings are client-rendered from content/_data/items.yaml, so
 # their external + asset links slip past it. This lints the content source
