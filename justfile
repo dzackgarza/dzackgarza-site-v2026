@@ -55,6 +55,15 @@ check-links: build
         --exclude-path dist/square_topologies \
         content dist
 
+# pandoc-ssg's `check` validates that internal links *resolve*, but not that a
+# page is linked *to* by anything — a page can build, sit in the sitemap, and
+# still be reachable only by typing its URL. This flags pages unreachable from
+# the home page + nav (following static links and island-injected ones).
+#
+# Fail on pages reachable from nothing (orphans)
+check-orphans: build
+    python3 .agents/check-orphans.py
+
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
 # browser: `bunx playwright install chromium`)
