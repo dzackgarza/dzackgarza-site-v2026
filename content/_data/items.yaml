@@ -184,11 +184,17 @@ about_links:
   title: Elsewhere
   links:
     - label: Email
-      href: mailto:zack@uga.edu
+      href: mailto:dzackgarza@gmail.com
     - label: Google Scholar
       href: "https://scholar.google.com/citations?hl=en&user=nvhLEh0AAAAJ"
+    - label: NCTS Profile
+      href: "https://ncts.ntu.edu.tw/people_detail.php?gid=475&bgid=7"
     - label: UGA Profile
       href: https://www.math.uga.edu/directory/people/d-zack-garza
+    - label: MathOverflow
+      href: "https://mathoverflow.net/users/50247/d-zack-garza"
+    - label: Math Stack Exchange
+      href: "https://math.stackexchange.com/users/147053/d-zack-garza"
     - label: GitHub
       href: https://github.com/dzackgarza
     - label: YouTube
