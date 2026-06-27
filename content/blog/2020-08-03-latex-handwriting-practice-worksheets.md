@@ -21,7 +21,7 @@ The idea is fairly simple: you toss in a bunch of symbols you want to practice w
 
 You can then either print this out and write over the symbols with any real-life writing implement, or just import them into your favorite PDF annotation software and practice using a stylus.
 
-If you just want to take a direct look, [here is a sample PDF](https://dzackgarza.com/assets/pdfs/handwriting.pdf) and [here is raw tex code](https://dzackgarza.com/assets/pdfs/handwriting.tex).
+If you just want to take a direct look, [here is a sample PDF](/assets/pdfs/handwriting.pdf) and [here is raw tex code](/assets/pdfs/handwriting.tex).
 
 The code is fairly simple:
 

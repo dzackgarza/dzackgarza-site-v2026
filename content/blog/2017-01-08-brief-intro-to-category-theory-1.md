@@ -505,7 +505,7 @@ This is also where much of functional analysis happens.
 - Morphisms:  Bounded linear maps $T: \mathcal{H} \rightarrow \mathcal{K}$ such that $\Vert T \Vert_{sup}$ is finite.
 - Isomorphisms: Bounded linear maps with bounded linear inverses.
 
-*Notes*: It might seem a bit simplistic at first to characterize something like a Hilbert space as essentially an "enriched vector space", but this turns out to be reflected in its categorical structure --  the forgetful functor from $\mathbf{Hilb}$ to $\mathbf{Vec}$ given by forgetting the inner product is **faithful** (the categorical analog of "surjective" for normal functions)
+*Notes*: It might seem a bit simplistic at first to characterize something like a Hilbert space as essentially an "enriched vector space", but this turns out to be reflected in its categorical structure --  the forgetful functor from $\mathbf{Hilb}$ to $\mathbf{Vec}$ given by forgetting the inner product is **faithful** (the categorical analog of "injective" for normal functions)
 
 Similarly, one can simultaneously regard any Hilbert space as a Banach space, where the norm is induced by the inner product.
 

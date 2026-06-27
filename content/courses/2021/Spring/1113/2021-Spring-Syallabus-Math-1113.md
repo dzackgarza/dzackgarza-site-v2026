@@ -48,7 +48,7 @@ If this is the case, any changes will be announced to the class.**
 
 - The website for this section can be found at
 
-  <https://dzackgarza.com/courses/2021/Spring/1113/>
+  </courses/2021/Spring/1113/>
 
 - The department maintains a special web page for this course on the departmental website. Note that this may not be up-to-date regarding pandemic practices, so information in this syllabus currently supersedes anything on the departmental website.
 

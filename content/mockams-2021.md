@@ -17,7 +17,7 @@ This is the website for the summer 2021 iteration of the Mock AMS conference at 
 
 - A conference booklet with detailed information can be downloaded here:
 
-  <https://dzackgarza.com/assets/pdfs/conferences/Mock_AMS_2021_Schedule.pdf>
+  </assets/pdfs/conferences/Mock_AMS_2021_Schedule.pdf>
 
 # Schedule
 

@@ -8,7 +8,7 @@ date: "Fall 2020"
 
 email: "zack@uga.edu"
 web: "dzackgarza.com/courses/2020/1113/"
-officehours: "TBA"
+officehours: "See ELC"
 office: " 427H Boyd"
 classroom: "29598"
 classhours: "Tu/Th 08:00 AM -- 09:15 AM, Boyd 304"
@@ -58,7 +58,7 @@ If this is the case, any changes will be announced to the class.**
 
 - The website for this section can be found at
   
-  <https://dzackgarza.com/courses/2020/1113/>.
+  </courses/2020/1113/>.
 
 - The department maintains a special web page for this course on the departmental website. 
   - At this time it is out of date, and the information is not consistent with the practices for this semester.

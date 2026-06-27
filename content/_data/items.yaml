@@ -602,8 +602,6 @@ notes:
   links:
   - label: PDF
     href: /assets/pdfs/notes/25-floer-homology.pdf
-  - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html
   images:
   - src: /assets/images/notes/25-floer-homology/1.png
   - src: /assets/images/notes/25-floer-homology/2.png
@@ -905,7 +903,7 @@ talks:
     href: /assets/talks/Annihilator_of_Lefschetz_Talk8.pdf
 - title: Why Derived Geometry
   category: Seminar
-  description: 02/2022 · UGA Graduate Student Seminar, February 2021.
+  description: 02/2022 · UGA Graduate Student Seminar, February 2022.
   tags:
   - Derived Geometry
   links:
@@ -922,8 +920,6 @@ talks:
   - Algebraic Geometry
   links:
   - label: Slides (PDF)
-    href: /assets/talks/Cohomology_Operations_Fall2021.pdf
-  - label: Slides (HTML)
     href: /assets/talks/Cohomology_Operations_Fall2021.pdf
   images:
   - src: /assets/images/graph_moduli_preview.png
@@ -1168,6 +1164,6 @@ talks:
   description: Winter/Spring 2018 · Undergraduate research with <a href="https://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/">Justin Roberts</a> at UCSD.
   links:
   - label: Poster (PDF)
-    href: https://dzackgarza.com/assets/pdfs/research/ResearchPoster.pdf
+    href: /assets/pdfs/research/ResearchPoster.pdf
   - label: Paper, Rough Draft (PDF)
-    href: https://dzackgarza.com/assets/pdfs/research/SSThesisPaper.pdf
+    href: /assets/pdfs/research/SSThesisPaper.pdf

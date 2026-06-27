@@ -139,7 +139,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
 
 - Real Analysis
 
-  - Convergence of sums/sequences, topological properties of .
+  - Convergence of sums/sequences, topological properties of $\mathbb{R}^n$.
 
 - Combinatorics
 
@@ -162,7 +162,7 @@ Note that the Math Subject GRE is vastly different than the Math portion of the 
   <https://www.mathsub.com/resources/>
 
 - A "Mathematics Subject GRE Workshop" that I ran at UCSD
-  - [Notes](/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html), [Slides (HTML)](/assets/talks/02-22-2019-GRE-Workshop/Slides.html), [Slides (PDF)](https://dzackgarza.com/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf).
+  - [Notes](/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html), [Slides (HTML)](/assets/talks/02-22-2019-GRE-Workshop/Slides.html), [Slides (PDF)](/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf).
 
 - A UCSB Math Subject GRE Seminar:
   <https://web.archive.org/web/20240726101825/https://web.math.ucsb.edu/~padraic/ucsb_2014_15/math_gre_w2015/math_gre_w2015.html>
