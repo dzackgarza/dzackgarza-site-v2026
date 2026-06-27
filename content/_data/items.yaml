@@ -442,10 +442,9 @@ notes:
   - Algebraic Geometry
   description: Phil Engel, Fall 2021
   links:
+  - label: HTML (pending)
   - label: PDF
     href: /assets/pdfs/notes/14-schemes.pdf
-  - label: HTML
-    href: https://dzackgarza.com/rawnotes/Class_Notes/2021/Fall/Schemes/Schemes.html
   images:
   - src: /assets/images/notes/14-schemes/1.png
   - src: /assets/images/notes/14-schemes/2.png

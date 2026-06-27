@@ -673,6 +673,14 @@ main iframe {
   font-size: 0.85rem;
   margin-right: 0.9rem;
 }
+/* a link whose target isn't available yet (e.g. an HTML render still pending):
+   shown as muted, non-clickable text rather than a live or broken link */
+.collection__link--pending {
+  color: var(--muted, #999);
+  font-style: italic;
+  cursor: default;
+  text-decoration: none;
+}
 /* per-item media inside a collection entry (folded-in talks): keep the video a
    scannable size, and give the gallery a little breathing room from the text */
 .collection__item .responsive-embed {

@@ -11,7 +11,7 @@
     title: string;
     category: string;
     description: string;
-    links: { label: string; href: string }[];
+    links: { label: string; href?: string }[];
     tags: string[];
     image?: string;
     alt?: string;
@@ -160,7 +160,11 @@
           {#if item.links && item.links.length > 0}
             <span class="collection__links">
               {#each item.links as link}
-                <a class="collection__link" href={link.href}>{link.label}</a>
+                {#if link.href}
+                  <a class="collection__link" href={link.href}>{link.label}</a>
+                {:else}
+                  <span class="collection__link collection__link--pending" aria-disabled="true" title="Not yet available">{link.label}</span>
+                {/if}
               {/each}
             </span>
           {/if}
