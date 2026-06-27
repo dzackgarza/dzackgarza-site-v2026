@@ -43,7 +43,7 @@ For $X$ a smooth and proper $k\dash$scheme, the Picard stack
 \[
 \underline{\Pic}_{X/k}
 \]
-is an Artin stack, which is a subclass Deligne-Mumford stacks.
+is an Artin stack, which is a generalization of Deligne-Mumford stacks.
 Note that this still has automorphisms given by global units on $X$.
 Think of these as 
 \[  
@@ -64,7 +64,7 @@ $K(\GG_m, n)$ is a "higher stack", thought of as a sheaf taking values in $n\das
 \[  
 \mathcal{S}_{\leq n} \da \ts{\text{Étale sheaves of $n\dash$truncated spaces}}
 .\]
-This is a stack with a single point, where the isotopy is $K(\GG_m, n-1)$.
+This is a stack with a single point, where the isotropy is $K(\GG_m, n-1)$.
 :::
 
 :::{.remark}

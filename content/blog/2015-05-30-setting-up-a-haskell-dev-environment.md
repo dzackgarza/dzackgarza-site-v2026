@@ -16,14 +16,14 @@ take a minute to write a bit about my experience diving into Haskell
 development.
 
 As someone relatively new to the Haskell world, I've had quite a bit to
-learn - fortunately, there's pleny of documentation out there, and the IRC
+learn - fortunately, there's plenty of documentation out there, and the IRC
 community is incredibly helpful as well (particularly #haskell, #hackage,
 and #haskell-beginners on Freenode).
 
 However, the packaging and build tools themselves are in constant development,
 and working with cabal can be a bit tricky at first. In particular, there's a
 lot of noise in forums and wikis concerning the best way to source your
-haskell packages - at this point, there are at several separate, viable
+haskell packages - at this point, there are several separate, viable
 ways to manage them:
 
 * Use the Haskell packages provided by your distro's package manager,
@@ -35,7 +35,7 @@ cabal-install, then pull and build packages from hackage using
 * Clone repos from git or darcs directly, and create binaries using
 `cabal install` in the project's root directory (preferably using sandboxes), or
 
-* Use one another tool to help streamline the process, such as the
+* Use another tool to help streamline the process, such as the
 Nix package manager or Halcyon.
 
 
@@ -67,7 +67,7 @@ installed alongside each other. Setting things up is pretty straightforward, so
 here's a quick rundown of what you can do to quickly get a dev environment
 rolling.
 
-# Install Halycon
+# Install Halcyon
 
 In my case, it was easiest to start with a clean OS installation. Assuming
 you're using a \*nix variant, the steps should be roughly similar.
@@ -85,7 +85,7 @@ directory.
 
 
 From this point on, any user with access to the /app/ directory can call
-`eval "$( /app/halcyon/halcyon paths` )"` to jump into this environment - this
+`eval "$( /app/halcyon/halcyon paths )"` to jump into this environment - this
 command takes care of putting the correct versions of ghc and cabal at the
 front of your path, regardless of which versions you may have otherwise
 installed elsewhere.
@@ -186,10 +186,10 @@ automatically adding qualified imports.
 ### **vim-haskellConcealPlus**
 (<https://github.com/enomsg/vim-haskellConcealPlus>)
 This one's purely aesthetic, and a great way to test exactly how well your
-terminal emulator support UTF-8! Uses vim conceals to show some Haskell
+terminal emulator supports UTF-8! Uses vim conceals to show some Haskell
 operators and keywords as symbols (that is, it displays them as special symbols
 unless they are on your current line). This is particularly useful when you're
-browing large swaths of code, and want to make things a bit more readable.
+browsing large swaths of code, and want to make things a bit more readable.
 Note: this does need a small hack not to be a complete eyesore. By default, vim
 adds a background highlight to every concealed character. You can clear this by
 throwing

@@ -15,7 +15,7 @@ site:
 - Kristen DeVleming [on COVID job advice](https://web.archive.org/web/20210129220534/http://www.math.ucsd.edu/~kdevleming/advice.pdf)
 - Dan Margalit's [advice on choosing an advisor](https://margalit.droppages.net/tsr/ChoosinganAdvisor.pdf)
 - Sara Billey's [advice collection](https://sites.math.washington.edu/~billey/advice/)
-- Benson Farb's [on what they wish they'd known as a graudate student](https://margalit.droppages.net/tsr/things.pdf)
+- Benson Farb's [on what they wish they'd known as a graduate student](https://margalit.droppages.net/tsr/things.pdf)
 - Ravi Vakil's "Three Things" [exercise](http://math.stanford.edu/~vakil/threethings.html)
 - Fan Chung's [advice page](https://fanchung.ucsd.edu/teach/gradpol.html)
 

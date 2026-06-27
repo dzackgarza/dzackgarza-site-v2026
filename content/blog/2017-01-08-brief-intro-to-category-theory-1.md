@@ -23,7 +23,7 @@ Of course, if we're going to talk about Category Theory, I should probably start
 
 Category Theory was conceived (or invented, or discovered; whichever you prefer) in 1945 by Samuel Eilenberg and Saunders Mac Lane while working on something called the Čech cohomology, which is central in the field of algebraic topology.
 
-One of Eilenberg and Mac Lane's motivations was that it was (and still is!) common among mathematicians to refer to certain constructions as "natural" and "canonical" -- broadly speaking, these terms are used to denote constructions that were somehow "choice-free". For example, one might want to study vector spaces without explicitly choosing a basis vectors. In this way, one can discover properties that don't actually *depend* on a particular frame of reference, and in some sense are more "universal" and intrinsic to the object being studied.
+One of Eilenberg and Mac Lane's motivations was that it was (and still is!) common among mathematicians to refer to certain constructions as "natural" and "canonical" -- broadly speaking, these terms are used to denote constructions that were somehow "choice-free". For example, one might want to study vector spaces without explicitly choosing basis vectors. In this way, one can discover properties that don't actually *depend* on a particular frame of reference, and in some sense are more "universal" and intrinsic to the object being studied.
 
 In particular, Eilenberg and Mac Lane wanted to formalize the notion of a **natural transformation** and things that were "naturally isomorphic."
 
@@ -69,7 +69,7 @@ add an element $\varepsilon$ to denote an empty symbol, and define a group opera
 We then stipulate that whenever something like $aa^{-1}$ occurs in a string (again, strictly as formal symbols over the alphabet $G$), there is a reduction operation that replaces this with $\varepsilon$. 
 After quotienting out by an equivalence under these reductions, we produce something that is a well-defined group, and is somehow the minimal group that could have been made from the original set and no other information.
 
-Then, there is something called a "forgetful functor" $\mathcal{F}$ from $\mathbf{Group}$ into $\mathbf{Set}$ that takes a group and gives you only the underlying set, "forgetting" everything about its structure as a group. For example, if one took that group $(\mathbb{Z}_2 = \theset{0,1}$ with the group operation 
+Then, there is something called a "forgetful functor" $\mathcal{F}$ from $\mathbf{Group}$ into $\mathbf{Set}$ that takes a group and gives you only the underlying set, "forgetting" everything about its structure as a group. For example, if one took that group $(\mathbb{Z}_2 = \theset{0,1})$ with the group operation 
 
 $$\begin{align*}
 0+1 &= 1+0 = 1 \\ 
@@ -125,7 +125,7 @@ Note that the objects of category are "black boxes" --  we have no real informat
 
 ## Foundational Issues
 
-Certain collections of objects are "too big" to be sets -- for example, we have Russel's paradox:
+Certain collections of objects are "too big" to be sets -- for example, we have Russell's paradox:
 
 $$
 (\exists R = \theset{ x : x \not \in x}) \Rightarrow (R\in R \iff R\not\in R),
@@ -135,16 +135,16 @@ which must be a contradiction.
 So strictly speaking, one can not consider a "set of all sets", although we would like to study things like the *blah* of all sets, for whatever *blah* we can come up with. 
 In particular, we'd like a category **Set** that contains all sets
 
-The workaround is to use use **classes** (sets with restricted operations). 
+The workaround is to use **classes** (sets with restricted operations). 
 A class that is a also a normal set is referred to as a **small class**, while classes that are *not* sets are denoted **proper classes**.
 
 We will take the objects of categories to be proper classes, and in general the morphisms will be small classes and are sometimes referred to as *hom-sets*, although this is not strictly required. 
-In this sense, category theory actually subsumes set and generalizes the theory of sets --  indeed, there are mathematical camps that see categories as an *alternative* to set theory for the foundation of math. 
+In this sense, category theory actually subsumes set theory and generalizes the theory of sets --  indeed, there are mathematical camps that see categories as an *alternative* to set theory for the foundation of math. 
 If one is interested in such things, it is worth investigating the ideas of **homotopy type theory** and **topoi**, which might be said to fall under the umbrella of logic.
 
 # Examples
 
-Since categories can be quite abstract objects, it's useful to have a few concrete toy examples in mind to check new definitions and theorems against, here are a number of you can use. 
+Since categories can be quite abstract objects, it's useful to have a few concrete toy examples in mind to check new definitions and theorems against, here are a number of examples you can use. 
 I've tried to collect examples from Algebra, Analysis, and even a few from Computer Science --  it is by no means necessary to be familiar with all of these; usually finding a few that you use often and are familiar with is quite sufficient for most purposes.
 
 Here, I'll just cover what I think are the three most important parts of recognizing that some structure you've used is a category --  the objects, the morphisms, and what kind of morphisms are called isomorphisms in that category. Checking the categorical axioms is pretty routine and perhaps not as enlightening, so we'll skip that for now.
@@ -159,7 +159,7 @@ That being said, here's how the following examples are formatted:
 
 - *Isomorphisms*: Denotes what conditions one puts on a morphism $f: X\rightarrow Y$  (and perhaps a corresponding morphism $g : Y \rightarrow X$) in order to recognize $X, Y$ as isomorphic objects in this category, which we'll denote $X \cong Y$.
 
-- *Notes*: Some of these categories are constructed, and easier to demonstrate their construction blackboard. I've included notes to explain how this is done for a few examples.
+- *Notes*: Some of these categories are constructed, and easier to demonstrate their construction on a blackboard. I've included notes to explain how this is done for a few examples.
 
 ## Constructions
 
@@ -207,7 +207,7 @@ Also, note that it didn't matter that $n$ was finite here --  this construction 
 
 *Notes*: The wacky symbols are again used to denote that these mappings are absolutely arbitrary.
 
-A quick explanation of what I mean by "minimally interesting", though: Given $\mathbb{2}$, note that there are really only a few things we can do with it at this point. We could add another morphism, $b \mapsto a$, and we would get a category where $b\cong a$.
+A quick explanation of what I mean by "minimally interesting", though: Given $\mathbf{2}$, note that there are really only a few things we can do with it at this point. We could add another morphism, $b \mapsto a$, and we would get a category where $b\cong a$.
 
 The other thing we can do is add in a single object $c$. We are forced to add an identity morphism for this to be a category, which is what the first union in the morphisms section supplies.
 
@@ -381,7 +381,7 @@ In other words, every Mathematical definition is an iff statement, and any propo
 
 ### $\mathbf{Graph}$
 
-- Objects: Graphs $G = (V_1, E_2),  H =(V_2, E_2)$ where $E_i \subseteq V_i\times V_i$
+- Objects: Graphs $G = (V_1, E_1),  H =(V_2, E_2)$ where $E_i \subseteq V_i\times V_i$
 - Morphisms: maps $f: V_1  \rightarrow V_2$ where  $(v,w) \in E_1 \Rightarrow (f(v), f(w)) \in E_2$
   - i.e. maps between vertex sets that preserve incidence relations.
 - Isomorphisms: Bijective graph morphisms
@@ -434,7 +434,7 @@ In other words, every Mathematical definition is an iff statement, and any propo
 
 Also, it turns out to actually be very tricky to formulate measure theory in a categorical way! If we try to look at the category of **measure** spaces, it turns out that adding the actual measure $\mu$ to a measurable space is in some sense "too strong" of a condition, and the resulting category lacks many useful properties.
 
-In particular, it precludes the possibility of having a structure that is denoted the "categorical product". Attempts formalize measure/probability in categorical terms is a topic of relatively current research.
+In particular, it precludes the possibility of having a structure that is denoted the "categorical product". Attempts to formalize measure/probability in categorical terms is a topic of relatively current research.
 
 ### $\mathbf{Top}$
 

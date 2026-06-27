@@ -13,7 +13,7 @@ I am able to provide private or group tutoring for any of the following undergra
 - Trigonometry
 - Statistics
 - General GRE, Quantitative Section
-- PreCalcus and Calculus
+- PreCalculus and Calculus
 - Discrete Mathematics
 - Ordinary Differential Equations
 - Linear Algebra

@@ -32,7 +32,7 @@ I thus sought to build some kind of process for how I read, parse, and recollect
    3. Expository notes, lecture notes, and other miscellaneous “unofficial” writing
 2. All PDFs should be searchable in some fashion
 3. Documents should be imported into some kind of reference management software that handles populating metadata, renaming and sorting files, and maintaining a global BibTex file.
-4. There should only ever be one canonical file for each reference, .e.g. a single PDF file
+4. There should only ever be one canonical file for each reference, e.g. a single PDF file
 5. Everything needs to sync between my devices (computers and Android phones/tablets) so I can read and annotate the same document everywhere
 6. Everything needs to be read in something that supports adding notes, annotations, and bookmarks.
 7. Any annotations and notes put into documents need to be easily searchable, ideally providing a quick way to jump directly back to the right spot in the right PDF
@@ -67,7 +67,7 @@ Occasionally, Zotero will have issues finding citation information for a documen
 
 There are many ways to go adjoining OCR data to a document, but I’ve settled on the wonderful [OCRmyPDF tool](https://github.com/jbarlow83/OCRmyPDF). Usage from the command line is extremely simple, generally something along the lines of `ocrmypdf infile.pdf outfile.pdf`.
 
-Many other OCR solutions miss many of critical features that this tool gets right -– for example, it positions the OCR’d text accurately, which is important when it comes to highlighting and extracting annotations correctly down the line. It also maintains the original PDF resolution, whereas other tools tend to degrade the quality.
+Many other OCR solutions miss many of the critical features that this tool gets right -– for example, it positions the OCR’d text accurately, which is important when it comes to highlighting and extracting annotations correctly down the line. It also maintains the original PDF resolution, whereas other tools tend to degrade the quality.
 
 But most importantly, it tends to **just work** on everything thrown at it, and the default settings tend to produce excellent results.
 
@@ -93,7 +93,7 @@ Zotero is slightly unwieldy, but has a handful of killer features that make it w
 
 - Excellent metadata extraction for papers,
 - Full-text indexing of all PDFs and annotations
-- Maintains a global, automatically updated [BibTeX](http://www.bibtex.org/)) file using the [Better BibTeX plugin](https://github.com/retorquere/zotero-better-bibtex), and
+- Maintains a global, automatically updated [BibTeX](http://www.bibtex.org/) file using the [Better BibTeX plugin](https://github.com/retorquere/zotero-better-bibtex), and
 - Excellent annotation extraction and report generation using the [Zotfile plugin](http://zotfile.com/).
 
 Moreover, it has decent internal organizational capabilities using hierarchical “collections”, which allow aliasing items in many separate places that all reference a single, canonical source reference and file.

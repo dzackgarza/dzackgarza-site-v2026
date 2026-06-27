@@ -15,7 +15,7 @@ geometry: margin=1in
 
 Welcome to Math 1113, *Precalculus*. 
 The course is designed to offer a broad introduction to the topics necessary to succeed in calculus. 
-The central theme in this course the idea of a *function*, and how we can reason about the most common ones.
+The central theme in this course is the idea of a *function*, and how we can reason about the most common ones.
 
 :::{.warning title="Please read this document carefully."}
 There is a great deal of uncertainty due to Coronavirus, and both course and university policies are subject to change throughout the semester. 
@@ -70,7 +70,7 @@ If this is the case, any changes will be announced to the class.**
   - Include several potential days/times when you are available.
 
 ## Course Format
-The format for this course will be a *flipped* and we will use a *hybrid online and face-to-face* model for meeting.
+The format for this course will be a *flipped* class and we will use a *hybrid online and face-to-face* model for meeting.
 
 - **Flipped**: 
   This means that you will be able to watch recorded lectures for this class on your own time, which includes an optional worksheet. These include the easier/more mechanical topics so we can focus on difficult concepts in class.
@@ -223,7 +223,7 @@ And final letter grades are assigned as follows:
 | -   | --  | --  | -   | --  | --  | -   | --  | -   |
 | 92% | 89% | 87% | 82% | 79% | 77% | 72% | 69% | 60% |
 
-- Regrade requests or questions about grading should be submitted to your professor **within three days** work being returned. 
+- Regrade requests or questions about grading should be submitted to your professor **within three days** of work being returned. 
 
 
 \hrule

@@ -74,9 +74,9 @@ site:
 
   - In particular, you should frame your writeup as though you were explaining it to someone in the first week of your course, and include all of the information they'd need to work the problem themselves.
 
-- Differentiate “scratch work” from what your present.
+- Differentiate “scratch work” from what you present.
 
-  - In previous classes, we're very used to writing our work out on some paper, possibly erasing things and reworking until we solve the problem, and turning that piece of paper in in. 
+  - In previous classes, we're very used to writing our work out on some paper, possibly erasing things and reworking until we solve the problem, and turning that piece of paper in. 
 
     Instead, it can help to do your intermediate work on scratch paper, setting that paper aside, and cleanly writing up a series of logical steps (usually equations) in a clean and organized way on the paper you'll actually turn in.
 
@@ -95,7 +95,7 @@ site:
 
   - Notice that each line is a **statement** that two things are equal. 
 
-  - Also notice that I've put a period at the end! This is the emphasize that you should be able to read your solution out loud. For example:
+  - Also notice that I've put a period at the end! This is to emphasize that you should be able to read your solution out loud. For example:
 
     - “Six $x$ plus two equals five $x$ plus 1,”
     - “Which implies that six $x$ plus 2 minus five $x$ equals one,”
@@ -182,7 +182,7 @@ site:
 
 - Carefully distinguish between equalities and approximations with $=$ and $\approx$ respectively. 
 
-  - Saying $a=b$ else is a **very strong** assertion, and can introduce issues in many contexts where numerical precision is important. Calculators can only hold so many digits, and some real numbers have infinitely many!
+  - Saying $a=b$ is a **very strong** assertion, and can introduce issues in many contexts where numerical precision is important. Calculators can only hold so many digits, and some real numbers have infinitely many!
 
   - It's important to use the $\approx$ symbol to communicate to the reader when error from approximation has potentially been introduced.
 

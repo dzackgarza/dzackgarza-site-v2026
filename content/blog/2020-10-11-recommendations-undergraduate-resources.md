@@ -27,7 +27,7 @@ I defer to this excellent page from the math department at UC Irvine: <https://w
 
 	The best resources are always materials from your own instructors and courses. If you do passively watch videos, it helps to engage yourself: write questions in your notes, timestamps/title of important topics, etc.
 
-- [MIT OCW](https://ocw.mit.edu/index.htm): the video lectures (when available) are generally of very high quality. These cover a quite a few areas, and are also a good source of practice problems and exams.
+- [MIT OCW](https://ocw.mit.edu/index.htm): the video lectures (when available) are generally of very high quality. These cover quite a few areas, and are also a good source of practice problems and exams.
 
 - Look (or ask) for book recommendations for your topic/class on [Math StackExchange (MSE)](https://math.stackexchange.com/) or [MathOverflow (MO)](https://mathoverflow.net/). 
 Don't be afraid to consult multiple books on the same topic! 
@@ -157,7 +157,7 @@ _Garrity_, [All the Mathematics You Missed: But Need to Know for Graduate School
 
 - <i class="fas fa-tv"></i> 
   JJ's Nullspace Trick
-  - Many computations in linear algebra boil down to computing the nullspace of a matrix, and this is an excellent shortcut that lets your write the basis of the nullspace of a matrix almost directly from its reduced row-echelon form.
+  - Many computations in linear algebra boil down to computing the nullspace of a matrix, and this is an excellent shortcut that lets you write the basis of the nullspace of a matrix almost directly from its reduced row-echelon form.
 
 
 ### Discrete Mathematics and Proofs
@@ -409,7 +409,7 @@ Standard Topics
 
 - <i class="fas fa-book"></i> 
   _Wasserman_,
-  **All the Statistics: A Concise Course in Statistical Inference**
+  **All of Statistics: A Concise Course in Statistical Inference**
   
 >  It is useful to take (either beforehand or concurrently) introductory classes in both statistics and combinatorics.
 

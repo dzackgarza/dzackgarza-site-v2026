@@ -266,7 +266,7 @@ I've just decided to toss all of it online for anyone that might find such a thi
     - Definition of a geodesic
     - Existence and uniqueness of geodesics
   - Definition of curvature, flat connections, parallel transport
-  - Definition of Levi-Cevita connection 
+  - Definition of Levi-Civita connection 
   - Properties of the Riemann curvature tensor
 - Principal Bundles:
   - Definition of a principal Lie group bundle for matrix groups

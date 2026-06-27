@@ -79,7 +79,7 @@ Why study $\Sigma_g$ bundles?
     His fields medal was finding a single hyperbolic structure on a closed 3-manifold fibering over the circle.
 
 3. For 4-manifolds: huge class of symplectic manifolds.
-   1. Perpendicular to work of Mike Friedman, these fundamental groups all contain free groups.
+   1. Perpendicular to work of Mike Freedman, these fundamental groups all contain free groups.
    2. Donaldson: All closed symplectic 4-manifolds are Lefschetz fibrations (!!)
 
 4. AG: $\mathcal M$ moduli spaces of Riemann surfaces, decompose problems about varieties to problems about families of algebraic curves (i.e. what we call surface bundles)
@@ -102,7 +102,7 @@ $$
 \rho: \pi_1 B \to \operatorname{Mod} \Sigma_g
 $$
 
-Look at LES in homotopy, the map $\pi_2 B \to \pi_1 F$ has image in the center, but $\pi_a \Sigma_g$ is centerless, yielding a SES.
+Look at LES in homotopy, the map $\pi_2 B \to \pi_1 F$ has image in the center, but $\pi_1 \Sigma_g$ is centerless, yielding a SES.
 
 For any SES of groups, you can get a representation $\pi_1 B \to \operatorname{Out} \pi_1 F$
 
@@ -137,7 +137,7 @@ Some serious math, theorem of Eels-Earle 1969:
 - For surfaces $g\geq 2$, $\operatorname{Diff}_0(\Sigma_g)$ (the diffeos isotopic to the identity) is homotopy-equivalent to a point!
     - Note: can write mapping class group as Diff mod the path-component of the identity (i.e. it's the group of path components)
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
-    - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmuller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
+    - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmüller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
 **Corollary**: we care about $\operatorname{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
 $$
@@ -210,7 +210,7 @@ What do we know?
 
 ## The "Signature Cocycle"
 
-Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a surface into that space. Given blah, pullback the bundle over $\operatorname{BDiff}$:
+Any 2-cycle (for any space) will be homologous to the image of a map $f$ of a surface into that space. Given $f$, pullback the bundle over $\operatorname{BDiff}$:
 
 \begin{tikzcd}
  &  & \Sigma_g \arrow[rr] &  & T \arrow[dd] \\
@@ -235,7 +235,7 @@ $$
 
 > Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
-**Theorem (Harrer, 1980s):**
+**Theorem (Harer, 1980s):**
 $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! 
 So all of these classes are scalar multiples of each other - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
 

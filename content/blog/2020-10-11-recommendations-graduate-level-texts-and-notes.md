@@ -135,8 +135,6 @@ Inspired by the following Twitter thread:
 
 <https://www.mi.fu-berlin.de/en/math/groups/arithmetic_geometry/teaching/exercises/Altman_-Kleiman---A-term-of-commutative-algebra-_2017_.pdf>
 
-<https://www.mi.fu-berlin.de/en/math/groups/arithmetic_geometry/teaching/exercises/Altman_-Kleiman---A-term-of-commutative-algebra-_2017_.pdf>
-
 ###  Atiyah and MacDonald, Introduction to Commutative Algebra
 
 ## Representation Theory
@@ -338,7 +336,7 @@ Inspired by the following Twitter thread:
 ### F. Kirwan, Complex Algebraic Curves
 
 
-### Voison, Hodge Theory and Complex Algebraic Geometry I
+### Voisin, Hodge Theory and Complex Algebraic Geometry I
 
 - Notes: [Period Mappings and Period Domains](https://web.archive.org/web/20260331070155/https://www-fourier.univ-grenoble-alpes.fr/~peters/Books/PeriodBook.f/SecondEdition/PerBook.pdf)
 
@@ -363,7 +361,7 @@ Inspired by the following Twitter thread:
 ### J. Kock, Frobenius algebras and 2D TQFTs
 
 
-### Osvath and Szabo, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
+### Ozsváth and Szabó, [Grid Homology for Knots and Links](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf)
 
 ## Geometric Group Theory
 
