@@ -57,11 +57,6 @@ weight = 40
   weight = 10
 
   [[main.children]]
-  title = "Tutoring"
-  href = "/tutoring/"
-  weight = 20
-
-  [[main.children]]
   title = "Activities"
   href = "/activities/"
   weight = 40

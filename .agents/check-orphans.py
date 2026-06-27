@@ -26,6 +26,8 @@ ISLAND_DATA = ["blog/posts.json", "_collections/notes.json", "_collections/talks
 
 # Routes that are intentionally not linked from anywhere. Keep each justified.
 ALLOWLIST: dict[str, str] = {
+    "/tutoring/": "Archived: not currently offering tutoring (NCTS postdoc abroad). "
+                  "Page kept for resurrection in a few years; intentionally unlinked.",
 }
 
 
