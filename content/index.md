@@ -32,7 +32,7 @@ Broadly, I am interested in compactifications of moduli spaces, particularly of 
   "sameAs" : [
     "https://www.linkedin.com/in/dzackgarza/"
   ],
-  "image": "https://dzackgarza.com/avatar.png",
+  "image": "https://dzackgarza.com/assets/images/photo/dzg-photo.png",
   "description": "D. Zack Garza is a mathematician and postdoctoral researcher at the National Center for Theoretical Sciences (NCTS) in Taipei, working on compactifications of moduli spaces of complex algebraic surfaces.",
   "email": "mailto:dzackgarza@gmail.com",
   "jobTitle": "Postdoctoral Researcher",
