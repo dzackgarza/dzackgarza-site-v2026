@@ -11,6 +11,8 @@ notes:
   links:
   - label: PDF
     href: "/assets/pdfs/notes/00-k3-surfaces.pdf"
+  - label: HTML
+    href: "/rawnotes/Class_Notes/2023/Spring/k3surfaces/K3Surfaces.html"
   images:
   - src: "/assets/images/notes/00-k3-surfaces/1.png"
   - src: "/assets/images/notes/00-k3-surfaces/2.png"
@@ -530,16 +532,26 @@ notes:
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf"
   - label: Combined Notes (HTML)
     href: "/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html"
-  - label: Krashen — Field arithmetic
+  - label: Krashen — Field arithmetic (PDF)
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Krashen_Talks.pdf"
-  - label: Gille — G-torsors over affine curves
+  - label: Krashen — Field arithmetic (HTML)
+    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/1_Krashen/Krashen_Talks.html"
+  - label: Gille — G-torsors over affine curves (PDF)
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Gille_Talks.pdf"
-  - label: Déglise — Motivic categories
+  - label: Gille — G-torsors over affine curves (HTML)
+    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/2_Gille/Gille_Talks.html"
+  - label: Déglise — Motivic categories (PDF)
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Deglise_Talks.pdf"
-  - label: Wickelgren — A1 homotopy theory
+  - label: Déglise — Motivic categories (HTML)
+    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/3_Deglise/Deglise_Talks.html"
+  - label: Wickelgren — A1 homotopy theory (PDF)
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Wickelgren_Talks.pdf"
-  - label: Morrow — Aspects of motivic cohomology
+  - label: Wickelgren — A1 homotopy theory (HTML)
+    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/4_Wickelgren/Wickelgren_Talks.html"
+  - label: Morrow — Aspects of motivic cohomology (PDF)
     href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Morrow_Talks.pdf"
+  - label: Morrow — Aspects of motivic cohomology (HTML)
+    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/5_Morrow/Morrow_Talks.html"
   images:
   - src: "/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/1.png"
   - src: "/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/2.png"
@@ -603,6 +615,16 @@ notes:
   links:
   - label: Talk Notes (HTML)
     href: "/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html"
+- title: Hartshorne Exercises Megadoc
+  category: Expository
+  tags:
+  - Algebraic Geometry
+  - Schemes
+  - Varieties
+  description: All of the exercises from Hartshorne compiled into a single document.
+  links:
+  - label: Notes (PDF)
+    href: "/assets/pdfs/Hartshorne_Megadoc.pdf"
 - title: 'Talbot 2022: Scissors Congruence and Algebraic K-Theory'
   category: Proceedings
   tags:
@@ -614,6 +636,44 @@ notes:
   links:
   - label: Notes (PDF)
     href: "/assets/pdfs/Talbot_2022.pdf"
+- title: 'INI Workshop: Algebraic Cycles, Strings and Amplitudes'
+  category: Workshop Notes
+  tags:
+  - Algebraic Geometry
+  - Arithmetic Geometry
+  - Algebraic K-Theory
+  - Complex Geometry
+  description: "Notes for the INI workshop on mathematical physics: algebraic cycles, strings and amplitudes."
+  links:
+  - label: Notes (PDF)
+    href: "/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.pdf"
+  - label: Notes (HTML)
+    href: "/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.html"
+- title: ADDING Conference at UGA
+  category: Workshop Notes
+  tags:
+  - Arithmetic Geometry
+  - Algebraic Number Theory
+  - Algebraic Geometry
+  description: Notes for the ADDING conference at UGA.
+  links:
+  - label: Notes (PDF)
+    href: "/rawnotes/Class_Notes/2022/ADDING/ADDING.pdf"
+  - label: Notes (HTML)
+    href: "/rawnotes/Class_Notes/2022/ADDING/ADDING.html"
+- title: 'Arizona Winter School 2022: Automorphic Forms Beyond GL2'
+  category: Mini Course
+  tags:
+  - Arithmetic Geometry
+  - Algebraic Number Theory
+  - Representation Theory
+  - Algebraic Geometry
+  description: "Lecture notes for Arizona Winter School 2022: Automorphic Forms Beyond GL2."
+  links:
+  - label: Notes (PDF)
+    href: "/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.pdf"
+  - label: Notes (HTML)
+    href: "/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.html"
 - title: 'MSRI Workshop: Chern-Simons and Other Topological Field Theories'
   category: Workshop Notes
   tags:
