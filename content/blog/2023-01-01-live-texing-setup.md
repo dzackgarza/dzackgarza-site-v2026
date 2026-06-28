@@ -21,7 +21,7 @@ Some tools I use:
   - I keep a collection of [pandoc templates and custom filters here](https://github.com/dzackgarza/dotfiles/tree/master/.pandoc).
 
 - For diagrams:
-  - [Inkscape](https://wiki.inkscape.org/wiki/Installing_Inkscape) for capturing freehand stylus drawings while live-texing.
+  - [Inkscape](https://inkscape.org/) for capturing freehand stylus drawings while live-texing.
   - [q.uiver](https://q.uiver.app/) for commutative diagrams in TikzCD.
   - [https://www.mathcha.io](https://www.mathcha.io) for converting hand-drawn stylus figures to Tikz code.
   - [QTikz/KTikz](https://github.com/fhackenberger/ktikz) for plain Tikz or hand-edited TikzCD.
