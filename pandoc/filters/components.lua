@@ -145,13 +145,25 @@ end
 -- doubled separators). A bare arXiv id becomes an abs URL; a full URL is linked
 -- verbatim. The `abstract` (block markdown) becomes a native <details>, emitted
 -- only when present. Class names follow AESTHETIC-GUIDELINES §6 (no cards).
-local function render_papers(key)
+local function render_papers(key, limit_attr)
   local papers = items[key]
   if papers == nil then
     error("component papers: unknown items key '" .. tostring(key) .. "'")
   end
+
+  local limit = nil
+  if limit_attr ~= nil then
+    limit = tonumber(limit_attr)
+    if limit == nil then
+      error("component papers: invalid limit attribute '" .. tostring(limit_attr) .. "'")
+    end
+  end
+
   local parts = { '<ul class="papers">' }
-  for _, p in ipairs(papers) do
+  for index, p in ipairs(papers) do
+    if limit ~= nil and index > limit then
+      break
+    end
     local title = p.title or ""
     if title == "" then
       error("component papers: entry under '" .. tostring(key) .. "' is missing a title")
@@ -386,7 +398,7 @@ local builtins = {
     return render_timeline(attrs.items)
   end,
   ["papers"] = function(attrs)
-    return render_papers(attrs.items)
+    return render_papers(attrs.items, attrs.limit)
   end,
   ["video"] = function(attrs)
     return render_video(attrs.provider, attrs.id)
