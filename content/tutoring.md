@@ -33,7 +33,7 @@ I am able to provide private or group tutoring for any of the following undergra
 
 If you are interested in scheduling a tutoring session, you can use the tool below to find and book available times.
 
-If you would like to meet a regular basis over a semester or year, please also [fill out the interest form here](https://goo.gl/forms/BfQod47lIQsiRt1m1).
+If you would like to meet on a regular basis over a semester or year, include that context when booking below.
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/dzackgarza" style="min-width:320px;height:630px;"></div>
