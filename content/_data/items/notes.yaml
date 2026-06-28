@@ -348,6 +348,16 @@ notes:
   - src: "/assets/images/notes/22-rational-points/1.png"
   - src: "/assets/images/notes/22-rational-points/2.png"
   - src: "/assets/images/notes/22-rational-points/3.png"
+- title: Elliptic Curves
+  category: Notes
+  tags:
+  - Arithmetic Geometry
+  - Algebraic Curves
+  - Algebraic Geometry
+  description: Pete Clark, Spring 2020
+  links:
+  - label: PDF
+    href: "/assets/pdfs/Elliptic_Curves_2020_03_01.pdf"
 - title: Algebraic Topology
   category: Notes
   tags:
@@ -489,8 +499,8 @@ notes:
   - Algebra
   description: ''
   links:
-  - label: PDF
-    href: https://dzackgarza.com/_pages/PQ%20Classification.html
+  - label: Notes (HTML)
+    href: "/assets/expository/pq-classification.html"
 - title: A history of modern Algebraic Geometry
   category: Expository
   tags:
