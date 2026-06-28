@@ -139,10 +139,12 @@ Some serious math, theorem of Eels-Earle 1969:
     - Uses Beltrami equation, measurable Riemann mapping theorem, solving PDEs, some serious Math!
     - $\operatorname{Diff}_0$ acts on the space of complex structures on the surface, and the quotient is Teichmüller space(?), which is contractible, which makes the space of complex structures contractible (from the LES in homotopy). This is some solution space of some PDE.
 
-**Corollary**: we care about $\operatorname{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
+:::{.corollary}
+We care about $\operatorname{Bdiff}$, classifying space theory doesn't really see contractible stuff. So:
 $$
 \operatorname{Bdiff}^+ \Sigma_g \simeq \operatorname{BMod}\Sigma_g = K(\operatorname{Mod}\Sigma_g, 1)
 $$
+:::
 
 Note that the last equality follows because there's no topology on the mapping class group of a discrete group.
 
@@ -161,7 +163,9 @@ Somehow, this all comes down to uniformization.
 
 How are you given the bundle? Can be given as triangulation, in which case one can produce the monodromy map (huge number of steps though! $e^{e^{e^{\cdots}}}$). Or can be given the monodromy map; this determines the bundle.
 
-**Theorem**: The conjugacy problem in $\operatorname{Mod} \Sigma_g$ is solvable.
+:::{.theorem}
+The conjugacy problem in $\operatorname{Mod} \Sigma_g$ is solvable.
+:::
 
 But this does not solve the problem for homeo $\Sigma_g \to M^3 \to S_1$.
 
@@ -235,11 +239,12 @@ $$
 
 > Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
-**Theorem (Harer, 1980s):**
+:::{.theorem title="Harer, 1980s"}
 $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! 
+:::
+
 So all of these classes are scalar multiples of each other - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
 
 See book with Dan Margalit: all of this lives in the group $\operatorname{Mod} \Sigma_g \injects \operatorname{Homeo}^+(S^1)$
-
 
 
