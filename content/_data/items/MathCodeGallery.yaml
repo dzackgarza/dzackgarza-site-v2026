@@ -1,0 +1,101 @@
+---
+MathCodeGallery:
+- type: image
+  src: "/assets/images/manifold_charts.png"
+  href: "/assets/images/manifold_charts.png"
+  caption: Manifold charts
+- type: image
+  src: "/assets/images/lattice.png"
+  href: "/assets/images/lattice.png"
+  caption: Lattice
+- type: image
+  src: "/assets/images/double_complex.png"
+  href: "/assets/images/double_complex.png"
+  caption: Double complex
+- type: image
+  src: "/assets/images/korbi.png"
+  href: "/assets/images/korbi.png"
+  caption: Korbi
+- type: image
+  src: "/assets/images/bundle_over_pn.png"
+  href: "/assets/images/bundle_over_pn.png"
+  caption: A bundle over projective space
+- type: image
+  src: "/assets/images/tangent_identity.jpeg"
+  href: "/assets/images/tangent_identity.jpeg"
+  caption: Tangent at the identity
+- type: image
+  src: "/assets/images/morse_decompose.png"
+  href: "/assets/images/morse_decompose.png"
+  caption: Decomposition
+- type: image
+  src: "/assets/images/blowup_one.png"
+  href: "/assets/images/blowup_one.png"
+  caption: Blowups
+- type: image
+  src: "/assets/images/tikz-twisted-sequence.jpg"
+  href: "/assets/images/tikz-twisted-sequence.jpg"
+  caption: A 'twisted' long exact sequence.
+- type: image
+  src: "/assets/images/tikz-lift.jpg"
+  href: "/assets/images/tikz-lift.jpg"
+  caption: Fibers of the exponential map, showing the universal cover of the circle.
+- type: image
+  src: "/assets/images/tikz-projection.jpg"
+  href: "/assets/images/tikz-projection.jpg"
+  caption: Stereographic projection from the sphere onto the plane
+- type: image
+  src: "/assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg"
+  href: "/assets/images/SSDoubleComplexDifferentialPatternOutOfNode.jpg"
+  caption: Various differentials in a spectral sequence.
+- type: image
+  src: "/assets/images/section_point.png"
+  href: "/assets/images/section_point.png"
+  caption: 'Conic section: degenerate case of a point.'
+- type: image
+  src: "/assets/images/section_lines.png"
+  href: "/assets/images/section_lines.png"
+  caption: 'Conic section: degenerate case of two lines.'
+- type: image
+  src: "/assets/images/section_circle.png"
+  href: "/assets/images/section_circle.png"
+  caption: 'Conic section: a circle.'
+- type: image
+  src: "/assets/images/section_ellipse.png"
+  href: "/assets/images/section_ellipse.png"
+  caption: 'Conic section: an ellipse.'
+- type: image
+  src: "/assets/images/section_hyperbola.png"
+  href: "/assets/images/section_hyperbola.png"
+  caption: 'Conic section: two branches of a hyperbola.'
+- type: image
+  src: "/assets/images/section_parabola.png"
+  href: "/assets/images/section_parabola.png"
+  caption: 'Conic section: a parabola.'
+- type: image
+  src: "/assets/images/intersect-cylinder-sphere.jpg"
+  href: "/assets/images/intersect-cylinder-sphere.jpg"
+  caption: Various differentials in a spectral sequence.
+- type: image
+  src: "/assets/images/cv-3dfaceplot.jpg"
+  href: "/assets/images/cv-3dfaceplot.jpg"
+  caption: A 3D plot of a 2D image, using pixel intensity as height.
+- type: image
+  src: "/assets/images/cv-face-normals.jpg"
+  href: "/assets/images/cv-face-normals.jpg"
+  caption: Dynamically generating normal vectors for a face based only on pixel intensity
+- type: image
+  src: "/assets/images/cv-eigenfaces.jpg"
+  href: "/assets/images/cv-eigenfaces.jpg"
+  caption: Examples of an 'eigenface' SVD decomposition, sorted from largest to smallest
+    singular values.
+- type: image
+  src: "/assets/images/cv-segmentation.jpg"
+  href: "/assets/images/cv-segmentation.jpg"
+  caption: Using computer vision techniques to segment an image for classification
+    purposes.
+- type: image
+  src: "/assets/images/cv-matching.jpg"
+  href: "/assets/images/cv-matching.jpg"
+  caption: Finding corresponding points in two images of the same object from different
+    perspectives using projective and epipolar geometry.

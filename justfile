@@ -35,10 +35,11 @@ test: check check-orphans
 test-ci: test
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
-# notes/talks listings are client-rendered from content/_data/items.yaml, so
-# their external + asset links slip past it. This lints the content source
-# (so even *bare* URLs that never render as <a href> are checked) plus every
-# built page, resolving root-relative links against the live local deployment.
+# collection data is rendered from content/_data/ sources such as
+# content/_data/items/*.yaml, so external + asset links slip past it. This
+# lints the content source (so even *bare* URLs that never render as <a href>
+# are checked) plus every built page, resolving root-relative links against the
+# live local deployment.
 # Vendored/archived third-party artifacts (example dumps, slide decks) are
 # skipped.
 #

@@ -1,0 +1,71 @@
+---
+MathDrawingGallery:
+- type: image
+  src: "/assets/images/sphere-v-ball-correct.png"
+  href: "/assets/images/sphere-v-ball-correct.png"
+  caption: Low-dimensional variants of the Sphere and Ball.
+- type: image
+  src: "/assets/images/mobius-band.png"
+  href: "/assets/images/mobius-band.png"
+  caption: The classic Mobius band!
+- type: image
+  src: "/assets/images/klein-bottle.png"
+  href: "/assets/images/klein-bottle.png"
+  caption: The classic Klein bottle!
+- type: image
+  src: "/assets/images/foliation-diagram.png"
+  href: "/assets/images/foliation-diagram.png"
+  caption: A diagram demonstrating how the fibers of a fiber bundle 'foliate' the
+    total space.
+- type: image
+  src: "/assets/images/group-swarm.png"
+  href: "/assets/images/group-swarm.png"
+  caption: Group swarm
+- type: image
+  src: "/assets/images/drawings/J_Holo_Curve.png"
+  href: "/assets/images/drawings/J_Holo_Curve.png"
+  caption: Embedded J-holomorphic curve
+- type: image
+  src: "/assets/images/drawings/Embedded_Blowup.png"
+  href: "/assets/images/drawings/Embedded_Blowup.png"
+  caption: Intersecting curves on a hyperplane
+- type: image
+  src: "/assets/images/drawings/Embedded_J_holo_curve.png"
+  href: "/assets/images/drawings/Embedded_J_holo_curve.png"
+  caption: An embedded curve with marked points
+- type: image
+  src: "/assets/images/drawings/cell_complex_gluing.png"
+  href: "/assets/images/drawings/cell_complex_gluing.png"
+  caption: Building a cell complex
+- type: image
+  src: "/assets/images/drawings/tangent_space_lie_group.png"
+  href: "/assets/images/drawings/tangent_space_lie_group.png"
+  caption: Tangent space at the identity
+- type: image
+  src: "/assets/images/drawings/derived_yoga.png"
+  href: "/assets/images/drawings/derived_yoga.png"
+  caption: Embedding a category into a graded category
+- type: image
+  src: "/assets/images/drawings/moduli_of_curves.png"
+  href: "/assets/images/drawings/moduli_of_curves.png"
+  caption: Moduli of curves
+- type: image
+  src: "/assets/images/drawings/handle_slide.png"
+  href: "/assets/images/drawings/handle_slide.png"
+  caption: Handle slides
+- type: image
+  src: "/assets/images/drawings/finger_moves.png"
+  href: "/assets/images/drawings/finger_moves.png"
+  caption: Finger moves
+- type: image
+  src: "/assets/images/drawings/QuadricChart.png"
+  href: "/assets/images/drawings/QuadricChart.png"
+  caption: Quadric surfaces
+- type: image
+  src: "/assets/images/drawings/sphere_bundle.png"
+  href: "/assets/images/drawings/sphere_bundle.png"
+  caption: A family of spheres over a sphere
+- type: image
+  src: "/assets/images/sseq_colors.jpeg"
+  href: "/assets/images/sseq_colors.jpeg"
+  caption: Spectral sequence

@@ -1,0 +1,312 @@
+---
+talks:
+- title: Compact Moduli of Enriques Surfaces of Degree 2
+  category: Research
+  description: A talk on joint work (with Valery Alexeev, Phil Engel, and Luca Schaffler)
+    on compact moduli of Enriques surfaces with a numerical polarization of degree
+    2.
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/ModuliEnriquesSlides.pdf"
+  video:
+    provider: youtube
+    id: PuH5VKlhH_Y
+- title: On Phil Engel's paper Looijenga's conjecture via integral affine geometry
+  category: Research
+  description: 12/2022 · UGA Oral Exam, December 2022.
+  tags:
+  - Algebraic Geometry
+- title: Toward a Definition of the Fukaya Category
+  category: Reading Group
+  description: '09/2022 · $A_\infty\dash$Categories. UGA Symplectic Reading Seminar,
+    September 2022.'
+  tags:
+  - Symplectic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/2022-09-20-Fukaya-Talk.pdf"
+- title: 'Applications of Torelli: Faltings'' proof of the Mordell conjecture.'
+  category: Reading Group
+  description: 07/2022 · UGA Reading Group, July 2022
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/2022-07-28_UGA_ReadingGroup_AG.pdf"
+- title: The Annihilator of the Lefschetz Motive
+  category: Conference
+  description: 06/2022 · The MIT Talbot Workshop, June 2022.
+  links:
+  - label: Typeset Notes (PDF)
+    href: "/assets/talks/Annihilator_of_Lefschetz_Talk8.pdf"
+- title: Why Derived Geometry
+  category: Seminar
+  description: 02/2022 · UGA Graduate Student Seminar, February 2022.
+  tags:
+  - Derived Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/2022-02-23_UGA_GSS_Derived_Geometry.pdf"
+  images:
+  - src: "/assets/images/dg_1.png"
+  - src: "/assets/images/dg_2.png"
+  - src: "/assets/images/dg_3.png"
+- title: 'Betz-Cohen’s “Graph Moduli Spaces and Cohomology Operations”: The Equivariant
+    Invariants'
+  category: Reading Group
+  description: 11/2021 · Reading group at UGA, November 2021.
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/Cohomology_Operations_Fall2021.pdf"
+  images:
+  - src: "/assets/images/graph_moduli_preview.png"
+  - src: "/assets/images/graph1.png"
+  - src: "/assets/images/graph2.png"
+- title: Catalan's Conjecture, the Cases $q=2$ and $p=2$.
+  category: Seminar
+  description: '09/2021 · CCAM, UGA.'
+  tags:
+  - Algebraic Geometry
+- title: Computing Volumes of Moduli Spaces
+  category: Conference
+  description: '08/2021 · Mock AMS Conference, UGA.'
+  tags:
+  - Algebraic Geometry
+- title: Grothendieck's "On the de Rham Cohomology of Algebraic Varieties"
+  category: Seminar
+  description: 07/2021 · CRAAG, UGA.
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/CRAAG_July_2021_Grothendieck_Algebraic_deRham.pdf"
+  images:
+  - src: "/assets/images/derham1.png"
+  - src: "/assets/images/derham2.png"
+  - src: "/assets/images/derham3.png"
+- title: The Adams Spectral Sequence.
+  category: Seminar
+  description: 06/2021 · Stable Homotopy Theory Seminar.
+  tags:
+  - Homotopy Theory
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/2021_Stable_Homotopy/AdSS2.pdf"
+  - label: Slides (HTML)
+    href: "/assets/talks/2021_Stable_Homotopy/AdSS2.html"
+  - label: Video
+    href: https://youtu.be/WGoguCm0nJg?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ
+  video:
+    provider: youtube
+    id: WGoguCm0nJg
+- title: McDuff-Salamon "$J\dash$holomorphic Curves and Symplectic Topology" Seminar
+  category: Reading Group
+  description: 06/2021 · Symplectic Reading Seminar at UGA.
+  tags:
+  - Symplectic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/GW_Talk_3_4_Regularity_and_Constrained_Curves.pdf"
+  images:
+  - src: "/assets/images/jholo_1.png"
+  - src: "/assets/images/jholo_2.png"
+  - src: "/assets/images/jholo_3.png"
+- title: Sarkar-Wang's "An algorithm for computing some Heegaard Floer homologies".
+  category: Research
+  description: 05/2021 · Heegaard-Floer homology course final presentation.
+  tags:
+  - Symplectic Geometry
+  images:
+  - src: "/assets/images/sarkar_1.png"
+  - src: "/assets/images/sarkar_2.png"
+  - src: "/assets/images/sarkar_3.png"
+- title: An Overview of Stable Homotopy Theory
+  category: Seminar
+  description: 03/2021 · Graduate Student Seminar at UGA.
+  tags:
+  - Homotopy Theory
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/UGA_GSS_2020_03_29.pdf"
+  images:
+  - src: "/assets/images/gss_stab_homotopy1.png"
+  - src: "/assets/images/gss_stab_homotopy2.png"
+  - src: "/assets/images/gss_stab_homotopy3.png"
+- title: Homotopy Groups of Spectra
+  category: Seminar
+  description: 03/2021 · Stable Homotopy Theory Seminar.
+  tags:
+  - Homotopy Theory
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/DZG_StableHomotopyTalk_3_22_2020.pdf"
+  - label: Video
+    href: https://youtu.be/U69FWhcn7ro?list=PL2CKWJCxPcYB2YQ9qCmCIGV9b2azLEeOZ
+  video:
+    provider: youtube
+    id: U69FWhcn7ro
+- title: Floer Homology, Multiple Talks
+  category: Reading Group
+  description: Fall 2020 · Reading seminar at UGA.
+  tags:
+  - Symplectic Geometry
+- title: Interesting Topological Spaces in Algebraic Geometry
+  category: Conference
+  description: 06/2020 · Mock AMS Conference at UGA.
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (HTML)
+    href: "/assets/talks/07-31-2020-Mock-AMS/TopAndAGSlides.html"
+  images:
+  - src: "/assets/images/spaces_in_ag_1.png"
+  - src: "/assets/images/spaces_in_ag_2.png"
+  - src: "/assets/images/spaces_in_ag_3.png"
+- title: Zeta Functions and The Weil Conjectures, "Numbers of solutions of equations
+    in finite fields"
+  category: Seminar
+  description: 04/2020 · CRAAG at UGA.
+  tags:
+  - Algebraic Geometry
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/DZG_CRAG_Weil_Conjectures.pdf"
+  images:
+  - src: "/assets/images/weil_zeta_1.png"
+  - src: "/assets/images/weil_zeta_2.png"
+  - src: "/assets/images/weil_zeta_3.png"
+- title: Homotopy Groups of Spheres
+  category: Seminar
+  description: 04/2020 · UGA Graduate Student Seminar, UGA.
+  tags:
+  - Homotopy Theory
+  links:
+  - label: Slides (PDF)
+    href: "/assets/talks/HomotopyGroupsOfSpheres.pdf"
+  images:
+  - src: "/assets/images/homotopy_of_spheres1.png"
+  - src: "/assets/images/homotopy_of_spheres2.png"
+  - src: "/assets/images/homotopy_of_spheres3.png"
+- title: Theorems/Conjectures on Periodic Orbits in Symplectic Geometry
+  category: Seminar
+  description: 02/2020 · Graduate Student Topology Seminar, UGA.
+  tags:
+  - Symplectic Geometry
+- title: Homotopy Theory and the Kervaire Invariant One Problem
+  category: Seminar
+  description: Nov 2019 · Graduate Student Topology Seminar, UGA
+  tags:
+  - Homotopy Theory
+- title: 'Spectral Sequences: A Primer'
+  category: Seminar
+  description: Oct 2019 · Graduate Student Seminar, UGA
+  tags:
+  - Homotopy Theory
+- title: 'Comparison Theorems in Cohomology: Singular, Simplicial, de Rham, and Čech'
+  category: Research
+  description: Sep 2019 · In-Class Talk, UGA.
+  tags:
+  - Algebraic Geometry
+- title: Mathematics Subject GRE Workshop
+  category: Seminar
+  description: Feb 2019 · Society of Undergraduate Mathematics Students, UCSD.
+  links:
+  - label: Notes(PDF)
+    href: "/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html"
+  - label: Slides (HTML)
+    href: "/assets/talks/02-22-2019-GRE-Workshop/Slides.html"
+  - label: Slides (PDF)
+    href: "/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf"
+  tags:
+  - Expository / Tools
+- title: Homotopy and the Hopf Fibration
+  category: Seminar
+  description: 06/2018 · UCSD
+  tags:
+  - Homotopy Theory
+- title: Introduction to Markdown and Latex for Mathematics
+  category: Seminar
+  description: 04/2018 · UCSD
+  tags:
+  - Expository / Tools
+- title: Topological Fixed Point Theorems
+  category: Seminar
+  description: 02/2018 · UCSD
+  tags:
+  - Topology
+- title: Homology and The Snake Lemma
+  category: Seminar
+  description: 11/2017 · UCSD
+  tags:
+  - Topology
+- title: 'Algebraic Geometry: A Historical Primer'
+  category: Seminar
+  description: 10/2017 · UCSD
+  tags:
+  - Algebraic Geometry
+- title: Introduction to Functional Programming
+  category: Seminar
+  description: 10/2017 · UCSD
+  tags:
+  - Expository / Tools
+- title: Intermediate LaTeX
+  category: Seminar
+  description: 05/2017 · UCSD
+  tags:
+  - Expository / Tools
+- title: Introduction to LaTeX
+  category: Seminar
+  description: 04/2017 · UCSD
+  tags:
+  - Expository / Tools
+- title: Intermediate LaTeX
+  category: Seminar
+  description: 02/2017 · UCSD
+  tags:
+  - Expository / Tools
+- title: 'Intermediate LaTeX: Organizing Large Projects'
+  category: Seminar
+  description: 01/2017 · UCSD
+  tags:
+  - Expository / Tools
+- title: Category Theory as a Mathematical Organizational Tool
+  category: Seminar
+  description: 01/2017 · UCSD
+  tags:
+  - Category Theory
+- title: Introduction to LaTeX
+  category: Seminar
+  description: 11/2016 · UCSD
+  tags:
+  - Expository / Tools
+- title: Introduction to Category Theory, Part 2
+  category: Seminar
+  description: 11/2016 · UCSD
+  tags:
+  - Category Theory
+- title: Introduction to Category Theory, Part 1
+  category: Seminar
+  description: 10/2016 · UCSD
+  tags:
+  - Category Theory
+- title: Haskell for Mathematicians
+  category: Seminar
+  description: 10/2016 · UCSD
+  tags:
+  - Expository / Tools
+- title: 'Discrete Mathematics: An Overview of Graphs and Trees'
+  category: Seminar
+  description: 05/2013 · Sierra College
+- title: Undergraduate Research in Algebraic Topology
+  category: Research
+  description: Winter/Spring 2018 · Undergraduate research with <a href="https://web.archive.org/web/20210916192326/http://math.ucsd.edu/~justin/">Justin
+    Roberts</a> at UCSD.
+  links:
+  - label: Poster (PDF)
+    href: "/assets/pdfs/research/ResearchPoster.pdf"
+  - label: Paper, Rough Draft (PDF)
+    href: "/assets/pdfs/research/SSThesisPaper.pdf"
