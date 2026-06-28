@@ -43,7 +43,7 @@ On the other hand, the map from $V$ to $V^{\vee\vee}$ requires *no such choice*.
 In this way, we say that $V$ is isomorphic to its dual, but $V$ is *naturally* isomorphic to it's double dual.
 This idea of "naturality" is part of what category theory sets out to make precise.
 
-A secondary motivation was to abstract away properties that are really only a result of some particular structure or construction, and don't actually have much to do with the specific kind of object you're working with. (If you've programmed much, the analog here would be "refactoring" commonly used pieces of code into a more general interface.)
+A secondary motivation was to abstract away properties that are really only a result of some particular structure or construction, and don't actually have much to do with the specific kind of object you're working with.^[If you've programmed much, the analog here would be "refactoring" commonly used pieces of code into a more general interface.]
 
 A few such constructions would be things like products or quotients of objects, which are ubiquitous in mathematics. With products, for example, it is possible to construct a product of sets (which have very little structure), but we can also construct a product of vector spaces (which have a very rich structure). It's then natural to ask, what commonalities do these constructions share? Which properties of a product of vector spaces are due to them being vector spaces, and which are just a result of its construction as a product? This is another area where category theory shines; notions such as products and quotients can be described in terms of *universal properties*, which pay no heed to what the underlying objects really are at all.
 
@@ -78,9 +78,7 @@ $$\begin{align*}
 
 (i.e., the $XOR$ operation), then applying $\mathcal{F}$ to $(\mathbb{Z}_2, XOR)$ just gives you a two element set $\theset{a_0. a_1}$.
 
-Then $\mathcal{F}$ has an adjoint $\mathcal{G}$, which creates the free group on that set, $F(\theset{a_0, a_1})$. So if you apply $\mathcal{G} \circ \mathcal{F}$ to $\mathbb{Z_2}$, you end up back in $\mathbf{Group}$, but you don't get back the same group you started with --  indeed, the free group consists of infinitely many strings over the alphabet $\theset{a_0, a_1, a_0^{-1}, a_1^{-1}}$, while $\mathbb{Z}_2$ had only two elements. So this adjunction, the free group, provided a way to reconstruct a minimal group out of the information we lost by applying $\mathcal{F}$. For this reason, you'll often hear of adjunction as the "the most efficient" solution to a given problem, or as a form of "optimization".
-
-(In this case, however, there was only one group with an underlying set of two elements, so if we knew the adjunction was applied, we could deduce what the original group was!)
+Then $\mathcal{F}$ has an adjoint $\mathcal{G}$, which creates the free group on that set, $F(\theset{a_0, a_1})$. So if you apply $\mathcal{G} \circ \mathcal{F}$ to $\mathbb{Z_2}$, you end up back in $\mathbf{Group}$, but you don't get back the same group you started with --  indeed, the free group consists of infinitely many strings over the alphabet $\theset{a_0, a_1, a_0^{-1}, a_1^{-1}}$, while $\mathbb{Z}_2$ had only two elements. So this adjunction, the free group, provided a way to reconstruct a minimal group out of the information we lost by applying $\mathcal{F}$.^[In this case, however, there was only one group with an underlying set of two elements, so if we knew the adjunction was applied, we could deduce what the original group was.] For this reason, you'll often hear of adjunction as the "the most efficient" solution to a given problem, or as a form of "optimization".
 
 # Definition of a Category
 

@@ -29,12 +29,10 @@ Below is a partial transcription and some notes I took while watching the follow
   - This talk: not so much related to his personal work!
   - Will revisit
 
-Throughout: $\Sigma_g$ will be a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by
+Throughout: $\Sigma_g$ will be a connected oriented $g\geq 2$ surface, will look at $\Sigma_g\dash$ bundles given by^[Fiber bundle where the base and total space will usually be compact manifolds, fiber is a surface.]
 $$
 \Sigma_g \to E \mapsvia{\pi} B
 $$
-
-(Fiber bundle where the base and total space will usually be compact manifolds, fiber is a surface)
 
 For any $f\in \operatorname{Diff}(\Sigma_g)$, take cylinder on $\Sigma_g$ and glue ends via $f$ to obtain a 3-manifold and the surface bundle
 $$
@@ -81,7 +79,7 @@ Why study $\Sigma_g$ bundles?
 
 The main invariant for these bundles: **The Monodromy Representation**
 
-Let $\operatorname{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\operatorname{Diff}^+ \Sigma_g)$) (group of homotopy/isotopy classes of diffeos on the surface).
+Let $\operatorname{Mod}(\Sigma_g)$ be the mapping class group of the surface, i.e. $\pi_0(\operatorname{Diff}^+ \Sigma_g)$.^[Group of homotopy/isotopy classes of diffeos on the surface.]
 
 Representation from earlier can be projected:
 $$
@@ -233,4 +231,3 @@ $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional!
 So all of these classes are scalar multiples of each other - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
 
 See book with Dan Margalit: all of this lives in the group $\operatorname{Mod} \Sigma_g \injects \operatorname{Homeo}^+(S^1)$
-
