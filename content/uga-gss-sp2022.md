@@ -26,7 +26,7 @@ This semester was jointly organized by [D. Zack Garza](https://dzackgarza.com) a
 
 ## 01/25/2022
 
-Speaker: [Dino Lorenzini](http://alpha.math.uga.edu/~lorenz/) (25m)
+Speaker: [Dino Lorenzini](https://dinolorenzini.franklinresearch.uga.edu/) (25m)
 
 ## 02/01/2022
 

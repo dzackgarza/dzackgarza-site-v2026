@@ -29,9 +29,9 @@ Inspired by the following Twitter thread:
 
 - [Milne's Collection of Course Notes](https://www.jmilne.org/math/CourseNotes/)
 
-- [Pete Clark's Expositions](http://alpha.math.uga.edu/~pete/expositions2012.html)
+- [Pete Clark's Expositions](https://plclark.github.io/PeteLClark/Expositions/)
 
-- [PDF Notes for a variety of Cambridge courses](http://dec41.user.srcf.net/notes/)
+- [PDF Notes for a variety of Cambridge courses](https://web.archive.org/web/20191229023440/http://dec41.user.srcf.net:80/notes/)
 
 - Qiaochu Yuan has some [reading recommendations](https://qchu.wordpress.com/reading-recommendations/)
 
@@ -275,7 +275,7 @@ Inspired by the following Twitter thread:
 
 - [Dwyer-Spalinski, Homotopy Theories and Model Categories](http://www.math.jhu.edu/~eriehl/616/DwyerSpalinski.pdf)
 - [Hovey-Shipley-Smith, Symmetric Spectra](https://arxiv.org/abs/math/9801077)
-- [Hovey, Spectra and symmetric spectra in general model categories](https://web.math.rochester.edu/people/faculty/doug/otherpapers/hovey-symm.pdf)
+- [Hovey, Spectra and symmetric spectra in general model categories](https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/hovey-symm.pdf)
 
 ### Bott-Tu, Differential Forms in Algebraic Topology
 

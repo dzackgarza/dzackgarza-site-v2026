@@ -21,7 +21,7 @@ Broadly, I am interested in compactifications of moduli spaces, particularly of 
 
 # Research
 
-- [(arxiv 2312.03638) Compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638). Joint work with [Valery Alexeev](https://www.math.uga.edu/directory/people/valery-alexeev), [Phil Engel](https://philip-engel.github.io/), and [Luca Schaffler](https://ricerca.matfis.uniroma3.it/users/lschaffler/).
+- [(arxiv 2312.03638) Compact moduli of Enriques surfaces with a numerical polarization of degree 2](https://arxiv.org/abs/2312.03638). Joint work with [Valery Alexeev](https://www.math.uga.edu/directory/people/valery-alexeev), [Phil Engel](https://philip-engel.github.io/), and [Luca Schaffler](http://ricerca.matfis.uniroma3.it/users/lschaffler/).
 
 <script type="application/ld+json">
 {
