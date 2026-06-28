@@ -54,7 +54,7 @@ repo owns the bundle used to render this site.
 ```
 content/
   *.md            # pages (opt in with `site.page: true` frontmatter)
-  _data/          # navigation.toml, items.yaml (merged component data), items/*.yaml (split sources)
+  _data/          # navigation.toml plus editable data-source YAML, e.g. items/*.yaml
   _site.toml      # passthrough subtrees, directory→type inference
   assets/         # images, PDFs, fonts (Git LFS); copied verbatim to dist/
   */              # standalone apps copied verbatim (opaque passthrough)

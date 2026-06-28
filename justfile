@@ -9,7 +9,6 @@
 
 SSG := "bunx pandoc-ssg"
 PANDOC := "pandoc"
-SYNC_ITEMS := "ruby scripts/sync-items-data.rb merge"
 
 # Install the pinned generator (run once after clone, and after `just update`)
 setup:
@@ -17,7 +16,6 @@ setup:
 
 # Compile content/ into dist/
 build:
-    {{SYNC_ITEMS}}
     {{SSG}} build --pandoc {{PANDOC}}
 
 # Build, then preview the site over HTTP (Ctrl-C to stop)
@@ -26,7 +24,6 @@ serve: build
 
 # Build, then fail on any malformed page or broken internal link
 check:
-    {{SYNC_ITEMS}}
     {{SSG}} check --pandoc {{PANDOC}}
 
 # QC gate (run by the global pre-commit hook): build + fail on malformed pages,
@@ -38,10 +35,11 @@ test: check check-orphans
 test-ci: test
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
-# notes/talks listings are client-rendered from content/_data/items.yaml, so
-# their external + asset links slip past it. This lints the content source
-# (so even *bare* URLs that never render as <a href> are checked) plus every
-# built page, resolving root-relative links against the live local deployment.
+# collection data is rendered from content/_data/ sources such as
+# content/_data/items/*.yaml, so external + asset links slip past it. This
+# lints the content source (so even *bare* URLs that never render as <a href>
+# are checked) plus every built page, resolving root-relative links against the
+# live local deployment.
 # Vendored/archived third-party artifacts (example dumps, slide decks) are
 # skipped.
 #
