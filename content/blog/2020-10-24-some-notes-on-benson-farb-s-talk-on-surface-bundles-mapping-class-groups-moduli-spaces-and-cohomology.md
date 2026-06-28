@@ -47,12 +47,7 @@ Another way to build bundles: take a representation $\rho: \pi_1 B \to \operator
 
 Generalizes previous example: take real line cross surface and mod out by deck transformations.
 
-Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.
-
-> Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. 
-> Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. 
-> Flat means curvature vanishes is equivalent to Frobenius integrability theorem -- the 2-plane is integrable. 
-> So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".
+Such bundles are called flat $\Sigma_g$ bundles, exactly those which admit flat connections.^[Note on connections: there's a map $TE \mapsvia{\pi} TB$, can look at $\ker \pi$ which is a 2-plane bundle over $E$. Take the kernel of $E \mapsvia{f} B$ is obtain a "vertical" 2-plane bundle, horizontal is not well-defined and so is a choice of a 2-plane field. Flat means curvature vanishes is equivalent to Frobenius integrability theorem -- the 2-plane is integrable. So curvature measures how integrable the 2-plane field is, rephrases "when is a 2-plane tangent to a foliation".]
 
 One organizing problem: classify surface bundles over a fixed closed base manifold up to
 
@@ -93,9 +88,7 @@ $$
 \pi_1 B \to \operatorname{Diff}^+ \Sigma_g \mapsvia{\pi} \operatorname{Mod}(\Sigma_g)
 $$
 
-Take a homeomorphism to its homotopy class, Mod is finitely generated.
-
-> In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.
+Take a homeomorphism to its homotopy class, Mod is finitely generated.^[In AG, the mapping class group is the orbifold fundamental group of $\mathcal{M}$, and this is a $K(\pi_1)$ space in the appropriate category.]
 
 So any bundle $\Sigma_g \to E \to B$ yields a corresponding monodromy representation
 $$
@@ -157,9 +150,7 @@ $$
 
 Why? For any $X = K(\pi, 1)$ space, $[\wait, X] \cong$ the conjugacy classes of $[\pi_1 \wait, \pi_1 X]$(?)
 
-Somehow, this all comes down to uniformization.
-
-> Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.
+Somehow, this all comes down to uniformization.^[Note: Reduces problem of classification up to bundle isomorphism (solved in general by B.F.) to a group theory problem immediately.]
 
 How are you given the bundle? Can be given as triangulation, in which case one can produce the monodromy map (huge number of steps though! $e^{e^{e^{\cdots}}}$). Or can be given the monodromy map; this determines the bundle.
 
@@ -228,16 +219,12 @@ Take the signature of $M_4$ (where you use the intersection pairing on $H_2$, ta
 
 ## Another Cocycle
 
-Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.
+Look at the vertical bundle over $T$, you get $\RR^2 \to E \to T$.^[Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.]
 
-> Note: can see this bundle by looking at moduli space of Riemann surfaces $\mathcal{M}_g$, covered by $\mathcal{M}_g^*$ with fiber $\Sigma_g$. There is a vertical bundle over this, everything that is tangent to the fiber, which is a 2-plane bundle over the covering space.
-
-So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so
+So look at the Euler class $e\in H^2(T)$, take so-called "MMM class". How to get a cocycle? Can try integrating over fiber, so^[Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.]
 $$
 e_i = \int_{\Sigma_g} e^{i+1} \in H^{2i}(\operatorname{Mod} \Sigma_g; \QQ).
 $$
-
-> Note: the moduli space is a Kahler manifold, so you get the Weil-Peterson 2-form which is the Kahler class in $H^2$.
 
 :::{.theorem title="Harer, 1980s"}
 $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional! 
@@ -246,5 +233,4 @@ $H^2(\operatorname{Mod}(\Sigma)g; \RR) = \RR$, which is one-dimensional!
 So all of these classes are scalar multiples of each other - and in fact, sometimes not rational multiples, so sometimes you get interesting number-theoretic quantities like $\frac {\pi^2} 6$.
 
 See book with Dan Margalit: all of this lives in the group $\operatorname{Mod} \Sigma_g \injects \operatorname{Homeo}^+(S^1)$
-
 
