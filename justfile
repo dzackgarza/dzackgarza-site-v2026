@@ -10,29 +10,53 @@
 SSG := "bunx pandoc-ssg"
 PANDOC := "pandoc"
 
-# Install the pinned generator (run once after clone, and after `just update`)
+# Show available recipes
+default:
+    @just --list
+
+# Install dependencies, LFS assets, and browser verification runtime
 setup:
     bun install
+    git lfs pull
+    bunx playwright install chromium
 
 # Compile content/ into dist/
-build:
-    {{SSG}} build --pandoc {{PANDOC}}
+build: _build
 
 # Build, then preview the site over HTTP (Ctrl-C to stop)
 serve: build
     {{SSG}} serve
 
-# Build, then fail on any malformed page or broken internal link
-check:
-    {{SSG}} check --pandoc {{PANDOC}}
+# Run the broad live-site readiness gate
+check: _check-build _check-orphans _check-links
 
-# QC gate (run by the global pre-commit hook): build + fail on malformed pages,
-# broken internal links, or pages reachable from nothing (orphans).
-test: check check-orphans
+# Run browser verification over the built site
+verify: _verify
 
-# Push gate (run by the global pre-push hook). This is a content repo, so the
-# push gate is the same build + internal-link validation as the commit gate.
+# Rebuild and validate dist/ for static hosting
+deploy: check verify
+
+# Run the local QC gate used by commit hooks
+test: check
+
+# Run the push/CI gate
 test-ci: test
+
+# Scaffold a new blog post: just new "My Post Title"
+new TITLE:
+    {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
+
+# Remove build output
+clean:
+    rm -rf dist
+
+[private]
+_build:
+    {{SSG}} build --pandoc {{PANDOC}}
+
+[private]
+_check-build:
+    {{SSG}} check --pandoc {{PANDOC}}
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
 # collection data is rendered from content/_data/ sources such as
@@ -42,9 +66,8 @@ test-ci: test
 # live local deployment.
 # Vendored/archived third-party artifacts (example dumps, slide decks) are
 # skipped.
-#
-# Check for dead links across the site + collection data (lychee)
-check-links: build
+[private]
+_check-links: _build
     lychee --no-progress --base-url http://website.localhost/ \
         --max-concurrency 8 --timeout 20 \
         --accept '200,206,301,302,307,308,403' \
@@ -60,25 +83,18 @@ check-links: build
 # page is linked *to* by anything — a page can build, sit in the sitemap, and
 # still be reachable only by typing its URL. This flags pages unreachable from
 # the home page + nav (following static links and island-injected ones).
-#
-# Fail on pages reachable from nothing (orphans)
-check-orphans: build
-    python3 .agents/check-orphans.py
+[private]
+_check-orphans: _build
+    python3 scripts/check-orphans.py
 
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
 # browser: `bunx playwright install chromium`)
-verify:
+[private]
+_verify:
     {{SSG}} verify --pandoc {{PANDOC}}
 
-# Scaffold a new blog post: just new "My Post Title"
-new TITLE:
-    {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
-
 # Bump the generator to the latest published version (updates bun.lock)
-update:
+[private]
+_update-generator:
     bun update pandoc-ssg
-
-# Remove build output
-clean:
-    rm -rf dist
