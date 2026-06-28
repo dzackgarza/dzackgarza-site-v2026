@@ -4,6 +4,9 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Algebraic Surfaces
+  - Complex Geometry
+  - Moduli Spaces
   description: Phil Engel, Spring 2023
   links:
   - label: PDF
@@ -56,6 +59,7 @@ notes:
   category: Notes
   tags:
   - Algebra
+  - Homological Algebra
   description: Brian Boe, Spring 2021
   links:
   - label: PDF
@@ -96,6 +100,7 @@ notes:
   category: Notes
   tags:
   - Representation Theory
+  - Homological Algebra
   description: Brian Boe, Spring 2020
   links:
   - label: PDF V2
@@ -110,6 +115,8 @@ notes:
   category: Notes
   tags:
   - Representation Theory
+  - Algebraic Geometry
+  - Varieties
   description: Dan Nakano, Fall 2020
   links:
   - label: PDF
@@ -124,6 +131,7 @@ notes:
   category: Notes
   tags:
   - Representation Theory
+  - Homological Algebra
   description: Dan Nakano, Spring 2022
   links:
   - label: PDF
@@ -138,6 +146,7 @@ notes:
   category: Notes
   tags:
   - Representation Theory
+  - Homological Algebra
   description: Arik Wilbert, Summer 2020
   links:
   - label: PDF
@@ -152,6 +161,9 @@ notes:
   category: Notes
   tags:
   - Representation Theory
+  - Algebraic Geometry
+  - Varieties
+  - Algebraic K-Theory
   description: Scott Larson, Fall 2021
   links:
   - label: PDF
@@ -166,6 +178,7 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Varieties
   description: Philip Engel, Fall 2020
   links:
   - label: PDF
@@ -180,6 +193,7 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Schemes
   description: Phil Engel, Fall 2021
   links:
   - label: HTML (pending)
@@ -193,6 +207,8 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Sheaves
+  - Homological Algebra
   description: Valery Alexeev, Spring 2022
   links:
   - label: PDF
@@ -207,6 +223,11 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Low-Dimensional Topology
+  - Differential Geometry
+  - Manifolds
+  - Algebraic Surfaces
+  - Complex Geometry
   description: Phil Engel, Spring 2021
   links:
   - label: PDF
@@ -221,6 +242,8 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Moduli Spaces
+  - Varieties
   description: Valery Alexeev, Fall 2022
   links:
   - label: PDF
@@ -235,6 +258,8 @@ notes:
   category: Notes
   tags:
   - Algebraic Geometry
+  - Moduli Spaces
+  - Complex Geometry
   description: Ben Bakker, Spring 2020
   links:
   - label: PDF
@@ -249,6 +274,8 @@ notes:
   category: Notes
   tags:
   - Number Theory
+  - Algebraic Number Theory
+  - Arithmetic Geometry
   description: Paul Pollack, Spring 2021
   links:
   - label: PDF
@@ -263,12 +290,17 @@ notes:
   category: Notes
   tags:
   - Number Theory
+  - Algebraic Number Theory
+  - Arithmetic Geometry
   description: Pete Clark, Spring 2021
   links: []
 - title: Algebraic Curves
   category: Notes
   tags:
   - Number Theory
+  - Algebraic Curves
+  - Arithmetic Geometry
+  - Algebraic Geometry
   description: Pete Clark, Fall 2020
   links:
   - label: PDF
@@ -283,6 +315,9 @@ notes:
   category: Notes
   tags:
   - Number Theory
+  - Arithmetic Geometry
+  - Algebraic Geometry
+  - Sheaves
   description: Daniel Litt, Fall 2020
   links:
   - label: PDF
@@ -297,6 +332,10 @@ notes:
   category: Notes
   tags:
   - Number Theory
+  - Arithmetic Geometry
+  - Algebraic Number Theory
+  - Algebraic Geometry
+  - Varieties
   description: Daniel Litt, Fall 2021
   links:
   - label: PDF
@@ -311,6 +350,8 @@ notes:
   category: Notes
   tags:
   - Topology
+  - Algebraic Topology
+  - Homotopy Theory
   description: Justin Roberts, Fall 2017 and Spring 2018
   links:
   - label: PDF
@@ -325,6 +366,8 @@ notes:
   category: Notes
   tags:
   - Topology
+  - Differential Geometry
+  - Manifolds
   description: Akram Alishahi, Spring 2020
   links:
   - label: PDF
@@ -337,6 +380,9 @@ notes:
   category: Notes
   tags:
   - Topology
+  - Low-Dimensional Topology
+  - Homological Algebra
+  - Manifolds
   description: Akram Alishahi, Spring 2021
   links:
   - label: PDF
@@ -349,6 +395,9 @@ notes:
   category: Notes
   tags:
   - Topology
+  - Algebraic Topology
+  - Differential Geometry
+  - Manifolds
   description: Akram Alishahi, Fall 2021
   links:
   - label: PDF
@@ -363,6 +412,9 @@ notes:
   category: Notes
   tags:
   - Topology
+  - Low-Dimensional Topology
+  - Differential Geometry
+  - Manifolds
   description: Peter Lambert-Cole, Spring 2022
   links:
   - label: PDF
@@ -389,6 +441,7 @@ notes:
   category: Notes
   tags:
   - Analysis
+  - Complex Geometry
   description: Jingzhi Tie, Spring 2020
   links:
   - label: PDF
@@ -450,7 +503,8 @@ notes:
   - src: "/assets/images/notes/33-a-history-of-modern-algebraic-geometry/3.png"
 - title: Notes on the Math GRE
   category: Expository
-  tags: []
+  tags:
+  - Undergraduate
   description: GRE Workshop, February 2019
   links:
   - label: Notes
@@ -468,6 +522,8 @@ notes:
   tags:
   - Homotopy Theory
   - Algebraic Geometry
+  - Arithmetic Geometry
+  - Algebraic Topology
   description: Lecture notes from the 2021 IAS/PCMI Graduate Summer School.
   links:
   - label: Combined Notes (PDF)
@@ -492,6 +548,9 @@ notes:
   category: Seminar
   tags:
   - Symplectic Geometry
+  - Differential Geometry
+  - Moduli Spaces
+  - Manifolds
   description: Gromov–Witten invariants and regularity theorems.
   links:
   - label: Typeset Notes (PDF)
@@ -506,6 +565,9 @@ notes:
   category: Seminar
   tags:
   - Geometry
+  - Differential Geometry
+  - Manifolds
+  - Low-Dimensional Topology
   links:
   - label: PDF
     href: "/assets/notes/Tilings.pdf"
@@ -518,6 +580,9 @@ notes:
   tags:
   - Algebraic Geometry
   - Number Theory
+  - Arithmetic Geometry
+  - Algebraic Number Theory
+  - Homotopy Theory
   description: Notes from the 2019 Arizona Winter School.
   links:
   - label: Wickelgren — A1 Enumerative Geometry
@@ -532,6 +597,44 @@ notes:
   category: Seminar
   tags:
   - Algebraic Geometry
+  - Moduli Spaces
+  - Algebraic Curves
+  - Algebraic Surfaces
   links:
   - label: Talk Notes (HTML)
     href: "/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html"
+- title: 'Talbot 2022: Scissors Congruence and Algebraic K-Theory'
+  category: Proceedings
+  tags:
+  - Algebraic K-Theory
+  - Algebraic Topology
+  - Homotopy Theory
+  - Manifolds
+  description: Proceedings from Talbot 2022, jointly compiled with Maxine Calle.
+  links:
+  - label: Notes (PDF)
+    href: "/assets/pdfs/Talbot_2022.pdf"
+- title: 'MSRI Workshop: Chern-Simons and Other Topological Field Theories'
+  category: Workshop Notes
+  tags:
+  - Low-Dimensional Topology
+  - Differential Geometry
+  - Algebraic Topology
+  - Manifolds
+  description: Notes from the MSRI workshop on Chern-Simons and other topological field theories.
+  links:
+  - label: Notes (PDF)
+    href: "/assets/pdfs/transcribed_notes/MSRI_2021_ChernSimons.pdf"
+- title: 'MIT Talbot Workshop: Viva Talbot!'
+  category: Workshop Notes
+  tags:
+  - Homotopy Theory
+  - Algebraic Topology
+  - Complex Geometry
+  - Algebraic Geometry
+  description: 'Notes from the MIT Talbot Workshop: Viva Talbot!'
+  links:
+  - label: Jeremy Hahn — Methods and Mysteries in the Construction of Ring Spectra
+    href: "/assets/pdfs/transcribed_notes/Talbot_2021__Methods_and_mysteries_in_the_construction_of_ring_spectra.pdf"
+  - label: Tasos Moulinos — Perspectives of Nonabelian Hodge Theory
+    href: "/assets/pdfs/transcribed_notes/Talbot_2021__Perspectives_on_non_abelian_Hodge_theory.pdf"
