@@ -49,13 +49,18 @@ new TITLE:
 # Remove build output
 clean:
     rm -rf dist
+    rm -f content/_data/items/projects.yaml
 
 [private]
-_build:
+_project-items:
+    python3 scripts/generate-project-items.py
+
+[private]
+_build: _project-items
     {{SSG}} build --pandoc {{PANDOC}}
 
 [private]
-_check-build:
+_check-build: _project-items
     {{SSG}} check --pandoc {{PANDOC}}
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
@@ -73,10 +78,10 @@ _check-links: _build
         --accept '200,206,301,302,307,308,403' \
         --exclude-path content/assets/examples \
         --exclude-path content/assets/talks \
-        --exclude-path content/square_topologies \
+        --exclude-path content/projects/square_topologies \
         --exclude-path dist/assets/examples \
         --exclude-path dist/assets/talks \
-        --exclude-path dist/square_topologies \
+        --exclude-path dist/projects/square_topologies \
         content dist
 
 # pandoc-ssg's `check` validates that internal links *resolve*, but not that a

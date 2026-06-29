@@ -1,0 +1,7 @@
+title = "Moving in Fundamental Domains"
+category = "Mathematical Toy"
+description = "An arrow-key toy for moving through square fundamental domains and comparing torus and projective-plane edge identifications."
+tags = ["Topology", "Geometry", "Interactive"]
+image = "/assets/images/SnakeTopology.png"
+alt = "Canvas toy showing movement through identified square fundamental domains."
+order = 20

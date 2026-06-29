@@ -57,7 +57,7 @@ content/
   _data/          # navigation.toml plus editable data-source YAML, e.g. items/*.yaml
   _site.toml      # passthrough subtrees, directory→type inference
   assets/         # images, PDFs, fonts (Git LFS); copied verbatim to dist/
-  */              # standalone apps copied verbatim (opaque passthrough)
+  projects/       # standalone apps; each folder has index.html + project.toml
 pandoc/
   templates/      # site-owned Pandoc HTML templates
   defaults/       # site-owned Pandoc defaults
@@ -67,3 +67,6 @@ pandoc/
 
 Binary assets (PDF, PNG, JPG, fonts, wasm, …) are stored via Git LFS; see
 `.gitattributes`.
+
+Project landing-page data is generated from `content/projects/*/project.toml`
+by `just build`; do not edit `content/_data/items/projects.yaml` by hand.

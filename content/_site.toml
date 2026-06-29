@@ -1,9 +1,5 @@
-# Standalone sub-sites copied verbatim (opaque passthrough): their internal
-# files — including any markdown — are never compiled; public URLs and
-# behavior are preserved exactly. See Static-Site-Generator-Design.md
-# "Standalone sub-sites" and the migration plan's step 6.
+# Standalone project sub-sites copied verbatim (opaque passthrough). The
+# landing page at /projects/ is generated from each child directory's
+# project.toml; child project files are not compiled as site pages.
 [[passthrough]]
-path = "persistent_homology"
-
-[[passthrough]]
-path = "square_topologies"
+path = "projects"

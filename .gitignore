@@ -1,4 +1,5 @@
 dist/
 .generated/
+content/_data/items/projects.yaml
 node_modules/
 *.log

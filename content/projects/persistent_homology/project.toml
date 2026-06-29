@@ -1,0 +1,7 @@
+title = "Persistent Homology"
+category = "Mathematical Toy"
+description = "A browser toy for watching a Vietoris-Rips complex, Euler characteristic, and low-dimensional homology change with a distance threshold."
+tags = ["Topology", "Homology", "Interactive"]
+image = "/assets/images/SimplicesToy.png"
+alt = "Persistent homology toy showing a moving simplicial complex."
+order = 10

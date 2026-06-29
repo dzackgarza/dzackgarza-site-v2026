@@ -854,6 +854,23 @@ main iframe {
   }
 }
 
+@media (max-width: 520px) {
+  .collection__item--thumbed {
+    display: block;
+  }
+  .collection__thumb {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 0.65rem;
+  }
+  .collection__cat {
+    display: block;
+    margin: 0.15rem 0 0;
+  }
+}
+
 /* -------------------------------------------------------------------------
  * amsthm-style environments (:::{.theorem}, …) — a run-in bold label, no box.
  * ------------------------------------------------------------------------- */

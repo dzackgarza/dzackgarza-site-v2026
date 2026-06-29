@@ -38,6 +38,11 @@ weight = 15
   weight = 40
 
 [[main]]
+title = "Projects"
+href = "/projects/"
+weight = 25
+
+[[main]]
 title = "About"
 href = "/about/"
 weight = 35
