@@ -5,6 +5,7 @@ const COLORS = {
   vertexCore: 0x60f3b2,
   edge: 0x57b8ff,
   face: 0xa993ff,
+  manualFace: 0x60f3b2,
   threshold: 0xffb84d,
 };
 
@@ -46,7 +47,8 @@ export async function createRenderer(container) {
     const height = app.screen.height;
     const mapped = complex.points.map((point) => mapPoint(point, width, height));
     const unit = Math.min(width, height);
-    const thresholdRadius = complex.threshold * unit;
+    const pad = unit * 0.075;
+    const thresholdRadius = complex.threshold * (unit - pad * 2);
 
     faceLayer.clear();
     edgeLayer.clear();
@@ -65,7 +67,28 @@ export async function createRenderer(container) {
         mapped[c].x,
         mapped[c].y,
       ]);
-      faceLayer.fill(COLORS.face, 0.065);
+      faceLayer.fill(COLORS.face, 0.082);
+    }
+
+    for (const [a, b, c] of complex.manualFaces ?? []) {
+      faceLayer.poly([
+        mapped[a].x,
+        mapped[a].y,
+        mapped[b].x,
+        mapped[b].y,
+        mapped[c].x,
+        mapped[c].y,
+      ]);
+      faceLayer.fill(COLORS.manualFace, 0.24);
+      faceLayer.poly([
+        mapped[a].x,
+        mapped[a].y,
+        mapped[b].x,
+        mapped[b].y,
+        mapped[c].x,
+        mapped[c].y,
+      ]);
+      faceLayer.stroke({ width: 1.8, color: COLORS.manualFace, alpha: 0.52 });
     }
 
     for (const [a, b] of complex.simplices[1]) {
@@ -77,7 +100,9 @@ export async function createRenderer(container) {
     for (const point of mapped) {
       if (options.halos !== false) {
         haloLayer.circle(point.x, point.y, thresholdRadius);
-        haloLayer.stroke({ width: 1, color: COLORS.threshold, alpha: 0.035 });
+        haloLayer.fill(COLORS.threshold, 0.018);
+        haloLayer.circle(point.x, point.y, thresholdRadius);
+        haloLayer.stroke({ width: 1.15, color: COLORS.threshold, alpha: 0.105 });
       }
 
       pointLayer.circle(point.x, point.y, 4.7);

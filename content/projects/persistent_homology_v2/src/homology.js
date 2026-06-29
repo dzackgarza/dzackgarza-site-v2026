@@ -269,6 +269,7 @@ export function buildRipsComplex(points, threshold, options = {}) {
     points,
     threshold,
     adjacency,
+    manualFaces: manual.faces,
     limited: visual.limited,
     limitedAt: visual.limitedAt,
     simplices: visualSimplices,

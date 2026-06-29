@@ -185,8 +185,8 @@ function cohomologyGroupsFromHomology(groups) {
 }
 
 function cohomologyExpression(groups, spaceTex) {
-  const summands = cohomologyGroupsFromHomology(groups).map(groupToTex).join(" \\oplus ");
-  return `\\tau_{\\leq 2} H^*(${spaceTex}; \\ZZ) = ${summands}`;
+  const terms = cohomologyGroupsFromHomology(groups).map(groupToTex).join(" \\rightarrow ");
+  return `\\tau_{\\leq 2} H^*(${spaceTex}; \\ZZ) = ${terms}`;
 }
 
 function countExponent(count, dimension) {
@@ -254,6 +254,9 @@ function updateFixtureReadout(fixture, result) {
     els.fixture.name.textContent = "Live cloud";
     els.fixture.oracle.textContent = "-";
     els.fixture.expected.textContent = "-";
+    delete els.fixture.name.dataset.tex;
+    delete els.fixture.oracle.dataset.tex;
+    delete els.fixture.expected.dataset.tex;
     els.fixture.result.textContent = "-";
     els.fixture.result.className = "";
     return;
@@ -578,7 +581,7 @@ renderer.app.ticker.add((ticker) => {
       rebuildComplex(false);
       lastTopologyRefresh = performance.now();
     }
-    renderer.draw(complex, { faces: false, halos: false });
+    renderer.draw(complex, { faces: false });
     needsDraw = false;
   }
   if (needsDraw) {
