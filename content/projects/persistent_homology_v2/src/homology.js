@@ -1,8 +1,16 @@
-const ZERO = 0n;
-const ONE = 1n;
+const ZERO = 0;
+const ONE = 1;
 
 function abs(value) {
-  return value < ZERO ? -value : value;
+  return Math.abs(value);
+}
+
+function roundInteger(value) {
+  const rounded = Math.round(value);
+  if (Math.abs(value - rounded) > 1e-6) {
+    throw new Error(`non-integral SNF entry ${value}`);
+  }
+  return rounded;
 }
 
 function makeRng(seed) {
@@ -42,15 +50,10 @@ export function advancePointCloud(points, seconds, speed) {
   }
 }
 
-export function buildRipsComplex(points, threshold, simplexBudget = 36000) {
+function buildCpuAdjacency(points, threshold) {
   const thresholdSq = threshold * threshold;
   const n = points.length;
   const adjacency = Array.from({ length: n }, () => new Uint8Array(n));
-  const vertices = Array.from({ length: n }, (_, i) => [i]);
-  const edges = [];
-  const triangles = [];
-  const tetrahedra = [];
-
   for (let i = 0; i < n; i += 1) {
     for (let j = i + 1; j < n; j += 1) {
       const dx = points[i].x - points[j].x;
@@ -58,32 +61,113 @@ export function buildRipsComplex(points, threshold, simplexBudget = 36000) {
       if (dx * dx + dy * dy <= thresholdSq) {
         adjacency[i][j] = 1;
         adjacency[j][i] = 1;
+      }
+    }
+  }
+  return adjacency;
+}
+
+function closedNeighborhoodContained(adjacency, active, source, target) {
+  if (!adjacency[source][target]) {
+    return false;
+  }
+  for (let vertex = 0; vertex < adjacency.length; vertex += 1) {
+    if (!active[vertex]) {
+      continue;
+    }
+    if (vertex === source || adjacency[source][vertex]) {
+      if (vertex !== target && !adjacency[target][vertex]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+function reduceDominatedVertices(adjacency) {
+  const active = new Uint8Array(adjacency.length).fill(1);
+  let removed = 0;
+  let changed = true;
+
+  while (changed) {
+    changed = false;
+    for (let source = 0; source < adjacency.length; source += 1) {
+      if (!active[source]) {
+        continue;
+      }
+      for (let target = 0; target < adjacency.length; target += 1) {
+        if (source === target || !active[target]) {
+          continue;
+        }
+        if (closedNeighborhoodContained(adjacency, active, source, target)) {
+          active[source] = 0;
+          removed += 1;
+          changed = true;
+          break;
+        }
+      }
+    }
+  }
+
+  return {
+    active,
+    removed,
+    vertices: Array.from({ length: adjacency.length }, (_, i) => i).filter((i) => active[i]),
+  };
+}
+
+function enumerateFlagSimplices(adjacency, vertexIds, simplexBudget, includeFaces = true, includeTetrahedra = true) {
+  const vertices = vertexIds.map((id) => [id]);
+  const edges = [];
+  const triangles = [];
+  const tetrahedra = [];
+  let limited = false;
+  let limitedAt = "";
+
+  for (let ai = 0; ai < vertexIds.length; ai += 1) {
+    const i = vertexIds[ai];
+    for (let bi = ai + 1; bi < vertexIds.length; bi += 1) {
+      const j = vertexIds[bi];
+      if (adjacency[i][j]) {
         edges.push([i, j]);
       }
     }
   }
 
-  let limited = false;
-  let limitedAt = "";
-  for (const [i, j] of edges) {
-    for (let k = j + 1; k < n; k += 1) {
-      if (adjacency[i][k] && adjacency[j][k]) {
-        triangles.push([i, j, k]);
-        if (vertices.length + edges.length + triangles.length > simplexBudget) {
-          limited = true;
-          limitedAt = "faces";
+  if (includeFaces) {
+    for (let ai = 0; ai < vertexIds.length; ai += 1) {
+      const i = vertexIds[ai];
+      for (let bi = ai + 1; bi < vertexIds.length; bi += 1) {
+        const j = vertexIds[bi];
+        if (!adjacency[i][j]) {
+          continue;
+        }
+        for (let ci = bi + 1; ci < vertexIds.length; ci += 1) {
+          const k = vertexIds[ci];
+          if (adjacency[i][k] && adjacency[j][k]) {
+            triangles.push([i, j, k]);
+            if (vertices.length + edges.length + triangles.length > simplexBudget) {
+              limited = true;
+              limitedAt = "faces";
+              break;
+            }
+          }
+        }
+        if (limited) {
           break;
         }
       }
-    }
-    if (limited) {
-      break;
+      if (limited) {
+        break;
+      }
     }
   }
 
-  if (!limited) {
+  if (includeTetrahedra && !limited) {
     for (const [i, j, k] of triangles) {
-      for (let l = k + 1; l < n; l += 1) {
+      const start = vertexIds.findIndex((id) => id === k) + 1;
+      for (let li = start; li < vertexIds.length; li += 1) {
+        const l = vertexIds[li];
         if (adjacency[i][l] && adjacency[j][l] && adjacency[k][l]) {
           tetrahedra.push([i, j, k, l]);
           if (vertices.length + edges.length + triangles.length + tetrahedra.length > simplexBudget) {
@@ -100,17 +184,142 @@ export function buildRipsComplex(points, threshold, simplexBudget = 36000) {
   }
 
   return {
-    points,
-    threshold,
-    adjacency,
     limited,
     limitedAt,
     simplices: [vertices, edges, triangles, tetrahedra],
   };
 }
 
+export function buildRipsComplex(points, threshold, options = {}) {
+  const adjacency = options.adjacencyBackend?.compute(points, threshold) ?? buildCpuAdjacency(points, threshold);
+  const allVertices = Array.from({ length: points.length }, (_, i) => i);
+  const visual = enumerateFlagSimplices(
+    adjacency,
+    allVertices,
+    options.visualSimplexBudget ?? 36000,
+    options.includeVisualFaces !== false,
+    options.includeVisualTetrahedra !== false,
+  );
+  const includeHomology = options.includeHomology !== false;
+  const graphReduction = includeHomology ? reduceDominatedVertices(adjacency) : null;
+  const homology = includeHomology
+    ? enumerateFlagSimplices(adjacency, graphReduction.vertices, options.homologySimplexBudget ?? 80000, true, true)
+    : null;
+
+  return {
+    points,
+    threshold,
+    adjacency,
+    limited: visual.limited,
+    limitedAt: visual.limitedAt,
+    simplices: visual.simplices,
+    homologyLimited: homology?.limited ?? false,
+    homologyLimitedAt: homology?.limitedAt ?? "",
+    homologySimplices: homology?.simplices ?? null,
+    graphReduction,
+  };
+}
+
 function key(simplex) {
   return simplex.join(",");
+}
+
+function boundaryData(simplices) {
+  const indexByKey = simplices.map((cells) => new Map(cells.map((simplex, index) => [key(simplex), index])));
+  const boundary = simplices.map(() => []);
+
+  for (let dim = 1; dim < simplices.length; dim += 1) {
+    boundary[dim] = simplices[dim].map((simplex) =>
+      simplex.map((_, i) => {
+        const face = simplex.slice(0, i).concat(simplex.slice(i + 1));
+        const index = indexByKey[dim - 1].get(key(face));
+        if (index === undefined) {
+          throw new Error(`missing face ${key(face)}`);
+        }
+        return { index, sign: i % 2 === 0 ? ONE : -ONE };
+      }),
+    );
+  }
+
+  return boundary;
+}
+
+function coreduceSimplices(simplices) {
+  const boundary = boundaryData(simplices);
+  const active = simplices.map((cells) => new Uint8Array(cells.length).fill(1));
+  const cofaces = simplices.slice(0, -1).map((cells) => cells.map(() => []));
+  const queue = [];
+
+  for (let dim = 1; dim < simplices.length; dim += 1) {
+    boundary[dim].forEach((faces, upper) => {
+      for (const face of faces) {
+        cofaces[dim - 1][face.index].push(upper);
+      }
+    });
+  }
+
+  function uniqueActiveCoface(dim, index) {
+    let count = 0;
+    let last = -1;
+    for (const coface of cofaces[dim][index]) {
+      if (active[dim + 1][coface]) {
+        count += 1;
+        last = coface;
+        if (count > 1) {
+          return -1;
+        }
+      }
+    }
+    return count === 1 ? last : -1;
+  }
+
+  function queueIfFree(dim, index) {
+    if (dim >= cofaces.length || !active[dim][index]) {
+      return;
+    }
+    if (uniqueActiveCoface(dim, index) !== -1) {
+      queue.push([dim, index]);
+    }
+  }
+
+  function removeSimplex(dim, index) {
+    if (!active[dim][index]) {
+      return;
+    }
+    active[dim][index] = 0;
+    if (dim === 0) {
+      return;
+    }
+    for (const face of boundary[dim][index]) {
+      queueIfFree(dim - 1, face.index);
+    }
+  }
+
+  for (let dim = 0; dim < cofaces.length; dim += 1) {
+    for (let index = 0; index < simplices[dim].length; index += 1) {
+      queueIfFree(dim, index);
+    }
+  }
+
+  while (queue.length > 0) {
+    const [dim, index] = queue.pop();
+    if (!active[dim][index]) {
+      continue;
+    }
+    const upper = uniqueActiveCoface(dim, index);
+    if (upper === -1) {
+      continue;
+    }
+    removeSimplex(dim + 1, upper);
+    removeSimplex(dim, index);
+  }
+
+  const reduced = simplices.map((cells, dim) => cells.filter((_, index) => active[dim][index]));
+  return {
+    simplices: reduced,
+    before: simplices.map((cells) => cells.length),
+    after: reduced.map((cells) => cells.length),
+  };
 }
 
 function boundaryMatrix(lower, upper) {
@@ -125,7 +334,7 @@ function boundaryMatrix(lower, upper) {
       const face = simplex.slice(0, i).concat(simplex.slice(i + 1));
       const row = rowIndex.get(key(face));
       if (row === undefined) {
-        throw new Error(`missing face ${key(face)}`);
+        throw new Error(`missing active face ${key(face)}`);
       }
       matrix[row][col] += i % 2 === 0 ? ONE : -ONE;
     }
@@ -161,13 +370,13 @@ function addRows(matrix, target, source, factor) {
     return;
   }
   for (let col = 0; col < matrix[target].length; col += 1) {
-    matrix[target][col] += factor * matrix[source][col];
+    matrix[target][col] = roundInteger(matrix[target][col] + factor * matrix[source][col]);
   }
 }
 
 function multiplyRow(matrix, row, factor) {
   for (let col = 0; col < matrix[row].length; col += 1) {
-    matrix[row][col] *= factor;
+    matrix[row][col] = roundInteger(matrix[row][col] * factor);
   }
 }
 
@@ -185,7 +394,7 @@ function addCols(matrix, target, source, factor) {
     return;
   }
   for (const row of matrix) {
-    row[target] += factor * row[source];
+    row[target] = roundInteger(row[target] + factor * row[source]);
   }
 }
 
@@ -224,7 +433,7 @@ export function smithNormalForm(input, rows, cols, trackColumnInverse = false) {
 
       for (let row = cursor + 1; row < rows; row += 1) {
         if (matrix[row][cursor] !== ZERO) {
-          const quotient = matrix[row][cursor] / matrix[cursor][cursor];
+          const quotient = Math.trunc(matrix[row][cursor] / matrix[cursor][cursor]);
           addRows(matrix, row, cursor, -quotient);
           if (matrix[row][cursor] !== ZERO) {
             swapRows(matrix, row, cursor);
@@ -239,7 +448,7 @@ export function smithNormalForm(input, rows, cols, trackColumnInverse = false) {
 
       for (let col = cursor + 1; col < cols; col += 1) {
         if (matrix[cursor][col] !== ZERO) {
-          const quotient = matrix[cursor][col] / matrix[cursor][cursor];
+          const quotient = Math.trunc(matrix[cursor][col] / matrix[cursor][cursor]);
           addCols(matrix, col, cursor, -quotient);
           if (columnInverse) {
             addRows(columnInverse, cursor, col, quotient);
@@ -306,7 +515,7 @@ function multiplyMatrices(left, right, leftRows, shared, rightCols) {
         continue;
       }
       for (let col = 0; col < rightCols; col += 1) {
-        product[row][col] += left[row][mid] * right[mid][col];
+        product[row][col] = roundInteger(product[row][col] + left[row][mid] * right[mid][col]);
       }
     }
   }
@@ -335,17 +544,20 @@ function homologyAt(boundaryDown, boundaryUp) {
 }
 
 export function computeHomology(complex) {
-  if (complex.limited) {
+  if (complex.homologyLimited) {
     return {
       limited: true,
       groups: [],
       ranks: [],
       elapsedMs: 0,
+      reduction: null,
     };
   }
 
   const started = performance.now();
-  const [vertices, edges, triangles, tetrahedra] = complex.simplices;
+  const source = complex.homologySimplices ?? complex.simplices;
+  const reduction = coreduceSimplices(source);
+  const [vertices, edges, triangles, tetrahedra] = reduction.simplices;
   const boundaries = [
     zeroBoundary(vertices.length),
     boundaryMatrix(vertices, edges),
@@ -361,8 +573,13 @@ export function computeHomology(complex) {
   return {
     limited: false,
     groups: [h0, h1, h2],
-    ranks: boundaries.slice(1).map((boundary) => smithNormalForm(boundary.matrix, boundary.rows, boundary.cols).rank),
+    ranks: [h0.imageRank, h1.imageRank, h2.imageRank],
     elapsedMs,
+    reduction: {
+      graphRemoved: complex.graphReduction?.removed ?? 0,
+      before: reduction.before,
+      after: reduction.after,
+    },
   };
 }
 

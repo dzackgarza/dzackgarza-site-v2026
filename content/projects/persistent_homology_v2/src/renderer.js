@@ -20,6 +20,7 @@ export async function createRenderer(container) {
   const app = new Application();
   await app.init({
     antialias: true,
+    autoStart: false,
     autoDensity: true,
     backgroundAlpha: 0,
     resizeTo: container,
@@ -32,7 +33,7 @@ export async function createRenderer(container) {
   const pointLayer = new Graphics();
   app.stage.addChild(faceLayer, edgeLayer, haloLayer, pointLayer);
 
-  function draw(complex) {
+  function draw(complex, options = {}) {
     const width = app.screen.width;
     const height = app.screen.height;
     const mapped = complex.points.map((point) => mapPoint(point, width, height));
@@ -44,8 +45,8 @@ export async function createRenderer(container) {
     haloLayer.clear();
     pointLayer.clear();
 
-    const triangles = complex.limitedAt === "faces" ? [] : complex.simplices[2];
-    const triangleLimit = Math.min(triangles.length, 2400);
+    const triangles = options.faces === false || complex.limitedAt === "faces" ? [] : complex.simplices[2];
+    const triangleLimit = Math.min(triangles.length, 1400);
     for (let index = 0; index < triangleLimit; index += 1) {
       const [a, b, c] = triangles[index];
       faceLayer.poly([
@@ -66,13 +67,21 @@ export async function createRenderer(container) {
     edgeLayer.stroke({ width: 1.15, color: COLORS.edge, alpha: 0.46 });
 
     for (const point of mapped) {
-      haloLayer.circle(point.x, point.y, thresholdRadius);
-      haloLayer.stroke({ width: 1, color: COLORS.threshold, alpha: 0.035 });
+      if (options.halos !== false) {
+        haloLayer.circle(point.x, point.y, thresholdRadius);
+        haloLayer.stroke({ width: 1, color: COLORS.threshold, alpha: 0.035 });
+      }
 
       pointLayer.circle(point.x, point.y, 4.7);
       pointLayer.fill(COLORS.vertex, 0.9);
       pointLayer.circle(point.x, point.y, 2.4);
       pointLayer.fill(COLORS.vertexCore, 1);
+    }
+
+    if (typeof app.render === "function") {
+      app.render();
+    } else {
+      app.renderer.render({ container: app.stage });
     }
   }
 
@@ -80,5 +89,12 @@ export async function createRenderer(container) {
     app,
     draw,
     fps: () => Math.round(app.ticker.FPS),
+    setAnimating(active) {
+      if (active) {
+        app.start();
+      } else {
+        app.stop();
+      }
+    },
   };
 }
