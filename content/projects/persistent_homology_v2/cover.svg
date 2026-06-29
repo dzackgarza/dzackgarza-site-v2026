@@ -24,5 +24,5 @@
     <circle cx="736" cy="548" r="24"/>
   </g>
   <text x="64" y="92" fill="#f7f2e8" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700">Persistent Homology Lab</text>
-  <text x="64" y="148" fill="#ffb84d" font-family="ui-monospace, SFMono-Regular, monospace" font-size="28">H0, H1, H2 via Smith normal form</text>
+  <text x="64" y="148" fill="#ffb84d" font-family="ui-monospace, SFMono-Regular, monospace" font-size="28">Integral homology via Smith normal form</text>
 </svg>

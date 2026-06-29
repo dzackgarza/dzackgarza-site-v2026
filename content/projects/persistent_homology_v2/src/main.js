@@ -262,8 +262,8 @@ function updateFixtureReadout(fixture, result) {
   const expectedCohomology = cohomologyGroupsFromHomology(expectedHomologyGroups(fixture));
   const actualCohomology = cohomologyGroupsFromHomology(result.groups);
   const matches = groupListsEqual(expectedCohomology, actualCohomology);
-  els.fixture.name.textContent = fixture.label;
-  els.fixture.oracle.textContent = fixture.oracle;
+  renderMath(els.fixture.name, fixture.displayTex);
+  renderMath(els.fixture.oracle, fixture.oracleTex);
   renderMath(els.fixture.expected, cohomologyExpression(expectedHomologyGroups(fixture), fixture.texLabel));
   els.fixture.result.textContent = matches ? "Match" : "Mismatch";
   els.fixture.result.className = matches ? "is-pass" : "is-fail";
