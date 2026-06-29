@@ -16,7 +16,10 @@ import { createGpuAdjacencyBackend } from "./gpu-adjacency.js";
 import { createRenderer } from "./renderer.js";
 
 const els = {
+  stageShell: document.querySelector(".stage-shell"),
   stage: document.querySelector("#stage"),
+  stageMenu: document.querySelector("#stage-menu"),
+  stageMenuList: document.querySelector("#stage-menu-list"),
   pointsInput: document.querySelector("#points-input"),
   pointsOutput: document.querySelector("#points-output"),
   thresholdInput: document.querySelector("#threshold-input"),
@@ -31,12 +34,7 @@ const els = {
   status: document.querySelector("#compute-status"),
   density: document.querySelector("#density-label"),
   fps: document.querySelector("#fps-label"),
-  counts: {
-    vertices: document.querySelector("#count-vertices"),
-    edges: document.querySelector("#count-edges"),
-    faces: document.querySelector("#count-faces"),
-    tetrahedra: document.querySelector("#count-tetrahedra"),
-  },
+  chain: document.querySelector("#chain-expression"),
   cohomology: document.querySelector("#cohomology-expression"),
   euler: document.querySelector("#euler"),
   snfTime: document.querySelector("#snf-time"),
@@ -67,9 +65,15 @@ let lastCompute = 0;
 let lastTopologyRefresh = 0;
 let needsDraw = true;
 let activeFixture = null;
+let stageMenuState = null;
+const manualEdges = new Set();
+const manualFaces = new Set();
+const manualTetrahedra = new Set();
 
 await customElements.whenDefined("sl-select");
 await customElements.whenDefined("sl-option");
+await customElements.whenDefined("sl-menu");
+await customElements.whenDefined("sl-menu-item");
 
 for (const fixture of HOMOLOGY_FIXTURES) {
   const option = document.createElement("sl-option");
@@ -85,18 +89,63 @@ function setStatus(text, mode = "") {
   els.status.className = mode;
 }
 
+function clampUnit(value) {
+  return Math.min(0.96, Math.max(0.04, value));
+}
+
+function simplexKey(simplex) {
+  return [...simplex].sort((a, b) => a - b).join(",");
+}
+
+function simplexFromKey(key) {
+  return key.split(",").map(Number);
+}
+
+function addManualSimplex(target, simplex) {
+  target.add(simplexKey(simplex));
+}
+
+function manualSimplexOptions() {
+  return {
+    manualEdges: [...manualEdges].map(simplexFromKey),
+    manualFaces: [...manualFaces].map(simplexFromKey),
+    manualTetrahedra: [...manualTetrahedra].map(simplexFromKey),
+  };
+}
+
+function clearManualSimplices() {
+  manualEdges.clear();
+  manualFaces.clear();
+  manualTetrahedra.clear();
+}
+
+function addFaceBoundary(face) {
+  addManualSimplex(manualEdges, [face[0], face[1]]);
+  addManualSimplex(manualEdges, [face[0], face[2]]);
+  addManualSimplex(manualEdges, [face[1], face[2]]);
+}
+
+function syncPointInput() {
+  const count = points.length;
+  if (count > Number(els.pointsInput.max)) {
+    els.pointsInput.max = String(count);
+  }
+  if (count < Number(els.pointsInput.min)) {
+    els.pointsInput.min = String(count);
+  }
+  els.pointsInput.value = String(count);
+  els.pointsOutput.value = String(count);
+}
+
 function updateControlLabels() {
-  els.pointsOutput.value = String(points.length);
+  syncPointInput();
   els.thresholdOutput.value = threshold.toFixed(3);
   els.speedOutput.value = speed.toFixed(2);
 }
 
 function updateCounts() {
   const counts = complex.cellCounts === undefined ? complex.simplices.map((cells) => cells.length) : complex.cellCounts;
-  els.counts.vertices.textContent = counts[0].toLocaleString();
-  els.counts.edges.textContent = counts[1].toLocaleString();
-  els.counts.faces.textContent = complex.limitedAt === "faces" ? "over budget" : counts[2].toLocaleString();
-  els.counts.tetrahedra.textContent = complex.limited ? "over budget" : counts[3].toLocaleString();
+  renderMath(els.chain, chainComplexExpression(counts));
   const chi = counts.reduce((total, count, dimension) => total + (dimension % 2 === 0 ? count : -count), 0);
   els.euler.textContent = chi.toLocaleString();
   if (activeFixture !== null) {
@@ -111,6 +160,7 @@ function renderMath(element, tex) {
   if (window.katex === undefined) {
     throw new Error("KaTeX failed to load before homology display rendering");
   }
+  element.dataset.tex = tex;
   window.katex.render(tex, element, KATEX_OPTIONS);
 }
 
@@ -137,6 +187,21 @@ function cohomologyGroupsFromHomology(groups) {
 function cohomologyExpression(groups, spaceTex) {
   const summands = cohomologyGroupsFromHomology(groups).map(groupToTex).join(" \\oplus ");
   return `\\tau_{\\leq 2} H^*(${spaceTex}; \\ZZ) = ${summands}`;
+}
+
+function countExponent(count, dimension) {
+  if (complex.limitedAt === "faces" && dimension >= 2) {
+    return "?";
+  }
+  if (complex.limitedAt === "tetrahedra" && dimension >= 3) {
+    return "?";
+  }
+  return count.toString();
+}
+
+function chainComplexExpression(counts) {
+  const terms = counts.map((count, dimension) => `\\ZZ^{${countExponent(count, dimension)}}`);
+  return `\\tau_{\\leq 3}\\operatorname{Sing}_\\bullet(${spaceTex()}) = ${terms[0]} \\leftarrow ${terms[1]} \\leftarrow ${terms[2]} \\leftarrow ${terms[3]}`;
 }
 
 function parseGroupText(text) {
@@ -242,6 +307,7 @@ function rebuildComplex(forceHomology = false) {
     includeHomology: shouldCompute,
     includeVisualFaces: shouldCompute,
     includeVisualTetrahedra: shouldCompute,
+    ...manualSimplexOptions(),
   });
   if (shouldCompute) {
     updateCounts();
@@ -259,8 +325,22 @@ function clearFixtureMode() {
 
 function resetCloud(count) {
   clearFixtureMode();
+  clearManualSimplices();
   seed = (seed + 7919) >>> 0;
   points = generatePointCloud(count, seed);
+  rebuildComplex(true);
+}
+
+function releaseFixtureToMotion() {
+  const fixturePoints = points.map((point, index) => ({
+    ...point,
+    id: index,
+    vx: point.vx === 0 ? 0.06 * (index % 2 === 0 ? 1 : -1) : point.vx,
+    vy: point.vy === 0 ? 0.05 * (index % 3 === 0 ? -1 : 1) : point.vy,
+  }));
+  clearFixtureMode();
+  points = fixturePoints;
+  clearManualSimplices();
   rebuildComplex(true);
 }
 
@@ -284,6 +364,7 @@ function loadSelectedFixture() {
   activeFixture = fixtureById(els.fixtureSelect.value);
   paused = true;
   els.toggleMotion.textContent = "Resume";
+  clearManualSimplices();
   complex = complexFromFixture(activeFixture);
   points = complex.points;
   threshold = complex.threshold;
@@ -294,6 +375,108 @@ function loadSelectedFixture() {
   updateTickerState();
   renderer.draw(complex);
   needsDraw = false;
+}
+
+function closeStageMenu() {
+  els.stageMenu.hidden = true;
+  stageMenuState = null;
+}
+
+function openStageMenu(event) {
+  const point = renderer.clientToPoint(event.clientX, event.clientY);
+  if (point === null) {
+    return;
+  }
+
+  const shellBox = els.stageShell.getBoundingClientRect();
+  stageMenuState = {
+    clientX: event.clientX,
+    clientY: event.clientY,
+    point,
+    face: faceAtPoint(point),
+  };
+  const fillItem = els.stageMenuList.querySelector('[value="fill-simplex"]');
+  fillItem.disabled = stageMenuState.face === null;
+  fillItem.textContent = stageMenuState.face === null ? "No fill" : "Fill 2-simplex";
+  els.stageMenu.style.left = `${Math.min(shellBox.width - 190, Math.max(10, event.clientX - shellBox.left))}px`;
+  els.stageMenu.style.top = `${Math.min(shellBox.height - 108, Math.max(10, event.clientY - shellBox.top))}px`;
+  els.stageMenu.hidden = false;
+}
+
+function addPointAt(point) {
+  clearFixtureMode();
+  const id = points.length;
+  points = [
+    ...points,
+    {
+      id,
+      x: clampUnit(point.x),
+      y: clampUnit(point.y),
+      vx: 0,
+      vy: 0,
+    },
+  ];
+  updateControlLabels();
+  rebuildComplex(true);
+  requestDraw();
+}
+
+function fillFace(face) {
+  clearFixtureMode();
+  addFaceBoundary(face);
+  addManualSimplex(manualFaces, face);
+  rebuildComplex(true);
+  requestDraw();
+}
+
+function hasEdge(edgeSet, a, b) {
+  return edgeSet.has(simplexKey([a, b]));
+}
+
+function signedArea(a, b, c) {
+  return ((b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x)) / 2;
+}
+
+function pointInTriangle(point, a, b, c) {
+  const area = signedArea(a, b, c);
+  if (Math.abs(area) < 1e-5) {
+    return false;
+  }
+  const s = signedArea(point, b, c) / area;
+  const t = signedArea(a, point, c) / area;
+  const u = signedArea(a, b, point) / area;
+  return s >= -1e-4 && t >= -1e-4 && u >= -1e-4;
+}
+
+function smallestContainingFace(point, requireBoundaryEdges) {
+  const edgeSet = new Set(complex.simplices[1].map(simplexKey));
+  let candidate = null;
+  let candidateArea = Infinity;
+
+  for (let a = 0; a < points.length; a += 1) {
+    for (let b = a + 1; b < points.length; b += 1) {
+      if (requireBoundaryEdges && !hasEdge(edgeSet, a, b)) {
+        continue;
+      }
+      for (let c = b + 1; c < points.length; c += 1) {
+        if (requireBoundaryEdges && (!hasEdge(edgeSet, a, c) || !hasEdge(edgeSet, b, c))) {
+          continue;
+        }
+        const area = Math.abs(signedArea(points[a], points[b], points[c]));
+        if (area >= candidateArea || !pointInTriangle(point, points[a], points[b], points[c])) {
+          continue;
+        }
+        candidate = [a, b, c];
+        candidateArea = area;
+      }
+    }
+  }
+
+  return candidate;
+}
+
+function faceAtPoint(point) {
+  return smallestContainingFace(point, true);
 }
 
 const renderer = await createRenderer(els.stage);
@@ -325,6 +508,15 @@ els.speedInput.addEventListener("input", () => {
 });
 
 els.toggleMotion.addEventListener("click", () => {
+  if (activeFixture !== null && paused) {
+    releaseFixtureToMotion();
+    paused = false;
+    els.toggleMotion.textContent = "Pause";
+    updateControlLabels();
+    updateTickerState();
+    requestDraw();
+    return;
+  }
   paused = !paused;
   els.toggleMotion.textContent = paused ? "Resume" : "Pause";
   updateTickerState();
@@ -342,6 +534,41 @@ els.recompute.addEventListener("click", () => {
 
 els.loadFixture.addEventListener("click", () => {
   loadSelectedFixture();
+});
+
+renderer.canvas.addEventListener("click", (event) => {
+  event.stopPropagation();
+  openStageMenu(event);
+});
+
+renderer.canvas.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+  event.stopPropagation();
+  openStageMenu(event);
+});
+
+els.stageMenu.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
+els.stageMenuList.addEventListener("sl-select", (event) => {
+  const action = event.detail.item.value;
+  const state = stageMenuState;
+  closeStageMenu();
+  if (state === null) {
+    return;
+  }
+  if (action === "add-point") {
+    addPointAt(state.point);
+    return;
+  }
+  if (action === "fill-simplex" && state.face !== null) {
+    fillFace(state.face);
+  }
+});
+
+document.addEventListener("click", () => {
+  closeStageMenu();
 });
 
 renderer.app.ticker.add((ticker) => {

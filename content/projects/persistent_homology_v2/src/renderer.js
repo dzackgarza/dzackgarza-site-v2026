@@ -16,6 +16,14 @@ function mapPoint(point, width, height) {
   };
 }
 
+function unmapPoint(x, y, width, height) {
+  const pad = Math.min(width, height) * 0.075;
+  return {
+    x: Math.min(1, Math.max(0, (x - pad) / (width - pad * 2))),
+    y: Math.min(1, Math.max(0, (y - pad) / (height - pad * 2))),
+  };
+}
+
 export async function createRenderer(container) {
   const app = new Application();
   await app.init({
@@ -87,6 +95,16 @@ export async function createRenderer(container) {
 
   return {
     app,
+    canvas: app.canvas,
+    clientToPoint(clientX, clientY) {
+      const rect = app.canvas.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) {
+        return null;
+      }
+      const x = (clientX - rect.left) * (app.screen.width / rect.width);
+      const y = (clientY - rect.top) * (app.screen.height / rect.height);
+      return unmapPoint(x, y, app.screen.width, app.screen.height);
+    },
     draw,
     fps: () => Math.round(app.ticker.FPS),
     setAnimating(active) {

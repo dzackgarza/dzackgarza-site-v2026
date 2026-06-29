@@ -190,8 +190,52 @@ function enumerateFlagSimplices(adjacency, vertexIds, simplexBudget, includeFace
   };
 }
 
+function simplexKey(simplex) {
+  return [...simplex].sort((a, b) => a - b).join(",");
+}
+
+function normalizeSimplex(simplex) {
+  return [...simplex].sort((a, b) => a - b);
+}
+
+function facesOf(simplex) {
+  return simplex.map((_, index) => simplex.slice(0, index).concat(simplex.slice(index + 1)));
+}
+
+function mergeSimplices(base, extras) {
+  const merged = [...base];
+  const seen = new Set(base.map(simplexKey));
+  for (const simplex of extras) {
+    const normalized = normalizeSimplex(simplex);
+    const key = simplexKey(normalized);
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(normalized);
+    }
+  }
+  return merged;
+}
+
+function manualSimplices(options) {
+  const tetrahedra = (options.manualTetrahedra ?? []).map(normalizeSimplex);
+  const faces = [...(options.manualFaces ?? []).map(normalizeSimplex), ...tetrahedra.flatMap(facesOf)];
+  const edges = [
+    ...(options.manualEdges ?? []).map(normalizeSimplex),
+    ...faces.flatMap(facesOf),
+    ...tetrahedra.flatMap((simplex) => facesOf(simplex).flatMap(facesOf)),
+  ];
+
+  return {
+    edges,
+    faces,
+    tetrahedra,
+    hasManualCells: edges.length > 0 || faces.length > 0 || tetrahedra.length > 0,
+  };
+}
+
 export function buildRipsComplex(points, threshold, options = {}) {
   const adjacency = options.adjacencyBackend?.compute(points, threshold) ?? buildCpuAdjacency(points, threshold);
+  const manual = manualSimplices(options);
   const allVertices = Array.from({ length: points.length }, (_, i) => i);
   const visual = enumerateFlagSimplices(
     adjacency,
@@ -200,11 +244,26 @@ export function buildRipsComplex(points, threshold, options = {}) {
     options.includeVisualFaces !== false,
     options.includeVisualTetrahedra !== false,
   );
+  const visualSimplices = [
+    visual.simplices[0],
+    mergeSimplices(visual.simplices[1], manual.edges),
+    mergeSimplices(visual.simplices[2], manual.faces),
+    mergeSimplices(visual.simplices[3], manual.tetrahedra),
+  ];
   const includeHomology = options.includeHomology !== false;
-  const graphReduction = includeHomology ? reduceDominatedVertices(adjacency) : null;
+  const graphReduction = includeHomology && !manual.hasManualCells ? reduceDominatedVertices(adjacency) : null;
   const homology = includeHomology
-    ? enumerateFlagSimplices(adjacency, graphReduction.vertices, options.homologySimplexBudget ?? 80000, true, true)
+    ? enumerateFlagSimplices(adjacency, graphReduction?.vertices ?? allVertices, options.homologySimplexBudget ?? 80000, true, true)
     : null;
+  const homologySimplices =
+    homology === null
+      ? null
+      : [
+          homology.simplices[0],
+          mergeSimplices(homology.simplices[1], manual.edges),
+          mergeSimplices(homology.simplices[2], manual.faces),
+          mergeSimplices(homology.simplices[3], manual.tetrahedra),
+        ];
 
   return {
     points,
@@ -212,10 +271,10 @@ export function buildRipsComplex(points, threshold, options = {}) {
     adjacency,
     limited: visual.limited,
     limitedAt: visual.limitedAt,
-    simplices: visual.simplices,
+    simplices: visualSimplices,
     homologyLimited: homology?.limited ?? false,
     homologyLimitedAt: homology?.limitedAt ?? "",
-    homologySimplices: homology?.simplices ?? null,
+    homologySimplices,
     graphReduction,
   };
 }

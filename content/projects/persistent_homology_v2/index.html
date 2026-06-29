@@ -17,26 +17,33 @@
     <main class="app-shell">
       <section class="control-rail" aria-label="Controls and homology output">
         <header class="brand-lockup">
-          <span class="eyebrow">Persistent Homology / 2026</span>
-          <h1>Rips Homology Lab</h1>
+          <h1>Rips lab</h1>
         </header>
 
-        <section class="readout-grid" aria-label="Complex size">
-          <div class="readout">
-            <span class="readout__label">Vertices</span>
-            <strong id="count-vertices">0</strong>
+        <section class="homology-panel" aria-label="Truncated chain complex and integral cohomology">
+          <div class="panel-title">
+            <h2>Algebra</h2>
+            <span id="compute-status">Ready</span>
           </div>
-          <div class="readout">
-            <span class="readout__label">Edges</span>
-            <strong id="count-edges">0</strong>
+          <div class="math-stack">
+            <div>
+              <span>Complex</span>
+              <strong id="chain-expression" class="math-readout"></strong>
+            </div>
+            <div>
+              <span>Cohomology</span>
+              <strong id="cohomology-expression" class="math-readout"></strong>
+            </div>
           </div>
-          <div class="readout">
-            <span class="readout__label">Faces</span>
-            <strong id="count-faces">0</strong>
+          <div class="algebra-grid" aria-label="Algebra diagnostics">
+            <div><span>Euler</span><strong id="euler">0</strong></div>
+            <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
           </div>
-          <div class="readout">
-            <span class="readout__label">Tetrahedra</span>
-            <strong id="count-tetrahedra">0</strong>
+          <div class="fixture-grid" aria-label="Fixture oracle">
+            <div><span>Fixture</span><strong id="fixture-name">Live cloud</strong></div>
+            <div><span>Oracle</span><strong id="fixture-oracle">-</strong></div>
+            <div><span>Expected</span><strong id="fixture-expected" class="math-readout">-</strong></div>
+            <div><span>Check</span><strong id="fixture-result">-</strong></div>
           </div>
         </section>
 
@@ -44,7 +51,7 @@
           <label class="control">
             <span>Points</span>
             <output id="points-output">28</output>
-            <input id="points-input" type="range" min="8" max="72" step="1" value="28" />
+            <input id="points-input" type="range" min="1" max="72" step="1" value="28" />
           </label>
           <label class="control">
             <span>Threshold</span>
@@ -64,24 +71,6 @@
             <button id="load-fixture" type="button">Load fixture</button>
           </div>
         </section>
-
-        <section class="homology-panel" aria-label="Truncated integral cohomology">
-          <div class="panel-title">
-            <h2>Integral cohomology</h2>
-            <span id="compute-status">Ready</span>
-          </div>
-          <div id="cohomology-expression" class="cohomology-expression" aria-live="polite"></div>
-          <div class="algebra-grid" aria-label="Algebra diagnostics">
-            <div><span>Euler</span><strong id="euler">0</strong></div>
-            <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
-          </div>
-          <div class="fixture-grid" aria-label="Fixture oracle">
-            <div><span>Fixture</span><strong id="fixture-name">Live cloud</strong></div>
-            <div><span>Oracle</span><strong id="fixture-oracle">-</strong></div>
-            <div><span>Expected</span><strong id="fixture-expected" class="math-readout">-</strong></div>
-            <div><span>Check</span><strong id="fixture-result">-</strong></div>
-          </div>
-        </section>
       </section>
 
       <section class="stage-shell" aria-label="Animated Vietoris-Rips complex">
@@ -90,6 +79,12 @@
           <span id="fps-label">0 fps</span>
         </div>
         <div id="stage" class="stage" aria-label="Point cloud visualization"></div>
+        <div id="stage-menu" class="stage-menu" hidden>
+          <sl-menu id="stage-menu-list">
+            <sl-menu-item value="add-point">Add point</sl-menu-item>
+            <sl-menu-item value="fill-simplex">Fill 2-simplex</sl-menu-item>
+          </sl-menu>
+        </div>
       </section>
     </main>
 
@@ -103,6 +98,8 @@
     <script type="module" data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/">
       import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/select/select.js";
       import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/option/option.js";
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/menu/menu.js";
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/menu-item/menu-item.js";
     </script>
     <script type="module" src="./src/main.js"></script>
   </body>
