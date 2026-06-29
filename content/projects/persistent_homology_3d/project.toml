@@ -1,0 +1,7 @@
+title = "Persistent Homology 3D"
+category = "Mathematical Toy"
+description = "A Three.js Vietoris-Rips explorer with points moving in a cube, spherical threshold neighborhoods, and low-dimensional integral homology."
+tags = ["Topology", "Homology", "Three.js", "Interactive"]
+image = "/projects/persistent_homology_3d/cover.svg"
+alt = "A three-dimensional Vietoris-Rips complex in a cube with threshold balls, edges, triangular faces, and a tetrahedral cell."
+order = 13

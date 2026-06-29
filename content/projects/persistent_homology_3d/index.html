@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="sl-theme-dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Persistent Homology 3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css"
+      integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="control-rail" aria-label="Controls and cohomology output">
+        <header class="brand-lockup">
+          <h1>Rips 3D</h1>
+        </header>
+
+        <section class="homology-panel" aria-label="Truncated chain complex and integral cohomology">
+          <div class="panel-title">
+            <h2>Algebra</h2>
+            <span id="compute-status">Ready</span>
+          </div>
+          <div class="math-stack">
+            <div>
+              <span>Complex</span>
+              <strong id="chain-expression" class="math-readout"></strong>
+            </div>
+            <div>
+              <span>Cohomology</span>
+              <strong id="cohomology-expression" class="math-readout"></strong>
+            </div>
+          </div>
+          <div class="stat-grid" aria-label="Algebra diagnostics">
+            <div><span>Euler</span><strong id="euler">0</strong></div>
+            <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
+            <div><span>Cells</span><strong id="cell-count">0 / 0 / 0 / 0</strong></div>
+            <div><span>GPU</span><strong id="gpu-mode">-</strong></div>
+          </div>
+          <div class="fixture-grid" aria-label="Fixture oracle">
+            <div><span>Fixture</span><strong id="fixture-name" class="math-readout">Live cloud</strong></div>
+            <div><span>Oracle</span><strong id="fixture-oracle" class="math-readout">-</strong></div>
+            <div><span>Expected</span><strong id="fixture-expected" class="math-readout">-</strong></div>
+            <div><span>Check</span><strong id="fixture-result">-</strong></div>
+          </div>
+        </section>
+
+        <section class="control-stack" aria-label="Point cloud controls">
+          <label class="control">
+            <span>Points</span>
+            <output id="points-output">34</output>
+            <input id="points-input" type="range" min="4" max="96" step="1" value="34" />
+          </label>
+          <label class="control">
+            <span>Threshold</span>
+            <output id="threshold-output">0.300</output>
+            <input id="threshold-input" type="range" min="0.05" max="1.45" step="0.005" value="0.300" />
+          </label>
+          <label class="control">
+            <span>Motion</span>
+            <output id="speed-output">0.28</output>
+            <input id="speed-input" type="range" min="0" max="1" step="0.01" value="0.28" />
+          </label>
+          <sl-select id="fixture-select" class="fixture-select" label="Fixture" aria-label="Homology fixture"></sl-select>
+          <div class="button-row" aria-label="Commands">
+            <button id="toggle-motion" type="button">Pause</button>
+            <button id="randomize" type="button">New cloud</button>
+            <button id="recompute" type="button">Recompute</button>
+            <button id="load-fixture" type="button">Load fixture</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="stage-shell" aria-label="Three-dimensional Vietoris-Rips complex">
+        <div class="stage-topbar">
+          <span id="density-label">3D complex</span>
+          <span id="fps-label">0 fps</span>
+        </div>
+        <div id="stage" class="stage" aria-label="Three-dimensional point cloud visualization"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gpu.js@2.16.0/dist/gpu-browser.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js"
+      integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/">
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/select/select.js";
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/option/option.js";
+    </script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
