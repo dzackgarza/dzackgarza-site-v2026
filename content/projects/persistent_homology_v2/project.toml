@@ -1,0 +1,7 @@
+title = "Persistent Homology Lab"
+category = "Mathematical Toy"
+description = "A polished Vietoris-Rips explorer with PixiJS rendering and exact integral H0, H1, and H2 computed through Smith normal form."
+tags = ["Topology", "Homology", "PixiJS", "Interactive"]
+image = "/projects/persistent_homology_v2/cover.svg"
+alt = "A stylized Vietoris-Rips complex with glowing vertices, edges, and triangular faces."
+order = 12

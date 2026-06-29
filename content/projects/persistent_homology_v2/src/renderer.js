@@ -1,0 +1,84 @@
+import { Application, Graphics } from "https://cdn.jsdelivr.net/npm/pixi.js@8.16.0/dist/pixi.mjs";
+
+const COLORS = {
+  vertex: 0xf7f2e8,
+  vertexCore: 0x60f3b2,
+  edge: 0x57b8ff,
+  face: 0xa993ff,
+  threshold: 0xffb84d,
+};
+
+function mapPoint(point, width, height) {
+  const pad = Math.min(width, height) * 0.075;
+  return {
+    x: pad + point.x * (width - pad * 2),
+    y: pad + point.y * (height - pad * 2),
+  };
+}
+
+export async function createRenderer(container) {
+  const app = new Application();
+  await app.init({
+    antialias: true,
+    autoDensity: true,
+    backgroundAlpha: 0,
+    resizeTo: container,
+  });
+  container.appendChild(app.canvas);
+
+  const faceLayer = new Graphics();
+  const edgeLayer = new Graphics();
+  const haloLayer = new Graphics();
+  const pointLayer = new Graphics();
+  app.stage.addChild(faceLayer, edgeLayer, haloLayer, pointLayer);
+
+  function draw(complex) {
+    const width = app.screen.width;
+    const height = app.screen.height;
+    const mapped = complex.points.map((point) => mapPoint(point, width, height));
+    const unit = Math.min(width, height);
+    const thresholdRadius = complex.threshold * unit;
+
+    faceLayer.clear();
+    edgeLayer.clear();
+    haloLayer.clear();
+    pointLayer.clear();
+
+    const triangles = complex.limitedAt === "faces" ? [] : complex.simplices[2];
+    const triangleLimit = Math.min(triangles.length, 2400);
+    for (let index = 0; index < triangleLimit; index += 1) {
+      const [a, b, c] = triangles[index];
+      faceLayer.poly([
+        mapped[a].x,
+        mapped[a].y,
+        mapped[b].x,
+        mapped[b].y,
+        mapped[c].x,
+        mapped[c].y,
+      ]);
+      faceLayer.fill(COLORS.face, 0.065);
+    }
+
+    for (const [a, b] of complex.simplices[1]) {
+      edgeLayer.moveTo(mapped[a].x, mapped[a].y);
+      edgeLayer.lineTo(mapped[b].x, mapped[b].y);
+    }
+    edgeLayer.stroke({ width: 1.15, color: COLORS.edge, alpha: 0.46 });
+
+    for (const point of mapped) {
+      haloLayer.circle(point.x, point.y, thresholdRadius);
+      haloLayer.stroke({ width: 1, color: COLORS.threshold, alpha: 0.035 });
+
+      pointLayer.circle(point.x, point.y, 4.7);
+      pointLayer.fill(COLORS.vertex, 0.9);
+      pointLayer.circle(point.x, point.y, 2.4);
+      pointLayer.fill(COLORS.vertexCore, 1);
+    }
+  }
+
+  return {
+    app,
+    draw,
+    fps: () => Math.round(app.ticker.FPS),
+  };
+}

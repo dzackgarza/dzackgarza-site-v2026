@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Persistent Homology Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="control-rail" aria-label="Controls and homology output">
+        <header class="brand-lockup">
+          <span class="eyebrow">Persistent Homology / 2026</span>
+          <h1>Rips Homology Lab</h1>
+        </header>
+
+        <section class="readout-grid" aria-label="Complex size">
+          <div class="readout">
+            <span class="readout__label">Vertices</span>
+            <strong id="count-vertices">0</strong>
+          </div>
+          <div class="readout">
+            <span class="readout__label">Edges</span>
+            <strong id="count-edges">0</strong>
+          </div>
+          <div class="readout">
+            <span class="readout__label">Faces</span>
+            <strong id="count-faces">0</strong>
+          </div>
+          <div class="readout">
+            <span class="readout__label">Tetrahedra</span>
+            <strong id="count-tetrahedra">0</strong>
+          </div>
+        </section>
+
+        <section class="control-stack" aria-label="Point cloud controls">
+          <label class="control">
+            <span>Points</span>
+            <output id="points-output">28</output>
+            <input id="points-input" type="range" min="8" max="72" step="1" value="28" />
+          </label>
+          <label class="control">
+            <span>Threshold</span>
+            <output id="threshold-output">0.170</output>
+            <input id="threshold-input" type="range" min="0.055" max="0.32" step="0.005" value="0.17" />
+          </label>
+          <label class="control">
+            <span>Motion</span>
+            <output id="speed-output">0.35</output>
+            <input id="speed-input" type="range" min="0" max="1" step="0.01" value="0.35" />
+          </label>
+          <div class="button-row" aria-label="Commands">
+            <button id="toggle-motion" type="button">Pause</button>
+            <button id="randomize" type="button">New cloud</button>
+            <button id="recompute" type="button">Recompute</button>
+          </div>
+        </section>
+
+        <section class="homology-panel" aria-label="Integral homology groups">
+          <div class="panel-title">
+            <h2>Integral homology</h2>
+            <span id="compute-status">Ready</span>
+          </div>
+          <ol class="homology-list">
+            <li><span>H0</span><strong id="h0">Z^0</strong></li>
+            <li><span>H1</span><strong id="h1">Z^0</strong></li>
+            <li><span>H2</span><strong id="h2">Z^0</strong></li>
+          </ol>
+          <div class="algebra-grid" aria-label="Algebra diagnostics">
+            <div><span>Euler</span><strong id="euler">0</strong></div>
+            <div><span>Ranks</span><strong id="ranks">0 / 0 / 0</strong></div>
+            <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="stage-shell" aria-label="Animated Vietoris-Rips complex">
+        <div class="stage-topbar">
+          <span id="density-label">Exact complex</span>
+          <span id="fps-label">0 fps</span>
+        </div>
+        <div id="stage" class="stage" aria-label="Point cloud visualization"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

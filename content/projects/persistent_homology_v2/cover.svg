@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Stylized Vietoris-Rips complex">
+  <rect width="1200" height="675" fill="#090b0a"/>
+  <path d="M0 80h1200M0 200h1200M0 320h1200M0 440h1200M0 560h1200M120 0v675M280 0v675M440 0v675M600 0v675M760 0v675M920 0v675M1080 0v675" stroke="#ffffff" stroke-opacity=".055" stroke-width="2"/>
+  <g fill="#a993ff" fill-opacity=".18" stroke="#60f3b2" stroke-opacity=".72" stroke-width="7">
+    <path d="M180 438 346 262 558 330Z"/>
+    <path d="M558 330 720 176 872 396Z"/>
+    <path d="M346 262 720 176 558 330Z"/>
+    <path d="M180 438 558 330 736 548Z"/>
+    <path d="M736 548 872 396 1014 512Z"/>
+  </g>
+  <g stroke="#57b8ff" stroke-opacity=".82" stroke-width="9" stroke-linecap="round">
+    <path d="M180 438 346 262 558 330 720 176 872 396 1014 512 736 548 180 438"/>
+    <path d="M346 262 720 176"/>
+    <path d="M558 330 872 396"/>
+    <path d="M558 330 736 548"/>
+  </g>
+  <g fill="#f7f2e8" stroke="#60f3b2" stroke-width="10">
+    <circle cx="180" cy="438" r="24"/>
+    <circle cx="346" cy="262" r="24"/>
+    <circle cx="558" cy="330" r="24"/>
+    <circle cx="720" cy="176" r="24"/>
+    <circle cx="872" cy="396" r="24"/>
+    <circle cx="1014" cy="512" r="24"/>
+    <circle cx="736" cy="548" r="24"/>
+  </g>
+  <text x="64" y="92" fill="#f7f2e8" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700">Persistent Homology Lab</text>
+  <text x="64" y="148" fill="#ffb84d" font-family="ui-monospace, SFMono-Regular, monospace" font-size="28">H0, H1, H2 via Smith normal form</text>
+</svg>
