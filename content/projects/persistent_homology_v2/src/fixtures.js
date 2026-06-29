@@ -1,4 +1,6 @@
 const HATCHER_AT = "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf";
+const CLIQUE_COMPLEX = "https://en.wikipedia.org/wiki/Clique_complex";
+const CYCLOMATIC_NUMBER = "https://en.wikipedia.org/wiki/Cyclomatic_number";
 
 function pointsFromCoordinates(coordinates) {
   return coordinates.map(([x, y], id) => ({ id, x, y, vx: 0, vy: 0 }));
@@ -25,6 +27,79 @@ function graphReductionFor(simplices) {
     removed: 0,
     vertices: simplices[0].map(([vertex]) => vertex),
   };
+}
+
+function regularPolygonCoordinates(count, centerX, centerY, radius) {
+  return Array.from({ length: count }, (_, index) => {
+    const angle = -Math.PI / 2 + (2 * Math.PI * index) / count;
+    return [centerX + radius * Math.cos(angle), centerY + radius * Math.sin(angle)];
+  });
+}
+
+function edge(a, b) {
+  return a < b ? [a, b] : [b, a];
+}
+
+function edgeKey(a, b) {
+  const [u, v] = edge(a, b);
+  return `${u},${v}`;
+}
+
+function completeGraphEdges(order, offset = 0) {
+  const edges = [];
+  for (let i = 0; i < order; i += 1) {
+    for (let j = i + 1; j < order; j += 1) {
+      edges.push([offset + i, offset + j]);
+    }
+  }
+  return edges;
+}
+
+function cycleEdges(order, offset = 0) {
+  return Array.from({ length: order }, (_, index) => [offset + index, offset + ((index + 1) % order)]);
+}
+
+function completeBipartiteEdges(leftOrder, rightOrder) {
+  const edges = [];
+  for (let left = 0; left < leftOrder; left += 1) {
+    for (let right = 0; right < rightOrder; right += 1) {
+      edges.push([left, leftOrder + right]);
+    }
+  }
+  return edges;
+}
+
+function graphSimplices(vertexCount, sourceEdges) {
+  const vertices = Array.from({ length: vertexCount }, (_, index) => [index]);
+  const edges = sourceEdges.map(([a, b]) => edge(a, b)).sort((left, right) => left[0] - right[0] || left[1] - right[1]);
+  const edgeSet = new Set(edges.map(([a, b]) => edgeKey(a, b)));
+  const hasEdge = (a, b) => edgeSet.has(edgeKey(a, b));
+  const triangles = [];
+  const tetrahedra = [];
+
+  for (let a = 0; a < vertexCount; a += 1) {
+    for (let b = a + 1; b < vertexCount; b += 1) {
+      for (let c = b + 1; c < vertexCount; c += 1) {
+        if (hasEdge(a, b) && hasEdge(a, c) && hasEdge(b, c)) {
+          triangles.push([a, b, c]);
+        }
+      }
+    }
+  }
+
+  for (let a = 0; a < vertexCount; a += 1) {
+    for (let b = a + 1; b < vertexCount; b += 1) {
+      for (let c = b + 1; c < vertexCount; c += 1) {
+        for (let d = c + 1; d < vertexCount; d += 1) {
+          if (hasEdge(a, b) && hasEdge(a, c) && hasEdge(a, d) && hasEdge(b, c) && hasEdge(b, d) && hasEdge(c, d)) {
+            tetrahedra.push([a, b, c, d]);
+          }
+        }
+      }
+    }
+  }
+
+  return [vertices, edges, triangles, tetrahedra];
 }
 
 const circlePoints = pointsFromCoordinates([
@@ -54,28 +129,18 @@ const diskPoints = pointsFromCoordinates([
   [0.22, 0.78],
 ]);
 
-const circleSimplices = [
-  [[0], [1], [2], [3]],
-  [
-    [0, 1],
-    [1, 2],
-    [2, 3],
-    [0, 3],
-  ],
-  [],
-  [],
-];
+const completeBipartitePoints = pointsFromCoordinates([
+  [0.27, 0.32],
+  [0.27, 0.68],
+  [0.76, 0.2],
+  [0.76, 0.5],
+  [0.76, 0.8],
+]);
 
-const filledTriangleSimplices = [
-  [[0], [1], [2]],
-  [
-    [0, 1],
-    [0, 2],
-    [1, 2],
-  ],
-  [[0, 1, 2]],
-  [],
-];
+const disjointCyclePoints = pointsFromCoordinates([
+  ...regularPolygonCoordinates(4, 0.31, 0.5, 0.2),
+  ...regularPolygonCoordinates(5, 0.72, 0.5, 0.21),
+]);
 
 const tetrahedronBoundarySimplices = [
   [[0], [1], [2], [3]],
@@ -96,11 +161,6 @@ const tetrahedronBoundarySimplices = [
   [],
 ];
 
-const filledTetrahedronSimplices = [
-  ...tetrahedronBoundarySimplices.slice(0, 3),
-  [[0, 1, 2, 3]],
-];
-
 const projectivePlaneDisplay = [
   [[0], [1], [2], [3]],
   [
@@ -117,38 +177,47 @@ const projectivePlaneDisplay = [
   [],
 ];
 
+const k23Simplices = graphSimplices(5, completeBipartiteEdges(2, 3));
+const disjointCycleSimplices = graphSimplices(9, [...cycleEdges(4), ...cycleEdges(5, 4)]);
+
 export const HOMOLOGY_FIXTURES = [
   {
     id: "circle-s1",
-    label: "Circle S1",
+    label: "S¹ = X(C₄)",
     type: "simplicial",
     expected: ["Z", "Z", "0"],
+    expectedCells: [4, 4, 0, 0],
+    oracle: "C₄ has one graph cycle and no 3-cliques, so H₁(X(C₄)) = Z.",
     threshold: 0.18,
     points: circlePoints,
-    simplices: circleSimplices,
+    simplices: graphSimplices(4, cycleEdges(4)),
     source: {
-      label: "Hatcher, Algebraic Topology, homology of spheres",
-      url: HATCHER_AT,
+      label: "Clique complex plus cyclomatic number",
+      url: CYCLOMATIC_NUMBER,
     },
   },
   {
     id: "filled-triangle",
-    label: "Filled 2-simplex",
+    label: "Δ² = X(K₃)",
     type: "simplicial",
     expected: ["Z", "0", "0"],
+    expectedCells: [3, 3, 1, 0],
+    oracle: "The 3-clique of K₃ is a 2-simplex, so the apparent graph cycle is filled.",
     threshold: 0.22,
     points: trianglePoints,
-    simplices: filledTriangleSimplices,
+    simplices: graphSimplices(3, completeGraphEdges(3)),
     source: {
-      label: "Contractibility of a simplex",
-      url: HATCHER_AT,
+      label: "Clique complex of a complete graph",
+      url: CLIQUE_COMPLEX,
     },
   },
   {
     id: "sphere-s2",
-    label: "Sphere S2",
+    label: "S² = ∂Δ³",
     type: "simplicial",
     expected: ["Z", "0", "Z"],
+    expectedCells: [4, 6, 4, 0],
+    oracle: "The boundary of the 3-simplex has one 2-dimensional void.",
     threshold: 0.2,
     points: tetrahedronPoints,
     simplices: tetrahedronBoundarySimplices,
@@ -159,22 +228,26 @@ export const HOMOLOGY_FIXTURES = [
   },
   {
     id: "filled-tetrahedron",
-    label: "Filled 3-simplex",
+    label: "B³ = Δ³ = X(K₄)",
     type: "simplicial",
     expected: ["Z", "0", "0"],
+    expectedCells: [4, 6, 4, 1],
+    oracle: "The 4-clique of K₄ is a 3-simplex, filling the S² boundary.",
     threshold: 0.2,
     points: tetrahedronPoints,
-    simplices: filledTetrahedronSimplices,
+    simplices: graphSimplices(4, completeGraphEdges(4)),
     source: {
-      label: "Contractibility of a simplex",
-      url: HATCHER_AT,
+      label: "Clique complex of a complete graph",
+      url: CLIQUE_COMPLEX,
     },
   },
   {
     id: "rp2-cellular",
-    label: "RP2 cellular",
+    label: "RP²",
     type: "chain",
     expected: ["Z", "Z/2", "0"],
+    expectedCells: [1, 1, 1, 0],
+    oracle: "The cellular boundary d₂ is multiplication by 2, giving H₁(RP²) = Z/2.",
     threshold: 0.16,
     points: diskPoints,
     displaySimplices: projectivePlaneDisplay,
@@ -188,6 +261,36 @@ export const HOMOLOGY_FIXTURES = [
     source: {
       label: "Hatcher, Algebraic Topology, cellular homology of RPn",
       url: HATCHER_AT,
+    },
+  },
+  {
+    id: "k23-clique",
+    label: "X(K₂,₃)",
+    type: "simplicial",
+    expected: ["Z", "Z^2", "0"],
+    expectedCells: [5, 6, 0, 0],
+    oracle: "K₂,₃ is connected and triangle-free, so β₁ = |E| - |V| + 1 = 2.",
+    threshold: 0.2,
+    points: completeBipartitePoints,
+    simplices: k23Simplices,
+    source: {
+      label: "Cyclomatic number for a connected triangle-free graph",
+      url: CYCLOMATIC_NUMBER,
+    },
+  },
+  {
+    id: "disjoint-cycles-clique",
+    label: "X(C₄ ⊔ C₅)",
+    type: "simplicial",
+    expected: ["Z^2", "Z^2", "0"],
+    expectedCells: [9, 9, 0, 0],
+    oracle: "Two triangle-free connected components give two H₀ generators and two H₁ graph cycles.",
+    threshold: 0.18,
+    points: disjointCyclePoints,
+    simplices: disjointCycleSimplices,
+    source: {
+      label: "Components and cyclomatic number of a graph",
+      url: CYCLOMATIC_NUMBER,
     },
   },
 ];

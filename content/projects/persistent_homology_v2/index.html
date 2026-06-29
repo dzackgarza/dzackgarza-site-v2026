@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html class="sl-theme-dark" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Persistent Homology Lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -49,10 +50,7 @@
             <output id="speed-output">0.35</output>
             <input id="speed-input" type="range" min="0" max="1" step="0.01" value="0.35" />
           </label>
-          <label class="control">
-            <span>Fixture</span>
-            <select id="fixture-select" aria-label="Homology fixture"></select>
-          </label>
+          <sl-select id="fixture-select" class="fixture-select" label="Fixture" aria-label="Homology fixture"></sl-select>
           <div class="button-row" aria-label="Commands">
             <button id="toggle-motion" type="button">Pause</button>
             <button id="randomize" type="button">New cloud</button>
@@ -78,6 +76,7 @@
           </div>
           <div class="fixture-grid" aria-label="Fixture oracle">
             <div><span>Fixture</span><strong id="fixture-name">Live cloud</strong></div>
+            <div><span>Oracle</span><strong id="fixture-oracle">-</strong></div>
             <div><span>Expected</span><strong id="fixture-expected">-</strong></div>
             <div><span>Computed</span><strong id="fixture-actual">-</strong></div>
             <div><span>Check</span><strong id="fixture-result">-</strong></div>
@@ -95,6 +94,10 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/gpu.js@2.16.0/dist/gpu-browser.min.js"></script>
+    <script type="module" data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/">
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/select/select.js";
+      import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/option/option.js";
+    </script>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

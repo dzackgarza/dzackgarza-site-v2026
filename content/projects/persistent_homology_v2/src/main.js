@@ -48,6 +48,7 @@ const els = {
   snfTime: document.querySelector("#snf-time"),
   fixture: {
     name: document.querySelector("#fixture-name"),
+    oracle: document.querySelector("#fixture-oracle"),
     expected: document.querySelector("#fixture-expected"),
     actual: document.querySelector("#fixture-actual"),
     result: document.querySelector("#fixture-result"),
@@ -66,12 +67,17 @@ let lastTopologyRefresh = 0;
 let needsDraw = true;
 let activeFixture = null;
 
+await customElements.whenDefined("sl-select");
+await customElements.whenDefined("sl-option");
+
 for (const fixture of HOMOLOGY_FIXTURES) {
-  const option = document.createElement("option");
-  option.value = fixture.id;
+  const option = document.createElement("sl-option");
+  option.setAttribute("value", fixture.id);
   option.textContent = fixture.label;
   els.fixtureSelect.appendChild(option);
 }
+els.fixtureSelect.value = HOMOLOGY_FIXTURES[0].id;
+await els.fixtureSelect.updateComplete;
 
 function setStatus(text, mode = "") {
   els.status.textContent = text;
@@ -111,6 +117,7 @@ function expectedText(fixture) {
 function updateFixtureReadout(fixture, result) {
   if (fixture === null) {
     els.fixture.name.textContent = "Live cloud";
+    els.fixture.oracle.textContent = "-";
     els.fixture.expected.textContent = "-";
     els.fixture.actual.textContent = "-";
     els.fixture.result.textContent = "-";
@@ -121,6 +128,7 @@ function updateFixtureReadout(fixture, result) {
   const actual = result.groups.map(formatGroup);
   const matches = fixture.expected.every((group, index) => group === actual[index]);
   els.fixture.name.textContent = fixture.label;
+  els.fixture.oracle.textContent = fixture.oracle;
   els.fixture.expected.textContent = expectedText(fixture);
   els.fixture.actual.textContent = groupText(result.groups);
   els.fixture.result.textContent = matches ? "Match" : "Mismatch";

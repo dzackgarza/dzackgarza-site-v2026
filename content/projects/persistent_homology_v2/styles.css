@@ -34,7 +34,7 @@ body {
 
 button,
 input,
-select {
+sl-select {
   font: inherit;
 }
 
@@ -47,17 +47,8 @@ button {
   cursor: pointer;
 }
 
-select {
-  min-height: 44px;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: rgba(247, 242, 232, 0.08);
-  color: var(--ink);
-}
-
 button:hover,
-button:focus-visible,
-select:focus-visible {
+button:focus-visible {
   border-color: rgba(96, 243, 178, 0.72);
   outline: none;
 }
@@ -169,10 +160,40 @@ h2 {
   accent-color: var(--accent);
 }
 
-.control select {
+.fixture-select {
+  --sl-input-background-color: rgba(247, 242, 232, 0.08);
+  --sl-input-background-color-hover: rgba(247, 242, 232, 0.11);
+  --sl-input-background-color-focus: rgba(247, 242, 232, 0.11);
+  --sl-input-border-color: var(--line);
+  --sl-input-border-color-hover: rgba(96, 243, 178, 0.72);
+  --sl-input-border-color-focus: rgba(96, 243, 178, 0.86);
+  --sl-input-border-radius-medium: 7px;
+  --sl-input-color: var(--ink);
+  --sl-input-label-color: var(--muted);
+  --sl-panel-background-color: #151815;
+  --sl-panel-border-color: rgba(247, 242, 232, 0.22);
+  --sl-color-neutral-0: #151815;
+  --sl-color-neutral-50: #1d211e;
+  --sl-color-neutral-100: #242a26;
+  --sl-color-neutral-700: #d8d0c3;
+  --sl-color-neutral-900: var(--ink);
+  --sl-color-primary-600: var(--accent);
   grid-column: 1 / -1;
-  width: 100%;
-  padding: 0 0.65rem;
+}
+
+.fixture-select::part(form-control-label) {
+  color: var(--muted);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.fixture-select::part(combobox) {
+  min-height: 44px;
+  box-shadow: none;
+}
+
+.fixture-select::part(listbox) {
+  border-color: rgba(247, 242, 232, 0.22);
 }
 
 .button-row {

@@ -9,11 +9,20 @@ import {
 } from "../content/projects/persistent_homology_v2/src/homology.js";
 
 function computeFixtureHomology(fixture) {
+  const complex = complexFromFixture(fixture);
+  const cells = complex.cellCounts === undefined ? complex.simplices.map((simplices) => simplices.length) : complex.cellCounts;
+
+  assert.deepEqual(
+    cells,
+    fixture.expectedCells,
+    `${fixture.label} should realize clique/cell counts ${fixture.expectedCells.join(", ")}`,
+  );
+
   if (fixture.type === "chain") {
     return computeHomologyFromBoundaries(boundariesFromFixture(fixture), reductionFromFixture(fixture));
   }
   if (fixture.type === "simplicial") {
-    return computeHomology(complexFromFixture(fixture));
+    return computeHomology(complex);
   }
   throw new Error(`unknown fixture type ${fixture.type}`);
 }
