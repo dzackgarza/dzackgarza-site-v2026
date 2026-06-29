@@ -49,10 +49,15 @@
             <output id="speed-output">0.35</output>
             <input id="speed-input" type="range" min="0" max="1" step="0.01" value="0.35" />
           </label>
+          <label class="control">
+            <span>Fixture</span>
+            <select id="fixture-select" aria-label="Homology fixture"></select>
+          </label>
           <div class="button-row" aria-label="Commands">
             <button id="toggle-motion" type="button">Pause</button>
             <button id="randomize" type="button">New cloud</button>
             <button id="recompute" type="button">Recompute</button>
+            <button id="load-fixture" type="button">Load fixture</button>
           </div>
         </section>
 
@@ -70,6 +75,12 @@
             <div><span>Euler</span><strong id="euler">0</strong></div>
             <div><span>Ranks</span><strong id="ranks">0 / 0 / 0</strong></div>
             <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
+          </div>
+          <div class="fixture-grid" aria-label="Fixture oracle">
+            <div><span>Fixture</span><strong id="fixture-name">Live cloud</strong></div>
+            <div><span>Expected</span><strong id="fixture-expected">-</strong></div>
+            <div><span>Computed</span><strong id="fixture-actual">-</strong></div>
+            <div><span>Check</span><strong id="fixture-result">-</strong></div>
           </div>
         </section>
       </section>

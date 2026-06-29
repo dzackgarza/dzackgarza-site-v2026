@@ -2,10 +2,17 @@ import {
   advancePointCloud,
   buildRipsComplex,
   computeHomology,
-  eulerCharacteristic,
+  computeHomologyFromBoundaries,
   formatGroup,
   generatePointCloud,
 } from "./homology.js";
+import {
+  HOMOLOGY_FIXTURES,
+  boundariesFromFixture,
+  complexFromFixture,
+  fixtureById,
+  reductionFromFixture,
+} from "./fixtures.js";
 import { createGpuAdjacencyBackend } from "./gpu-adjacency.js";
 import { createRenderer } from "./renderer.js";
 
@@ -20,6 +27,8 @@ const els = {
   toggleMotion: document.querySelector("#toggle-motion"),
   randomize: document.querySelector("#randomize"),
   recompute: document.querySelector("#recompute"),
+  fixtureSelect: document.querySelector("#fixture-select"),
+  loadFixture: document.querySelector("#load-fixture"),
   status: document.querySelector("#compute-status"),
   density: document.querySelector("#density-label"),
   fps: document.querySelector("#fps-label"),
@@ -37,6 +46,12 @@ const els = {
   euler: document.querySelector("#euler"),
   ranks: document.querySelector("#ranks"),
   snfTime: document.querySelector("#snf-time"),
+  fixture: {
+    name: document.querySelector("#fixture-name"),
+    expected: document.querySelector("#fixture-expected"),
+    actual: document.querySelector("#fixture-actual"),
+    result: document.querySelector("#fixture-result"),
+  },
 };
 
 let seed = 20260629;
@@ -49,6 +64,14 @@ let complex = buildRipsComplex(points, threshold, { adjacencyBackend, includeHom
 let lastCompute = 0;
 let lastTopologyRefresh = 0;
 let needsDraw = true;
+let activeFixture = null;
+
+for (const fixture of HOMOLOGY_FIXTURES) {
+  const option = document.createElement("option");
+  option.value = fixture.id;
+  option.textContent = fixture.label;
+  els.fixtureSelect.appendChild(option);
+}
 
 function setStatus(text, mode = "") {
   els.status.textContent = text;
@@ -62,14 +85,53 @@ function updateControlLabels() {
 }
 
 function updateCounts() {
-  const [vertices, edges, faces, tetrahedra] = complex.simplices;
-  els.counts.vertices.textContent = vertices.length.toLocaleString();
-  els.counts.edges.textContent = edges.length.toLocaleString();
-  els.counts.faces.textContent = complex.limitedAt === "faces" ? "over budget" : faces.length.toLocaleString();
-  els.counts.tetrahedra.textContent = complex.limited ? "over budget" : tetrahedra.length.toLocaleString();
-  els.euler.textContent = eulerCharacteristic(complex).toLocaleString();
+  const counts = complex.cellCounts === undefined ? complex.simplices.map((cells) => cells.length) : complex.cellCounts;
+  els.counts.vertices.textContent = counts[0].toLocaleString();
+  els.counts.edges.textContent = counts[1].toLocaleString();
+  els.counts.faces.textContent = complex.limitedAt === "faces" ? "over budget" : counts[2].toLocaleString();
+  els.counts.tetrahedra.textContent = complex.limited ? "over budget" : counts[3].toLocaleString();
+  const chi = counts.reduce((total, count, dimension) => total + (dimension % 2 === 0 ? count : -count), 0);
+  els.euler.textContent = chi.toLocaleString();
+  if (activeFixture !== null) {
+    els.density.textContent = activeFixture.type === "chain" ? "cellular chain" : "fixture complex";
+    return;
+  }
   const removed = complex.graphReduction?.removed;
   els.density.textContent = removed === undefined ? `${adjacencyBackend.mode} adjacency` : `${adjacencyBackend.mode} / ${removed} collapsed`;
+}
+
+function groupText(groups) {
+  return groups.map((group, index) => `H${index}=${formatGroup(group)}`).join(" / ");
+}
+
+function expectedText(fixture) {
+  return fixture.expected.map((group, index) => `H${index}=${group}`).join(" / ");
+}
+
+function updateFixtureReadout(fixture, result) {
+  if (fixture === null) {
+    els.fixture.name.textContent = "Live cloud";
+    els.fixture.expected.textContent = "-";
+    els.fixture.actual.textContent = "-";
+    els.fixture.result.textContent = "-";
+    els.fixture.result.className = "";
+    return;
+  }
+
+  const actual = result.groups.map(formatGroup);
+  const matches = fixture.expected.every((group, index) => group === actual[index]);
+  els.fixture.name.textContent = fixture.label;
+  els.fixture.expected.textContent = expectedText(fixture);
+  els.fixture.actual.textContent = groupText(result.groups);
+  els.fixture.result.textContent = matches ? "Match" : "Mismatch";
+  els.fixture.result.className = matches ? "is-pass" : "is-fail";
+}
+
+function computeActiveHomology() {
+  if (activeFixture !== null && activeFixture.type === "chain") {
+    return computeHomologyFromBoundaries(boundariesFromFixture(activeFixture), reductionFromFixture(activeFixture));
+  }
+  return computeHomology(complex);
 }
 
 function recomputeHomology() {
@@ -81,20 +143,27 @@ function recomputeHomology() {
     }
     els.ranks.textContent = "- / - / -";
     els.snfTime.textContent = "-";
-    return;
+    updateFixtureReadout(activeFixture, { groups: [] });
+    return null;
   }
 
   setStatus("Computing", "is-hot");
-  const result = computeHomology(complex);
+  const result = computeActiveHomology();
   result.groups.forEach((group, index) => {
     els.homology[index].textContent = formatGroup(group);
   });
   els.ranks.textContent = result.ranks.join(" / ");
   els.snfTime.textContent = `${Math.round(result.elapsedMs)} ms`;
+  updateFixtureReadout(activeFixture, result);
   setStatus("Reduced SNF");
+  return result;
 }
 
 function rebuildComplex(forceHomology = false) {
+  if (activeFixture !== null) {
+    recomputeHomology();
+    return;
+  }
   const homologyInterval = speed > 0 && !paused ? 1500 : 420;
   const shouldCompute = forceHomology || performance.now() - lastCompute > homologyInterval;
   complex = buildRipsComplex(points, threshold, {
@@ -112,14 +181,20 @@ function rebuildComplex(forceHomology = false) {
   }
 }
 
+function clearFixtureMode() {
+  activeFixture = null;
+  updateFixtureReadout(null, null);
+}
+
 function resetCloud(count) {
+  clearFixtureMode();
   seed = (seed + 7919) >>> 0;
   points = generatePointCloud(count, seed);
   rebuildComplex(true);
 }
 
 function updateTickerState() {
-  const active = !paused && speed > 0;
+  const active = activeFixture === null && !paused && speed > 0;
   renderer.setAnimating(active);
   if (!active) {
     els.fps.textContent = "idle";
@@ -132,6 +207,22 @@ function requestDraw() {
     renderer.draw(complex);
     needsDraw = false;
   }
+}
+
+function loadSelectedFixture() {
+  activeFixture = fixtureById(els.fixtureSelect.value);
+  paused = true;
+  els.toggleMotion.textContent = "Resume";
+  complex = complexFromFixture(activeFixture);
+  points = complex.points;
+  threshold = complex.threshold;
+  els.pointsInput.value = String(points.length);
+  els.thresholdInput.value = String(threshold);
+  updateControlLabels();
+  recomputeHomology();
+  updateTickerState();
+  renderer.draw(complex);
+  needsDraw = false;
 }
 
 const renderer = await createRenderer(els.stage);
@@ -148,6 +239,7 @@ els.pointsInput.addEventListener("input", () => {
 });
 
 els.thresholdInput.addEventListener("input", () => {
+  clearFixtureMode();
   threshold = Number(els.thresholdInput.value);
   updateControlLabels();
   rebuildComplex(true);
@@ -177,8 +269,12 @@ els.recompute.addEventListener("click", () => {
   requestDraw();
 });
 
+els.loadFixture.addEventListener("click", () => {
+  loadSelectedFixture();
+});
+
 renderer.app.ticker.add((ticker) => {
-  if (!paused && speed > 0) {
+  if (activeFixture === null && !paused && speed > 0) {
     advancePointCloud(points, Math.min(ticker.deltaMS, 50) / 1000, speed);
     if (performance.now() - lastTopologyRefresh > 350) {
       rebuildComplex(false);

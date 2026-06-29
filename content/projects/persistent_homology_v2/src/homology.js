@@ -543,6 +543,26 @@ function homologyAt(boundaryDown, boundaryUp) {
   };
 }
 
+export function computeHomologyFromBoundaries(boundaries, reduction) {
+  if (boundaries.length !== 4) {
+    throw new Error(`expected four boundary operators, received ${boundaries.length}`);
+  }
+
+  const started = performance.now();
+  const h0 = homologyAt(boundaries[0], boundaries[1]);
+  const h1 = homologyAt(boundaries[1], boundaries[2]);
+  const h2 = homologyAt(boundaries[2], boundaries[3]);
+  const elapsedMs = performance.now() - started;
+
+  return {
+    limited: false,
+    groups: [h0, h1, h2],
+    ranks: [h0.imageRank, h1.imageRank, h2.imageRank],
+    elapsedMs,
+    reduction,
+  };
+}
+
 export function computeHomology(complex) {
   if (complex.homologyLimited) {
     return {
@@ -554,7 +574,6 @@ export function computeHomology(complex) {
     };
   }
 
-  const started = performance.now();
   const source = complex.homologySimplices ?? complex.simplices;
   const reduction = coreduceSimplices(source);
   const [vertices, edges, triangles, tetrahedra] = reduction.simplices;
@@ -565,22 +584,11 @@ export function computeHomology(complex) {
     boundaryMatrix(triangles, tetrahedra),
   ];
 
-  const h0 = homologyAt(boundaries[0], boundaries[1]);
-  const h1 = homologyAt(boundaries[1], boundaries[2]);
-  const h2 = homologyAt(boundaries[2], boundaries[3]);
-  const elapsedMs = performance.now() - started;
-
-  return {
-    limited: false,
-    groups: [h0, h1, h2],
-    ranks: [h0.imageRank, h1.imageRank, h2.imageRank],
-    elapsedMs,
-    reduction: {
-      graphRemoved: complex.graphReduction?.removed ?? 0,
-      before: reduction.before,
-      after: reduction.after,
-    },
-  };
+  return computeHomologyFromBoundaries(boundaries, {
+    graphRemoved: complex.graphReduction?.removed ?? 0,
+    before: reduction.before,
+    after: reduction.after,
+  });
 }
 
 export function eulerCharacteristic(complex) {

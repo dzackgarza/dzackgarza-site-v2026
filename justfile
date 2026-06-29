@@ -28,7 +28,7 @@ serve: build
     {{SSG}} serve
 
 # Run the broad live-site readiness gate
-check: _check-build _check-orphans _check-links
+check: _check-build _check-orphans _check-homology-fixtures _check-links
 
 # Run browser verification over the built site
 verify: _verify
@@ -91,6 +91,10 @@ _check-links: _build
 [private]
 _check-orphans: _build
     python3 scripts/check-orphans.py
+
+[private]
+_check-homology-fixtures:
+    bun scripts/check-homology-fixtures.mjs
 
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
