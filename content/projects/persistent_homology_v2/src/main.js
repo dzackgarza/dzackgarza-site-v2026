@@ -3,7 +3,6 @@ import {
   buildRipsComplex,
   computeHomology,
   computeHomologyFromBoundaries,
-  formatGroup,
   generatePointCloud,
 } from "./homology.js";
 import {
@@ -38,20 +37,22 @@ const els = {
     faces: document.querySelector("#count-faces"),
     tetrahedra: document.querySelector("#count-tetrahedra"),
   },
-  homology: [
-    document.querySelector("#h0"),
-    document.querySelector("#h1"),
-    document.querySelector("#h2"),
-  ],
+  cohomology: document.querySelector("#cohomology-expression"),
   euler: document.querySelector("#euler"),
-  ranks: document.querySelector("#ranks"),
   snfTime: document.querySelector("#snf-time"),
   fixture: {
     name: document.querySelector("#fixture-name"),
     oracle: document.querySelector("#fixture-oracle"),
     expected: document.querySelector("#fixture-expected"),
-    actual: document.querySelector("#fixture-actual"),
     result: document.querySelector("#fixture-result"),
+  },
+};
+
+const KATEX_OPTIONS = {
+  displayMode: false,
+  throwOnError: false,
+  macros: {
+    "\\ZZ": "\\mathbb{Z}",
   },
 };
 
@@ -106,12 +107,81 @@ function updateCounts() {
   els.density.textContent = removed === undefined ? `${adjacencyBackend.mode} adjacency` : `${adjacencyBackend.mode} / ${removed} collapsed`;
 }
 
-function groupText(groups) {
-  return groups.map((group, index) => `H${index}=${formatGroup(group)}`).join(" / ");
+function renderMath(element, tex) {
+  if (window.katex === undefined) {
+    throw new Error("KaTeX failed to load before homology display rendering");
+  }
+  window.katex.render(tex, element, KATEX_OPTIONS);
 }
 
-function expectedText(fixture) {
-  return fixture.expected.map((group, index) => `H${index}=${group}`).join(" / ");
+function groupToTex(group) {
+  const pieces = [];
+  if (group.freeRank === 1) {
+    pieces.push("\\ZZ");
+  } else if (group.freeRank > 1) {
+    pieces.push(`\\ZZ^{${group.freeRank}}`);
+  }
+  for (const factor of group.torsion) {
+    pieces.push(`\\ZZ/${factor.toString()}\\ZZ`);
+  }
+  return pieces.length === 0 ? "0" : pieces.join(" \\oplus ");
+}
+
+function cohomologyGroupsFromHomology(groups) {
+  return groups.map((group, index) => ({
+    freeRank: group.freeRank,
+    torsion: index === 0 ? [] : [...(groups[index - 1]?.torsion ?? [])],
+  }));
+}
+
+function cohomologyExpression(groups, spaceTex) {
+  const summands = cohomologyGroupsFromHomology(groups).map(groupToTex).join(" \\oplus ");
+  return `\\tau_{\\leq 2} H^*(${spaceTex}; \\ZZ) = ${summands}`;
+}
+
+function parseGroupText(text) {
+  if (text === "0") {
+    return { freeRank: 0, torsion: [] };
+  }
+
+  return text.split(/\s*\+\s*/).reduce(
+    (group, piece) => {
+      if (piece === "Z") {
+        group.freeRank += 1;
+        return group;
+      }
+      if (piece.startsWith("Z^")) {
+        group.freeRank += Number(piece.slice(2));
+        return group;
+      }
+      if (piece.startsWith("Z/")) {
+        group.torsion.push(BigInt(piece.slice(2)));
+        return group;
+      }
+      throw new Error(`unknown fixture group notation ${piece}`);
+    },
+    { freeRank: 0, torsion: [] },
+  );
+}
+
+function expectedHomologyGroups(fixture) {
+  return fixture.expected.map(parseGroupText);
+}
+
+function groupsEqual(left, right) {
+  return (
+    left.freeRank === right.freeRank &&
+    left.torsion.length === right.torsion.length &&
+    left.torsion.every((factor, index) => factor.toString() === right.torsion[index].toString())
+  );
+}
+
+function groupListsEqual(left, right) {
+  return left.length === right.length && left.every((group, index) => groupsEqual(group, right[index]));
+}
+
+function spaceTex() {
+  return activeFixture?.texLabel ?? "X";
 }
 
 function updateFixtureReadout(fixture, result) {
@@ -119,18 +189,17 @@ function updateFixtureReadout(fixture, result) {
     els.fixture.name.textContent = "Live cloud";
     els.fixture.oracle.textContent = "-";
     els.fixture.expected.textContent = "-";
-    els.fixture.actual.textContent = "-";
     els.fixture.result.textContent = "-";
     els.fixture.result.className = "";
     return;
   }
 
-  const actual = result.groups.map(formatGroup);
-  const matches = fixture.expected.every((group, index) => group === actual[index]);
+  const expectedCohomology = cohomologyGroupsFromHomology(expectedHomologyGroups(fixture));
+  const actualCohomology = cohomologyGroupsFromHomology(result.groups);
+  const matches = groupListsEqual(expectedCohomology, actualCohomology);
   els.fixture.name.textContent = fixture.label;
   els.fixture.oracle.textContent = fixture.oracle;
-  els.fixture.expected.textContent = expectedText(fixture);
-  els.fixture.actual.textContent = groupText(result.groups);
+  renderMath(els.fixture.expected, cohomologyExpression(expectedHomologyGroups(fixture), fixture.texLabel));
   els.fixture.result.textContent = matches ? "Match" : "Mismatch";
   els.fixture.result.className = matches ? "is-pass" : "is-fail";
 }
@@ -146,10 +215,7 @@ function recomputeHomology() {
   updateCounts();
   if (complex.homologyLimited) {
     setStatus("Reduce density", "is-blocked");
-    for (const target of els.homology) {
-      target.textContent = "not computed";
-    }
-    els.ranks.textContent = "- / - / -";
+    renderMath(els.cohomology, `\\tau_{\\leq 2} H^*(${spaceTex()}; \\ZZ) = \\text{not computed}`);
     els.snfTime.textContent = "-";
     updateFixtureReadout(activeFixture, { groups: [] });
     return null;
@@ -157,13 +223,10 @@ function recomputeHomology() {
 
   setStatus("Computing", "is-hot");
   const result = computeActiveHomology();
-  result.groups.forEach((group, index) => {
-    els.homology[index].textContent = formatGroup(group);
-  });
-  els.ranks.textContent = result.ranks.join(" / ");
+  renderMath(els.cohomology, cohomologyExpression(result.groups, spaceTex()));
   els.snfTime.textContent = `${Math.round(result.elapsedMs)} ms`;
   updateFixtureReadout(activeFixture, result);
-  setStatus("Reduced SNF");
+  setStatus("Ready");
   return result;
 }
 

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Persistent Homology Lab</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css"
+      integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -59,26 +65,20 @@
           </div>
         </section>
 
-        <section class="homology-panel" aria-label="Integral homology groups">
+        <section class="homology-panel" aria-label="Truncated integral cohomology">
           <div class="panel-title">
-            <h2>Integral homology</h2>
+            <h2>Integral cohomology</h2>
             <span id="compute-status">Ready</span>
           </div>
-          <ol class="homology-list">
-            <li><span>H0</span><strong id="h0">Z^0</strong></li>
-            <li><span>H1</span><strong id="h1">Z^0</strong></li>
-            <li><span>H2</span><strong id="h2">Z^0</strong></li>
-          </ol>
+          <div id="cohomology-expression" class="cohomology-expression" aria-live="polite"></div>
           <div class="algebra-grid" aria-label="Algebra diagnostics">
             <div><span>Euler</span><strong id="euler">0</strong></div>
-            <div><span>Ranks</span><strong id="ranks">0 / 0 / 0</strong></div>
             <div><span>SNF</span><strong id="snf-time">0 ms</strong></div>
           </div>
           <div class="fixture-grid" aria-label="Fixture oracle">
             <div><span>Fixture</span><strong id="fixture-name">Live cloud</strong></div>
             <div><span>Oracle</span><strong id="fixture-oracle">-</strong></div>
-            <div><span>Expected</span><strong id="fixture-expected">-</strong></div>
-            <div><span>Computed</span><strong id="fixture-actual">-</strong></div>
+            <div><span>Expected</span><strong id="fixture-expected" class="math-readout">-</strong></div>
             <div><span>Check</span><strong id="fixture-result">-</strong></div>
           </div>
         </section>
@@ -94,6 +94,12 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/gpu.js@2.16.0/dist/gpu-browser.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js"
+      integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/">
       import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/select/select.js";
       import "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/option/option.js";

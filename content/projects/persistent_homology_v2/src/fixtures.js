@@ -184,6 +184,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "circle-s1",
     label: "S¹ = X(C₄)",
+    texLabel: "S^1",
     type: "simplicial",
     expected: ["Z", "Z", "0"],
     expectedCells: [4, 4, 0, 0],
@@ -199,6 +200,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "filled-triangle",
     label: "Δ² = X(K₃)",
+    texLabel: "\\Delta^2",
     type: "simplicial",
     expected: ["Z", "0", "0"],
     expectedCells: [3, 3, 1, 0],
@@ -214,6 +216,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "sphere-s2",
     label: "S² = ∂Δ³",
+    texLabel: "S^2",
     type: "simplicial",
     expected: ["Z", "0", "Z"],
     expectedCells: [4, 6, 4, 0],
@@ -229,6 +232,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "filled-tetrahedron",
     label: "B³ = Δ³ = X(K₄)",
+    texLabel: "B^3",
     type: "simplicial",
     expected: ["Z", "0", "0"],
     expectedCells: [4, 6, 4, 1],
@@ -244,6 +248,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "rp2-cellular",
     label: "RP²",
+    texLabel: "\\mathbb{RP}^2",
     type: "chain",
     expected: ["Z", "Z/2", "0"],
     expectedCells: [1, 1, 1, 0],
@@ -266,6 +271,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "k23-clique",
     label: "X(K₂,₃)",
+    texLabel: "X(K_{2,3})",
     type: "simplicial",
     expected: ["Z", "Z^2", "0"],
     expectedCells: [5, 6, 0, 0],
@@ -281,6 +287,7 @@ export const HOMOLOGY_FIXTURES = [
   {
     id: "disjoint-cycles-clique",
     label: "X(C₄ ⊔ C₅)",
+    texLabel: "X(C_4 \\sqcup C_5)",
     type: "simplicial",
     expected: ["Z^2", "Z^2", "0"],
     expectedCells: [9, 9, 0, 0],
