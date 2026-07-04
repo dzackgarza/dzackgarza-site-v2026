@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving in Fundamental Domains</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="world" aria-label="Three dimensional quotient topology visualization"></canvas>
+
+  <main class="overlay">
+    <section class="modal modal-controls" aria-label="Topology controls">
+      <p class="eyebrow">Quotient Lab</p>
+      <h1>Moving in Fundamental Domains</h1>
+
+      <label for="topology">Topology</label>
+      <select id="topology">
+        <option value="torus">Torus</option>
+        <option value="rp2">Projective Plane</option>
+      </select>
+
+      <label for="roots">Roots</label>
+      <input id="roots" type="number" min="1" max="200" value="6">
+
+      <label for="pathColor">Path Color</label>
+      <select id="pathColor">
+        <option value="#4fc3ff">Ion Blue</option>
+        <option value="#ff3f3f">Hot Red</option>
+        <option value="#4cff6a">Laser Green</option>
+        <option value="#ffffff">White</option>
+      </select>
+
+      <div class="readout">
+        <span>Arrows move</span>
+        <span><kbd>t</kbd> breadcrumbs</span>
+      </div>
+    </section>
+
+    <section class="modal modal-square" aria-label="Square fundamental domain">
+      <div class="modal-title">
+        <span>Fundamental Square</span>
+        <span id="trailStatus">Trail off</span>
+      </div>
+      <canvas id="playground" aria-label="Square fundamental domain overlay"></canvas>
+    </section>
+  </main>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
