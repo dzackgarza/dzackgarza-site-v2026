@@ -1,0 +1,4 @@
+# Installed by `just setup` to $XDG_CONFIG_HOME/pandoc-ssg/config.toml.
+# `pandoc-ssg` requires absolute paths, so setup writes $HOME into the values.
+pandoc_home = "__HOME__/.pandoc"
+mathjax_macro_manifest = "__HOME__/.pandoc/styles/macros/mathjax-sources.txt"

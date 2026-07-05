@@ -2,27 +2,30 @@
 #
 # This repo holds pages, _data, assets, and standalone apps. The static-site
 # generator (pandoc-ssg) is a *dependency*, declared in package.json and pinned
-# by bun.lock — not vendored here. `just setup` installs repo dependencies and
-# fetches LFS assets; `just setup-browser` installs the Chromium runtime needed
-# for browser verification. Recipes invoke the locally-installed generator
-# (NOT `bunx github:…`, which caches a stale clone and is not reproducible).
+# by bun.lock — not vendored here. `just setup` installs repo dependencies,
+# installs the generator's XDG config, and fetches LFS assets; `just setup-browser`
+# installs the Chromium runtime needed for browser verification. Recipes invoke
+# the explicit local bin under node_modules.
 
-SSG := "bunx pandoc-ssg"
+SSG := "bun node_modules/.bin/pandoc-ssg"
+PLAYWRIGHT := "bun node_modules/.bin/playwright"
 PANDOC := "pandoc"
 
 # Show available recipes
 default:
     @just --list
 
-# Install repo dependencies and fetch Git LFS assets
+# Install dependencies, generator config, and Git LFS assets
 setup: _check-setup-tools
     bun install
+    just _check-local-generator
+    just _install-generator-config
     git lfs pull
 
 # Install Chromium for browser verification
 setup-browser: _check-bun
     bun install
-    bunx playwright install chromium
+    {{PLAYWRIGHT}} install chromium
 
 # Compile content/ into dist/
 build: _build
@@ -50,7 +53,7 @@ test-ci: test
 update: _update-generator
 
 # Scaffold a new blog post: just new "My Post Title"
-new TITLE:
+new TITLE: _check-local-generator
     {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
 
 # Remove build output
@@ -64,19 +67,40 @@ _check-bun:
 
 [private]
 _check-setup-tools: _check-bun
+    @command -v uv >/dev/null || { echo "Missing required tool: uv"; exit 1; }
     @command -v pandoc >/dev/null || { echo "Missing required tool: pandoc"; exit 1; }
     @git lfs version >/dev/null 2>&1 || { echo "Missing required tool: git-lfs"; exit 1; }
+
+[private]
+_check-local-generator:
+    @test -x node_modules/.bin/pandoc-ssg || { echo "Missing installed pandoc-ssg CLI: run 'just setup'"; exit 1; }
+
+[private]
+_install-generator-config:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    : "${HOME:?HOME is required}"
+    template="config/pandoc-ssg/config.toml"
+    config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+    target_dir="$config_home/pandoc-ssg"
+    target="$target_dir/config.toml"
+    test -f "$template" || { echo "Missing tracked pandoc-ssg generator config: $template"; exit 1; }
+    test -d "$HOME/.pandoc" || { echo "Missing required pandoc config checkout: $HOME/.pandoc"; exit 1; }
+    test -f "$HOME/.pandoc/styles/macros/mathjax-sources.txt" || { echo "Missing MathJax macro manifest: $HOME/.pandoc/styles/macros/mathjax-sources.txt"; exit 1; }
+    mkdir -p "$target_dir"
+    sed "s#__HOME__#$HOME#g" "$template" > "$target"
+    echo "Installed pandoc-ssg generator config: $target"
 
 [private]
 _project-items:
     python3 scripts/generate-project-items.py
 
 [private]
-_build: _project-items
+_build: _check-local-generator _project-items
     {{SSG}} build --pandoc {{PANDOC}}
 
 [private]
-_check-build: _project-items
+_check-build: _check-local-generator _project-items
     {{SSG}} check --pandoc {{PANDOC}}
 
 # pandoc-ssg's `check` only validates internal links in static HTML; the
@@ -88,7 +112,7 @@ _check-build: _project-items
 # Vendored/archived third-party artifacts (example dumps, slide decks) are
 # skipped.
 [private]
-_check-links: _build
+_check-links: _check-lychee _build
     lychee --no-progress --base-url http://website.localhost/ \
         --max-concurrency 8 --timeout 20 \
         --accept '200,206,301,302,307,308,403' \
@@ -99,6 +123,10 @@ _check-links: _build
         --exclude-path dist/assets/talks \
         --exclude-path dist/projects/square_topologies \
         content dist
+
+[private]
+_check-lychee:
+    @command -v lychee >/dev/null || { echo "Missing required tool for just check/test: lychee"; exit 1; }
 
 # pandoc-ssg's `check` validates that internal links *resolve*, but not that a
 # page is linked *to* by anything — a page can build, sit in the sitemap, and
@@ -114,9 +142,9 @@ _check-homology-fixtures:
 
 # Build, then drive a headless browser over every page: fail on JS/console
 # errors, missing landmarks, or MathJax errors (needs the playwright dep + a
-# browser: `bunx playwright install chromium`)
+# browser: `just setup-browser`)
 [private]
-_verify:
+_verify: _check-local-generator
     {{SSG}} verify --pandoc {{PANDOC}}
 
 # Bump the generator to the latest published version (updates bun.lock)

@@ -10,7 +10,7 @@ templates, not the owner of this site's theme.
 ## Usage
 
 ```
-just setup          # install repo dependencies and fetch LFS assets
+just setup          # install deps, generator config, and LFS assets
 just build          # content/ -> dist/
 just serve          # build, then preview over HTTP
 just check          # build, then fail on malformed pages or broken internal links
@@ -27,21 +27,37 @@ Install these system tools before running the project recipes:
 - `just`
 - `bun`
 - `pandoc`
+- `uv`
 - `git-lfs`
 
-Run `just setup` once after cloning. It runs `bun install`, which installs the
-pinned `pandoc-ssg` dependency from `package.json` and `bun.lock`, then runs
-`git lfs pull` to fetch binary assets.
+Run `just setup` once after cloning. It runs `bun install` to install the
+pinned dependency graph from `package.json` and `bun.lock`, verifies the local
+`node_modules/.bin/pandoc-ssg` executable, installs the tracked generator
+config from `config/pandoc-ssg/config.toml` into
+`$XDG_CONFIG_HOME/pandoc-ssg/config.toml` (default:
+`~/.config/pandoc-ssg/config.toml`), then runs `git lfs pull` to fetch binary
+assets.
+
+The installed generator config points at the author's central Pandoc toolchain:
+
+- `~/.pandoc`
+- `~/.pandoc/styles/macros/mathjax-sources.txt`
+
+Those paths must exist before `just setup` can install the config. They are
+shared author-level Pandoc state, not vendored site assets.
 
 `just setup` does not install the browser runtime used by `just verify`.
 Run `just setup-browser` only when you need the Playwright Chromium browser for
 `just verify` or `just deploy`.
 
+`just check` and `just test` also require `lychee` for link checking.
+
 The generator [pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg) is a
 declared dependency (`package.json`), pinned by `bun.lock` so builds are
 reproducible — exactly like Jekyll in a `Gemfile`. Recipes invoke the installed
-generator, *not* `bunx github:…` (which caches a stale clone and is not
-reproducible). Upgrade deliberately with `just update`.
+local executable at `node_modules/.bin/pandoc-ssg`, *not* `bunx github:…`
+(which caches a stale clone and is not reproducible). Upgrade deliberately
+with `just update`.
 
 To develop against a local generator checkout instead:
 
