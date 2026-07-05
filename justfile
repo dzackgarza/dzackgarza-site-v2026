@@ -2,10 +2,10 @@
 #
 # This repo holds pages, _data, assets, and standalone apps. The static-site
 # generator (pandoc-ssg) is a *dependency*, declared in package.json and pinned
-# by bun.lock — not vendored here. `just setup` installs it; `just update`
-# bumps it to the latest published commit. Recipes invoke the locally-installed
-# generator (NOT `bunx github:…`, which caches a stale clone and is not
-# reproducible).
+# by bun.lock — not vendored here. `just setup` installs repo dependencies and
+# fetches LFS assets; `just setup-browser` installs the Chromium runtime needed
+# for browser verification. Recipes invoke the locally-installed generator
+# (NOT `bunx github:…`, which caches a stale clone and is not reproducible).
 
 SSG := "bunx pandoc-ssg"
 PANDOC := "pandoc"
@@ -14,10 +14,14 @@ PANDOC := "pandoc"
 default:
     @just --list
 
-# Install dependencies, LFS assets, and browser verification runtime
-setup:
+# Install repo dependencies and fetch Git LFS assets
+setup: _check-setup-tools
     bun install
     git lfs pull
+
+# Install Chromium for browser verification
+setup-browser: _check-bun
+    bun install
     bunx playwright install chromium
 
 # Compile content/ into dist/
@@ -42,6 +46,9 @@ test: check
 # Run the push/CI gate
 test-ci: test
 
+# Bump the generator to the latest published version
+update: _update-generator
+
 # Scaffold a new blog post: just new "My Post Title"
 new TITLE:
     {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
@@ -50,6 +57,15 @@ new TITLE:
 clean:
     rm -rf dist
     rm -f content/_data/items/projects.yaml
+
+[private]
+_check-bun:
+    @command -v bun >/dev/null || { echo "Missing required tool: bun"; exit 1; }
+
+[private]
+_check-setup-tools: _check-bun
+    @command -v pandoc >/dev/null || { echo "Missing required tool: pandoc"; exit 1; }
+    @git lfs version >/dev/null 2>&1 || { echo "Missing required tool: git-lfs"; exit 1; }
 
 [private]
 _project-items:

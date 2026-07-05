@@ -10,17 +10,32 @@ templates, not the owner of this site's theme.
 ## Usage
 
 ```
-just setup        # install the pinned generator (once, after clone)
-just build        # content/ -> dist/
-just serve        # build, then preview over HTTP
-just check        # build, then fail on malformed pages or broken internal links
-just verify       # build, then browser-check every page (JS errors, MathJax, landmarks)
-just new "Title"  # scaffold a blog post
-just update       # bump the generator to the latest published commit
+just setup          # install repo dependencies and fetch LFS assets
+just build          # content/ -> dist/
+just serve          # build, then preview over HTTP
+just check          # build, then fail on malformed pages or broken internal links
+just setup-browser  # install Chromium for browser verification
+just verify         # browser-check every page (JS errors, MathJax, landmarks)
+just new "Title"    # scaffold a blog post
+just update         # bump the generator to the latest published commit
 ```
 
-`just verify` drives a headless browser (Playwright) over every page; run
-`bunx playwright install chromium` once to fetch the browser.
+## Requirements
+
+Install these system tools before running the project recipes:
+
+- `just`
+- `bun`
+- `pandoc`
+- `git-lfs`
+
+Run `just setup` once after cloning. It runs `bun install`, which installs the
+pinned `pandoc-ssg` dependency from `package.json` and `bun.lock`, then runs
+`git lfs pull` to fetch binary assets.
+
+`just setup` does not install the browser runtime used by `just verify`.
+Run `just setup-browser` only when you need the Playwright Chromium browser for
+`just verify` or `just deploy`.
 
 The generator [pandoc-ssg](https://github.com/dzackgarza/pandoc-ssg) is a
 declared dependency (`package.json`), pinned by `bun.lock` so builds are
