@@ -10,17 +10,138 @@
 SSG := "bun node_modules/.bin/pandoc-ssg"
 PLAYWRIGHT := "bun node_modules/.bin/playwright"
 PANDOC := "pandoc"
+JUST_MIN := "1.30.0"
+BUN_MIN := "1.2.0"
+UV_MIN := "0.7.0"
+PANDOC_MIN := "3.6.0"
+GIT_LFS_MIN := "3.0.0"
 
 # Show available recipes
 default:
     @just --list
 
 # Install dependencies, generator config, and Git LFS assets
-setup: _check-setup-tools
+setup: _preflight
     bun install
     just _check-local-generator
     just _install-generator-config
     git lfs pull
+
+# Report system tools and minimum versions needed by this project
+doctor:
+    @just _doctor
+
+[private]
+_doctor fail_mode="":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    fail_mode="{{fail_mode}}"
+    errors=0
+
+    version_ge() {
+        local have="${1%%[-+~]*}"
+        local need="${2%%[-+~]*}"
+        local IFS=.
+        local -a have_parts need_parts
+        read -ra have_parts <<< "$have"
+        read -ra need_parts <<< "$need"
+        local i have_part need_part
+        for ((i = 0; i < 4; i++)); do
+            have_part="${have_parts[i]:-0}"
+            need_part="${need_parts[i]:-0}"
+            have_part="${have_part//[^0-9]/}"
+            need_part="${need_part//[^0-9]/}"
+            have_part="${have_part:-0}"
+            need_part="${need_part:-0}"
+            if ((10#$have_part > 10#$need_part)); then
+                return 0
+            fi
+            if ((10#$have_part < 10#$need_part)); then
+                return 1
+            fi
+        done
+        return 0
+    }
+
+    check_tool() {
+        local name="$1"
+        local command_name="$2"
+        local min_version="$3"
+        local version_command="$4"
+        local version_regex="$5"
+
+        if ! command -v "$command_name" >/dev/null 2>&1; then
+            printf 'missing: %s >= %s\n' "$name" "$min_version"
+            errors=$((errors + 1))
+            return
+        fi
+
+        local path output version
+        path="$(command -v "$command_name")"
+        if ! output="$(bash -lc "$version_command" 2>&1)"; then
+            printf 'broken:  %s at %s (version command failed)\n' "$name" "$path"
+            printf '%s\n' "$output"
+            errors=$((errors + 1))
+            return
+        fi
+
+        if [[ "$output" =~ $version_regex ]]; then
+            version="${BASH_REMATCH[1]}"
+        else
+            printf 'broken:  %s at %s (could not parse version)\n' "$name" "$path"
+            printf '%s\n' "$output"
+            errors=$((errors + 1))
+            return
+        fi
+
+        if version_ge "$version" "$min_version"; then
+            printf 'ok:      %s %s at %s\n' "$name" "$version" "$path"
+        else
+            printf 'old:     %s %s at %s (need >= %s)\n' "$name" "$version" "$path" "$min_version"
+            errors=$((errors + 1))
+        fi
+    }
+
+    printf 'System tool preflight:\n'
+    check_tool "just" "just" "{{JUST_MIN}}" "just --version" '^just[[:space:]]+([0-9][0-9A-Za-z.+~:-]*)'
+    check_tool "bun" "bun" "{{BUN_MIN}}" "bun --version" '^([0-9][0-9A-Za-z.+~:-]*)'
+    check_tool "uv" "uv" "{{UV_MIN}}" "uv --version" '^uv[[:space:]]+([0-9][0-9A-Za-z.+~:-]*)'
+    check_tool "pandoc" "pandoc" "{{PANDOC_MIN}}" "pandoc --version" '^pandoc[[:space:]]+([0-9][0-9A-Za-z.+~:-]*)'
+    check_tool "git-lfs" "git-lfs" "{{GIT_LFS_MIN}}" "git-lfs version" '^git-lfs/([0-9][0-9A-Za-z.+~:-]*)'
+
+    printf '\nProject state:\n'
+    if test -f config/pandoc-ssg/config.toml; then
+        printf 'ok:      tracked generator config config/pandoc-ssg/config.toml\n'
+    else
+        printf 'missing: tracked generator config config/pandoc-ssg/config.toml\n'
+        errors=$((errors + 1))
+    fi
+    if test -d "$HOME/.pandoc"; then
+        printf 'ok:      pandoc home %s/.pandoc\n' "$HOME"
+    else
+        printf 'missing: pandoc home %s/.pandoc\n' "$HOME"
+        errors=$((errors + 1))
+    fi
+    if test -f "$HOME/.pandoc/styles/macros/mathjax-sources.txt"; then
+        printf 'ok:      MathJax macro manifest\n'
+    else
+        printf 'missing: MathJax macro manifest %s/.pandoc/styles/macros/mathjax-sources.txt\n' "$HOME"
+        errors=$((errors + 1))
+    fi
+
+    printf '\nOptional check/test tool:\n'
+    if command -v lychee >/dev/null 2>&1; then
+        printf 'ok:      lychee at %s\n' "$(command -v lychee)"
+    else
+        printf 'missing: lychee (required by just check/test, not by just setup)\n'
+    fi
+
+    if ((errors > 0)); then
+        printf '\nPreflight failed. Install or update the missing/old tools, then run: just doctor\n'
+        if [[ "$fail_mode" == "--fail" ]]; then
+            exit 1
+        fi
+    fi
 
 # Install Chromium for browser verification
 setup-browser: _check-bun
@@ -62,14 +183,12 @@ clean:
     rm -f content/_data/items/projects.yaml
 
 [private]
-_check-bun:
-    @command -v bun >/dev/null || { echo "Missing required tool: bun"; exit 1; }
+_preflight:
+    @just _doctor --fail
 
 [private]
-_check-setup-tools: _check-bun
-    @command -v uv >/dev/null || { echo "Missing required tool: uv"; exit 1; }
-    @command -v pandoc >/dev/null || { echo "Missing required tool: pandoc"; exit 1; }
-    @git lfs version >/dev/null 2>&1 || { echo "Missing required tool: git-lfs"; exit 1; }
+_check-bun:
+    @command -v bun >/dev/null || { echo "Missing required tool: bun; run 'just doctor'"; exit 1; }
 
 [private]
 _check-local-generator:

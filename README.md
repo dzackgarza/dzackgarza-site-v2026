@@ -11,6 +11,7 @@ templates, not the owner of this site's theme.
 
 ```
 just setup          # install deps, generator config, and LFS assets
+just doctor         # report system tools, versions, and setup prerequisites
 just build          # content/ -> dist/
 just serve          # build, then preview over HTTP
 just check          # build, then fail on malformed pages or broken internal links
@@ -24,11 +25,16 @@ just update         # bump the generator to the latest published commit
 
 Install these system tools before running the project recipes:
 
-- `just`
-- `bun`
-- `pandoc`
-- `uv`
-- `git-lfs`
+- `just >= 1.30.0`
+- `bun >= 1.2.0`
+- `pandoc >= 3.6.0`
+- `uv >= 0.7.0`
+- `git-lfs >= 3.0.0`
+
+Run `just doctor` to print the exact tools found on the current machine, the
+versions detected, and any missing or too-old setup prerequisites. `just setup`
+starts with the same preflight and fails before installing dependencies when a
+required system tool is missing or below the minimum version.
 
 Run `just setup` once after cloning. It runs `bun install` to install the
 pinned dependency graph from `package.json` and `bun.lock`, verifies the local
