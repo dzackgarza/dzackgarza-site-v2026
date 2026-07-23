@@ -1,0 +1,9 @@
+{
+  "origins": [
+    "https://dzackgarza.com",
+    "https://www.dzackgarza.com"
+  ],
+  "originsRegex": [
+    "^http://(?:localhost|127\\.0\\.0\\.1):[0-9]+$"
+  ]
+}

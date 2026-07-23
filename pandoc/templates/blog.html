@@ -50,6 +50,7 @@ $body$
 $if(prev)$<a class="post-nav__link post-nav__prev" href="$prev.url$"><span class="post-nav__dir">← Older</span><span class="post-nav__title">$prev.title$</span></a>$endif$
 $if(next)$<a class="post-nav__link post-nav__next" href="$next.url$"><span class="post-nav__dir">Newer →</span><span class="post-nav__title">$next.title$</span></a>$endif$
 </nav>
+${ comments() }
 </article>
 </main>
 </body>

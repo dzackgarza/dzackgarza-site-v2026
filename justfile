@@ -7,6 +7,17 @@
 # installs the Chromium runtime needed for browser verification. Recipes invoke
 # the explicit local bin under node_modules.
 
+# ai-review-ci contract variables consumed by doctor and workflow installers.
+# The QC tiers below delegate to the central implementation in
+# ~/ai-review-ci/justfiles/bun.just while keeping this repo as the caller root.
+ai_review_ci_schema_version := "1"
+ai_review_ci_profile := "bun"
+ai_review_ci_ref := "main"
+ai_review_ci_release_channel := "main"
+ai_review_ci_workflow_template_version := "1"
+ai_review_ci_local_delegation := "global-justfile"
+ai_review_ci_default_branch := "main"
+
 SSG := "bun node_modules/.bin/pandoc-ssg"
 PLAYWRIGHT := "bun node_modules/.bin/playwright"
 PANDOC := "pandoc"
@@ -164,11 +175,17 @@ verify: _verify
 # Rebuild and validate dist/ for static hosting
 deploy: check verify
 
-# Run the local QC gate used by commit hooks
-test: check
+# Run commit-tier QC through the central implementation
+test-commit:
+    @just -f ~/ai-review-ci/justfiles/bun.just -d . test-commit
 
-# Run the push/CI gate
-test-ci: test
+# Run the push gate: commit checks plus this repo's own site suite
+test-push:
+    @just -f ~/ai-review-ci/justfiles/bun.just -d . test-push
+
+# Run CI acceptance QC through the central implementation
+test-ci:
+    @just -f ~/ai-review-ci/justfiles/bun.just -d . test-ci
 
 # Bump the generator to the latest published version
 update: _update-generator
@@ -233,7 +250,7 @@ _check-build: _check-local-generator _project-items
 [private]
 _check-links: _check-lychee _build
     lychee --no-progress --base-url http://website.localhost/ \
-        --max-concurrency 8 --timeout 20 \
+        --max-concurrency 2 --timeout 20 \
         --accept '200,206,301,302,307,308,403' \
         --exclude-path content/assets/examples \
         --exclude-path content/assets/talks \

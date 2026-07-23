@@ -3,8 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "description": "Content surface for dzackgarza.com, built with the pandoc-ssg generator.",
+  "scripts": {
+    "test": "just check",
+    "test:push": "just check",
+    "test:ci": "just check && just verify"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5",
+    "@types/bun": "^1.3.14",
     "pandoc-ssg": "github:dzackgarza/pandoc-ssg#04e7a38601db",
     "playwright": "^1.60.0",
     "svelte": "^5",
