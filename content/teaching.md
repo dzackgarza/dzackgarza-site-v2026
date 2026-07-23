@@ -6,8 +6,7 @@ site:
   route: /teaching/
 ---
 
-Courses taught at the University of Georgia as instructor of record (and, earlier,
-as a teaching assistant).
+Courses taught at the University of Georgia as instructor of record (and, earlier, as a teaching assistant).
 
 ::: {.component type="timeline" items="teaching"}
 :::

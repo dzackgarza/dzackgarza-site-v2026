@@ -25,7 +25,5 @@ With that in mind, I tried to approach it in a slightly different way.
 <!--<embed src="/assets/pdfs/expository/Moments.pdf" type='application/pdf' />-->
 <!--</object>-->
 
-
-
-Hope you all enjoy the read! Feel free to let me know if you have ideas for improvements or any feedback.
-
+Hope you all enjoy the read!
+Feel free to let me know if you have ideas for improvements or any feedback.
