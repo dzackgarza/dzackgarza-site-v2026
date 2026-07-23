@@ -6,34 +6,27 @@ site:
   route: /gallery/
 ---
 
-Some images and photos -- most can be clicked to open a gallery view. Enjoy!
+Some images and photos -- most can be clicked to open a gallery view.
+Enjoy!
 
 # Desktop
 
-My current desktop:
-![My current desktop](/assets/images/photo/desktop.png)
+My current desktop: ![My current desktop](/assets/images/photo/desktop.png)
 
 # Digital Images
 
-An animation of plotting 2D faces as surfaces in $\RR^3$:
-<video controls>
-  <source src="/assets/images/3dface.mp4" type="video/mp4">
-</video>
+An animation of plotting 2D faces as surfaces in $\RR^3$: <video controls> <source src="/assets/images/3dface.mp4" type="video/mp4"> </video>
 
 # Hand-Drawn Mathematics
 
 Illustrations I've drawn while teaching or thinking through a problem.
 
-:::{.component type="media-gallery" items="MathDrawingGallery"}
+::: {.component type="media-gallery" items="MathDrawingGallery"}
 :::
 
 # Generated Figures
 
 Figures produced with TikZ, code, and other tools.
 
-:::{.component type="media-gallery" items="MathCodeGallery"}
+::: {.component type="media-gallery" items="MathCodeGallery"}
 :::
-
-
-
-

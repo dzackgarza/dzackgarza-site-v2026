@@ -1,710 +1,710 @@
 ---
 notes:
-- title: K3 Surfaces
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Algebraic Surfaces
-  - Complex Geometry
-  - Moduli Spaces
-  description: Phil Engel, Spring 2023
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/00-k3-surfaces.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2023/Spring/k3surfaces/K3Surfaces.html"
-  images:
-  - src: "/assets/images/notes/00-k3-surfaces/1.png"
-  - src: "/assets/images/notes/00-k3-surfaces/2.png"
-  - src: "/assets/images/notes/00-k3-surfaces/3.png"
-- title: Abstract Algebra
-  category: Notes
-  tags:
-  - Algebra
-  description: Dan Nakano, Fall 2019
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/02-abstract-algebra.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2019/Algebra/Algebra.html"
-  images:
-  - src: "/assets/images/notes/02-abstract-algebra/1.png"
-  - src: "/assets/images/notes/02-abstract-algebra/2.png"
-  - src: "/assets/images/notes/02-abstract-algebra/3.png"
-- title: Commutative Algebra
-  category: Notes
-  tags:
-  - Algebra
-  description: Pete Clark, Spring 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/03-commutative-algebra.pdf"
-  images:
-  - src: "/assets/images/notes/03-commutative-algebra/1.png"
-  - src: "/assets/images/notes/03-commutative-algebra/2.png"
-  - src: "/assets/images/notes/03-commutative-algebra/3.png"
-- title: Commutative Algebra
-  category: Notes
-  tags:
-  - Algebra
-  description: Daniel Litt, Spring 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/04-commutative-algebra.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html"
-  images:
-  - src: "/assets/images/notes/04-commutative-algebra/1.png"
-  - src: "/assets/images/notes/04-commutative-algebra/2.png"
-  - src: "/assets/images/notes/04-commutative-algebra/3.png"
-- title: Homological Algebra
-  category: Notes
-  tags:
-  - Algebra
-  - Homological Algebra
-  description: Brian Boe, Spring 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/05-homological-algebra.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html"
-  images:
-  - src: "/assets/images/notes/05-homological-algebra/1.png"
-  - src: "/assets/images/notes/05-homological-algebra/2.png"
-  - src: "/assets/images/notes/05-homological-algebra/3.png"
-- title: Lie Algebras
-  category: Notes
-  tags:
-  - Representation Theory
-  description: Chun-Ju Lai, Fall 2019
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/06-lie-algebras.pdf"
-  images:
-  - src: "/assets/images/notes/06-lie-algebras/1.png"
-  - src: "/assets/images/notes/06-lie-algebras/2.png"
-  - src: "/assets/images/notes/06-lie-algebras/3.png"
-- title: Lie Algebras
-  category: Notes
-  tags:
-  - Representation Theory
-  description: Brian Boe, Fall 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/07-lie-algebras.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html"
-  images:
-  - src: "/assets/images/notes/07-lie-algebras/1.png"
-  - src: "/assets/images/notes/07-lie-algebras/2.png"
-  - src: "/assets/images/notes/07-lie-algebras/3.png"
-- title: Category $\OO$
-  category: Notes
-  tags:
-  - Representation Theory
-  - Homological Algebra
-  description: Brian Boe, Spring 2020
-  links:
-  - label: PDF V2
-    href: "/assets/pdfs/notes/08-category-oo.pdf"
-  - label: HTML V2
-    href: "/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html"
-  images:
-  - src: "/assets/images/notes/08-category-oo/1.png"
-  - src: "/assets/images/notes/08-category-oo/2.png"
-  - src: "/assets/images/notes/08-category-oo/3.png"
-- title: Algebraic Groups
-  category: Notes
-  tags:
-  - Representation Theory
-  - Algebraic Geometry
-  - Varieties
-  description: Dan Nakano, Fall 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/09-algebraic-groups.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html"
-  images:
-  - src: "/assets/images/notes/09-algebraic-groups/1.png"
-  - src: "/assets/images/notes/09-algebraic-groups/2.png"
-  - src: "/assets/images/notes/09-algebraic-groups/3.png"
-- title: Cohomology in Representation Theory
-  category: Notes
-  tags:
-  - Representation Theory
-  - Homological Algebra
-  description: Dan Nakano, Spring 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/10-cohomology-in-representation-theory.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html"
-  images:
-  - src: "/assets/images/notes/10-cohomology-in-representation-theory/1.png"
-  - src: "/assets/images/notes/10-cohomology-in-representation-theory/2.png"
-  - src: "/assets/images/notes/10-cohomology-in-representation-theory/3.png"
-- title: Categorification
-  category: Notes
-  tags:
-  - Representation Theory
-  - Homological Algebra
-  description: Arik Wilbert, Summer 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/11-categorification.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html"
-  images:
-  - src: "/assets/images/notes/11-categorification/1.png"
-  - src: "/assets/images/notes/11-categorification/2.png"
-  - src: "/assets/images/notes/11-categorification/3.png"
-- title: Flag Varieties, Equivariant Cohomology, and K Theory
-  category: Notes
-  tags:
-  - Representation Theory
-  - Algebraic Geometry
-  - Varieties
-  - Algebraic K-Theory
-  description: Scott Larson, Fall 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/12-flag-varieties-equivariant-cohomology-an.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html"
-  images:
-  - src: "/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/1.png"
-  - src: "/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/2.png"
-  - src: "/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/3.png"
-- title: Varieties
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Varieties
-  description: Philip Engel, Fall 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/13-varieties.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html"
-  images:
-  - src: "/assets/images/notes/13-varieties/1.png"
-  - src: "/assets/images/notes/13-varieties/2.png"
-  - src: "/assets/images/notes/13-varieties/3.png"
-- title: Schemes
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Schemes
-  description: Phil Engel, Fall 2021
-  links:
-  - label: HTML (pending)
-  - label: PDF
-    href: "/assets/pdfs/notes/14-schemes.pdf"
-  images:
-  - src: "/assets/images/notes/14-schemes/1.png"
-  - src: "/assets/images/notes/14-schemes/2.png"
-  - src: "/assets/images/notes/14-schemes/3.png"
-- title: Sheaf Cohomology
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Sheaves
-  - Homological Algebra
-  description: Valery Alexeev, Spring 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/15-sheaf-cohomology.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html"
-  images:
-  - src: "/assets/images/notes/15-sheaf-cohomology/1.png"
-  - src: "/assets/images/notes/15-sheaf-cohomology/2.png"
-  - src: "/assets/images/notes/15-sheaf-cohomology/3.png"
-- title: 4-Manifolds and Algebraic Surfaces
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Low-Dimensional Topology
-  - Differential Geometry
-  - Manifolds
-  - Algebraic Surfaces
-  - Complex Geometry
-  description: Phil Engel, Spring 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/16-4-manifolds-and-algebraic-surfaces.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html"
-  images:
-  - src: "/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/1.png"
-  - src: "/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/2.png"
-  - src: "/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/3.png"
-- title: 'Moduli: GIT'
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Moduli Spaces
-  - Varieties
-  description: Valery Alexeev, Fall 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/17-moduli-git.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html"
-  images:
-  - src: "/assets/images/notes/17-moduli-git/1.png"
-  - src: "/assets/images/notes/17-moduli-git/2.png"
-  - src: "/assets/images/notes/17-moduli-git/3.png"
-- title: 'Moduli: Deformations'
-  category: Notes
-  tags:
-  - Algebraic Geometry
-  - Moduli Spaces
-  - Complex Geometry
-  description: Ben Bakker, Spring 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/18-moduli-deformations.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html"
-  images:
-  - src: "/assets/images/notes/18-moduli-deformations/1.png"
-  - src: "/assets/images/notes/18-moduli-deformations/2.png"
-  - src: "/assets/images/notes/18-moduli-deformations/3.png"
-- title: Algebraic Number Theory
-  category: Notes
-  tags:
-  - Number Theory
-  - Algebraic Number Theory
-  - Arithmetic Geometry
-  description: Paul Pollack, Spring 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/19-algebraic-number-theory.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html"
-  images:
-  - src: "/assets/images/notes/19-algebraic-number-theory/1.png"
-  - src: "/assets/images/notes/19-algebraic-number-theory/2.png"
-  - src: "/assets/images/notes/19-algebraic-number-theory/3.png"
-- title: Galois Cohomology and Class Field Theory
-  category: Notes
-  tags:
-  - Number Theory
-  - Algebraic Number Theory
-  - Arithmetic Geometry
-  description: Pete Clark, Spring 2021
-  links: []
-- title: Algebraic Curves
-  category: Notes
-  tags:
-  - Number Theory
-  - Algebraic Curves
-  - Arithmetic Geometry
-  - Algebraic Geometry
-  description: Pete Clark, Fall 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/20-algebraic-curves.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html"
-  images:
-  - src: "/assets/images/notes/20-algebraic-curves/1.png"
-  - src: "/assets/images/notes/20-algebraic-curves/2.png"
-  - src: "/assets/images/notes/20-algebraic-curves/3.png"
-- title: Étale Cohomology
-  category: Notes
-  tags:
-  - Number Theory
-  - Arithmetic Geometry
-  - Algebraic Geometry
-  - Sheaves
-  description: Daniel Litt, Fall 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/21-tale-cohomology.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html"
-  images:
-  - src: "/assets/images/notes/21-tale-cohomology/1.png"
-  - src: "/assets/images/notes/21-tale-cohomology/2.png"
-  - src: "/assets/images/notes/21-tale-cohomology/3.png"
-- title: Rational Points
-  category: Notes
-  tags:
-  - Number Theory
-  - Arithmetic Geometry
-  - Algebraic Number Theory
-  - Algebraic Geometry
-  - Varieties
-  description: Daniel Litt, Fall 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/22-rational-points.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html"
-  images:
-  - src: "/assets/images/notes/22-rational-points/1.png"
-  - src: "/assets/images/notes/22-rational-points/2.png"
-  - src: "/assets/images/notes/22-rational-points/3.png"
-- title: Elliptic Curves
-  category: Notes
-  tags:
-  - Arithmetic Geometry
-  - Algebraic Curves
-  - Algebraic Geometry
-  description: Pete Clark, Spring 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/Elliptic_Curves_2020_03_01.pdf"
-- title: Algebraic Topology
-  category: Notes
-  tags:
-  - Topology
-  - Algebraic Topology
-  - Homotopy Theory
-  description: Justin Roberts, Fall 2017 and Spring 2018
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/23-algebraic-topology.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html"
-  images:
-  - src: "/assets/images/notes/23-algebraic-topology/1.png"
-  - src: "/assets/images/notes/23-algebraic-topology/2.png"
-  - src: "/assets/images/notes/23-algebraic-topology/3.png"
-- title: Morse Theory
-  category: Notes
-  tags:
-  - Topology
-  - Differential Geometry
-  - Manifolds
-  description: Akram Alishahi, Spring 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/24-morse-theory.pdf"
-  images:
-  - src: "/assets/images/notes/24-morse-theory/1.png"
-  - src: "/assets/images/notes/24-morse-theory/2.png"
-  - src: "/assets/images/notes/24-morse-theory/3.png"
-- title: Floer Homology
-  category: Notes
-  tags:
-  - Topology
-  - Low-Dimensional Topology
-  - Homological Algebra
-  - Manifolds
-  description: Akram Alishahi, Spring 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/25-floer-homology.pdf"
-  images:
-  - src: "/assets/images/notes/25-floer-homology/1.png"
-  - src: "/assets/images/notes/25-floer-homology/2.png"
-  - src: "/assets/images/notes/25-floer-homology/3.png"
-- title: Characteristic Classes
-  category: Notes
-  tags:
-  - Topology
-  - Algebraic Topology
-  - Differential Geometry
-  - Manifolds
-  description: Akram Alishahi, Fall 2021
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/26-characteristic-classes.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html"
-  images:
-  - src: "/assets/images/notes/26-characteristic-classes/1.png"
-  - src: "/assets/images/notes/26-characteristic-classes/2.png"
-  - src: "/assets/images/notes/26-characteristic-classes/3.png"
-- title: Contact Topology
-  category: Notes
-  tags:
-  - Topology
-  - Low-Dimensional Topology
-  - Differential Geometry
-  - Manifolds
-  description: Peter Lambert-Cole, Spring 2022
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/27-contact-topology.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html"
-  images:
-  - src: "/assets/images/notes/27-contact-topology/1.png"
-  - src: "/assets/images/notes/27-contact-topology/2.png"
-  - src: "/assets/images/notes/27-contact-topology/3.png"
-- title: Real Analysis
-  category: Notes
-  tags:
-  - Analysis
-  description: Neil Lyall, Fall 2019
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/28-real-analysis.pdf"
-  images:
-  - src: "/assets/images/notes/28-real-analysis/1.png"
-  - src: "/assets/images/notes/28-real-analysis/2.png"
-  - src: "/assets/images/notes/28-real-analysis/3.png"
-- title: Complex Analysis
-  category: Notes
-  tags:
-  - Analysis
-  - Complex Geometry
-  description: Jingzhi Tie, Spring 2020
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/29-complex-analysis.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html"
-  images:
-  - src: "/assets/images/notes/29-complex-analysis/1.png"
-  - src: "/assets/images/notes/29-complex-analysis/2.png"
-  - src: "/assets/images/notes/29-complex-analysis/3.png"
-- title: Undergraduate Compendium
-  category: Notes
-  tags:
-  - Undergraduate
-  description: A giant study guide of undergraduate topics I wrote while studying
-    for the Mathematics Subject GRE. (Self study, Spring 2017)
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/30-undergraduate-compendium.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html"
-  images:
-  - src: "/assets/images/notes/30-undergraduate-compendium/1.png"
-  - src: "/assets/images/notes/30-undergraduate-compendium/2.png"
-  - src: "/assets/images/notes/30-undergraduate-compendium/3.png"
-- title: Combinatorics
-  category: Notes
-  tags:
-  - Undergraduate
-  description: A study guide for undergraduate Combinatorics.
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/31-combinatorics.pdf"
-  - label: HTML
-    href: "/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html"
-  images:
-  - src: "/assets/images/notes/31-combinatorics/1.png"
-  - src: "/assets/images/notes/31-combinatorics/2.png"
-  - src: "/assets/images/notes/31-combinatorics/3.png"
-- title: Classifying groups of order $pq$ using semidirect products
-  category: Expository
-  tags:
-  - Algebra
-  description: ''
-  links:
-  - label: Notes (HTML)
-    href: "/assets/expository/pq-classification.html"
-- title: A history of modern Algebraic Geometry
-  category: Expository
-  tags:
-  - Algebraic Geometry
-  description: Expository paper, 2017
-  links:
-  - label: PDF
-    href: "/assets/pdfs/notes/33-a-history-of-modern-algebraic-geometry.pdf"
-  images:
-  - src: "/assets/images/notes/33-a-history-of-modern-algebraic-geometry/1.png"
-  - src: "/assets/images/notes/33-a-history-of-modern-algebraic-geometry/2.png"
-  - src: "/assets/images/notes/33-a-history-of-modern-algebraic-geometry/3.png"
-- title: Notes on the Math GRE
-  category: Expository
-  tags:
-  - Undergraduate
-  description: GRE Workshop, February 2019
-  links:
-  - label: Notes
-    href: "/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html"
-  - label: Slides (HTML)
-    href: "/assets/talks/02-22-2019-GRE-Workshop/Slides.html"
-  - label: Slides (PDF)
-    href: "/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf"
-  images:
-  - src: "/assets/images/notes/34-notes-on-the-math-gre/1.png"
-  - src: "/assets/images/notes/34-notes-on-the-math-gre/2.png"
-  - src: "/assets/images/notes/34-notes-on-the-math-gre/3.png"
-- title: 'IAS/PCMI Graduate Summer School: Motivic Homotopy'
-  category: Mini Course
-  tags:
-  - Homotopy Theory
-  - Algebraic Geometry
-  - Arithmetic Geometry
-  - Algebraic Topology
-  description: Lecture notes from the 2021 IAS/PCMI Graduate Summer School.
-  links:
-  - label: Combined Notes (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf"
-  - label: Combined Notes (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html"
-  - label: Krashen — Field arithmetic (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Krashen_Talks.pdf"
-  - label: Krashen — Field arithmetic (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/1_Krashen/Krashen_Talks.html"
-  - label: Gille — G-torsors over affine curves (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Gille_Talks.pdf"
-  - label: Gille — G-torsors over affine curves (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/2_Gille/Gille_Talks.html"
-  - label: Déglise — Motivic categories (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Deglise_Talks.pdf"
-  - label: Déglise — Motivic categories (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/3_Deglise/Deglise_Talks.html"
-  - label: Wickelgren — A1 homotopy theory (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Wickelgren_Talks.pdf"
-  - label: Wickelgren — A1 homotopy theory (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/4_Wickelgren/Wickelgren_Talks.html"
-  - label: Morrow — Aspects of motivic cohomology (PDF)
-    href: "/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Morrow_Talks.pdf"
-  - label: Morrow — Aspects of motivic cohomology (HTML)
-    href: "/rawnotes/Class_Notes/2021/Summer/PCMI/5_Morrow/Morrow_Talks.html"
-  images:
-  - src: "/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/1.png"
-  - src: "/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/2.png"
-  - src: "/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/3.png"
-- title: 'Reading Seminar: McDuff–Salamon, J-Holomorphic Curves and Symplectic Topology'
-  category: Seminar
-  tags:
-  - Symplectic Geometry
-  - Differential Geometry
-  - Moduli Spaces
-  - Manifolds
-  description: Gromov–Witten invariants and regularity theorems.
-  links:
-  - label: Typeset Notes (PDF)
-    href: "/assets/pdfs/expository/GW_Notes_June_26.pdf"
-  - label: Slides and Handwritten Notes (PDF)
-    href: "/assets/pdfs/expository/GW_Talk_June_26.pdf"
-  images:
-  - src: "/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/1.png"
-  - src: "/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/2.png"
-  - src: "/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/3.png"
-- title: VRG Notes on Tilings and Translation Surfaces
-  category: Seminar
-  tags:
-  - Geometry
-  - Differential Geometry
-  - Manifolds
-  - Low-Dimensional Topology
-  links:
-  - label: PDF
-    href: "/assets/notes/Tilings.pdf"
-  images:
-  - src: "/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/1.png"
-  - src: "/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/2.png"
-  - src: "/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/3.png"
-- title: Arizona Winter School, 2019
-  category: Mini Course
-  tags:
-  - Algebraic Geometry
-  - Number Theory
-  - Arithmetic Geometry
-  - Algebraic Number Theory
-  - Homotopy Theory
-  description: Notes from the 2019 Arizona Winter School.
-  links:
-  - label: Wickelgren — A1 Enumerative Geometry
-    href: "/assets/pdfs/AWS2019_Wickelgren_typeset.pdf"
-  - label: Morrow — Topological Hochschild Homology
-    href: "/assets/pdfs/AWS2019_Morrow.pdf"
-  images:
-  - src: "/assets/images/notes/38-arizona-winter-school-2019/1.png"
-  - src: "/assets/images/notes/38-arizona-winter-school-2019/2.png"
-  - src: "/assets/images/notes/38-arizona-winter-school-2019/3.png"
-- title: UCSD Algebraic Geometry Conference, 2019
-  category: Seminar
-  tags:
-  - Algebraic Geometry
-  - Moduli Spaces
-  - Algebraic Curves
-  - Algebraic Surfaces
-  links:
-  - label: Talk Notes (HTML)
-    href: "/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html"
-- title: Hartshorne Exercises Megadoc
-  category: Expository
-  tags:
-  - Algebraic Geometry
-  - Schemes
-  - Varieties
-  description: All of the exercises from Hartshorne compiled into a single document.
-  links:
-  - label: Notes (PDF)
-    href: "/assets/pdfs/Hartshorne_Megadoc.pdf"
-- title: 'Talbot 2022: Scissors Congruence and Algebraic K-Theory'
-  category: Proceedings
-  tags:
-  - Algebraic K-Theory
-  - Algebraic Topology
-  - Homotopy Theory
-  - Manifolds
-  description: Proceedings from Talbot 2022, jointly compiled with Maxine Calle.
-  links:
-  - label: Notes (PDF)
-    href: "/assets/pdfs/Talbot_2022.pdf"
-- title: 'INI Workshop: Algebraic Cycles, Strings and Amplitudes'
-  category: Workshop Notes
-  tags:
-  - Algebraic Geometry
-  - Arithmetic Geometry
-  - Algebraic K-Theory
-  - Complex Geometry
-  description: "Notes for the INI workshop on mathematical physics: algebraic cycles, strings and amplitudes."
-  links:
-  - label: Notes (PDF)
-    href: "/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.pdf"
-  - label: Notes (HTML)
-    href: "/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.html"
-- title: ADDING Conference at UGA
-  category: Workshop Notes
-  tags:
-  - Arithmetic Geometry
-  - Algebraic Number Theory
-  - Algebraic Geometry
-  description: Notes for the ADDING conference at UGA.
-  links:
-  - label: Notes (PDF)
-    href: "/rawnotes/Class_Notes/2022/ADDING/ADDING.pdf"
-  - label: Notes (HTML)
-    href: "/rawnotes/Class_Notes/2022/ADDING/ADDING.html"
-- title: 'Arizona Winter School 2022: Automorphic Forms Beyond GL2'
-  category: Mini Course
-  tags:
-  - Arithmetic Geometry
-  - Algebraic Number Theory
-  - Representation Theory
-  - Algebraic Geometry
-  description: "Lecture notes for Arizona Winter School 2022: Automorphic Forms Beyond GL2."
-  links:
-  - label: Notes (PDF)
-    href: "/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.pdf"
-  - label: Notes (HTML)
-    href: "/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.html"
-- title: 'MSRI Workshop: Chern-Simons and Other Topological Field Theories'
-  category: Workshop Notes
-  tags:
-  - Low-Dimensional Topology
-  - Differential Geometry
-  - Algebraic Topology
-  - Manifolds
-  description: Notes from the MSRI workshop on Chern-Simons and other topological field theories.
-  links:
-  - label: Notes (PDF)
-    href: "/assets/pdfs/transcribed_notes/MSRI_2021_ChernSimons.pdf"
-- title: 'MIT Talbot Workshop: Viva Talbot!'
-  category: Workshop Notes
-  tags:
-  - Homotopy Theory
-  - Algebraic Topology
-  - Complex Geometry
-  - Algebraic Geometry
-  description: 'Notes from the MIT Talbot Workshop: Viva Talbot!'
-  links:
-  - label: Jeremy Hahn — Methods and Mysteries in the Construction of Ring Spectra
-    href: "/assets/pdfs/transcribed_notes/Talbot_2021__Methods_and_mysteries_in_the_construction_of_ring_spectra.pdf"
-  - label: Tasos Moulinos — Perspectives of Nonabelian Hodge Theory
-    href: "/assets/pdfs/transcribed_notes/Talbot_2021__Perspectives_on_non_abelian_Hodge_theory.pdf"
+  - title: K3 Surfaces
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Algebraic Surfaces
+      - Complex Geometry
+      - Moduli Spaces
+    description: Phil Engel, Spring 2023
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/00-k3-surfaces.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2023/Spring/k3surfaces/K3Surfaces.html'
+    images:
+      - src: '/assets/images/notes/00-k3-surfaces/1.png'
+      - src: '/assets/images/notes/00-k3-surfaces/2.png'
+      - src: '/assets/images/notes/00-k3-surfaces/3.png'
+  - title: Abstract Algebra
+    category: Notes
+    tags:
+      - Algebra
+    description: Dan Nakano, Fall 2019
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/02-abstract-algebra.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2019/Algebra/Algebra.html'
+    images:
+      - src: '/assets/images/notes/02-abstract-algebra/1.png'
+      - src: '/assets/images/notes/02-abstract-algebra/2.png'
+      - src: '/assets/images/notes/02-abstract-algebra/3.png'
+  - title: Commutative Algebra
+    category: Notes
+    tags:
+      - Algebra
+    description: Pete Clark, Spring 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/03-commutative-algebra.pdf'
+    images:
+      - src: '/assets/images/notes/03-commutative-algebra/1.png'
+      - src: '/assets/images/notes/03-commutative-algebra/2.png'
+      - src: '/assets/images/notes/03-commutative-algebra/3.png'
+  - title: Commutative Algebra
+    category: Notes
+    tags:
+      - Algebra
+    description: Daniel Litt, Spring 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/04-commutative-algebra.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Spring/CommutativeAlgebra/CommutativeAlgebra.html'
+    images:
+      - src: '/assets/images/notes/04-commutative-algebra/1.png'
+      - src: '/assets/images/notes/04-commutative-algebra/2.png'
+      - src: '/assets/images/notes/04-commutative-algebra/3.png'
+  - title: Homological Algebra
+    category: Notes
+    tags:
+      - Algebra
+      - Homological Algebra
+    description: Brian Boe, Spring 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/05-homological-algebra.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Spring/HomologicalAlgebra/HomologicalAlgebra.html'
+    images:
+      - src: '/assets/images/notes/05-homological-algebra/1.png'
+      - src: '/assets/images/notes/05-homological-algebra/2.png'
+      - src: '/assets/images/notes/05-homological-algebra/3.png'
+  - title: Lie Algebras
+    category: Notes
+    tags:
+      - Representation Theory
+    description: Chun-Ju Lai, Fall 2019
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/06-lie-algebras.pdf'
+    images:
+      - src: '/assets/images/notes/06-lie-algebras/1.png'
+      - src: '/assets/images/notes/06-lie-algebras/2.png'
+      - src: '/assets/images/notes/06-lie-algebras/3.png'
+  - title: Lie Algebras
+    category: Notes
+    tags:
+      - Representation Theory
+    description: Brian Boe, Fall 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/07-lie-algebras.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Fall/LieAlgebras/LieAlgebraF22.html'
+    images:
+      - src: '/assets/images/notes/07-lie-algebras/1.png'
+      - src: '/assets/images/notes/07-lie-algebras/2.png'
+      - src: '/assets/images/notes/07-lie-algebras/3.png'
+  - title: Category $\OO$
+    category: Notes
+    tags:
+      - Representation Theory
+      - Homological Algebra
+    description: Brian Boe, Spring 2020
+    links:
+      - label: PDF V2
+        href: '/assets/pdfs/notes/08-category-oo.pdf'
+      - label: HTML V2
+        href: '/rawnotes/Class_Notes/2020/Spring/CategoryO/CategoryO.html'
+    images:
+      - src: '/assets/images/notes/08-category-oo/1.png'
+      - src: '/assets/images/notes/08-category-oo/2.png'
+      - src: '/assets/images/notes/08-category-oo/3.png'
+  - title: Algebraic Groups
+    category: Notes
+    tags:
+      - Representation Theory
+      - Algebraic Geometry
+      - Varieties
+    description: Dan Nakano, Fall 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/09-algebraic-groups.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Fall/Algebraic%20Groups/AlgebraicGroups.html'
+    images:
+      - src: '/assets/images/notes/09-algebraic-groups/1.png'
+      - src: '/assets/images/notes/09-algebraic-groups/2.png'
+      - src: '/assets/images/notes/09-algebraic-groups/3.png'
+  - title: Cohomology in Representation Theory
+    category: Notes
+    tags:
+      - Representation Theory
+      - Homological Algebra
+    description: Dan Nakano, Spring 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/10-cohomology-in-representation-theory.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Spring/CohomologyRepTheory/CohomologyRepTheory.html'
+    images:
+      - src: '/assets/images/notes/10-cohomology-in-representation-theory/1.png'
+      - src: '/assets/images/notes/10-cohomology-in-representation-theory/2.png'
+      - src: '/assets/images/notes/10-cohomology-in-representation-theory/3.png'
+  - title: Categorification
+    category: Notes
+    tags:
+      - Representation Theory
+      - Homological Algebra
+    description: Arik Wilbert, Summer 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/11-categorification.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Summer/Categorification/Categorification.html'
+    images:
+      - src: '/assets/images/notes/11-categorification/1.png'
+      - src: '/assets/images/notes/11-categorification/2.png'
+      - src: '/assets/images/notes/11-categorification/3.png'
+  - title: Flag Varieties, Equivariant Cohomology, and K Theory
+    category: Notes
+    tags:
+      - Representation Theory
+      - Algebraic Geometry
+      - Varieties
+      - Algebraic K-Theory
+    description: Scott Larson, Fall 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/12-flag-varieties-equivariant-cohomology-an.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Fall/FlagVarieties/FlagVarieties.html'
+    images:
+      - src: '/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/1.png'
+      - src: '/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/2.png'
+      - src: '/assets/images/notes/12-flag-varieties-equivariant-cohomology-an/3.png'
+  - title: Varieties
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Varieties
+    description: Philip Engel, Fall 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/13-varieties.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Fall/Algebraic%20Geometry/AlgebraicGeometry.html'
+    images:
+      - src: '/assets/images/notes/13-varieties/1.png'
+      - src: '/assets/images/notes/13-varieties/2.png'
+      - src: '/assets/images/notes/13-varieties/3.png'
+  - title: Schemes
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Schemes
+    description: Phil Engel, Fall 2021
+    links:
+      - label: HTML (pending)
+      - label: PDF
+        href: '/assets/pdfs/notes/14-schemes.pdf'
+    images:
+      - src: '/assets/images/notes/14-schemes/1.png'
+      - src: '/assets/images/notes/14-schemes/2.png'
+      - src: '/assets/images/notes/14-schemes/3.png'
+  - title: Sheaf Cohomology
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Sheaves
+      - Homological Algebra
+    description: Valery Alexeev, Spring 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/15-sheaf-cohomology.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Spring/SheafCohomology/SheafCohomology.html'
+    images:
+      - src: '/assets/images/notes/15-sheaf-cohomology/1.png'
+      - src: '/assets/images/notes/15-sheaf-cohomology/2.png'
+      - src: '/assets/images/notes/15-sheaf-cohomology/3.png'
+  - title: 4-Manifolds and Algebraic Surfaces
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Low-Dimensional Topology
+      - Differential Geometry
+      - Manifolds
+      - Algebraic Surfaces
+      - Complex Geometry
+    description: Phil Engel, Spring 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/16-4-manifolds-and-algebraic-surfaces.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Spring/FourManifolds/FourManifolds.html'
+    images:
+      - src: '/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/1.png'
+      - src: '/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/2.png'
+      - src: '/assets/images/notes/16-4-manifolds-and-algebraic-surfaces/3.png'
+  - title: 'Moduli: GIT'
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Moduli Spaces
+      - Varieties
+    description: Valery Alexeev, Fall 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/17-moduli-git.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Fall/Moduli/Moduli.html'
+    images:
+      - src: '/assets/images/notes/17-moduli-git/1.png'
+      - src: '/assets/images/notes/17-moduli-git/2.png'
+      - src: '/assets/images/notes/17-moduli-git/3.png'
+  - title: 'Moduli: Deformations'
+    category: Notes
+    tags:
+      - Algebraic Geometry
+      - Moduli Spaces
+      - Complex Geometry
+    description: Ben Bakker, Spring 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/18-moduli-deformations.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Spring/Moduli%20Spaces/ModuliSpaces.html'
+    images:
+      - src: '/assets/images/notes/18-moduli-deformations/1.png'
+      - src: '/assets/images/notes/18-moduli-deformations/2.png'
+      - src: '/assets/images/notes/18-moduli-deformations/3.png'
+  - title: Algebraic Number Theory
+    category: Notes
+    tags:
+      - Number Theory
+      - Algebraic Number Theory
+      - Arithmetic Geometry
+    description: Paul Pollack, Spring 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/19-algebraic-number-theory.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Spring/NumberTheory/NumberTheory.html'
+    images:
+      - src: '/assets/images/notes/19-algebraic-number-theory/1.png'
+      - src: '/assets/images/notes/19-algebraic-number-theory/2.png'
+      - src: '/assets/images/notes/19-algebraic-number-theory/3.png'
+  - title: Galois Cohomology and Class Field Theory
+    category: Notes
+    tags:
+      - Number Theory
+      - Algebraic Number Theory
+      - Arithmetic Geometry
+    description: Pete Clark, Spring 2021
+    links: []
+  - title: Algebraic Curves
+    category: Notes
+    tags:
+      - Number Theory
+      - Algebraic Curves
+      - Arithmetic Geometry
+      - Algebraic Geometry
+    description: Pete Clark, Fall 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/20-algebraic-curves.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Fall/Algebraic%20Curves/AlgebraicCurves.html'
+    images:
+      - src: '/assets/images/notes/20-algebraic-curves/1.png'
+      - src: '/assets/images/notes/20-algebraic-curves/2.png'
+      - src: '/assets/images/notes/20-algebraic-curves/3.png'
+  - title: Étale Cohomology
+    category: Notes
+    tags:
+      - Number Theory
+      - Arithmetic Geometry
+      - Algebraic Geometry
+      - Sheaves
+    description: Daniel Litt, Fall 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/21-tale-cohomology.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Fall/Etale%20Cohomology/EtaleCohomology.html'
+    images:
+      - src: '/assets/images/notes/21-tale-cohomology/1.png'
+      - src: '/assets/images/notes/21-tale-cohomology/2.png'
+      - src: '/assets/images/notes/21-tale-cohomology/3.png'
+  - title: Rational Points
+    category: Notes
+    tags:
+      - Number Theory
+      - Arithmetic Geometry
+      - Algebraic Number Theory
+      - Algebraic Geometry
+      - Varieties
+    description: Daniel Litt, Fall 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/22-rational-points.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Fall/RationalPoints/RationalPoints.html'
+    images:
+      - src: '/assets/images/notes/22-rational-points/1.png'
+      - src: '/assets/images/notes/22-rational-points/2.png'
+      - src: '/assets/images/notes/22-rational-points/3.png'
+  - title: Elliptic Curves
+    category: Notes
+    tags:
+      - Arithmetic Geometry
+      - Algebraic Curves
+      - Algebraic Geometry
+    description: Pete Clark, Spring 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/Elliptic_Curves_2020_03_01.pdf'
+  - title: Algebraic Topology
+    category: Notes
+    tags:
+      - Topology
+      - Algebraic Topology
+      - Homotopy Theory
+    description: Justin Roberts, Fall 2017 and Spring 2018
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/23-algebraic-topology.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/Independent/Algebraic%20Topology/Algebraic_Topology.html'
+    images:
+      - src: '/assets/images/notes/23-algebraic-topology/1.png'
+      - src: '/assets/images/notes/23-algebraic-topology/2.png'
+      - src: '/assets/images/notes/23-algebraic-topology/3.png'
+  - title: Morse Theory
+    category: Notes
+    tags:
+      - Topology
+      - Differential Geometry
+      - Manifolds
+    description: Akram Alishahi, Spring 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/24-morse-theory.pdf'
+    images:
+      - src: '/assets/images/notes/24-morse-theory/1.png'
+      - src: '/assets/images/notes/24-morse-theory/2.png'
+      - src: '/assets/images/notes/24-morse-theory/3.png'
+  - title: Floer Homology
+    category: Notes
+    tags:
+      - Topology
+      - Low-Dimensional Topology
+      - Homological Algebra
+      - Manifolds
+    description: Akram Alishahi, Spring 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/25-floer-homology.pdf'
+    images:
+      - src: '/assets/images/notes/25-floer-homology/1.png'
+      - src: '/assets/images/notes/25-floer-homology/2.png'
+      - src: '/assets/images/notes/25-floer-homology/3.png'
+  - title: Characteristic Classes
+    category: Notes
+    tags:
+      - Topology
+      - Algebraic Topology
+      - Differential Geometry
+      - Manifolds
+    description: Akram Alishahi, Fall 2021
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/26-characteristic-classes.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2021/Fall/CharacteristicClasses/CharacteristicClasses.html'
+    images:
+      - src: '/assets/images/notes/26-characteristic-classes/1.png'
+      - src: '/assets/images/notes/26-characteristic-classes/2.png'
+      - src: '/assets/images/notes/26-characteristic-classes/3.png'
+  - title: Contact Topology
+    category: Notes
+    tags:
+      - Topology
+      - Low-Dimensional Topology
+      - Differential Geometry
+      - Manifolds
+    description: Peter Lambert-Cole, Spring 2022
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/27-contact-topology.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2022/Spring/ContactTopology/Contact.html'
+    images:
+      - src: '/assets/images/notes/27-contact-topology/1.png'
+      - src: '/assets/images/notes/27-contact-topology/2.png'
+      - src: '/assets/images/notes/27-contact-topology/3.png'
+  - title: Real Analysis
+    category: Notes
+    tags:
+      - Analysis
+    description: Neil Lyall, Fall 2019
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/28-real-analysis.pdf'
+    images:
+      - src: '/assets/images/notes/28-real-analysis/1.png'
+      - src: '/assets/images/notes/28-real-analysis/2.png'
+      - src: '/assets/images/notes/28-real-analysis/3.png'
+  - title: Complex Analysis
+    category: Notes
+    tags:
+      - Analysis
+      - Complex Geometry
+    description: Jingzhi Tie, Spring 2020
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/29-complex-analysis.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2020/Spring/Complex%20Analysis/ComplexAnalysis.html'
+    images:
+      - src: '/assets/images/notes/29-complex-analysis/1.png'
+      - src: '/assets/images/notes/29-complex-analysis/2.png'
+      - src: '/assets/images/notes/29-complex-analysis/3.png'
+  - title: Undergraduate Compendium
+    category: Notes
+    tags:
+      - Undergraduate
+    description: A giant study guide of undergraduate topics I wrote while studying
+      for the Mathematics Subject GRE. (Self study, Spring 2017)
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/30-undergraduate-compendium.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2016%20and%20Earlier/UndergradCompendium/UndergraduateCompendium.html'
+    images:
+      - src: '/assets/images/notes/30-undergraduate-compendium/1.png'
+      - src: '/assets/images/notes/30-undergraduate-compendium/2.png'
+      - src: '/assets/images/notes/30-undergraduate-compendium/3.png'
+  - title: Combinatorics
+    category: Notes
+    tags:
+      - Undergraduate
+    description: A study guide for undergraduate Combinatorics.
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/31-combinatorics.pdf'
+      - label: HTML
+        href: '/rawnotes/Class_Notes/2016%20and%20Earlier/Combinatorics/Combinatorics.html'
+    images:
+      - src: '/assets/images/notes/31-combinatorics/1.png'
+      - src: '/assets/images/notes/31-combinatorics/2.png'
+      - src: '/assets/images/notes/31-combinatorics/3.png'
+  - title: Classifying groups of order $pq$ using semidirect products
+    category: Expository
+    tags:
+      - Algebra
+    description: ''
+    links:
+      - label: Notes (HTML)
+        href: '/assets/expository/pq-classification.html'
+  - title: A history of modern Algebraic Geometry
+    category: Expository
+    tags:
+      - Algebraic Geometry
+    description: Expository paper, 2017
+    links:
+      - label: PDF
+        href: '/assets/pdfs/notes/33-a-history-of-modern-algebraic-geometry.pdf'
+    images:
+      - src: '/assets/images/notes/33-a-history-of-modern-algebraic-geometry/1.png'
+      - src: '/assets/images/notes/33-a-history-of-modern-algebraic-geometry/2.png'
+      - src: '/assets/images/notes/33-a-history-of-modern-algebraic-geometry/3.png'
+  - title: Notes on the Math GRE
+    category: Expository
+    tags:
+      - Undergraduate
+    description: GRE Workshop, February 2019
+    links:
+      - label: Notes
+        href: '/assets/talks/02-22-2019-GRE-Workshop/General%20Notes.html'
+      - label: Slides (HTML)
+        href: '/assets/talks/02-22-2019-GRE-Workshop/Slides.html'
+      - label: Slides (PDF)
+        href: '/assets/talks/02-22-2019-GRE-Workshop/Slides.pdf'
+    images:
+      - src: '/assets/images/notes/34-notes-on-the-math-gre/1.png'
+      - src: '/assets/images/notes/34-notes-on-the-math-gre/2.png'
+      - src: '/assets/images/notes/34-notes-on-the-math-gre/3.png'
+  - title: 'IAS/PCMI Graduate Summer School: Motivic Homotopy'
+    category: Mini Course
+    tags:
+      - Homotopy Theory
+      - Algebraic Geometry
+      - Arithmetic Geometry
+      - Algebraic Topology
+    description: Lecture notes from the 2021 IAS/PCMI Graduate Summer School.
+    links:
+      - label: Combined Notes (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-.pdf'
+      - label: Combined Notes (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/6_Combined/Combined_Talks.html'
+      - label: Krashen — Field arithmetic (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Krashen_Talks.pdf'
+      - label: Krashen — Field arithmetic (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/1_Krashen/Krashen_Talks.html'
+      - label: Gille — G-torsors over affine curves (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Gille_Talks.pdf'
+      - label: Gille — G-torsors over affine curves (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/2_Gille/Gille_Talks.html'
+      - label: Déglise — Motivic categories (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Deglise_Talks.pdf'
+      - label: Déglise — Motivic categories (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/3_Deglise/Deglise_Talks.html'
+      - label: Wickelgren — A1 homotopy theory (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Wickelgren_Talks.pdf'
+      - label: Wickelgren — A1 homotopy theory (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/4_Wickelgren/Wickelgren_Talks.html'
+      - label: Morrow — Aspects of motivic cohomology (PDF)
+        href: '/assets/pdfs/notes/35-ias-pcmi-graduate-summer-school-motivic-/Morrow_Talks.pdf'
+      - label: Morrow — Aspects of motivic cohomology (HTML)
+        href: '/rawnotes/Class_Notes/2021/Summer/PCMI/5_Morrow/Morrow_Talks.html'
+    images:
+      - src: '/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/1.png'
+      - src: '/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/2.png'
+      - src: '/assets/images/notes/35-ias-pcmi-graduate-summer-school-motivic-/3.png'
+  - title: 'Reading Seminar: McDuff–Salamon, J-Holomorphic Curves and Symplectic Topology'
+    category: Seminar
+    tags:
+      - Symplectic Geometry
+      - Differential Geometry
+      - Moduli Spaces
+      - Manifolds
+    description: Gromov–Witten invariants and regularity theorems.
+    links:
+      - label: Typeset Notes (PDF)
+        href: '/assets/pdfs/expository/GW_Notes_June_26.pdf'
+      - label: Slides and Handwritten Notes (PDF)
+        href: '/assets/pdfs/expository/GW_Talk_June_26.pdf'
+    images:
+      - src: '/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/1.png'
+      - src: '/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/2.png'
+      - src: '/assets/images/notes/36-reading-seminar-mcduff-salamon-j-holomor/3.png'
+  - title: VRG Notes on Tilings and Translation Surfaces
+    category: Seminar
+    tags:
+      - Geometry
+      - Differential Geometry
+      - Manifolds
+      - Low-Dimensional Topology
+    links:
+      - label: PDF
+        href: '/assets/notes/Tilings.pdf'
+    images:
+      - src: '/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/1.png'
+      - src: '/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/2.png'
+      - src: '/assets/images/notes/37-vrg-notes-on-tilings-and-translation-sur/3.png'
+  - title: Arizona Winter School, 2019
+    category: Mini Course
+    tags:
+      - Algebraic Geometry
+      - Number Theory
+      - Arithmetic Geometry
+      - Algebraic Number Theory
+      - Homotopy Theory
+    description: Notes from the 2019 Arizona Winter School.
+    links:
+      - label: Wickelgren — A1 Enumerative Geometry
+        href: '/assets/pdfs/AWS2019_Wickelgren_typeset.pdf'
+      - label: Morrow — Topological Hochschild Homology
+        href: '/assets/pdfs/AWS2019_Morrow.pdf'
+    images:
+      - src: '/assets/images/notes/38-arizona-winter-school-2019/1.png'
+      - src: '/assets/images/notes/38-arizona-winter-school-2019/2.png'
+      - src: '/assets/images/notes/38-arizona-winter-school-2019/3.png'
+  - title: UCSD Algebraic Geometry Conference, 2019
+    category: Seminar
+    tags:
+      - Algebraic Geometry
+      - Moduli Spaces
+      - Algebraic Curves
+      - Algebraic Surfaces
+    links:
+      - label: Talk Notes (HTML)
+        href: '/assets/conferences/UCSD-Algebraic-Geometry-Conference-2019.html'
+  - title: Hartshorne Exercises Megadoc
+    category: Expository
+    tags:
+      - Algebraic Geometry
+      - Schemes
+      - Varieties
+    description: All of the exercises from Hartshorne compiled into a single document.
+    links:
+      - label: Notes (PDF)
+        href: '/assets/pdfs/Hartshorne_Megadoc.pdf'
+  - title: 'Talbot 2022: Scissors Congruence and Algebraic K-Theory'
+    category: Proceedings
+    tags:
+      - Algebraic K-Theory
+      - Algebraic Topology
+      - Homotopy Theory
+      - Manifolds
+    description: Proceedings from Talbot 2022, jointly compiled with Maxine Calle.
+    links:
+      - label: Notes (PDF)
+        href: '/assets/pdfs/Talbot_2022.pdf'
+  - title: 'INI Workshop: Algebraic Cycles, Strings and Amplitudes'
+    category: Workshop Notes
+    tags:
+      - Algebraic Geometry
+      - Arithmetic Geometry
+      - Algebraic K-Theory
+      - Complex Geometry
+    description: 'Notes for the INI workshop on mathematical physics: algebraic cycles, strings and amplitudes.'
+    links:
+      - label: Notes (PDF)
+        href: '/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.pdf'
+      - label: Notes (HTML)
+        href: '/rawnotes/Class_Notes/2022/INIMotivic/INIMotivic.html'
+  - title: ADDING Conference at UGA
+    category: Workshop Notes
+    tags:
+      - Arithmetic Geometry
+      - Algebraic Number Theory
+      - Algebraic Geometry
+    description: Notes for the ADDING conference at UGA.
+    links:
+      - label: Notes (PDF)
+        href: '/rawnotes/Class_Notes/2022/ADDING/ADDING.pdf'
+      - label: Notes (HTML)
+        href: '/rawnotes/Class_Notes/2022/ADDING/ADDING.html'
+  - title: 'Arizona Winter School 2022: Automorphic Forms Beyond GL2'
+    category: Mini Course
+    tags:
+      - Arithmetic Geometry
+      - Algebraic Number Theory
+      - Representation Theory
+      - Algebraic Geometry
+    description: 'Lecture notes for Arizona Winter School 2022: Automorphic Forms Beyond GL2.'
+    links:
+      - label: Notes (PDF)
+        href: '/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.pdf'
+      - label: Notes (HTML)
+        href: '/rawnotes/Class_Notes/2022/AWS2022/AWS2022AutFormsBeyond.html'
+  - title: 'MSRI Workshop: Chern-Simons and Other Topological Field Theories'
+    category: Workshop Notes
+    tags:
+      - Low-Dimensional Topology
+      - Differential Geometry
+      - Algebraic Topology
+      - Manifolds
+    description: Notes from the MSRI workshop on Chern-Simons and other topological field theories.
+    links:
+      - label: Notes (PDF)
+        href: '/assets/pdfs/transcribed_notes/MSRI_2021_ChernSimons.pdf'
+  - title: 'MIT Talbot Workshop: Viva Talbot!'
+    category: Workshop Notes
+    tags:
+      - Homotopy Theory
+      - Algebraic Topology
+      - Complex Geometry
+      - Algebraic Geometry
+    description: 'Notes from the MIT Talbot Workshop: Viva Talbot!'
+    links:
+      - label: Jeremy Hahn — Methods and Mysteries in the Construction of Ring Spectra
+        href: '/assets/pdfs/transcribed_notes/Talbot_2021__Methods_and_mysteries_in_the_construction_of_ring_spectra.pdf'
+      - label: Tasos Moulinos — Perspectives of Nonabelian Hodge Theory
+        href: '/assets/pdfs/transcribed_notes/Talbot_2021__Perspectives_on_non_abelian_Hodge_theory.pdf'
