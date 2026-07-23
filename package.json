@@ -4,9 +4,9 @@
   "private": true,
   "description": "Content surface for dzackgarza.com, built with the pandoc-ssg generator.",
   "scripts": {
-    "test": "just check",
-    "test:push": "just check",
-    "test:ci": "just check && just verify"
+    "test": "bun test && just check",
+    "test:push": "bun test && just check",
+    "test:ci": "bun test && just check && just verify"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5",
