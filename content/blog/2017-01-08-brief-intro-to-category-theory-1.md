@@ -29,7 +29,7 @@ In particular, Eilenberg and Mac Lane wanted to formalize the notion of a **natu
 
 ## Interlude --  What does "natural" mean?
 
-A canonical example from mathematics is that, given a finite-dimensional vector space $V$ over a field $k$ (you can just take $k=\mathbb{R}$ here if you'd like), one can look at it's *dual space*, denoted $V\dual$, which is the space of all functions $f : V \rightarrow k$ that take vectors in $V$ as input and output scalars in the base field $k$. It turns out that $V^*$ is also a vector space, with the same dimension as $V$, and one result you might remember from linear algebra is that $\text{dim} V = n \Rightarrow V \cong R^n$ --  that is, all vector spaces of finite dimension $n$ are indistinguishable (as vector spaces) from $\mathbb{R}^n$.
+A canonical example from mathematics is that, given a finite-dimensional vector space $V$ over a field $k$ (you can just take $k=\mathbb{R}$ here if you'd like), one can look at it's *dual space*, denoted $\dualof{V}$, which is the space of all functions $f : V \rightarrow k$ that take vectors in $V$ as input and output scalars in the base field $k$. It turns out that $V^*$ is also a vector space, with the same dimension as $V$, and one result you might remember from linear algebra is that $\text{dim} V = n \Rightarrow V \cong R^n$ --  that is, all vector spaces of finite dimension $n$ are indistinguishable (as vector spaces) from $\mathbb{R}^n$.
 
 In particular, we have $\text{dim}~V^* = n$, so $V^* \cong R^n \cong V$. So $V$ is isomorphic to its dual.
 
@@ -37,8 +37,8 @@ But $V^*$ is a vector space in its own right, so we can look at *it's* dual too.
 This is denoted $V^{\vee\vee}$, and sometimes referred to as the "double dual" of $V$. 
 In exactly the same way, we find that $\text{dim}V^{\vee\vee} =n$ as well, and so $V^{\vee\vee} \cong V^*$, and so we can conclude that $V \cong V^{\vee\vee}$ --  that is, $V$ is isomorphic to its double dual.
 
-So $V$ is isomorphic to $V\dual$, and it is also isomorphic to $V^{\vee\vee}$.  
-However, when one goes through the process of actually finding and constructing these bijections, one finds that the map from $V \rightarrow V\dual$ depends on choosing a basis for $V$. 
+So $V$ is isomorphic to $\dualof{V}$, and it is also isomorphic to $V^{\vee\vee}$.  
+However, when one goes through the process of actually finding and constructing these bijections, one finds that the map from $V \rightarrow \dualof{V}$ depends on choosing a basis for $V$. 
 On the other hand, the map from $V$ to $V^{\vee\vee}$ requires *no such choice*. 
 In this way, we say that $V$ is isomorphic to its dual, but $V$ is *naturally* isomorphic to it's double dual.
 This idea of "naturality" is part of what category theory sets out to make precise.
@@ -253,7 +253,7 @@ Here are some common examples of categories that arise in various contexts, roug
 
 - $\forall b\in B, (f\circ g)(b) = b$
   - (i.e. $f\circ g = id_B$ as a function)
-- $\forall a \in A, g\circ f(a) = a $
+- $\forall a \in A, g\circ f(a) = a$
   - (i.e. $g\circ f = id_A$ as a function)
 
 So we refer to $g$ as **the** two-sided inverse and call it $f^{-1}$, which is unique when it exists. In many common cases, the objects in a category are "built" out of sets. These categories are called concrete, and the isomorphisms in these categories end up just being isomorphisms of the underlying sets, along with some other structure-preserving conditions. Thus understanding how morphisms and isomorphisms in $\mathbf{Set}$ are constructed is a key first step.
