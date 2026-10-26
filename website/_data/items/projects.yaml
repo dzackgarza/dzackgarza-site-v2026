@@ -1,0 +1,64 @@
+---
+projects:
+- title: "Persistent Homology"
+  category: "Mathematical Toy"
+  description: "A browser toy for watching a Vietoris-Rips complex, Euler characteristic, and low-dimensional homology change with a distance threshold."
+  tags:
+  - "Topology"
+  - "Homology"
+  - "Interactive"
+  image: "/assets/images/SimplicesToy.png"
+  alt: "Persistent homology toy showing a moving simplicial complex."
+  links:
+  - label: "Open project"
+    href: "/projects/persistent_homology/"
+- title: "Persistent Homology Lab"
+  category: "Mathematical Toy"
+  description: "A Vietoris-Rips explorer with PixiJS rendering and Smith normal form computations for low-dimensional integral homology."
+  tags:
+  - "Topology"
+  - "Homology"
+  - "PixiJS"
+  - "Interactive"
+  image: "/projects/persistent_homology_v2/cover.svg"
+  alt: "A stylized Vietoris-Rips complex with glowing vertices, edges, and triangular faces."
+  links:
+  - label: "Open project"
+    href: "/projects/persistent_homology_v2/"
+- title: "Persistent Homology 3D"
+  category: "Mathematical Toy"
+  description: "A Three.js Vietoris-Rips explorer with points moving in a cube, spherical threshold neighborhoods, and low-dimensional integral homology."
+  tags:
+  - "Topology"
+  - "Homology"
+  - "Three.js"
+  - "Interactive"
+  image: "/projects/persistent_homology_3d/cover.svg"
+  alt: "A three-dimensional Vietoris-Rips complex in a cube with threshold balls, edges, triangular faces, and a tetrahedral cell."
+  links:
+  - label: "Open project"
+    href: "/projects/persistent_homology_3d/"
+- title: "Moving in Fundamental Domains"
+  category: "Mathematical Toy"
+  description: "An arrow-key toy for moving through square fundamental domains and comparing torus and projective-plane edge identifications."
+  tags:
+  - "Topology"
+  - "Geometry"
+  - "Interactive"
+  image: "/assets/images/SnakeTopology.png"
+  alt: "Canvas toy showing movement through identified square fundamental domains."
+  links:
+  - label: "Open project"
+    href: "/projects/square_topologies/"
+- title: "Moving in Fundamental Domains (v2)"
+  category: "Mathematical Toy"
+  description: "An updated square fundamental-domain toy for comparing torus and projective-plane edge identifications."
+  tags:
+  - "Topology"
+  - "Geometry"
+  - "Interactive"
+  image: "/assets/images/SnakeTopology.png"
+  alt: "Canvas toy showing movement through identified square fundamental domains."
+  links:
+  - label: "Open project"
+    href: "/projects/square_topologies_v2/"

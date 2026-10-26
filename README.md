@@ -13,9 +13,18 @@ just serve          # build, then preview over HTTP
 just check          # build, then fail on malformed pages or broken internal links
 just setup-browser  # install Chromium for browser verification
 just verify         # browser-check every page (JS errors, MathJax, landmarks)
-just new "Title"    # scaffold a blog post
+just new             # interactive content creator (blog post or page)
+just new-post        # create a blog post; prompts for its title
+just new-page        # create a page; prompts for title + location
 just update         # bump the generator to the latest published commit
 ```
+
+Content-creation recipes use [Gum](https://github.com/charmbracelet/gum) for the
+small interactive prompts and delegate the actual file/frontmatter scaffold to
+`pandoc-ssg`. This keeps generated content on the same schema path as the build.
+The old non-interactive shortcut remains available as `just new "Title"`; it
+creates a blog post. `just new-post "Title"` does the same explicitly, while
+`just new-page "Title" pages` creates `content/pages/<slug>.md` without prompts.
 
 ## Requirements
 
@@ -30,6 +39,8 @@ Install these system tools before running the project recipes:
 - `uv >= 0.7.0`
 
 - `git-lfs >= 3.0.0`
+
+- `gum` (only for interactive `just new*` authoring recipes)
 
 Run `just doctor` to print the exact tools found on the current machine, the versions detected, and any missing or too-old setup prerequisites.
 `just setup` starts with the same preflight and fails before installing dependencies when a required system tool is missing or below the minimum version.

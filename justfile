@@ -147,6 +147,13 @@ _doctor fail_mode="":
         printf 'missing: lychee (required by just check/test, not by just setup)\n'
     fi
 
+    printf '\nOptional authoring tool:\n'
+    if gum_path="$(type -P gum 2>/dev/null)"; then
+        printf 'ok:      gum at %s\n' "$gum_path"
+    else
+        printf 'missing: gum (required only by interactive just new* recipes)\n'
+    fi
+
     if ((errors > 0)); then
         printf '\nPreflight failed. Install or update the missing/old tools, then run: just doctor\n'
         if [[ "$fail_mode" == "--fail" ]]; then
@@ -190,9 +197,38 @@ test-ci:
 # Bump the generator to the latest published version
 update: _update-generator
 
-# Scaffold a new blog post: just new "My Post Title"
-new TITLE: _check-local-generator
-    {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
+# Interactively create a blog post or page (a supplied title keeps the old blog-post shortcut)
+new TITLE="": _check-local-generator
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [[ -n {{quote(TITLE)}} ]]; then
+        scripts/new-content post --title {{quote(TITLE)}}
+    else
+        scripts/new-content
+    fi
+
+# Create a blog post; prompts for the title when omitted
+new-post TITLE="": _check-local-generator
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [[ -n {{quote(TITLE)}} ]]; then
+        scripts/new-content post --title {{quote(TITLE)}}
+    else
+        scripts/new-content post
+    fi
+
+# Create a page; prompts for its title and content/ directory when omitted
+new-page TITLE="" DIR="": _check-local-generator
+    #!/usr/bin/env bash
+    set -euo pipefail
+    args=(scripts/new-content page)
+    if [[ -n {{quote(TITLE)}} ]]; then
+        args+=(--title {{quote(TITLE)}})
+    fi
+    if [[ -n {{quote(DIR)}} ]]; then
+        args+=(--dir {{quote(DIR)}})
+    fi
+    "${args[@]}"
 
 # Remove build output
 clean:

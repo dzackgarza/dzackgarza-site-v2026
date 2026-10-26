@@ -1,0 +1,147 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+content_dir="${CONTENT_DIR:-content}"
+pandoc_dir="${PANDOC_DIR:-pandoc}"
+ssg="$repo_root/node_modules/.bin/pandoc-ssg"
+
+kind=""
+title=""
+dir=""
+dir_set=0
+
+usage() {
+    cat <<'EOF'
+Usage: scripts/new-content [post|page] [--title TITLE] [--dir DIR]
+
+With missing arguments, prompts interactively with Gum. DIR is relative to
+content/ and is only used for pages; leave it empty for a top-level page.
+EOF
+}
+
+while (($# > 0)); do
+    case "$1" in
+        post|page)
+            if [[ -n "$kind" ]]; then
+                echo "content creation error: content type specified more than once" >&2
+                exit 2
+            fi
+            kind="$1"
+            shift
+            ;;
+        --title)
+            [[ $# -ge 2 ]] || { echo "content creation error: --title requires a value" >&2; exit 2; }
+            title="$2"
+            shift 2
+            ;;
+        --dir)
+            [[ $# -ge 2 ]] || { echo "content creation error: --dir requires a value" >&2; exit 2; }
+            dir="$2"
+            dir_set=1
+            shift 2
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        *)
+            echo "content creation error: unknown argument: $1" >&2
+            usage >&2
+            exit 2
+            ;;
+    esac
+done
+
+[[ -x "$ssg" ]] || {
+    echo "content creation error: missing installed pandoc-ssg CLI; run 'just setup'" >&2
+    exit 1
+}
+
+need_gum() {
+    type -P gum >/dev/null 2>&1 || {
+        echo "content creation error: Gum is required for interactive authoring (https://github.com/charmbracelet/gum)" >&2
+        exit 1
+    }
+}
+
+if [[ -z "$kind" ]]; then
+    need_gum
+    choice="$(gum choose --header "Create website content" "Blog post" "Page")"
+    case "$choice" in
+        "Blog post") kind="post" ;;
+        "Page") kind="page" ;;
+        *) exit 1 ;;
+    esac
+fi
+
+if [[ -z "$title" ]]; then
+    need_gum
+    if [[ "$kind" == "post" ]]; then
+        title="$(gum input --header "New blog post" --prompt "Title: " --placeholder "Post title")"
+    else
+        title="$(gum input --header "New page" --prompt "Title: " --placeholder "Page title")"
+    fi
+fi
+
+if [[ -z "${title//[[:space:]]/}" ]]; then
+    echo "content creation error: title cannot be empty" >&2
+    exit 2
+fi
+
+if [[ "$kind" == "page" && "$dir_set" -eq 0 ]]; then
+    need_gum
+    dir="$(gum input \
+        --header "Page location (relative to content/)" \
+        --prompt "content/" \
+        --placeholder "leave empty for a top-level page")"
+fi
+
+if [[ "$kind" == "post" && "$dir_set" -eq 1 ]]; then
+    echo "content creation error: --dir is only valid for pages" >&2
+    exit 2
+fi
+
+if [[ -n "$dir" ]]; then
+    if [[ "$dir" == /* || "$dir" == ".." || "$dir" == ../* || "$dir" == */../* || "$dir" == */.. ]]; then
+        echo "content creation error: page directory must stay inside content/" >&2
+        exit 2
+    fi
+    dir="${dir#./}"
+    dir="${dir%/}"
+fi
+
+slug="$(python3 - "$title" <<'PY'
+import re
+import sys
+
+title = sys.argv[1].lower()
+print(re.sub(r"[^a-z0-9]+", "-", title).strip("-"))
+PY
+)"
+
+if [[ -z "$slug" ]]; then
+    echo "content creation error: title must contain at least one ASCII letter or digit so it has a filename slug" >&2
+    exit 2
+fi
+
+args=(bun "$ssg" new "$kind" "$title" --content "$content_dir" --pandoc "$pandoc_dir")
+if [[ "$kind" == "page" && -n "$dir" ]]; then
+    args+=(--dir "$dir")
+fi
+
+"${args[@]}"
+
+if [[ "$kind" == "post" ]]; then
+    created="$content_dir/blog/$(date -u +%F)-$slug.md"
+else
+    if [[ -n "$dir" ]]; then
+        created="$content_dir/$dir/$slug.md"
+    else
+        created="$content_dir/$slug.md"
+    fi
+fi
+
+printf 'Created %s\n' "$created"
