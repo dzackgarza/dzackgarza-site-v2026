@@ -579,7 +579,7 @@ This follows because doing the Kan extension on the graded pieces is deriving th
 We can complete with respect to this filtration, which we'll write has 
 
 \[
-\hat{L\dR_{\wait/k}} \da \inverselim L\dR_{\wait/k} / F_H^i
+\widehat{L\dR_{\wait/k}} \da \inverselim L\dR_{\wait/k} / F_H^i
 ,\]
 where you quotient out by the $i$th piece of the filtration.
 Note that this definition is a general way of taking completions.[^what_its_like]
@@ -591,7 +591,7 @@ This is like defining the $p\dash$adics as the limit of $\ZZ/p^n\ZZ$.
 :::{.theorem title="Bhatt, Grothendieck, Hartshorne"}
 Suppose $X/\CC$ is finite type, then
 \[
-R \Gamma(X,  \hat{ L\dR_{\OO_X/ k} } ) 
+R \Gamma(X,  \widehat{ L\dR_{\OO_X/ k} } ) 
 \cong
 R \Gamma_{\Sing}(X(\CC), \CC)
 ,\]
