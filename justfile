@@ -1,15 +1,3 @@
-# dzackgarza-site-v2026 — the content surface for dzackgarza.com.
-#
-# This repo holds pages, _data, assets, and standalone apps. The static-site
-# generator (pandoc-ssg) is a *dependency*, declared in package.json and pinned
-# by bun.lock — not vendored here. `just setup` installs repo dependencies,
-# installs the generator's XDG config, and fetches LFS assets; `just setup-browser`
-# installs the Chromium runtime needed for browser verification. Recipes invoke
-# the explicit local bin under node_modules.
-
-# ai-review-ci contract variables consumed by doctor and workflow installers.
-# The QC tiers below delegate to the central implementation in
-# ~/ai-review-ci/justfiles/bun.just while keeping this repo as the caller root.
 ai_review_ci_schema_version := "1"
 ai_review_ci_profile := "bun"
 ai_review_ci_ref := "main"
@@ -27,18 +15,18 @@ UV_MIN := "0.7.0"
 PANDOC_MIN := "3.6.0"
 GIT_LFS_MIN := "3.0.0"
 
-# Show available recipes
+[doc("Show available recipes")]
 default:
     @just --list
 
-# Install dependencies, generator config, and Git LFS assets
+[doc("Install dependencies, generator config, and Git LFS assets")]
 setup: _preflight
     bun install
     just _check-local-generator
     just _install-generator-config
     git lfs pull
 
-# Report system tools and minimum versions needed by this project
+[doc("Report system tools and minimum versions needed by this project")]
 doctor:
     @just _doctor
 
@@ -154,47 +142,47 @@ _doctor fail_mode="":
         fi
     fi
 
-# Install Chromium for browser verification
+[doc("Install Chromium for browser verification")]
 setup-browser: _check-bun
     bun install
     {{PLAYWRIGHT}} install chromium
 
-# Compile content/ into dist/
+[doc("Compile content/ into dist/")]
 build: _build
 
-# Build, then preview the site over HTTP (Ctrl-C to stop)
+[doc("Build, then preview the site over HTTP (Ctrl-C to stop)")]
 serve: build
     {{SSG}} serve
 
-# Run the broad live-site readiness gate
+[doc("Run the broad live-site readiness gate")]
 check: _check-build _check-orphans _check-homology-fixtures _check-links
 
-# Run browser verification over the built site
+[doc("Run browser verification over the built site")]
 verify: _verify
 
-# Rebuild and validate dist/ for static hosting
+[doc("Rebuild and validate dist/ for static hosting")]
 deploy: check verify
 
-# Run commit-tier QC through the central implementation
+[doc("Run commit-tier QC through the central implementation")]
 test-commit:
     @just -f ~/ai-review-ci/justfiles/bun.just -d . test-commit
 
-# Run the push gate: commit checks plus this repo's own site suite
+[doc("Run the push gate: commit checks plus this repo's own site suite")]
 test-push:
     @just -f ~/ai-review-ci/justfiles/bun.just -d . test-push
 
-# Run CI acceptance QC through the central implementation
+[doc("Run CI acceptance QC through the central implementation")]
 test-ci:
     @just -f ~/ai-review-ci/justfiles/bun.just -d . test-ci
 
-# Bump the generator to the latest published version
+[doc("Bump the generator to the latest published version")]
 update: _update-generator
 
-# Scaffold a new blog post: just new "My Post Title"
+[doc("Scaffold a new blog post: just new \"My Post Title\"")]
 new TITLE: _check-local-generator
     {{SSG}} new post "{{TITLE}}" --pandoc {{PANDOC}}
 
-# Remove build output
+[doc("Remove build output")]
 clean:
     rm -rf dist
     rm -f content/_data/items/projects.yaml
@@ -239,14 +227,7 @@ _build: _check-local-generator _project-items
 _check-build: _check-local-generator _project-items
     {{SSG}} check --pandoc {{PANDOC}}
 
-# pandoc-ssg's `check` only validates internal links in static HTML; the
-# collection data is rendered from content/_data/ sources such as
-# content/_data/items/*.yaml, so external + asset links slip past it. This
-# lints the content source (so even *bare* URLs that never render as <a href>
-# are checked) plus every built page, resolving root-relative links against the
-# live local deployment.
-# Vendored/archived third-party artifacts (example dumps, slide decks) are
-# skipped.
+[doc("pandoc-ssg's `check` only validates internal links in static HTML; the")]
 [private]
 _check-links: _check-lychee _build
     lychee --no-progress --base-url http://website.localhost/ \
@@ -264,10 +245,7 @@ _check-links: _check-lychee _build
 _check-lychee:
     @command -v lychee >/dev/null || { echo "Missing required tool for just check/test: lychee"; exit 1; }
 
-# pandoc-ssg's `check` validates that internal links *resolve*, but not that a
-# page is linked *to* by anything — a page can build, sit in the sitemap, and
-# still be reachable only by typing its URL. This flags pages unreachable from
-# the home page + nav (following static links and island-injected ones).
+[doc("pandoc-ssg's `check` validates that internal links *resolve*, but not that a")]
 [private]
 _check-orphans: _build
     python3 scripts/check-orphans.py
@@ -276,14 +254,12 @@ _check-orphans: _build
 _check-homology-fixtures:
     bun scripts/check-homology-fixtures.mjs
 
-# Build, then drive a headless browser over every page: fail on JS/console
-# errors, missing landmarks, or MathJax errors (needs the playwright dep + a
-# browser: `just setup-browser`)
+[doc("Build, then drive a headless browser over every page: fail on JS/console")]
 [private]
 _verify: _check-local-generator
     {{SSG}} verify --pandoc {{PANDOC}}
 
-# Bump the generator to the latest published version (updates bun.lock)
+[doc("Bump the generator to the latest published version (updates bun.lock)")]
 [private]
 _update-generator:
     bun update pandoc-ssg
