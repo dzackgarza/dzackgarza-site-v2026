@@ -227,7 +227,7 @@ _build: _check-local-generator _project-items
 _check-build: _check-local-generator _project-items
     {{SSG}} check --pandoc {{PANDOC}}
 
-[doc("pandoc-ssg's `check` only validates internal links in static HTML; the")]
+[doc("pandoc-ssg's `check` only validates internal links in static HTML; the collection data is rendered from content/_data/ sources such as content/_data/items/*.yaml, so external + asset links slip past it.")]
 [private]
 _check-links: _check-lychee _build
     lychee --no-progress --base-url http://website.localhost/ \
@@ -245,7 +245,7 @@ _check-links: _check-lychee _build
 _check-lychee:
     @command -v lychee >/dev/null || { echo "Missing required tool for just check/test: lychee"; exit 1; }
 
-[doc("pandoc-ssg's `check` validates that internal links *resolve*, but not that a")]
+[doc("pandoc-ssg's `check` validates that internal links *resolve*, but not that a page is linked *to* by anything — a page can build, sit in the sitemap, and still be reachable only by typing its URL.")]
 [private]
 _check-orphans: _build
     python3 scripts/check-orphans.py
@@ -254,7 +254,7 @@ _check-orphans: _build
 _check-homology-fixtures:
     bun scripts/check-homology-fixtures.mjs
 
-[doc("Build, then drive a headless browser over every page: fail on JS/console")]
+[doc("Build, then drive a headless browser over every page: fail on JS/console errors, missing landmarks, or MathJax errors (needs the playwright dep + a browser: `just setup-browser`)")]
 [private]
 _verify: _check-local-generator
     {{SSG}} verify --pandoc {{PANDOC}}
