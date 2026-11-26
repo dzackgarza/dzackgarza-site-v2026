@@ -11,7 +11,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5",
     "@types/bun": "^1.3.14",
-    "pandoc-ssg": "github:dzackgarza/pandoc-ssg#04e7a38601db",
+    "pandoc-ssg": "github:dzackgarza/pandoc-ssg",
     "playwright": "^1.60.0",
     "svelte": "^5",
     "vite": "^6"

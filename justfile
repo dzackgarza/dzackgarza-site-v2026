@@ -22,6 +22,7 @@ default:
 [doc("Install dependencies, generator config, and Git LFS assets")]
 setup: _preflight
     bun install
+    bun update pandoc-ssg
     just _check-local-generator
     just _install-generator-config
     git lfs pull
@@ -175,7 +176,7 @@ test-push:
 test-ci:
     @just -f ~/ai-review-ci/justfiles/bun.just -d . test-ci
 
-[doc("Bump the generator to the latest published version")]
+[doc("Move pandoc-ssg to the head of its main branch")]
 update: _update-generator
 
 [doc("Scaffold a new blog post: just new \"My Post Title\"")]
@@ -259,7 +260,7 @@ _check-homology-fixtures:
 _verify: _check-local-generator
     {{SSG}} verify --pandoc {{PANDOC}}
 
-[doc("Bump the generator to the latest published version (updates bun.lock)")]
+[doc("Move pandoc-ssg to the head of its main branch (updates bun.lock)")]
 [private]
 _update-generator:
     bun update pandoc-ssg
